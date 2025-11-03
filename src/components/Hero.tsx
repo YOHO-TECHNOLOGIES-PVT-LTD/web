@@ -24,17 +24,19 @@ export default function Hero() {
             </div>
             <div className="max-width-large">
               <h1 className={`heading-style-h1 ${isLoaded ? 'animate-in' : ''}`}>
-                Build better DevOps, Data,<br />and AI solutions faster
+                Accelerate Your Business with<br /> Smarter Tech Talent
               </h1>
               <div className="spacer-small"></div>
               <p className={`text-size-large ${isLoaded ? 'animate-in delay-300' : ''}`}>
-                There are more than 150000 highly skilled tech professionals on our roster. Most in largely untapped markets. Ready to be placed quickly and effectively.
+                KIAQ connects global companies with top-tier engineering talent from emerging markets. 
+                Our adaptive hiring model ensures fast, scalable, and cost-effective workforce solutions 
+                across AI, Data, and Cloud technologies.
               </p>
               <div>
                 <div className="spacer-large"></div>
                 <div className={`button-group ${isLoaded ? 'animate-in delay-600' : ''}`}>
-                  <a href="/request-demo" className="button w-button">Request a Consultation</a>
-                  <a href="/adaptive-hiring" className="button is-link is-alternate w-button">What is Adaptive Nim?</a>
+                  <a href="/contact" className="button w-button">Request a Consultation</a>
+                  <a href="/about" className="button is-link is-alternate w-button">Learn About KIAQ</a>
                 </div>
               </div>
               <div className="spacer-large"></div>
@@ -49,14 +51,13 @@ export default function Hero() {
               <img 
                 width="2876" 
                 height="1366" 
-                alt="headshot of a smiling woman" 
+                alt="Global team collaborating" 
                 src="https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign.avif" 
                 className={`image-hero_bg-image-is-right ${isLoaded ? 'bg-animate' : ''}`}
                 loading="eager"
                 sizes="(max-width: 2876px) 100vw, 2876px"
                 srcSet="https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign-p-500.avif 500w, https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign-p-800.avif 800w, https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign-p-1080.avif 1080w, https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign-p-1600.avif 1600w, https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/67070a24904046b992c7fc3d_Brand%20Campaign.avif 2876w"
               />
-              {/* Gradient overlay removed */}
             </div>
           </div>
           <div className="image-hero_bg-video w-embed w-iframe">
@@ -79,7 +80,6 @@ export default function Hero() {
               }}
             />
           </div>
-          {/* Video overlay removed */}
         </div>
       </div>
       

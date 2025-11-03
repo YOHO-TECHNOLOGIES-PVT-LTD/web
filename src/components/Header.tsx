@@ -71,107 +71,138 @@ export default function Header() {
       </nav>
       
       {activeDropdown === 'why-kiaq' && (
-        <div className="absolute top-full left-0 w-screen bg-white shadow-xl z-40" style={{height: '80vh', borderBottomLeftRadius: '16px', borderBottomRightRadius: '36px', overflow: 'auto'}}>
-          <div className="max-w-7xl mx-auto px-16 py-8">
-            <div className="flex gap-16 justify-center">
-              {/* Left Column */}
-              <div className="flex-1" style={{maxWidth: '380px'}}>
-                <h2 className="text-4xl font-bold text-slate-800 mb-6 leading-tight">Why KIAQ</h2>
-                <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                  Our vast network of technologists and AI-driven matching help you hire the world's best.
-                </p>
-                <Link to="/why-kiaq" className="inline-flex items-center text-slate-800 font-semibold hover:text-teal-600 transition-colors">
-                  Learn More 
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-                <div className="mt-12">
-                  <img 
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=380&h=240&fit=crop&crop=faces" 
-                    alt="Team collaboration" 
-                    className="w-full rounded-2xl"
-                    style={{height: '240px', objectFit: 'cover'}}
-                  />
-                </div>
-              </div>
-              
-              {/* Middle Column */}
-              <div className="flex-1" style={{maxWidth: '320px'}}>
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-3">Our Talent Community</h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      We don't just find the best talent — we cultivate it.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-3">Untapped Talent Markets</h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      The talent you need is in untapped emerging markets.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-3">Mission Focused</h3>
-                    <p className="text-slate-600 leading-relaxed">
-                      KIAQ talent improves their career trajectories and quality of life.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Right Column */}
-              <div className="flex-1" style={{maxWidth: '380px'}}>
-                <div className="bg-slate-50 rounded-2xl p-8 mb-8">
-                  <img 
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=320&h=180&fit=crop&crop=faces" 
-                    alt="Global team" 
-                    className="w-full rounded-xl mb-6"
-                    style={{height: '180px', objectFit: 'cover'}}
-                  />
-                  <div className="text-xs font-semibold text-slate-500 tracking-wider mb-4">INSIGHTS</div>
-                  <h3 className="text-xl font-bold text-slate-800 mb-6 leading-tight">
-                    5 Steps To Building A Successful Global Team
-                  </h3>
-                  <Link to="/insights" className="inline-flex items-center text-slate-800 font-semibold hover:text-teal-600 transition-colors">
+        <div className="absolute top-full left-0 w-screen bg-white shadow-xl z-40" style={{height: '80vh', borderBottomLeftRadius: '16px', borderBottomRightRadius: '36px', overflow: 'hidden'}}>
+          <div className="h-full flex items-center">
+            <div className="max-w-7xl mx-auto px-16 w-full">
+              <div className="flex gap-16 justify-center items-start">
+                {/* Left Column */}
+                <div className="flex-1" style={{maxWidth: '380px'}}>
+                  <h2 className="text-5xl font-bold mb-8" style={{color: '#1e3a3a', lineHeight: '1.1'}}>Why KIAQ</h2>
+                  <p className="text-base mb-10" style={{color: '#6b7280', lineHeight: '1.7'}}>
+                    Our vast network of technologists and AI-driven matching help you hire the world's best.
+                  </p>
+                  <Link to="/why-kiaq" className="inline-flex items-center font-semibold hover:opacity-80 transition-opacity" style={{color: '#1e3a3a', fontSize: '15px'}}>
                     Learn More 
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
+                  <div className="mt-10">
+                    <img 
+                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=420&h=260&fit=crop&crop=faces" 
+                      alt="Team collaboration" 
+                      className="w-full rounded-lg"
+                      style={{height: '260px', objectFit: 'cover'}}
+                    />
+                  </div>
                 </div>
                 
-                <div>
-                  <h4 className="text-sm font-bold text-slate-500 tracking-wider mb-6">IMPACT</h4>
-                  <div className="space-y-4">
-                    <Link to="/customer-stories" className="flex items-center text-slate-600 hover:text-teal-600 transition-colors">
-                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                {/* Middle Column */}
+                <div className="flex-1" style={{maxWidth: '340px'}}>
+                  <div className="space-y-10">
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3" style={{color: '#1e3a3a'}}>Our Talent Community</h3>
+                      <p style={{color: '#6b7280', lineHeight: '1.7', fontSize: '15px'}}>
+                        We don't just find the best talent — we cultivate it.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3" style={{color: '#1e3a3a'}}>Untapped Talent Markets</h3>
+                      <p style={{color: '#6b7280', lineHeight: '1.7', fontSize: '15px'}}>
+                        The talent you need is in untapped emerging markets.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3" style={{color: '#1e3a3a'}}>Mission Focused</h3>
+                      <p style={{color: '#6b7280', lineHeight: '1.7', fontSize: '15px'}}>
+                        KIAQ talent improves their career trajectories and quality of life.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold tracking-widest mb-5" style={{color: '#9ca3af', letterSpacing: '0.12em'}}>IMPACT</h4>
+                      <div className="space-y-3.5">
+                        <Link to="/customer-stories" className="flex items-center hover:opacity-70 transition-opacity group" style={{color: '#6b7280', fontSize: '15px'}}>
+                          <svg className="w-3 h-3 mr-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                          Customer Stories
+                        </Link>
+                        <Link to="/economic-impact" className="flex items-center hover:opacity-70 transition-opacity group" style={{color: '#6b7280', fontSize: '15px'}}>
+                          <svg className="w-3 h-3 mr-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                          Forrester Total Economic Impact (TEI) Study
+                        </Link>
+                        <Link to="/humans-of-kiaq" className="flex items-center hover:opacity-70 transition-opacity group" style={{color: '#6b7280', fontSize: '15px'}}>
+                          <svg className="w-3 h-3 mr-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                          Humans of KIAQ
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right Column */}
+                <div className="flex-1" style={{maxWidth: '380px'}}>
+                  <div className="rounded-lg relative overflow-hidden" style={{background: 'linear-gradient(135deg, #e0f2f1 0%, #f0fdf4 100%)'}}>
+                    <div className="absolute top-4 right-4 opacity-10">
+                      <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                        {[...Array(6)].map((_, i) => (
+                          <circle key={i} cx={15 + (i % 3) * 35} cy={15 + Math.floor(i / 3) * 35} r="12" stroke="#10b981" strokeWidth="1" />
+                        ))}
                       </svg>
-                      Customer Stories
-                    </Link>
-                    <Link to="/economic-impact" className="flex items-center text-slate-600 hover:text-teal-600 transition-colors">
-                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                      Forrester Total Economic Impact (TEI) Study
-                    </Link>
-                    <Link to="/humans-of-kiaq" className="flex items-center text-slate-600 hover:text-teal-600 transition-colors">
-                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                      Humans of KIAQ
-                    </Link>
+                    </div>
+                    <img 
+                      src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=220&fit=crop&crop=faces" 
+                      alt="Global team" 
+                      className="w-full"
+                      style={{height: '220px', objectFit: 'cover'}}
+                    />
+                    <div className="p-7">
+                      <div className="text-xs font-bold tracking-widest mb-4" style={{color: '#9ca3af', letterSpacing: '0.12em'}}>INSIGHTS</div>
+                      <h3 className="text-xl font-bold mb-5" style={{color: '#1e3a3a', lineHeight: '1.3'}}>
+                        5 Steps To Building A Successful Global Team
+                      </h3>
+                      <Link to="/insights" className="inline-flex items-center font-semibold hover:opacity-80 transition-opacity" style={{color: '#1e3a3a', fontSize: '15px'}}>
+                        Learn More 
+                        <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
+          {/* Decorative Pattern Bottom Right */}
+          <div className="absolute bottom-0 right-0 opacity-15 pointer-events-none" style={{width: '280px', height: '280px'}}>
+            <svg width="100%" height="100%" viewBox="0 0 280 280" fill="none">
+              {[...Array(20)].map((_, i) => {
+                const row = Math.floor(i / 5);
+                const col = i % 5;
+                return (
+                  <circle 
+                    key={i} 
+                    cx={25 + col * 60} 
+                    cy={25 + row * 60} 
+                    r="24" 
+                    stroke="#10b981" 
+                    strokeWidth="0.5" 
+                    fill="none"
+                  />
+                );
+              })}
+            </svg>
+          </div>
         </div>
       )}
       
       {activeDropdown && (
-        <div className="fixed inset-0  bg-opacity-40 z-30" style={{top: 'calc(64px + 50vh)'}} onClick={() => setActiveDropdown(null)}></div>
+        <div className="fixed inset-0 bg-opacity-40 z-30" style={{top: 'calc(64px + 50vh)'}} onClick={() => setActiveDropdown(null)}></div>
       )}
     </header>
   );

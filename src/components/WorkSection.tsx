@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Cpu, PieChart, Users, Shield, Grid, Code, Globe, FileText, Star } from 'lucide-react';
+import { Cpu, PieChart, Users, Shield, Grid, Code, Globe, FileText, Star, ArrowRight } from 'lucide-react';
 
 const UI_CONSTANTS = {
   PRIMARY: '#ff4600',
@@ -245,6 +245,123 @@ export default function ConsultingServices() {
           </div>
         </div>
       </section>
+
+      {/* Adaptive Hiring Resources Section */}
+      <div className="min-h-screen bg-gray-50 p-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex justify-between items-center mb-8">
+            <h1 className="text-4xl font-bold text-gray-900">
+              Put Adaptive Hiring to work for you
+            </h1>
+            <button className="px-6 py-2.5 border-2 border-gray-900 text-gray-900 font-semibold rounded hover:bg-gray-900 hover:text-white transition-colors">
+              View All Resources
+            </button>
+          </div>
+
+          {/* Featured Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-8 bg-white rounded-lg shadow-sm overflow-hidden">
+            <div className="p-8 flex flex-col justify-between">
+              <div>
+                <p className="text-xs font-semibold text-gray-500 tracking-wider mb-4">
+                  DIGITAL TRANSFORMATION
+                </p>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  How to build an AI-ready workforce
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  The rise of AI has created a paradigm shift in organizations and how they build their teams. Andela community member Oladimeji Samuel explores how businesses can stay competitive with AI-ready workforces.
+                </p>
+              </div>
+              <a href="#" className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group">
+                Read More
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+            <div className="relative min-h-[300px] bg-gradient-to-br from-orange-500 via-purple-800 to-purple-900">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <div className="absolute bottom-0 left-0 w-3/5 h-4/5 bg-orange-500"></div>
+                  <div className="absolute bottom-0 left-[20%] w-12 h-[70%] bg-purple-800"></div>
+                  <div className="absolute bottom-0 left-[35%] w-12 h-[55%] bg-purple-800"></div>
+                  <div className="absolute bottom-0 left-[50%] w-12 h-[40%] bg-purple-800"></div>
+                  <div className="absolute top-8 right-12 w-0 h-0 border-l-[60px] border-l-transparent border-r-[60px] border-r-transparent border-b-[100px] border-b-amber-400 rotate-12"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Three Column Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative h-48 bg-gradient-to-br from-purple-400 via-purple-600 to-indigo-900">
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-300 opacity-60 blur-2xl"></div>
+                  <div className="absolute top-1/3 right-1/4 w-40 h-40 bg-pink-400 opacity-50 blur-3xl"></div>
+                  <div className="absolute bottom-1/4 left-1/3 w-36 h-36 bg-indigo-400 opacity-40 blur-2xl"></div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-semibold text-gray-500 tracking-wider mb-3">
+                  DIGITAL TRANSFORMATION
+                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Tackle cloud migration complexity & skills gap
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative h-48 bg-gradient-to-br from-teal-900 via-slate-900 to-black">
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute top-1/4 right-1/3 w-1 h-32 bg-gradient-to-b from-teal-300 to-transparent rotate-45 blur-sm"></div>
+                  <div className="absolute top-1/2 right-1/2 w-1 h-24 bg-gradient-to-b from-emerald-300 to-transparent -rotate-12 blur-sm"></div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-semibold text-gray-500 tracking-wider mb-3">
+                  UPSKILL/RESKILL
+                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Real-Time Chat App: Node.js, GraphQL, React - Pt. 1
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="relative h-48 bg-gradient-to-br from-amber-100 to-amber-200">
+                <div className="absolute inset-0 flex items-end justify-center px-4 pb-4">
+                  <div className="grid grid-cols-6 gap-2 w-full">
+                    {[...Array(18)].map((_, i) => (
+                      <div key={i} className="aspect-square rounded-full bg-gradient-to-br from-amber-600 to-orange-700 shadow-md"></div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-semibold text-gray-500 tracking-wider mb-3">
+                  THIS IS ANDELA
+                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  This is Andela: A quick introduction
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Client Satisfaction Section */}
       <section className="py-20 bg-gray-50">
