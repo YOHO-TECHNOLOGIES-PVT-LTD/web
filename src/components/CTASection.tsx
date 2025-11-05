@@ -3,11 +3,11 @@ import { UI_CONSTANTS } from '../constants/colors';
 export default function CTASection() {
   return (
     <section className="dual-action-button-cta">
-      <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[400px]">
+      <div className="dual-action-button-cta-wrapper grid sm:grid-cols-1 lg:grid-cols-2 gap-0 min-h-[300px] sm:min-h-[350px] lg:min-h-[400px]">
         
         {/* LEFT SECTION */}
         <div
-          className="dual-action-button-cta-left-div relative px-12 py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+          className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
           style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
         >
           {/* Pattern Background */}
@@ -43,7 +43,7 @@ export default function CTASection() {
             </div>
 
             <h2
-              className="text-4xl lg:text-5xl font-bold mb-12 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
               style={{ color: UI_CONSTANTS.WHITE }}
             >
               Build the tech team of the future with KIAQ
@@ -54,7 +54,7 @@ export default function CTASection() {
                 backgroundColor: UI_CONSTANTS.DARK,
                 color: UI_CONSTANTS.WHITE,
               }}
-              className="px-8 py-4 rounded-lg text-lg font-bold hover:opacity-90 transition-opacity"
+              className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity"
             >
               Request a consultation
             </button>
@@ -63,8 +63,8 @@ export default function CTASection() {
 
         {/* RIGHT SECTION */}
         <div
-          className="dual-action-button-cta-right-div relative px-12 py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-          style={{ backgroundColor: UI_CONSTANTS.LIGHT_TEAL }}
+          className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+          style={{ backgroundColor: UI_CONSTANTS.WHITE }}
         >
           {/* Pattern Background */}
           <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
@@ -99,7 +99,7 @@ export default function CTASection() {
             </div>
 
             <h2
-              className="text-4xl lg:text-5xl font-bold mb-12 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
               style={{ color: '#173B3F' }}
             >
               Let us know how we can help
@@ -111,7 +111,7 @@ export default function CTASection() {
                 color: '#173B3F',
                 border: '2px solid rgba(23, 59, 63, 0.2)',
               }}
-              className="px-8 py-4 rounded-lg text-lg font-bold hover:bg-white transition-colors"
+              className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors"
             >
               Schedule Now
             </button>

@@ -11,32 +11,32 @@ export default function Hero() {
     <div className="section_image-hero">
       <div className="z-index-20">
         <div className="padding-global" style={{paddingLeft: 0, paddingRight: 0}}>
-          <div className="spacer-medium"></div>
-          <div className="spacer-huge"></div>
-          <div className="spacer-xlarge"></div>
+          <div className="spacer-small sm:spacer-medium"></div>
+          <div className="spacer-large sm:spacer-huge"></div>
+          <div className="spacer-medium sm:spacer-xlarge"></div>
           <div className="container-large">
-            <div className="is-show-mobile">
-              <div className="spacer-huge"></div>
-              <div className="spacer-huge"></div>
-              <div className="spacer-huge"></div>
-              <div className="spacer-huge"></div>
-              <div className="spacer-huge"></div>
+            <div className="block sm:hidden">
+              <div className="spacer-medium"></div>
+              <div className="spacer-medium"></div>
+              <div className="spacer-medium"></div>
+              <div className="spacer-medium"></div>
+              <div className="spacer-medium"></div>
             </div>
             <div className="max-width-large">
-              <h1 className={`heading-style-h1 ${isLoaded ? 'animate-in' : ''}`}>
-                Accelerate Your Business with<br /> Smarter Tech Talent
+              <h1 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white ${isLoaded ? 'animate-in' : ''}`}>
+                Accelerate Your Business with<br className="hidden sm:block" /> Smarter Tech Talent
               </h1>
               <div className="spacer-small"></div>
-              <p className={`text-size-large ${isLoaded ? 'animate-in delay-300' : ''}`}>
+              <p className={`text-base sm:text-lg md:text-xl leading-relaxed text-white ${isLoaded ? 'animate-in delay-300' : ''}`}>
                 KIAQ connects global companies with top-tier engineering talent from emerging markets. 
                 Our adaptive hiring model ensures fast, scalable, and cost-effective workforce solutions 
                 across AI, Data, and Cloud technologies.
               </p>
               <div>
                 <div className="spacer-large"></div>
-                <div className={`button-group ${isLoaded ? 'animate-in delay-600' : ''}`}>
-                  <a href="/contact" className="button w-button">Request a Consultation</a>
-                  <a href="/about" className="button is-link is-alternate w-button">Learn About KIAQ</a>
+                <div className={`flex flex-col sm:flex-row gap-4 ${isLoaded ? 'animate-in delay-600' : ''}`}>
+                  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-orange-500 text-white rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors">Request a Consultation</a>
+                  <a href="/about" className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-gray-900 transition-colors">Learn About KIAQ</a>
                 </div>
               </div>
               <div className="spacer-large"></div>

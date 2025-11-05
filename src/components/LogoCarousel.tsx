@@ -1,5 +1,8 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import oneimg from '../assets/HOME/6691895968bbd612d571a566_66574b85211fe13a5f88dbf9_Resources – shifting paradigm -banner (1) (1).avif';
+import twoimg from '../assets/HOME/665691bd6db48663245503c1_Resources - rethink your approach - thumb.avif';
+import threeimg from '../assets/HOME/665690b4f13ba521b118f6d1_Resources - kinship - thumb.avif';
 
 const UI_CONSTANTS = {
   PRIMARY: '#ff4600',
@@ -11,25 +14,29 @@ const UI_CONSTANTS = {
 
 const WalmartTechSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const cards = [
     {
       title: "Walmart's Retail Rewired Report India 2025",
       date: 'Sept. 23, 2025',
       description: 'Read on to learn how Indian shoppers are adapting to an increasingly digital retail landscape.',
-      bgColor: '#A8D5F0'
+      bgColor: '#A8D5F0',
+      image: oneimg
     },
     {
       title: "Inside the network powering Walmart",
       date: 'Sept 15, 2025',
       description: "Learn more about the digital backbone supporting Walmart's operations.",
-      bgColor: '#7BA7D4'
+      bgColor: '#7BA7D4',
+      image: twoimg
     },
     {
       title: "From models to agents: A new era of intelligent systems at Walmart",
       date: 'Aug. 29, 2025',
       description: "New agentic capabilities represent a key step in our ongoing transformation.",
-      bgColor: '#0A4B9E'
+      bgColor: '#0A4B9E',
+      image: threeimg
     }
   ];
 
@@ -55,30 +62,22 @@ const WalmartTechSection = () => {
       {/* Walmart Tech Cards Section */}
       <div style={{ 
         backgroundColor: '#F5F5F5',
-        padding: '80px 60px',
+        padding: '40px 20px',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-      }}>
+      }} className="sm:p-16 lg:p-20">
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ display: 'flex', gap: '60px', alignItems: 'flex-start' }}>
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
             {/* Left Content */}
-            <div style={{ flex: '0 0 380px' }}>
-              <h1 style={{ 
-                fontSize: '42px',
-                lineHeight: '1.2',
+            <div className="w-full lg:flex-shrink-0 lg:w-96">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-normal leading-tight mb-6 sm:mb-8" style={{ 
                 color: UI_CONSTANTS.DARK,
-                fontWeight: '400',
-                margin: '0 0 32px 0',
                 letterSpacing: '-0.5px'
               }}>
                 Future-ready digital transformation starts here
               </h1>
               
-              <p style={{ 
-                fontSize: '16px',
-                lineHeight: '1.7',
-                color: UI_CONSTANTS.DARK,
-                margin: '0 0 32px 0',
-                fontWeight: '400'
+              <p className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8" style={{ 
+                color: UI_CONSTANTS.DARK
               }}>
                 At Walmart Global Tech, we work at the forefront of cutting-edge technologies inspired by the vision of transforming retail tech. As a people-led and tech-powered organization, we drive innovations that impact millions of lives globally. Our associates empower us with innovative solutions that power the world's leading retailer, driving digital solutions that keep us resilient and future-ready.
               </p>
@@ -95,12 +94,8 @@ const WalmartTechSection = () => {
             </div>
 
             {/* Right Cards Section */}
-            <div style={{ flex: '1', position: 'relative' }}>
-              <div style={{ 
-                display: 'flex',
-                gap: '20px',
-                overflow: 'hidden'
-              }}>
+            <div className="w-full lg:flex-1 relative">
+              <div className="flex gap-4 sm:gap-5 overflow-hidden">
                 {cards.map((card, index) => {
                   const position = (index - currentSlide + cards.length) % cards.length;
                   const isVisible = position < 3;
@@ -108,9 +103,11 @@ const WalmartTechSection = () => {
                   return (
                     <div
                       key={index}
+                      onMouseEnter={() => setHoveredCard(index)}
+                      onMouseLeave={() => setHoveredCard(null)}
+                      className="flex-shrink-0 w-full sm:w-80 lg:w-72"
                       style={{
-                        flex: '0 0 calc(33.333% - 14px)',
-                        backgroundColor: UI_CONSTANTS.WHITE,
+                        backgroundColor: hoveredCard === index ? UI_CONSTANTS.DARK : UI_CONSTANTS.WHITE,
                         borderRadius: '12px',
                         overflow: 'hidden',
                         transition: 'all 0.4s ease',
@@ -118,142 +115,27 @@ const WalmartTechSection = () => {
                         transform: `translateX(${-currentSlide * 100}%)`,
                         display: isVisible ? 'flex' : 'none',
                         flexDirection: 'column',
-                        boxShadow: '0 1px 3px rgba(0,0,0,0.08)'
+                        boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
+                        color: hoveredCard === index ? UI_CONSTANTS.WHITE : UI_CONSTANTS.DARK
                       }}
                     >
-                      {/* Image Container with Colored Background */}
+                      {/* Card Image */}
                       <div style={{
-                        backgroundColor: card.bgColor,
-                        padding: '32px 24px',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        minHeight: '180px',
-                        borderRadius: '12px 12px 0 0'
+                        width: '100%',
+                        height: '200px',
+                        overflow: 'hidden'
                       }}>
-                        {/* Laptop Illustration */}
-                        <div style={{
-                          width: '200px',
-                          position: 'relative'
-                        }}>
-                          {/* Laptop Screen */}
-                          <div style={{
-                            backgroundColor: '#2C2C2C',
-                            borderRadius: '8px 8px 0 0',
-                            padding: '12px',
-                            border: '8px solid #404040',
-                            borderBottom: 'none',
-                            position: 'relative'
-                          }}>
-                            {/* Screen Content */}
-                            <div style={{
-                              backgroundColor: '#0066FF',
-                              borderRadius: '4px',
-                              padding: '16px',
-                              height: '110px',
-                              position: 'relative',
-                              display: 'flex',
-                              flexDirection: 'column',
-                              justifyContent: 'space-between'
-                            }}>
-                              {/* Close button */}
-                              <div style={{
-                                position: 'absolute',
-                                top: '8px',
-                                right: '8px',
-                                width: '16px',
-                                height: '16px',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center'
-                              }}>
-                                <div style={{
-                                  width: '12px',
-                                  height: '2px',
-                                  backgroundColor: 'rgba(255,255,255,0.6)',
-                                  transform: 'rotate(45deg)',
-                                  position: 'absolute'
-                                }}></div>
-                                <div style={{
-                                  width: '12px',
-                                  height: '2px',
-                                  backgroundColor: 'rgba(255,255,255,0.6)',
-                                  transform: 'rotate(-45deg)',
-                                  position: 'absolute'
-                                }}></div>
-                              </div>
-
-                              {/* Title */}
-                              <div style={{
-                                color: 'rgba(255,255,255,0.9)',
-                                fontSize: '14px',
-                                fontWeight: '600',
-                                lineHeight: '1.3',
-                                letterSpacing: '-0.3px'
-                              }}>
-                                Retail Rewired<br/>Report India
-                              </div>
-
-                              {/* Chart Bars */}
-                              <div style={{
-                                display: 'flex',
-                                alignItems: 'flex-end',
-                                gap: '6px',
-                                height: '48px'
-                              }}>
-                                <div style={{
-                                  width: '20px',
-                                  height: '24px',
-                                  backgroundColor: 'rgba(255,255,255,0.95)',
-                                  borderRadius: '2px'
-                                }}></div>
-                                <div style={{
-                                  width: '20px',
-                                  height: '34px',
-                                  backgroundColor: '#87CEEB',
-                                  borderRadius: '2px'
-                                }}></div>
-                                <div style={{
-                                  width: '20px',
-                                  height: '46px',
-                                  backgroundColor: '#1E90FF',
-                                  borderRadius: '2px'
-                                }}></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Laptop Base */}
-                          <div style={{
-                            backgroundColor: '#B8B8B8',
-                            height: '8px',
-                            borderRadius: '0 0 12px 12px',
-                            position: 'relative',
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
-                          }}>
-                            {/* Trackpad indicator */}
-                            <div style={{
-                              position: 'absolute',
-                              top: '50%',
-                              left: '50%',
-                              transform: 'translate(-50%, -50%)',
-                              width: '20px',
-                              height: '2px',
-                              backgroundColor: '#999',
-                              borderRadius: '1px'
-                            }}></div>
-                          </div>
-
-                          {/* Laptop Stand/Bottom */}
-                          <div style={{
-                            backgroundColor: '#999',
-                            height: '4px',
-                            width: '220px',
-                            marginLeft: '-10px',
-                            borderRadius: '0 0 8px 8px',
-                            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-                          }}></div>
-                        </div>
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            transition: 'transform 0.5s ease',
+                            transform: hoveredCard === index ? 'scale(1.1)' : 'scale(1)'
+                          }}
+                        />
                       </div>
 
                       {/* Content */}
@@ -262,12 +144,11 @@ const WalmartTechSection = () => {
                         flex: 1,
                         display: 'flex',
                         flexDirection: 'column',
-                        backgroundColor: UI_CONSTANTS.WHITE
+                        backgroundColor: 'transparent'
                       }}>
                         <h3 style={{ 
                           fontSize: '20px',
                           fontWeight: '600',
-                          color: UI_CONSTANTS.DARK,
                           margin: '0 0 12px 0',
                           lineHeight: '1.3'
                         }}>
@@ -276,33 +157,32 @@ const WalmartTechSection = () => {
                         
                         <p style={{ 
                           fontSize: '14px',
-                          color: '#6B7280',
                           margin: '0 0 20px 0',
                           lineHeight: '1.6'
                         }}>
-                          <span style={{ fontWeight: '600', color: UI_CONSTANTS.DARK }}>{card.date}</span> - {card.description}
+                          <span style={{ fontWeight: '600' }}>{card.date}</span> - {card.description}
                         </p>
 
                         <button style={{ 
                           marginTop: 'auto',
                           padding: '10px 28px',
-                          border: '2px solid ' + UI_CONSTANTS.DARK,
+                          border: '2px solid ' + (hoveredCard === index ? UI_CONSTANTS.WHITE : UI_CONSTANTS.DARK),
                           backgroundColor: 'transparent',
                           borderRadius: '30px',
                           fontSize: '14px',
                           fontWeight: '600',
-                          color: UI_CONSTANTS.DARK,
+                          color: hoveredCard === index ? UI_CONSTANTS.WHITE : UI_CONSTANTS.DARK,
                           cursor: 'pointer',
                           alignSelf: 'flex-start',
                           transition: 'all 0.2s'
                         }}
                         onMouseOver={(e) => {
-                          e.currentTarget.style.backgroundColor = UI_CONSTANTS.DARK;
-                          e.currentTarget.style.color = UI_CONSTANTS.WHITE;
+                          e.currentTarget.style.backgroundColor = hoveredCard === index ? UI_CONSTANTS.WHITE : UI_CONSTANTS.DARK;
+                          e.currentTarget.style.color = hoveredCard === index ? UI_CONSTANTS.DARK : UI_CONSTANTS.WHITE;
                         }}
                         onMouseOut={(e) => {
                           e.currentTarget.style.backgroundColor = 'transparent';
-                          e.currentTarget.style.color = UI_CONSTANTS.DARK;
+                          e.currentTarget.style.color = hoveredCard === index ? UI_CONSTANTS.WHITE : UI_CONSTANTS.DARK;
                         }}>
                           See more
                         </button>
@@ -381,19 +261,15 @@ const WalmartTechSection = () => {
       {/* Logo Carousel Section */}
       <section style={{ 
         backgroundColor: UI_CONSTANTS.WHITE,
-        padding: '56px 0',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 60px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '48px' }}>
+      }} className="py-12 sm:py-14 lg:py-16">
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="px-4 sm:px-8 lg:px-16">
+          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
             
             {/* LEFT SIDE - TEXT */}
-            <div style={{ flex: '0 0 300px' }}>
-              <h2 style={{ 
-                fontSize: '24px',
-                fontWeight: '600',
+            <div className="w-full sm:flex-shrink-0 sm:w-72 text-center sm:text-left">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-snug" style={{ 
                 color: '#6B7280',
-                lineHeight: '1.4',
                 letterSpacing: '-0.3px'
               }}>
                 Tech leaders trust <span style={{ fontWeight: '700', color: '#374151' }}>KIAQ</span> to quickly<br />
@@ -402,13 +278,7 @@ const WalmartTechSection = () => {
             </div>
 
             {/* RIGHT SIDE - LOGO CAROUSEL */}
-            <div style={{ 
-              flex: '1',
-              position: 'relative',
-              overflow: 'hidden',
-              display: 'flex',
-              alignItems: 'center'
-            }}>
+            <div className="w-full sm:flex-1 relative overflow-hidden flex items-center">
               {/* Left Gradient */}
               <div style={{
                 position: 'absolute',
@@ -421,27 +291,13 @@ const WalmartTechSection = () => {
               }}></div>
 
               {/* Scrolling Logos */}
-              <div style={{
-                display: 'flex',
-                animation: 'scroll 25s linear infinite'
-              }}>
+              <div className="flex animate-scroll">
                 {[...logos, ...logos].map((logo, index) => (
-                  <div key={index} style={{
-                    flexShrink: 0,
-                    margin: '0 32px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
+                  <div key={index} className="flex-shrink-0 mx-6 sm:mx-8 flex items-center justify-center">
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      style={{
-                        height: '24px',
-                        width: 'auto',
-                        opacity: 0.7,
-                        transition: 'opacity 0.3s'
-                      }}
+                      className="h-5 sm:h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
                       onMouseOver={(e) => e.currentTarget.style.opacity = '1'}
                       onMouseOut={(e) => e.currentTarget.style.opacity = '0.7'}
                     />
@@ -467,6 +323,9 @@ const WalmartTechSection = () => {
           @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
+          }
+          .animate-scroll {
+            animation: scroll 9s linear infinite;
           }
         `}</style>
       </section>

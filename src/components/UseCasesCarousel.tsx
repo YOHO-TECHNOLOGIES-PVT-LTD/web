@@ -78,15 +78,15 @@ export default function UseCasesCarousel() {
   const bottomRowUseCases = useCases.slice(4);
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
+    <section className="py-12 sm:py-16 lg:py-20 px-4" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
       <div className="max-w-[1400px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold" style={{ color: UI_CONSTANTS.DARK }}>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: UI_CONSTANTS.DARK }}>
             Success Stories: African Talent Driving Global Innovation
           </h2>
         </div>
         
-        <div className="space-y-6 overflow-hidden">
+        <div className="space-y-4 sm:space-y-6 overflow-hidden">
           {/* Top row - scrolls left */}
           <div className="relative">
             <div className="flex animate-scroll-left hover:pause-animation gap-6">
@@ -106,10 +106,10 @@ export default function UseCasesCarousel() {
           </div>
         </div>
         
-        <div className="text-center mt-16">
+        <div className="text-center mt-12 sm:mt-16">
           <button 
             style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-            className="px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity"
+            className="px-8 py-3 sm:px-10 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Explore More Success Stories
           </button>
@@ -160,9 +160,9 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   const uniqueId = `pattern-${index}`;
 
   return (
-    <div className="flex-shrink-0 w-[450px] h-[320px] group cursor-pointer">
+    <div className="flex-shrink-0 w-[300px] sm:w-[380px] lg:w-[450px] h-[280px] sm:h-[300px] lg:h-[320px] group cursor-pointer">
       <div 
-        className="p-10 rounded-3xl h-full relative overflow-hidden transition-all duration-500"
+        className="p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
         style={{ backgroundColor: useCase.bgColor }}
       >
         {/* Hover background overlay */}
@@ -196,42 +196,42 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
 
         {/* Content overlay on hover - shows ALL content */}
         <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-10"
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 sm:p-8 lg:p-10"
         >
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-4 sm:mb-6">
             <div className="mr-3">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
                 <path d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z" fill="#FFFFFF"/>
               </svg>
             </div>
-            <div className="text-sm font-semibold tracking-wider uppercase" style={{ color: '#FFFFFF', letterSpacing: '0.05em' }}>
+            <div className="text-xs sm:text-sm font-semibold tracking-wider uppercase" style={{ color: '#FFFFFF', letterSpacing: '0.05em' }}>
               {useCase.category}
             </div>
           </div>
           
-          <h3 className="text-2xl font-bold leading-tight mb-4" style={{ color: '#FFFFFF' }}>
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight mb-3 sm:mb-4" style={{ color: '#FFFFFF' }}>
             {useCase.title}
           </h3>
           
-          <p className="text-base leading-relaxed" style={{ color: '#FFFFFF', opacity: 0.95 }}>
+          <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#FFFFFF', opacity: 0.95 }}>
             {useCase.description}
           </p>
         </div>
 
         {/* Default Content - hides on hover */}
         <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-500">
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-4 sm:mb-6">
             <div className="mr-3">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
                 <path d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z" fill={textColor}/>
               </svg>
             </div>
-            <div className="text-sm font-semibold tracking-wider uppercase" style={{ color: textColor, letterSpacing: '0.05em' }}>
+            <div className="text-xs sm:text-sm font-semibold tracking-wider uppercase" style={{ color: textColor, letterSpacing: '0.05em' }}>
               {useCase.category}
             </div>
           </div>
           
-          <h3 className="text-2xl font-bold leading-tight" style={{ color: textColor }}>
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight" style={{ color: textColor }}>
             {useCase.title}
           </h3>
         </div>

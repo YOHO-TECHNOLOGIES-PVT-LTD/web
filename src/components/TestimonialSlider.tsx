@@ -35,25 +35,25 @@ export default function TestimonialSlider() {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden" style={{ backgroundColor: UI_CONSTANTS.DARK }}>
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden" style={{ backgroundColor: UI_CONSTANTS.DARK }}>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center group"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center group"
           aria-label="Previous slide"
         >
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center group"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center group"
           aria-label="Next slide"
         >
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
@@ -67,22 +67,22 @@ export default function TestimonialSlider() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'
               }`}
             >
-              <div className="py-12">
+              <div className="py-8 sm:py-12">
                 {/* Logo */}
                 <img 
                   src={testimonial.logo} 
                   alt={testimonial.company}
-                  className="h-10 w-auto mb-12"
+                  className="h-8 sm:h-10 w-auto mb-8 sm:mb-12"
                 />
                 
                 {/* Content Grid */}
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
                   {/* Left Content */}
-                  <div className="space-y-6">
-                    <h2 className="text-4xl lg:text-5xl font-bold leading-tight" style={{ color: UI_CONSTANTS.WHITE }}>
+                  <div className="space-y-4 sm:space-y-6">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: UI_CONSTANTS.WHITE }}>
                       {testimonial.title}
                     </h2>
-                    <p className="text-lg lg:text-xl leading-relaxed opacity-90" style={{ color: UI_CONSTANTS.WHITE }}>
+                    <p className="text-base sm:text-lg lg:text-xl leading-relaxed opacity-90" style={{ color: UI_CONSTANTS.WHITE }}>
                       {testimonial.description}
                     </p>
                   </div>
@@ -100,8 +100,8 @@ export default function TestimonialSlider() {
                       
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="w-20 h-20 rounded-full bg-white/90 hover:bg-white transition-all flex items-center justify-center group hover:scale-110 duration-300">
-                          <svg className="w-8 h-8 ml-1" style={{ color: UI_CONSTANTS.DARK }} fill="currentColor" viewBox="0 0 24 24">
+                        <button className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/90 hover:bg-white transition-all flex items-center justify-center group hover:scale-110 duration-300">
+                          <svg className="w-6 h-6 sm:w-8 sm:h-8 ml-1" style={{ color: UI_CONSTANTS.DARK }} fill="currentColor" viewBox="0 0 24 24">
                             <path d="M8 5v14l11-7z"/>
                           </svg>
                         </button>
@@ -115,15 +115,15 @@ export default function TestimonialSlider() {
         </div>
 
         {/* Slide Indicators */}
-        <div className="flex justify-center gap-3 mt-12">
+        <div className="flex justify-center gap-2 sm:gap-3 mt-8 sm:mt-12">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
                 index === currentSlide 
-                  ? 'w-12 bg-white' 
-                  : 'w-2 bg-white/30 hover:bg-white/50'
+                  ? 'w-8 sm:w-12 bg-white' 
+                  : 'w-1.5 sm:w-2 bg-white/30 hover:bg-white/50'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
