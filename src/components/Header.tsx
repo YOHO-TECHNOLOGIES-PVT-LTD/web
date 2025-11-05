@@ -107,7 +107,7 @@ export default function Header() {
             <Link 
               to="/request-consultation"
               className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 hover:scale-101"
-              style={{ backgroundColor: '#00D4AA', color: '#000000' }}
+              style={{ backgroundColor: '#ff4600', color: '#ffffff' }}
             >
             <span className="hidden sm:inline">GET IN TOUCH</span><span className="sm:hidden">CONTACT</span>
             </Link>
