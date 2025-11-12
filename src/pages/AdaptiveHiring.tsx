@@ -212,7 +212,7 @@ export default function WebAppDevelopmentHero() {
         <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <g id="star">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.TEAL} />
+              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
             </g>
           </defs>
           <g transform="translate(0,0)" opacity="0.5">
@@ -248,7 +248,7 @@ export default function WebAppDevelopmentHero() {
         <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <g id="starB">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.TEAL} />
+              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
             </g>
           </defs>
           <g transform="translate(0,0)" opacity="0.5">
@@ -308,7 +308,7 @@ export default function WebAppDevelopmentHero() {
                         style={{
                           height: 3,
                           bottom: -8,
-                          background: UI_CONSTANTS.TEAL,
+                          background: UI_CONSTANTS.orange,
                           borderRadius: 2,
                         }}
                       />

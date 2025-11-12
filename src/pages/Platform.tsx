@@ -12,15 +12,15 @@ export default function Platform() {
             <p className="text-lg mb-8">Our advanced algorithms ensure perfect talent-project matches based on skills, experience, and cultural fit.</p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Smart skill assessment</span>
               </div>
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Cultural compatibility analysis</span>
               </div>
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Real-time availability tracking</span>
               </div>
             </div>
@@ -30,15 +30,15 @@ export default function Platform() {
             <p className="text-lg mb-8">Integrated tools for seamless team communication and project management.</p>
             <div className="space-y-4">
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Integrated video conferencing</span>
               </div>
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Project tracking dashboard</span>
               </div>
               <div className="flex items-center">
-                <div className="w-2 h-2 bg-teal-500 rounded-full mr-3"></div>
+                <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
                 <span>Time tracking and reporting</span>
               </div>
             </div>

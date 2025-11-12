@@ -322,9 +322,9 @@ export default function ConsultingServices() {
 
           {/* Card 2 */}
           <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
-            <div className="relative h-48 bg-gradient-to-br from-teal-900 via-slate-900 to-black overflow-hidden">
+            <div className="relative h-48 bg-gradient-to-br from-orange-900 via-slate-900 to-black overflow-hidden">
               <div className="absolute inset-0 overflow-hidden transition-transform duration-700 group-hover:scale-110">
-                <div className="absolute top-1/4 right-1/3 w-1 h-32 bg-gradient-to-b from-teal-300 to-transparent rotate-45 blur-sm"></div>
+                <div className="absolute top-1/4 right-1/3 w-1 h-32 bg-gradient-to-b from-orange-300 to-transparent rotate-45 blur-sm"></div>
                 <div className="absolute top-1/2 right-1/2 w-1 h-24 bg-gradient-to-b from-emerald-300 to-transparent -rotate-12 blur-sm"></div>
               </div>
             </div>

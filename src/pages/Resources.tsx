@@ -12,15 +12,15 @@ export default function Resources() {
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Blog</h3>
               <p className="mb-4">Latest insights and industry trends from our experts.</p>
-              <a href="/blog" className="text-teal-600 font-medium">Read Articles →</a>
+              <a href="/blog" className="text-orange-600 font-medium">Read Articles →</a>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden">
-            <div className="h-48 bg-gradient-to-r from-green-500 to-teal-600"></div>
+            <div className="h-48 bg-gradient-to-r from-green-500 to-orange-600"></div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Case Studies</h3>
               <p className="mb-4">Real success stories from our clients and partners.</p>
-              <a href="/case-studies" className="text-teal-600 font-medium">View Studies →</a>
+              <a href="/case-studies" className="text-orange-600 font-medium">View Studies →</a>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden">
@@ -28,7 +28,7 @@ export default function Resources() {
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Whitepapers</h3>
               <p className="mb-4">In-depth research and analysis on tech trends.</p>
-              <a href="/whitepapers" className="text-teal-600 font-medium">Download →</a>
+              <a href="/whitepapers" className="text-orange-600 font-medium">Download →</a>
             </div>
           </div>
         </div>

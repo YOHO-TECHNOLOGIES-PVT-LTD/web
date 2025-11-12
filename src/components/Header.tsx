@@ -68,7 +68,7 @@ export default function Header() {
       }}
     >
       <nav className="w-full px-4 sm:px-6 lg:px-12">
-        <div className="flex justify-between items-center h-12 sm:h-14">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           <div className="flex items-center">
             <button 
               className="md:hidden p-2 mr-3"
@@ -79,27 +79,27 @@ export default function Header() {
               </svg>
             </button>
             <Link to="/" className="flex items-center">
-              <img src={image} alt="KIAQ Logo" className="h-6 sm:h-8" />
+              <img src={image} alt="KIAQ Logo" className="h-8 sm:h-10" />
             </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            <button onClick={() => handleDropdownToggle('why-kiaq')} className={`${activeDropdown === 'why-kiaq' || activeMenu === 'why-kiaq' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Why KIAQ?</button>
-            <button onClick={() => handleDropdownToggle('use-cases')} className={`${activeDropdown === 'use-cases' || activeMenu === 'use-cases' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Use Cases</button>
-            <button onClick={() => handleDropdownToggle('solutions')} className={`${activeDropdown === 'solutions' || activeMenu === 'solutions' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Solutions</button>
-            {/* <button onClick={() => handleDropdownToggle('platform')} className={`${activeDropdown === 'platform' || activeMenu === 'platform' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-sm font-medium transition-colors pb-1`}>Platform</button> */}
-            <button onClick={() => handleDropdownToggle('resources')} className={`${activeDropdown === 'resources' || activeMenu === 'resources' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Resources</button>
-            <button onClick={() => handleDropdownToggle('talent')} className={`${activeDropdown === 'talent' || activeMenu === 'talent' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Talent</button>
-            <button onClick={() => handleDropdownToggle('about')} className={`${activeDropdown === 'about' || activeMenu === 'about' ? 'text-teal-400 border-b-2 border-teal-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>About</button>
+            <button onClick={() => handleDropdownToggle('why-kiaq')} className={`${activeDropdown === 'why-kiaq' || activeMenu === 'why-kiaq' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Why KIAQ?</button>
+            <button onClick={() => handleDropdownToggle('use-cases')} className={`${activeDropdown === 'use-cases' || activeMenu === 'use-cases' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Use Cases</button>
+            <button onClick={() => handleDropdownToggle('solutions')} className={`${activeDropdown === 'solutions' || activeMenu === 'solutions' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Solutions</button>
+            {/* <button onClick={() => handleDropdownToggle('platform')} className={`${activeDropdown === 'platform' || activeMenu === 'platform' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-sm font-medium transition-colors pb-1`}>Platform</button> */}
+            <button onClick={() => handleDropdownToggle('resources')} className={`${activeDropdown === 'resources' || activeMenu === 'resources' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Resources</button>
+            <button onClick={() => handleDropdownToggle('talent')} className={`${activeDropdown === 'talent' || activeMenu === 'talent' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>Talent</button>
+            <button onClick={() => handleDropdownToggle('about')} className={`${activeDropdown === 'about' || activeMenu === 'about' ? 'text-orange-400 border-b-2 border-orange-400' : isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1`}>About</button>
           </div>
           
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <button className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 p-2 transition-colors`}>
+            <button className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 p-2 transition-colors`}>
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
             </button>
-            <button className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-teal-400 p-2 transition-colors`}>
+            <button className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-400 p-2 transition-colors`}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -118,12 +118,12 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
             <div className="px-4 py-4 space-y-2">
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'why-kiaq' ? null : 'why-kiaq');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">Why KIAQ?</button>
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'use-cases' ? null : 'use-cases');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">Use Cases</button>
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'solutions' ? null : 'solutions');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">Solutions</button>
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'resources' ? null : 'resources');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">Resources</button>
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'talent' ? null : 'talent');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">Talent</button>
-              <button onClick={() => {setActiveDropdown(activeDropdown === 'about' ? null : 'about');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-teal-400 font-medium rounded-lg transition-colors">About</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'why-kiaq' ? null : 'why-kiaq');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">Why KIAQ?</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'use-cases' ? null : 'use-cases');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">Use Cases</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'solutions' ? null : 'solutions');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">Solutions</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'resources' ? null : 'resources');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">Resources</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'talent' ? null : 'talent');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">Talent</button>
+              <button onClick={() => {setActiveDropdown(activeDropdown === 'about' ? null : 'about');}} className="block w-full text-left px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-orange-400 font-medium rounded-lg transition-colors">About</button>
             </div>
           </div>
         )}

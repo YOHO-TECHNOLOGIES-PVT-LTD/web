@@ -43,7 +43,7 @@ export default function Insights() {
             {/* Tag and Date */}
             <div className="flex items-center justify-center gap-2 text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">
               <span>ADAPTIVE HIRING</span>
-              <Sparkles className="w-3.5 h-3.5 text-teal-500" />
+              <Sparkles className="w-3.5 h-3.5 text-orange-500" />
               <span>AUG 29, 2023</span>
             </div>
 
@@ -54,7 +54,7 @@ export default function Insights() {
 
             {/* Read Time */}
             <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
-              <Clock className="w-4 h-4 text-teal-500" />
+              <Clock className="w-4 h-4 text-orange-500" />
               <span>4 minutes</span>
             </div>
           </div>
@@ -195,22 +195,22 @@ export default function Insights() {
 
       {/* Subscribe Section */}
       <section className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-6xl bg-gradient-to-br from-teal-800 to-teal-900 rounded-3xl shadow-2xl overflow-hidden relative">
+      <div className="w-full max-w-6xl bg-gradient-to-br from-orange-800 to-orange-900 rounded-3xl shadow-2xl overflow-hidden relative">
         {/* Left Pattern Overlay */}
         <div className="absolute left-0 top-0 bottom-0 w-1/3 pointer-events-none overflow-hidden">
           <svg className="absolute w-full h-full opacity-10" viewBox="0 0 400 400" preserveAspectRatio="none">
-            <circle cx="50" cy="100" r="150" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="-20" cy="250" r="120" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="80" cy="350" r="100" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
+            <circle cx="50" cy="100" r="150" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="-20" cy="250" r="120" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="80" cy="350" r="100" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
           </svg>
         </div>
 
         {/* Right Pattern Overlay */}
         <div className="absolute right-0 top-0 bottom-0 w-1/3 pointer-events-none overflow-hidden">
           <svg className="absolute w-full h-full opacity-10" viewBox="0 0 400 400" preserveAspectRatio="none">
-            <circle cx="350" cy="100" r="150" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="420" cy="250" r="120" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="320" cy="350" r="100" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
+            <circle cx="350" cy="100" r="150" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="420" cy="250" r="120" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="320" cy="350" r="100" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
           </svg>
         </div>
 
@@ -237,12 +237,12 @@ export default function Insights() {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400"
                   placeholder=""
                 />
               </div>
 
-              <button className="w-full md:w-auto px-8 py-3 bg-teal-400 hover:bg-teal-300 text-teal-900 font-semibold rounded-lg transition-colors duration-200">
+              <button className="w-full md:w-auto px-8 py-3 bg-orange-400 hover:bg-orange-300 text-orange-900 font-semibold rounded-lg transition-colors duration-200">
                 Submit
               </button>
             </div>
@@ -284,7 +284,7 @@ export default function Insights() {
                     {article.author}
                   </p>
                   
-                  <button className="flex items-center gap-2 text-teal-700 font-semibold hover:text-teal-400 transition-colors group-hover:text-teal-400">
+                  <button className="flex items-center gap-2 text-orange-700 font-semibold hover:text-orange-400 transition-colors group-hover:text-orange-400">
                     Learn More
                     <svg 
                       className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
@@ -307,11 +307,11 @@ export default function Insights() {
         {/* Pattern Overlay */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <svg className="absolute w-full h-full opacity-10" viewBox="0 0 1600 400" preserveAspectRatio="none">
-            <circle cx="400" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="800" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="1200" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="200" cy="100" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
-            <circle cx="1400" cy="300" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-teal-300" />
+            <circle cx="400" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="800" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="1200" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="200" cy="100" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="1400" cy="300" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
           </svg>
         </div>
 
@@ -321,7 +321,7 @@ export default function Insights() {
             Ready to get started?
           </h2>
           
-          <button className="px-10 py-4 bg-teal-400 hover:bg-teal-300 text-teal-900 font-semibold rounded-lg transition-colors duration-200 text-lg">
+          <button className="px-10 py-4 bg-orange-400 hover:bg-orange-300 text-orange-900 font-semibold rounded-lg transition-colors duration-200 text-lg">
             Contact Us
           </button>
         </div>

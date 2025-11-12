@@ -19,6 +19,10 @@ import Resources from './pages/Resources'
 import Blog from './pages/Blog'
 import CaseStudies from './pages/CaseStudies'
 import Whitepapers from './pages/Whitepapers'
+import Webinars from './pages/Webinars'
+import Videos from './pages/Videos'
+import EBooks from './pages/EBooks'
+import WhitePapers from './pages/Whitepapers'
 import Talent from './pages/Talent'
 import Apply from './pages/Apply'
 import TalentSuccess from './pages/TalentSuccess'
@@ -38,6 +42,7 @@ import CloudDevops from './pages/CloudDevops'
 import AdaptiveHiring from './pages/AdaptiveHiring'
 import HowItWorks from './pages/HowItWorks'
 import ManageRemoteTeams from './pages/ManageRemoteTeams'
+import CaseStudyDetail from './pages/CaseStudyDetail'
 
 function App() {
   return (
@@ -63,6 +68,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/whitepapers" element={<Whitepapers />} />
+          <Route path="/webinars" element={<Webinars />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/ebooks" element={<EBooks />} />
+          <Route path="/white-papers" element={<WhitePapers />} />
           <Route path="/talent" element={<Talent />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/talent-success" element={<TalentSuccess />} />
@@ -82,6 +91,7 @@ function App() {
           <Route path="/request-consultation" element={<RequestConsultation />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/get-started" element={<GetStarted />} />
+          <Route path="/case-study" element={<CaseStudyDetail />} />
         </Routes>
         <Footer />
       </div>

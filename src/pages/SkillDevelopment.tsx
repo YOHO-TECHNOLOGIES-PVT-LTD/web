@@ -169,7 +169,7 @@ const TalentSection = () => {
           Because when skills grow, innovation thrives.
         </p>
 
-        <button className="bg-teal-400 hover:bg-teal-300 text-black font-semibold text-sm md:text-base px-7 py-3 rounded-md shadow-md transition-all duration-300">
+        <button className="bg-orange-400 hover:bg-orange-300 text-black font-semibold text-sm md:text-base px-7 py-3 rounded-md shadow-md transition-all duration-300">
           Explore Skill Programs
         </button>
       </div>
@@ -212,7 +212,7 @@ const TalentSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 max-w-6xl mx-auto">
         {features.map((f, i) => (
           <div key={i} className="flex flex-col items-start text-left px-8 py-10">
-            <div className="bg-teal-700 text-white p-3 rounded-xl shadow-md mb-4">
+            <div className="bg-orange-700 text-white p-3 rounded-xl shadow-md mb-4">
               {f.icon}
             </div>
             <h3 className="font-semibold text-lg text-gray-900 mb-2">{f.title}</h3>

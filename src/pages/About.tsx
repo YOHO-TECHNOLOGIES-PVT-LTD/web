@@ -22,19 +22,19 @@ export default function About() {
             <h2 className="text-3xl font-semibold mb-6">Our Impact</h2>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-teal-600 mb-2">25+</div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">25+</div>
                 <div className="text-sm text-gray-600">African Countries</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-teal-600 mb-2">200+</div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">200+</div>
                 <div className="text-sm text-gray-600">Global Companies</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-teal-600 mb-2">5000+</div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">5000+</div>
                 <div className="text-sm text-gray-600">Talented Professionals</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-teal-600 mb-2">98%</div>
+                <div className="text-4xl font-bold text-orange-600 mb-2">98%</div>
                 <div className="text-sm text-gray-600">Client Satisfaction</div>
               </div>
             </div>

@@ -159,8 +159,12 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   const textColor = isDark ? "#FFFFFF" : UI_CONSTANTS.DARK;
   const uniqueId = `pattern-${index}`;
 
+  const handleClick = () => {
+    window.location.href = '/case-study';
+  };
+
   return (
-    <div className="flex-shrink-0 w-[300px] sm:w-[380px] lg:w-[450px] h-[280px] sm:h-[300px] lg:h-[320px] group cursor-pointer">
+    <div className="flex-shrink-0 w-[300px] sm:w-[380px] lg:w-[450px] h-[280px] sm:h-[300px] lg:h-[320px] group cursor-pointer" onClick={handleClick}>
       <div 
         className="p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
         style={{ backgroundColor: useCase.bgColor }}

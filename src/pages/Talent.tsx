@@ -27,7 +27,7 @@ export default function Talent() {
           <div className="bg-gray-50 p-8 rounded-lg">
             <h3 className="text-2xl font-semibold mb-6">Ready to Apply?</h3>
             <p className="mb-6">Join thousands of talented professionals who have found their dream opportunities through KIAQ.</p>
-            <button className="w-full bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-700 transition-colors">
+            <button className="w-full bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
               Apply Now
             </button>
           </div>

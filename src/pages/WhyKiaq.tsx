@@ -30,7 +30,7 @@ export default function WhyKiaq() {
             
             {/* Left Content */}
             <div className="w-full md:w-1/2 max-w-xl space-y-5">
-              <p className="text-teal-400 font-semibold uppercase tracking-wider text-base">
+              <p className="text-orange-400 font-semibold uppercase tracking-wider text-base">
                 WHY KIAQ?
               </p>
 
@@ -45,7 +45,7 @@ export default function WhyKiaq() {
                 AI-driven matching, we help you hire the world's best — up to 66% faster.
               </p>
 
-              <button className="mt-5 bg-teal-500 text-black font-semibold px-6 py-3 text-base rounded-md hover:bg-teal-400 transition">
+              <button className="mt-5 bg-orange-500 text-black font-semibold px-6 py-3 text-base rounded-md hover:bg-orange-400 transition">
                 Book a discovery call
               </button>
             </div>
@@ -68,13 +68,13 @@ export default function WhyKiaq() {
 
         {/* Tabs */}
         <div className="flex justify-center gap-10 border-b border-gray-200 mb-16">
-          <button className="pb-3 border-b-4 border-teal-500 text-teal-600 font-semibold">
+          <button className="pb-3 border-b-4 border-orange-500 text-orange-600 font-semibold">
             Top Global Talent
           </button>
-          <button className="pb-3 text-gray-500 hover:text-teal-600 transition font-medium">
+          <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
             Untapped Markets
           </button>
-          <button className="pb-3 text-gray-500 hover:text-teal-600 transition font-medium">
+          <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
             Qualified and Certified
           </button>
         </div>
@@ -93,7 +93,7 @@ export default function WhyKiaq() {
           {/* Right - Content */}
           <div className="w-full lg:w-[48%] space-y-8">
             <div>
-              <p className="uppercase text-sm font-semibold text-teal-600 tracking-wider">
+              <p className="uppercase text-sm font-semibold text-orange-600 tracking-wider">
                 Top Global Talent
               </p>
               <h3 className="text-3xl md:text-4xl font-bold mt-2 leading-snug">
@@ -106,7 +106,7 @@ export default function WhyKiaq() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center mt-4 text-teal-600 font-semibold hover:underline"
+                className="inline-flex items-center mt-4 text-orange-600 font-semibold hover:underline"
               >
                 Learn More →
               </a>
@@ -185,25 +185,25 @@ export default function WhyKiaq() {
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-8 border-t border-white/20 pt-10 text-center lg:text-left">
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">150K</h3>
-        <p className="text-teal-300 text-xs leading-relaxed">
+        <p className="text-orange-300 text-xs leading-relaxed">
           Top-rated, highly skilled <br /> talent pool
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">135+</h3>
-        <p className="text-teal-300 text-xs leading-relaxed">
+        <p className="text-orange-300 text-xs leading-relaxed">
           Countries from diverse <br /> regions
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">93%</h3>
-        <p className="text-teal-300 text-xs leading-relaxed">
+        <p className="text-orange-300 text-xs leading-relaxed">
           Client satisfaction in <br /> overall value
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">97%</h3>
-        <p className="text-teal-300 text-xs leading-relaxed">
+        <p className="text-orange-300 text-xs leading-relaxed">
           Client satisfaction with <br /> talent quality
         </p>
       </div>
