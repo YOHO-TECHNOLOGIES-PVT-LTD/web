@@ -15,25 +15,26 @@ export default function FocusScrollSection() {
   
   const features = [
     {
-      title: "Connect with Africa's finest tech minds.",
-      description: "Access a curated network of highly skilled African professionals specializing in DevOps, Data Science, and AI. Our talent is rigorously vetted and ready to drive your technology initiatives forward."
-    },
-    {
-      title: "Bridge continents, build solutions.",
-      description: "KIAQ connects global companies with Africa's top tech talent, creating partnerships that transcend geographical boundaries and deliver exceptional results."
-    },
-    {
-      title: "Expertise that scales with your vision.",
-      description: "Whether you need DevOps automation, data insights, or AI implementation, our African specialists bring world-class expertise to your most challenging projects."
-    },
-    {
-      title: "Seamless collaboration across time zones.",
-      description: "Our professionals are experienced in global collaboration, ensuring smooth communication and project delivery regardless of geographical distance."
-    },
-    {
-      title: "Innovation powered by diversity.",
-      description: "Tap into Africa's rich pool of technical talent and bring fresh perspectives to your technology challenges. Experience innovation through global collaboration."
-    }
+  title: "Connect with top global tech talent.",
+  description: "Access a curated network of skilled engineers across DevOps, Data, and AI—vetted and ready to accelerate your projects."
+},
+{
+  title: "Build without borders.",
+  description: "KIAQ brings world-class engineering talent to global teams, enabling seamless collaboration and scalable results."
+},
+{
+  title: "Expertise that grows with you.",
+  description: "From DevOps to AI, our specialists deliver high-quality solutions tailored to your evolving business needs."
+},
+{
+  title: "Global collaboration made simple.",
+  description: "Work smoothly across time zones with professionals experienced in remote-first execution and delivery."
+},
+{
+  title: "Innovation through global talent.",
+  description: "Tap into diverse engineering expertise that brings fresh ideas and drives continuous innovation."
+}
+
   ];
 
   useEffect(() => {
@@ -119,7 +120,7 @@ export default function FocusScrollSection() {
               color: UI_CONSTANTS.WHITE
             }}
           >
-            <span className="hidden sm:inline">Connect with African Tech Talent</span><span className="sm:hidden">Connect with Talent</span>
+            <span className="hidden sm:inline">Connect with Global Tech Talent</span><span className="sm:hidden">Connect with Talent</span>
           </button>
         </div>
       </div>

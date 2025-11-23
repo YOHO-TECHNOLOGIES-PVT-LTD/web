@@ -34,38 +34,38 @@ export default function WebAppDevelopmentHero() {
   const [showRightArrow, setShowRightArrow] = useState(true);
 
   const testimonials = [
-    {
-      title: "GitHub quickly activates scalable global teams to improve their customer experience",
-      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Andela to get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
-      name: "Mark Schaefer",
-      role: "Sr. Director, Worldwide Partnerships, GitHub",
-      image: sol15,
-      logo: sol17
-    },
-    {
-      title: "The Weather Company diversifies skill sets",
-      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Andela just continues to amaze me and does a phenomenal job.",
-      name: "Wendy Frazier",
-      role: "CTO, The Weather Company",
-      image: sol13,
-      logo: sol18
-    },
-    {
-      title: "Mindshare scales data teams to serve the world's largest advertisers",
-      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Andela de-risks global hiring, so businesses can grow and be competitive.",
-      name: "Ikechi Okoronkwo",
-      role: "EVP, Analytics & Data Science",
-      image: sol14,
-      logo: sol19
-    },
-    {
-      title: "Nebula scales its engineering team to meet goals faster",
-      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Andela meet every single sprint milestone - they have a spotless execution track record.",
-      name: "Ed Donner",
-      role: "Cofounder and CTO, Nebula",
-      image: sol16,
-      logo: sol20
-    }
+     {
+    title: "GitHub quickly builds scalable global teams to enhance customer experience",
+    quote: "When we needed skilled professionals to accelerate our projects, KIAQ delivered the right talent at the right time, enabling us to achieve transformational results.",
+    name: "Mark Schaefer",
+    role: "Sr. Director, Worldwide Partnerships, GitHub",
+    image: sol15,
+    logo: sol17
+  },
+  {
+    title: "The Weather Company diversifies skill sets efficiently",
+    quote: "KIAQ helped us leverage advanced technologies to deliver faster outcomes. Their talent consistently drives innovation and supports rapid growth.",
+    name: "Wendy Frazier",
+    role: "CTO, The Weather Company",
+    image: sol13,
+    logo: sol18
+  },
+  {
+    title: "Mindshare scales data teams for major global advertisers",
+    quote: "With KIAQ, we quickly access skilled professionals who align with our culture and deliver immediate value, helping us stay competitive and agile.",
+    name: "Ikechi Okoronkwo",
+    role: "EVP, Analytics & Data Science",
+    image: sol14,
+    logo: sol19
+  },
+  {
+    title: "Nebula accelerates engineering projects with KIAQ talent",
+    quote: "We reached key product milestones months faster thanks to KIAQ’s reliable engineering teams and seamless execution.",
+    name: "Ed Donner",
+    role: "Cofounder and CTO, Nebula",
+    image: sol16,
+    logo: sol20
+  }
   ];
 
   const scroll = (direction: 'left' | 'right') => {
@@ -112,274 +112,271 @@ export default function WebAppDevelopmentHero() {
 
   return (
     <>
-    <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
-      <img
-        src={webimg}
-        alt="Web app development"
-        className="absolute inset-0 w-full h-full object-cover object-right z-0"
-      />
+   <section
+  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+  style={{ backgroundColor: UI_CONSTANTS.DARK }}
+>
+  {/* Background image */}
+  <img
+    src={webimg}
+    alt="Application Development"
+    className="absolute inset-0 w-full h-full object-cover object-right z-0"
+  />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
+  {/* Dark gradient overlay */}
+  <div
+    className="absolute inset-0 z-10"
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
+    <div className="max-w-[520px] mt-[14vh]">
+      {/* Title */}
+      <h1
+        className="text-white font-bold leading-snug mb-5"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          lineHeight: 1.2,
         }}
-      ></div>
+      >
+        Accelerate Your Application
+        <br />
+        Development with KIAQ
+      </h1>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-[520px] mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-5"
-            style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", // smaller + balanced
-              lineHeight: 1.2,
-            }}
-          >
-            Drive Your Web Application
-            <br />
-            Development Projects
-          </h1>
+      {/* Description */}
+      <p
+        className="text-gray-200 font-light mb-8"
+        style={{
+          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          lineHeight: 1.65,
+          color: "rgba(255,255,255,0.85)",
+        }}
+      >
+        KIAQ’s experts deliver custom web and mobile applications that align
+        with your business goals — from intuitive UI/UX to robust backend
+        systems and seamless scalability for future growth.
+      </p>
 
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-8"
-            style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            Our web application experts craft custom solutions that extend from
-            design to launch — aligning your business objectives with intuitive
-            user interfaces, robust back-end systems, and seamless scalability
-            for growth.
-          </p>
+      {/* CTA Button */}
+      <button
+        className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
+        style={{
+          backgroundColor: UI_CONSTANTS.WHITE,
+          color: UI_CONSTANTS.DARK,
+        }}
+      >
+        Get Started
+      </button>
+    </div>
 
-          {/* CTA Button */}
-          <button
-            className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Book a discovery call
-          </button>
-        </div>
-
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
-          <div>
-            <p className="text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-sm opacity-90">
-              Of clients satisfied with talent quality
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
-            <p className="text-sm opacity-90">
-              Mobile and web app developers
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">18+</p>
-            <p className="text-sm opacity-90">
-              Month average engagement length
-            </p>
-          </div>
-        </div>
+    {/* Stats Section */}
+    <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
+      <div>
+        <p className="text-2xl font-semibold text-white mb-1">98%</p>
+        <p className="text-sm opacity-90">
+          Clients satisfied with delivered applications
+        </p>
       </div>
-    </section>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
+        <p className="text-sm opacity-90">
+          Skilled mobile and web developers
+        </p>
+      </div>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">18+</p>
+        <p className="text-sm opacity-90">
+          Month average engagement length
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   {/* {second section} */}
   <section className="relative w-full bg-white overflow-hidden py-20 px-6 lg:px-12">
-      {/* STAR PATTERN TOP-RIGHT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute top-8 right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="star">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {/* Row 1 */}
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            {/* Row 2 */}
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            {/* Row 3 (trim) */}
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN TOP-RIGHT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute top-8 right-8 pointer-events-none"
+    style={{ opacity: 0.12 }}
+  >
+    <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="star">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {/* Row 1 */}
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="36" y="0" />
+        <use href="#star" x="72" y="0" />
+        <use href="#star" x="108" y="0" />
+        <use href="#star" x="144" y="0" />
+        <use href="#star" x="180" y="0" />
+        {/* Row 2 */}
+        <use href="#star" x="18" y="28" />
+        <use href="#star" x="54" y="28" />
+        <use href="#star" x="90" y="28" />
+        <use href="#star" x="126" y="28" />
+        <use href="#star" x="162" y="28" />
+        <use href="#star" x="198" y="28" />
+        {/* Row 3 (trim) */}
+        <use href="#star" x="36" y="56" />
+        <use href="#star" x="72" y="56" />
+        <use href="#star" x="108" y="56" />
+        <use href="#star" x="144" y="56" />
+      </g>
+    </svg>
+  </div>
 
-      {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="starB">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                // staggered placement
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
+  {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute bottom-0 left-0 pointer-events-none"
+    style={{ opacity: 0.10 }}
+  >
+    <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="starB">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {Array.from({ length: 6 }).map((_, row) =>
+          Array.from({ length: 6 }).map((__, col) => (
+            <use
+              key={`b-${row}-${col}`}
+              href="#starB"
+              x={col * 40 + (row % 2 === 0 ? 0 : 20)}
+              y={row * 36}
+            />
+          ))
+        )}
+      </g>
+    </svg>
+  </div>
+
+  <div className="relative z-10 max-w-6xl mx-auto">
+    {/* LEFT aligned top block */}
+    <div className="max-w-[980px]">
+      <div className="pr-12">
+        <h2
+          className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
+        >
+          Tailored Web Applications
+          <br />
+          Built to Drive Your Business
+        </h2>
+        <p
+          className="text-gray-600 mb-8 max-w-[720px]"
+          style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
+        >
+          KIAQ delivers custom web applications that combine intuitive design,
+          scalable backend systems, and seamless integration to accelerate growth
+          and optimize your workflows.
+        </p>
+      </div>
+    </div>
+
+    {/* TABS: LEFT-ALIGNED under heading, with separators */}
+    <div className="mt-4">
+      <div className="flex items-center gap-6 max-w-[720px] pb-3">
+        {tabs.map((tab, idx) => {
+          const isActive = tab === activeTab;
+          return (
+            <div key={tab} className="flex items-center">
+              <button
+                onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
+                className="relative text-sm md:text-base font-medium pb-2 transition-colors"
+                style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
+              >
+                {tab}
+                {isActive && (
+                  <span
+                    className="absolute left-0 right-0"
+                    style={{
+                      height: 3,
+                      bottom: -8,
+                      background: UI_CONSTANTS.orange,
+                      borderRadius: 2,
+                    }}
+                  />
+                )}
+              </button>
+
+              {idx < tabs.length - 1 && (
+                <div
+                  aria-hidden
+                  className="mx-4"
+                  style={{
+                    width: 36,
+                    height: 1,
+                    background: "rgba(1,17,35,0.06)",
+                    borderRadius: 2,
+                  }}
                 />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* LEFT aligned top block */}
-        <div className="max-w-[980px]">
-          <div className="pr-12">
-            <h2
-              className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
-            >
-              Custom web application solutions designed to meet your business’s
-              unique needs
-            </h2>
-            <p
-              className="text-gray-600 mb-8 max-w-[720px]"
-              style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
-            >
-              Enhance the power of the web to ensure a high-performing, digital
-              experience for all customers and users. We deliver custom solutions
-              that seamlessly integrate with existing systems and workflows.
-            </p>
-          </div>
-        </div>
-
-        {/* TABS: LEFT-ALIGNED under heading, with separators */}
-        <div className="mt-4">
-          <div className="flex items-center gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
-                    className="relative text-sm md:text-base font-medium pb-2 transition-colors"
-                    style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
-                  >
-                    {tab}
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: UI_CONSTANTS.orange,
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {/* separator between tabs (except after last) */}
-                  {idx < tabs.length - 1 && (
-                    <div
-                      aria-hidden
-                      className="mx-4"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                        borderRadius: 2,
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* subtle bottom border below the tabs area */}
-          <div className="max-w-[720px] border-b border-gray-200 mt-2" />
-        </div>
-
-        {/* Two-column content: left narrow (text), right image */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-5">
-            <h3
-              className="text-[20px] md:text-[22px] font-semibold mb-3"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
-            >
-              AI-powered platform makes it quick and easy to find the skillsets
-              you need, now
-            </h3>
-
-            <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
-              Nebula was able to advance its development timeline by nine months
-              using Andela Talent Cloud to hire 10 engineers within days,
-              accelerating its growth trajectory.
-            </p>
-
-            <button
-              className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
-              style={{ color: UI_CONSTANTS.DARK }}
-            >
-              Learn More
-            </button>
-          </div>
-
-          <div className="md:col-span-7 flex justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-                style={{ display: "block" }}
-              />
+              )}
             </div>
-          </div>
+          );
+        })}
+      </div>
+
+      <div className="max-w-[720px] border-b border-gray-200 mt-2" />
+    </div>
+
+    {/* Two-column content: left narrow (text), right image */}
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div className="md:col-span-5">
+        <h3
+          className="text-[20px] md:text-[22px] font-semibold mb-3"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
+        >
+          Find the Right Talent Quickly
+        </h3>
+
+        <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
+          KIAQ helps businesses hire skilled developers fast, reducing timelines
+          and ensuring projects are delivered on schedule with top-tier talent.
+        </p>
+
+        <button
+          className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
+          style={{ color: UI_CONSTANTS.DARK }}
+        >
+          Learn More
+        </button>
+      </div>
+
+      <div className="md:col-span-7 flex justify-end">
+        <div className="w-full max-w-[520px]">
+          <img
+            src={images[activeTab]}
+            alt={activeTab}
+            className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+            style={{ display: "block" }}
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     {/* {third section} */}
 
-   <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12">
+  <section className="relative w-full bg-[#fff2eb] overflow-hidden py-20 px-6 lg:px-12">
   {/* Scrollable SVG Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -397,74 +394,71 @@ export default function WebAppDevelopmentHero() {
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
     <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
-      Get the talent you need for all your application projects
+      Access Top Talent for Every Application Project
     </h2>
 
     {/* Cards */}
-    {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
-  {[
-    {
-      title: "Develop custom software",
-      desc: "Tailored for seamless integration and enhanced efficiency",
-      gradient: "from-[#e3f3e9] to-[#f1faf4]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Innovate web apps",
-      desc: "Improve and energize the customer experience",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Transform mobile apps",
-      desc: "Optimize for brand, customer engagement, and revenue",
-      gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Modernize legacy systems",
-      desc: "Upgrade to the most modern, scalable, and useful iteration",
-      gradient: "from-[#e7f6dc] to-[#f1fbef]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Craft engaging UX designs",
-      desc: "Delight customers with more intuitive user experiences",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-  ].map((card, idx) => (
-    <div
-      key={idx}
-      className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-    >
-      <div>
-        <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
-          {card.title}
-        </h3>
-        <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
-      </div>
-      <div
-        className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
-        style={{
-          backgroundImage: card.pattern,
-          backgroundSize: "24px 24px",
-          backgroundRepeat: "repeat-x",
-          backgroundPosition: "bottom",
-          opacity: 0.6,
-        }}
-      ></div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
+      {[
+        {
+          title: "Custom Software Development",
+          desc: "Seamlessly integrated solutions for maximum efficiency",
+          gradient: "from-[#e3f3e9] to-[#f1faf4]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Innovative Web Applications",
+          desc: "Enhancing user experience and engagement",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Mobile App Transformation",
+          desc: "Boost brand value and customer engagement",
+          gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Legacy System Modernization",
+          desc: "Upgrade to scalable, modern solutions",
+          gradient: "from-[#e7f6dc] to-[#f1fbef]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Engaging UX Design",
+          desc: "Create intuitive, user-friendly interfaces",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+      ].map((card, idx) => (
+        <div
+          key={idx}
+          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+        >
+          <div>
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+              {card.title}
+            </h3>
+            <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
+          </div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
+            style={{
+              backgroundImage: card.pattern,
+              backgroundSize: "24px 24px",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "bottom",
+              opacity: 0.6,
+            }}
+          ></div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
-
 
     {/* Auto Scrolling Logos Row */}
     <div className="relative overflow-hidden mt-20">
@@ -483,6 +477,7 @@ export default function WebAppDevelopmentHero() {
 </section>
 
 
+
 <style>
 {`
   @keyframes scroll {
@@ -499,11 +494,11 @@ export default function WebAppDevelopmentHero() {
 
 
         {/* {fourth section} */}
-             <section className="relative w-full bg-gray-50 py-20 px-6 lg:px-12 overflow-hidden">
+           <section className="relative w-full bg-gray-50 py-20 px-6 lg:px-12 overflow-hidden">
   {/* Heading */}
   <div className="text-center mb-14">
     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-      Here's why industry leaders rely on <br /> Andela talent
+      Why Leading Companies Choose <br /> KIAQ Talent
     </h2>
   </div>
 
@@ -594,6 +589,7 @@ export default function WebAppDevelopmentHero() {
     }
   `}</style>
 </section>
+
   
     {/* fourth.one section */}
 
@@ -635,13 +631,10 @@ export default function WebAppDevelopmentHero() {
     {/* Right Content */}
     <div className="w-full lg:w-1/2">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
-        How Mastercard Foundry expanded into new global product offerings
+        How Mastercard Foundry accelerated global product innovation
       </h2>
       <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-        Mastercard Foundry scaled its engineering teams to develop promising
-        products. Over the past four years, 10 Andela engineers have contributed
-        to key projects with a focus on financial inclusion. The partnership has
-        since expanded to include numerous other initiatives.
+        Mastercard Foundry scaled its engineering teams with KIAQ talent to deliver key product innovations. This collaboration enabled rapid development and expansion into new initiatives, supporting global growth.
       </p>
       <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
         Learn More
@@ -649,6 +642,7 @@ export default function WebAppDevelopmentHero() {
     </div>
   </div>
 </section>
+
 
 
         {/* {fifth section} */}
@@ -674,7 +668,7 @@ export default function WebAppDevelopmentHero() {
         Put Adaptive Hiring to work for you
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        View All Resources
+        Explore Solutions
       </button>
     </div>
 
@@ -694,7 +688,7 @@ export default function WebAppDevelopmentHero() {
             White Paper
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            The Future of Global Hiring
           </h3>
           <a
             href="#"
@@ -719,7 +713,7 @@ export default function WebAppDevelopmentHero() {
             Case Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            Diversifying Tech Talent Across Industries
           </h3>
           <a
             href="#"
@@ -744,7 +738,7 @@ export default function WebAppDevelopmentHero() {
             Infographic
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            Rising Demand for Remote Tech Talent
           </h3>
           <a
             href="#"

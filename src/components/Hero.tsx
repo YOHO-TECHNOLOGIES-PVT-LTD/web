@@ -28,15 +28,13 @@ export default function Hero() {
               </h1>
               <div className="spacer-small"></div>
               <p className={`text-base sm:text-lg md:text-xl leading-relaxed text-white ${isLoaded ? 'animate-in delay-300' : ''}`}>
-                KIAQ connects global companies with top-tier engineering talent from emerging markets. 
-                Our adaptive hiring model ensures fast, scalable, and cost-effective workforce solutions 
-                across AI, Data, and Cloud technologies.
+               KIAQ connects global companies with top engineering talent from emerging markets. Our flexible hiring model helps you scale fast, cut costs, and build future-ready teams across AI, Data, Cloud, and Software Engineering.
               </p>
               <div>
                 <div className="spacer-large"></div>
                 <div className={`flex flex-col sm:flex-row gap-4 ${isLoaded ? 'animate-in delay-600' : ''}`}>
-                  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-orange-500 text-white rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors">Request a Consultation</a>
-                  <a href="/about" className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-gray-900 transition-colors">Learn About KIAQ</a>
+                  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-orange-500 text-white rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors">Build Your Team Faster</a>
+                  <a href="/about" className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-gray-900 transition-colors">Explore KIAQ</a>
                 </div>
               </div>
               <div className="spacer-large"></div>

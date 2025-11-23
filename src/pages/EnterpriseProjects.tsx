@@ -41,273 +41,263 @@ export default function WebAppDevelopmentHero() {
   return (
     <>
     <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
-      <img
-        src={webimg}
-        alt="Web app development"
-        className="absolute inset-0 w-full h-full object-cover object-right z-0"
-      />
+  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+  style={{ backgroundColor: UI_CONSTANTS.DARK }}
+>
+  {/* Background image */}
+  <img
+    src={webimg}
+    alt="Web app development"
+    className="absolute inset-0 w-full h-full object-cover object-right z-0"
+  />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
+  {/* Dark gradient overlay */}
+  <div
+    className="absolute inset-0 z-10"
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
+    <div className="max-w-[520px] mt-[14vh]">
+      {/* Title */}
+      <h1
+        className="text-white font-bold leading-snug mb-5"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          lineHeight: 1.2,
         }}
-      ></div>
+      >
+        Modernize Your Web Systems
+        <br />
+        with Expert Development Teams
+      </h1>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-[520px] mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-5"
-            style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", // smaller + balanced
-              lineHeight: 1.2,
-            }}
-          >
-            Drive Your Web Application
-            <br />
-            Development Projects
-          </h1>
+      {/* Description */}
+      <p
+        className="text-gray-200 font-light mb-8"
+        style={{
+          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          lineHeight: 1.65,
+          color: "rgba(255,255,255,0.85)",
+        }}
+      >
+        KIAQ connects companies with top-tier web and mobile developers, delivering scalable solutions from design to launch. Enhance your digital systems with efficient, user-friendly applications built for growth.
+      </p>
 
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-8"
-            style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            Our web application experts craft custom solutions that extend from
-            design to launch — aligning your business objectives with intuitive
-            user interfaces, robust back-end systems, and seamless scalability
-            for growth.
-          </p>
+      {/* CTA Button */}
+      <button
+        className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
+        style={{
+          backgroundColor: UI_CONSTANTS.WHITE,
+          color: UI_CONSTANTS.DARK,
+        }}
+      >
+        Explore Our Solutions
+      </button>
+    </div>
 
-          {/* CTA Button */}
-          <button
-            className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Book a discovery call
-          </button>
-        </div>
-
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
-          <div>
-            <p className="text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-sm opacity-90">
-              Of clients satisfied with talent quality
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
-            <p className="text-sm opacity-90">
-              Mobile and web app developers
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">18+</p>
-            <p className="text-sm opacity-90">
-              Month average engagement length
-            </p>
-          </div>
-        </div>
+    {/* Stats Section */}
+    <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
+      <div>
+        <p className="text-2xl font-semibold text-white mb-1">98%</p>
+        <p className="text-sm opacity-90">
+          Clients satisfied with talent quality
+        </p>
       </div>
-    </section>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
+        <p className="text-sm opacity-90">
+          Skilled mobile and web developers
+        </p>
+      </div>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">18+</p>
+        <p className="text-sm opacity-90">
+          Months average engagement length
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   {/* {second section} */}
   <section className="relative w-full bg-white overflow-hidden py-20 px-6 lg:px-12">
-      {/* STAR PATTERN TOP-RIGHT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute top-8 right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="star">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {/* Row 1 */}
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            {/* Row 2 */}
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            {/* Row 3 (trim) */}
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN TOP-RIGHT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute top-8 right-8 pointer-events-none"
+    style={{ opacity: 0.12 }}
+  >
+    <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="star">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {/* Row 1 */}
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="36" y="0" />
+        <use href="#star" x="72" y="0" />
+        <use href="#star" x="108" y="0" />
+        <use href="#star" x="144" y="0" />
+        <use href="#star" x="180" y="0" />
+        {/* Row 2 */}
+        <use href="#star" x="18" y="28" />
+        <use href="#star" x="54" y="28" />
+        <use href="#star" x="90" y="28" />
+        <use href="#star" x="126" y="28" />
+        <use href="#star" x="162" y="28" />
+        <use href="#star" x="198" y="28" />
+        {/* Row 3 (trim) */}
+        <use href="#star" x="36" y="56" />
+        <use href="#star" x="72" y="56" />
+        <use href="#star" x="108" y="56" />
+        <use href="#star" x="144" y="56" />
+      </g>
+    </svg>
+  </div>
 
-      {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="starB">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                // staggered placement
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
+  {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute bottom-0 left-0 pointer-events-none"
+    style={{ opacity: 0.10 }}
+  >
+    <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="starB">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {Array.from({ length: 6 }).map((_, row) =>
+          Array.from({ length: 6 }).map((__, col) => (
+            <use
+              key={`b-${row}-${col}`}
+              href="#starB"
+              x={col * 40 + (row % 2 === 0 ? 0 : 20)}
+              y={row * 36}
+            />
+          ))
+        )}
+      </g>
+    </svg>
+  </div>
+
+  <div className="relative z-10 max-w-6xl mx-auto">
+    {/* LEFT aligned top block */}
+    <div className="max-w-[980px]">
+      <div className="pr-12">
+        <h2
+          className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
+        >
+          Modernize Your Digital Systems with Custom Web Solutions
+        </h2>
+        <p
+          className="text-gray-600 mb-8 max-w-[720px]"
+          style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
+        >
+          KIAQ delivers high-performing, scalable web applications tailored to your business needs, integrating seamlessly with your workflows for a smooth digital experience.
+        </p>
+      </div>
+    </div>
+
+    {/* TABS: LEFT-ALIGNED under heading, with separators */}
+    <div className="mt-4">
+      <div className="flex items-center gap-6 max-w-[720px] pb-3">
+        {tabs.map((tab, idx) => {
+          const isActive = tab === activeTab;
+          return (
+            <div key={tab} className="flex items-center">
+              <button
+                onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
+                className="relative text-sm md:text-base font-medium pb-2 transition-colors"
+                style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
+              >
+                {tab}
+                {isActive && (
+                  <span
+                    className="absolute left-0 right-0"
+                    style={{
+                      height: 3,
+                      bottom: -8,
+                      background: UI_CONSTANTS.orange,
+                      borderRadius: 2,
+                    }}
+                  />
+                )}
+              </button>
+
+              {idx < tabs.length - 1 && (
+                <div
+                  aria-hidden
+                  className="mx-4"
+                  style={{
+                    width: 36,
+                    height: 1,
+                    background: "rgba(1,17,35,0.06)",
+                    borderRadius: 2,
+                  }}
                 />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* LEFT aligned top block */}
-        <div className="max-w-[980px]">
-          <div className="pr-12">
-            <h2
-              className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
-            >
-              Custom web application solutions designed to meet your business’s
-              unique needs
-            </h2>
-            <p
-              className="text-gray-600 mb-8 max-w-[720px]"
-              style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
-            >
-              Enhance the power of the web to ensure a high-performing, digital
-              experience for all customers and users. We deliver custom solutions
-              that seamlessly integrate with existing systems and workflows.
-            </p>
-          </div>
-        </div>
-
-        {/* TABS: LEFT-ALIGNED under heading, with separators */}
-        <div className="mt-4">
-          <div className="flex items-center gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
-                    className="relative text-sm md:text-base font-medium pb-2 transition-colors"
-                    style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
-                  >
-                    {tab}
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: UI_CONSTANTS.orange,
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {/* separator between tabs (except after last) */}
-                  {idx < tabs.length - 1 && (
-                    <div
-                      aria-hidden
-                      className="mx-4"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                        borderRadius: 2,
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* subtle bottom border below the tabs area */}
-          <div className="max-w-[720px] border-b border-gray-200 mt-2" />
-        </div>
-
-        {/* Two-column content: left narrow (text), right image */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-5">
-            <h3
-              className="text-[20px] md:text-[22px] font-semibold mb-3"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
-            >
-              AI-powered platform makes it quick and easy to find the skillsets
-              you need, now
-            </h3>
-
-            <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
-              Nebula was able to advance its development timeline by nine months
-              using Andela Talent Cloud to hire 10 engineers within days,
-              accelerating its growth trajectory.
-            </p>
-
-            <button
-              className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
-              style={{ color: UI_CONSTANTS.DARK }}
-            >
-              Learn More
-            </button>
-          </div>
-
-          <div className="md:col-span-7 flex justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-                style={{ display: "block" }}
-              />
+              )}
             </div>
-          </div>
+          );
+        })}
+      </div>
+
+      <div className="max-w-[720px] border-b border-gray-200 mt-2" />
+    </div>
+
+    {/* Two-column content: left narrow (text), right image */}
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div className="md:col-span-5">
+        <h3
+          className="text-[20px] md:text-[22px] font-semibold mb-3"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
+        >
+          Quickly access the talent you need with our AI-driven platform
+        </h3>
+
+        <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
+          Companies accelerate project timelines by quickly connecting with top developers through KIAQ’s platform, reducing hiring time and enabling faster growth.
+        </p>
+
+        <button
+          className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
+          style={{ color: UI_CONSTANTS.DARK }}
+        >
+          Learn More
+        </button>
+      </div>
+
+      <div className="md:col-span-7 flex justify-end">
+        <div className="w-full max-w-[520px]">
+          <img
+            src={images[activeTab]}
+            alt={activeTab}
+            className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+            style={{ display: "block" }}
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     {/* {third section} */}
 
-    <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12">
+    <section className="relative w-full bg-[#fff2eb] overflow-hidden py-20 px-6 lg:px-12">
   {/* Scrollable SVG Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -317,106 +307,103 @@ export default function WebAppDevelopmentHero() {
         radial-gradient(circle at 60px 60px, rgba(0, 0, 0, 0.1) 1px, transparent 1px)
       `,
       backgroundSize: "80px 80px",
-      backgroundAttachment: "scroll", // ✅ scrollable pattern
+      backgroundAttachment: "scroll",
     }}
   ></div>
 
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
     <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
-      We solve for the most important use cases
+      Solving the Most Critical Business Challenges
     </h2>
 
-   {/* --- Use Case Cards (full block including corrected 3rd card) */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-16">
-  <div className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-lg bg-[#000]">
-          <img
-            src={webimg6}
-            alt="Indeed Case Study"
-            className="w-full h-[340px] object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-          <div className="absolute bottom-5 left-5 text-left text-white">
-            <p className="text-[10px] font-semibold uppercase tracking-wide mb-1 opacity-80">
-              Case Study
-            </p>
-            <h3 className="text-lg font-semibold leading-snug">
-              Optimizing Infrastructure: Indeed's Large-Scale Cloud Transformation
-            </h3>
-            <p className="text-xs underline mt-2 font-medium opacity-90 cursor-pointer">
-              Learn More
-            </p>
-          </div>
+   {/* --- Use Case Cards */}
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center mb-16">
+    {/* CARD 1 */}
+    <div className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-lg bg-[#000]">
+      <img
+        src={webimg6}
+        alt="Case Study"
+        className="w-full h-[340px] object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+      <div className="absolute bottom-5 left-5 text-left text-white">
+        <p className="text-[10px] font-semibold uppercase tracking-wide mb-1 opacity-80">
+          Case Study
+        </p>
+        <h3 className="text-lg font-semibold leading-snug">
+          Optimizing Cloud Infrastructure for Large-Scale Applications
+        </h3>
+        <p className="text-xs underline mt-2 font-medium opacity-90 cursor-pointer">
+          Learn More
+        </p>
+      </div>
+    </div>
+
+    {/* CARD 2 */}
+    <div className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-lg bg-[#000]">
+      <img
+        src={webimg7}
+        alt="Case Study"
+        className="w-full h-[340px] object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+      <div className="absolute bottom-5 left-5 text-left text-white">
+        <p className="text-[10px] font-semibold uppercase tracking-wide mb-1 opacity-80">
+          Case Study
+        </p>
+        <h3 className="text-lg font-semibold leading-snug">
+          Boosting Database Uptime with Seamless Cloud Integration
+        </h3>
+        <p className="text-xs underline mt-2 font-medium opacity-90 cursor-pointer">
+          Learn More
+        </p>
+      </div>
+    </div>
+
+    {/* CARD 3 */}
+    <div
+      className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-md border border-[#d8eeea] bg-white flex flex-col"
+      style={{ height: "340px" }}
+    >
+      <div className="flex items-center justify-center h-[160px] bg-[#ecf9f7]">
+        <img
+          src={webimg5}
+          alt="Pymetrics"
+          className="h-12 md:h-14 object-contain"
+        />
+      </div>
+
+      <div className="p-6 flex-1 text-left flex flex-col justify-between">
+        <div>
+          <p className="text-[10px] font-semibold uppercase tracking-wide mb-2 text-gray-500">
+            Case Study
+          </p>
+          <h3 className="text-base font-semibold text-[#011123] leading-snug mb-2">
+            Scaling Global Development Projects with Effective Hiring
+          </h3>
         </div>
 
-        {/* CARD 2 */}
-        <div className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-lg bg-[#000]">
-          <img
-            src={webimg7}
-            alt="GoPuff Case Study"
-            className="w-full h-[340px] object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-          <div className="absolute bottom-5 left-5 text-left text-white">
-            <p className="text-[10px] font-semibold uppercase tracking-wide mb-1 opacity-80">
-              Case Study
-            </p>
-            <h3 className="text-lg font-semibold leading-snug">
-              Elevating GoPuff's Database Uptime by 80% With a Seamless Azure Integration
-            </h3>
-            <p className="text-xs underline mt-2 font-medium opacity-90 cursor-pointer">
-              Learn More
-            </p>
-          </div>
+        <div>
+          <p className="text-xs underline font-medium text-[#011123] cursor-pointer">
+            Learn More
+          </p>
         </div>
+      </div>
 
-        {/* CARD 3 (PYMETRICS — MINT BACKGROUND) */}
-        <div
-          className="relative w-full max-w-[360px] rounded-xl overflow-hidden shadow-md border border-[#d8eeea] bg-white flex flex-col"
-          style={{ height: "340px" }}
-        >
-          {/* Top area with mint background and centered logo */}
-          <div className="flex items-center justify-center h-[160px] bg-[#ecf9f7]">
-            <img
-              src={webimg5}
-              alt="Pymetrics"
-              className="h-12 md:h-14 object-contain"
-            />
-          </div>
-
-          {/* Bottom content area */}
-          <div className="p-6 flex-1 text-left flex flex-col justify-between">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-wide mb-2 text-gray-500">
-                Case Study
-              </p>
-              <h3 className="text-base font-semibold text-[#011123] leading-snug mb-2">
-                How Pymetrics Scaled Global Development Projects With Effective Hiring
-              </h3>
-            </div>
-
-            <div>
-              <p className="text-xs underline font-medium text-[#011123] cursor-pointer">
-                Learn More
-              </p>
-            </div>
-          </div>
-
-    {/* subtle rounded inside corners matching the outer radius */}
-    <style >{`
-      /* ensure top area has same radius on top corners */
-      .rounded-xl > div:first-child {
-        border-top-left-radius: 0.75rem;  /* Tailwind rounded-xl = 0.75rem */
-        border-top-right-radius: 0.75rem;
-      }
-      /* keep bottom area crisp */
-      .rounded-xl > div:last-child {
-        border-bottom-left-radius: 0.75rem;
-        border-bottom-right-radius: 0.75rem;
-      }
-    `}</style>
+      <style>{`
+        .rounded-xl > div:first-child {
+          border-top-left-radius: 0.75rem;
+          border-top-right-radius: 0.75rem;
+        }
+        .rounded-xl > div:last-child {
+          border-bottom-left-radius: 0.75rem;
+          border-bottom-right-radius: 0.75rem;
+        }
+      `}</style>
+    </div>
   </div>
-</div>
+
     {/* Auto Scrolling Logos Row */}
     <div className="relative overflow-hidden">
       <div className="flex items-center justify-start gap-16 md:gap-20 opacity-70 animate-scroll">
@@ -435,80 +422,78 @@ export default function WebAppDevelopmentHero() {
 
 
 
+
         {/* {fourth section} */}
          <section className="relative w-full bg-white overflow-hidden py-20 px-6 lg:px-12">
-      {/* SVG PATTERN — BOTTOM LEFT */}
-      <svg
-        className="absolute left-0 bottom-0 w-[520px] h-[220px] md:w-[720px] md:h-[320px] opacity-30 pointer-events-none z-0"
-        viewBox="0 0 720 320"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden
-      >
-        <defs>
-          <pattern id="circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="20" cy="20" r="10" stroke="#cfeee9" strokeWidth="1" fill="transparent" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#circles)" />
-      </svg>
+  {/* SVG PATTERN — BOTTOM LEFT */}
+  <svg
+    className="absolute left-0 bottom-0 w-[520px] h-[220px] md:w-[720px] md:h-[320px] opacity-30 pointer-events-none z-0"
+    viewBox="0 0 720 320"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden
+  >
+    <defs>
+      <pattern id="circles" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <circle cx="20" cy="20" r="10" stroke="#cfeee9" strokeWidth="1" fill="transparent" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circles)" />
+  </svg>
 
-      {/* SVG PATTERN — TOP RIGHT (subtle and cropped) */}
-      <svg
-        className="absolute right-0 top-0 w-[360px] h-[160px] md:w-[560px] md:h-[240px] opacity-20 pointer-events-none z-0"
-        viewBox="0 0 560 240"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden
-      >
-        <defs>
-          <pattern id="circles2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="20" cy="20" r="10" stroke="#cfeee9" strokeWidth="1" fill="transparent" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#circles2)" />
-      </svg>
+  {/* SVG PATTERN — TOP RIGHT */}
+  <svg
+    className="absolute right-0 top-0 w-[360px] h-[160px] md:w-[560px] md:h-[240px] opacity-20 pointer-events-none z-0"
+    viewBox="0 0 560 240"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden
+  >
+    <defs>
+      <pattern id="circles2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <circle cx="20" cy="20" r="10" stroke="#cfeee9" strokeWidth="1" fill="transparent" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circles2)" />
+  </svg>
 
-      {/* subtle radial background to blend with pattern */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background:
-            "radial-gradient(circle at 10% 90%, rgba(206,238,233,0.12) 0%, transparent 25%), radial-gradient(circle at 90% 10%, rgba(206,238,233,0.06) 0%, transparent 20%)",
-        }}
-        aria-hidden
-      />
+  {/* subtle radial background */}
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      background:
+        "radial-gradient(circle at 10% 90%, rgba(206,238,233,0.12) 0%, transparent 25%), radial-gradient(circle at 90% 10%, rgba(206,238,233,0.06) 0%, transparent 20%)",
+    }}
+    aria-hidden
+  />
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-        {/* Left side (Image / Video) */}
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src={webimg15}
-              alt="The Weather Company Interview"
-              className="w-full h-auto object-cover rounded-2xl"
-              style={{ maxWidth: 520 }}
-            />
-          </div>
-        </div>
-
-        {/* Right side (Text Content) */}
-        <div className="w-full lg:w-1/2 text-left">
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] leading-snug mb-4">
-            Staying ahead of the competition by rewriting their app
-          </h2>
-          <p className="text-base text-gray-700 leading-relaxed mb-8">
-            The Weather Company fortified its ability to innovate, meet customer demands,
-            and cement its market leadership by tapping into a diverse pool of engineering
-            talent with skills in LLMs, GenAI, and supercomputers to rewrite their app.
-          </p>
-
-          <button className="px-6 py-2 border border-[#011123] rounded-md font-medium text-[#011123] hover:bg-[#011123] hover:text-white transition-all duration-300">
-            Watch Video
-          </button>
-        </div>
+  <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    {/* Left side (Image / Video) */}
+    <div className="w-full lg:w-1/2 flex justify-center">
+      <div className="relative rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src={webimg15}
+          alt="App Modernization"
+          className="w-full h-auto object-cover rounded-2xl"
+          style={{ maxWidth: 520 }}
+        />
       </div>
-    </section>
+    </div>
+
+    {/* Right side (Text Content) */}
+    <div className="w-full lg:w-1/2 text-left">
+      <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] leading-snug mb-4">
+        Accelerate Growth by Modernizing Your Applications
+      </h2>
+      <p className="text-base text-gray-700 leading-relaxed mb-8">
+        Companies enhance innovation and market impact by leveraging skilled engineering talent to modernize outdated systems, integrate AI-driven solutions, and scale digital capabilities efficiently.
+      </p>
+
+      
+    </div>
+  </div>
+</section>
+
 
         {/* {fifth section} */}
 
@@ -530,10 +515,10 @@ export default function WebAppDevelopmentHero() {
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Put Adaptive Hiring to work for you
+        Harness Adaptive Hiring for Your Business
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        View All Resources
+        Explore Resources
       </button>
     </div>
 
@@ -553,7 +538,7 @@ export default function WebAppDevelopmentHero() {
             White Paper
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            The Future of Global Hiring
           </h3>
           <a
             href="#"
@@ -578,7 +563,7 @@ export default function WebAppDevelopmentHero() {
             Case Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            Expanding Talent Capabilities
           </h3>
           <a
             href="#"
@@ -603,7 +588,7 @@ export default function WebAppDevelopmentHero() {
             Infographic
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            Growing Demand for Remote Tech Talent
           </h3>
           <a
             href="#"
@@ -616,6 +601,7 @@ export default function WebAppDevelopmentHero() {
     </div>
   </div>
 </section>
+
 
 
           {/* {6th Section} */}

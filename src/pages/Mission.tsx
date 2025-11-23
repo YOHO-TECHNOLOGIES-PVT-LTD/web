@@ -45,34 +45,34 @@ const ContactUs = () => {
   return (
     <>
       {/* Contact Section */}
-      <section className="relative w-full overflow-hidden bg-[#133E40] pb-24 pt-20">
-        {/* Background Circular Pattern */}
-        <svg
-          className="absolute inset-0 w-full h-full opacity-20"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <pattern
-              id="circlePattern"
-              x="0"
-              y="0"
-              width="100"
-              height="100"
-              patternUnits="userSpaceOnUse"
-            >
-              <circle
-                cx="50"
-                cy="50"
-                r="48"
-                fill="none"
-                stroke="#68C9C3"
-                strokeWidth="1"
-              />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#circlePattern)" />
-        </svg>
+     <section className="relative w-full overflow-hidden bg-[#ff5500] pb-24 pt-20">
+  {/* Background Circular Pattern */}
+  <svg
+    className="absolute inset-0 w-full h-full opacity-20"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <defs>
+      <pattern
+        id="circlePattern"
+        x="0"
+        y="0"
+        width="100"
+        height="100"
+        patternUnits="userSpaceOnUse"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          fill="none"
+          stroke="#ffffff"  
+          strokeWidth="1"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#circlePattern)" />
+  </svg>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center text-white px-4">
@@ -130,7 +130,7 @@ const ContactUs = () => {
                     name="inquiry"
                     value="sales"
                     defaultChecked
-                    className="text-[#1ad6b5] focus:ring-[#1ad6b5]"
+                    className="text-[#ff5500] focus:ring-[#ff5500]"
                   />
                   SALES
                 </label>
@@ -139,7 +139,7 @@ const ContactUs = () => {
                     type="radio"
                     name="inquiry"
                     value="media"
-                    className="text-[#1ad6b5] focus:ring-[#1ad6b5]"
+                    className="text-[#ff5500] focus:ring-[#ff5500]"
                   />
                   MEDIA
                 </label>
@@ -148,7 +148,7 @@ const ContactUs = () => {
                     type="radio"
                     name="inquiry"
                     value="general"
-                    className="text-[#1ad6b5] focus:ring-[#1ad6b5]"
+                    className="text-[#ff5500] focus:ring-[#ff5500]"
                   />
                   GENERAL
                 </label>
@@ -158,7 +158,7 @@ const ContactUs = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-[#1ad6b5] text-gray-900 font-semibold text-sm px-8 py-2.5 rounded-md hover:bg-[#13c0a2] transition-all duration-300"
+              className="bg-[#ff5500] text-gray-900 font-semibold text-sm px-8 py-2.5 rounded-md hover:bg-[#e64e00] transition-all duration-300"
             >
               Submit
             </button>
@@ -225,11 +225,11 @@ const ContactUs = () => {
 
 
        <section className="w-full bg-white py-20 px-6">
-  <div className="max-w-7xl mx-auto bg-[#F4F7F0] rounded-2xl shadow-sm overflow-hidden">
+  <div className="max-w-7xl mx-auto bg-[#fff2eb] rounded-2xl shadow-sm overflow-hidden">
     <div className="flex flex-col md:flex-row">
       
       {/* LEFT SIDE — Explore More Heading with Pattern */}
-      <div className="relative flex flex-col justify-center items-start p-16 md:w-[32%] bg-[#F4F7F0] border-b md:border-b-0 md:border-r border-[#D7E0D2]">
+      <div className="relative flex flex-col justify-center items-start p-16 md:w-[32%] bg-[#fff2eb] border-b md:border-b-0 md:border-r border-[#D7E0D2]">
         <h2 className="text-4xl font-extrabold text-[#0F3E40] leading-snug mb-2">
           Explore<br />More
         </h2>
@@ -261,7 +261,7 @@ const ContactUs = () => {
       </div>
 
       {/* RIGHT SIDE — 3 CARD GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 flex-1 divide-y sm:divide-y-0 sm:divide-x divide-[#D7E0D2] bg-[#F4F7F0]">
+      <div className="grid grid-cols-1 sm:grid-cols-3 flex-1 divide-y sm:divide-y-0 sm:divide-x divide-[#D7E0D2] bg-[#fff2eb]">
         {items.map((item, idx) => (
           <div
             key={idx}

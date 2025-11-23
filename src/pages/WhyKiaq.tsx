@@ -1,9 +1,9 @@
 import kiaqimag from '../assets/whykiaq/665a571d3afa925ba1844fcd_Why Join Andela - Hero.avif'
 import secimg from '../assets/whykiaq/6662ffb0eb1555ee15a857a0_Top Global Talent@2x.webp'
 import videoThumbnail from '../assets/whykiaq/665a571d3afa925ba1844fcd_Why Join Andela - Hero.avif';
-import frimg from '../assets/whykiaq/665f02af7dd93da9c55cbe45_Flexible Engagements@2x.webp';
-import fvimg from '../assets/whykiaq/665f02af04f35114afad4317_Project Completion@2x.webp';
-import sximg from '../assets/whykiaq/665f01761ac7ae2cd7b6a0c0_Andela Talent Cloud@2x.webp';
+import frimg from '../assets/whykiaq/home-01-001.webp';
+import fvimg from '../assets/whykiaq/case5-1.webp';
+import sximg from '../assets/whykiaq/case4-1.webp';
 import svnimg from '../assets/whykiaq/665f017906055188a91e32cb_Talent Decision Engine@2x.webp';
 import ethimg from '../assets/whykiaq/665f02ad1a0373467ab3c7cf_Integrations@2x.webp';
 import ninth from '../assets/whykiaq/6674b5009b8b21f1393a29a4_tei hero image.webp';
@@ -29,26 +29,27 @@ export default function WhyKiaq() {
           <div className="flex flex-col md:flex-row items-start md:items-center">
             
             {/* Left Content */}
-            <div className="w-full md:w-1/2 max-w-xl space-y-5">
-              <p className="text-orange-400 font-semibold uppercase tracking-wider text-base">
-                WHY KIAQ?
-              </p>
+           <div className="w-full md:w-1/2 max-w-xl space-y-5">
+  <p className="text-orange-400 font-semibold uppercase tracking-wider text-base">
+    WHY KIAQ?
+  </p>
 
-              <h1 className="text-4xl sm:text-5xl font-bold leading-snug">
-                We Connect Brilliance <br />
-                with Opportunity So Everyone Wins
-              </h1>
+  <h1 className="text-4xl sm:text-5xl font-bold leading-snug">
+    Connecting Global Teams <br />
+    with Exceptional Talent
+  </h1>
 
-              <p className="text-gray-300 text-lg leading-relaxed">
-                Competition for top digital talent is more fierce than ever. But you don’t have to limit
-                your search by geography. With our global marketplace of skilled technologists and
-                AI-driven matching, we help you hire the world's best — up to 66% faster.
-              </p>
+  <p className="text-gray-300 text-lg leading-relaxed">
+    Finding reliable digital talent is tough — but KIAQ makes it simple. Through our
+    global talent network and intelligent matching, we help companies hire skilled
+    engineers faster, smarter, and more efficiently.
+  </p>
 
-              <button className="mt-5 bg-orange-500 text-black font-semibold px-6 py-3 text-base rounded-md hover:bg-orange-400 transition">
-                Book a discovery call
-              </button>
-            </div>
+  <button className="mt-5 bg-orange-500 text-black font-semibold px-6 py-3 text-base rounded-md hover:bg-orange-400 transition">
+    Book a discovery call
+  </button>
+</div>
+
 
             {/* Spacer for layout balance */}
             <div className="hidden md:block md:flex-1" />
@@ -58,106 +59,112 @@ export default function WhyKiaq() {
 
       {/* Second Section */}
        <section className="bg-white text-gray-900 py-24 px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto">
-        {/* Main Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Hire unparalleled talent from untapped markets
-          </h2>
-        </div>
+  <div className="max-w-7xl mx-auto">
 
-        {/* Tabs */}
-        <div className="flex justify-center gap-10 border-b border-gray-200 mb-16">
-          <button className="pb-3 border-b-4 border-orange-500 text-orange-600 font-semibold">
+    {/* Main Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+        Hire world-class talent from high-growth markets
+      </h2>
+    </div>
+
+    {/* Tabs */}
+    <div className="flex justify-center gap-10 border-b border-gray-200 mb-16">
+      <button className="pb-3 border-b-4 border-orange-500 text-orange-600 font-semibold">
+        Top Global Talent
+      </button>
+      <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
+        High-Growth Regions
+      </button>
+      <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
+        Verified & Skilled
+      </button>
+    </div>
+
+    {/* Main Flex Layout */}
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
+
+      {/* Left - Image */}
+      <div className="w-full lg:w-[48%] flex justify-center">
+        <img
+          src={secimg}
+          alt="Top Global Talent"
+          className="w-full max-w-md rounded-2xl shadow-lg object-cover"
+        />
+      </div>
+
+      {/* Right - Content */}
+      <div className="w-full lg:w-[48%] space-y-8">
+        <div>
+          <p className="uppercase text-sm font-semibold text-orange-600 tracking-wider">
             Top Global Talent
-          </button>
-          <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
-            Untapped Markets
-          </button>
-          <button className="pb-3 text-gray-500 hover:text-orange-600 transition font-medium">
-            Qualified and Certified
-          </button>
+          </p>
+
+          <h3 className="text-3xl md:text-4xl font-bold mt-2 leading-snug">
+            Build stronger teams with elite digital talent
+          </h3>
+
+          <p className="text-gray-600 text-lg leading-relaxed mt-4">
+            KIAQ gives companies access to a private network of highly skilled technologists from emerging markets, enabling faster, smarter, and more scalable hiring.
+          </p>
+
+          <a
+            href="#"
+            className="inline-flex items-center mt-4 text-orange-600 font-semibold hover:underline"
+          >
+            Learn More →
+          </a>
         </div>
 
-        {/* Main Flex Layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
-          {/* Left - Image */}
-          <div className="w-full lg:w-[48%] flex justify-center">
-            <img
-              src={secimg}
-              alt="Top Global Talent"
-              className="w-full max-w-md rounded-2xl shadow-lg object-cover"
-            />
+        {/* Feature Grid */}
+        <div className="grid sm:grid-cols-2 gap-x-10 gap-y-8 pt-6 border-t border-gray-200">
+
+          <div>
+            <h4 className="font-semibold text-gray-900 text-lg">
+              Accelerate hiring speed
+            </h4>
+            <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+              Hire up to 66% faster with AI-powered talent matching and pre-vetted experts.
+            </p>
           </div>
 
-          {/* Right - Content */}
-          <div className="w-full lg:w-[48%] space-y-8">
-            <div>
-              <p className="uppercase text-sm font-semibold text-orange-600 tracking-wider">
-                Top Global Talent
-              </p>
-              <h3 className="text-3xl md:text-4xl font-bold mt-2 leading-snug">
-                Hire top digital talent efficiently
-              </h3>
-              <p className="text-gray-600 text-lg leading-relaxed mt-4">
-                The KIAQ private talent marketplace includes over 150K skilled,
-                experienced technologists in more than 135 countries — including
-                emerging regions like Africa and Latin America.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center mt-4 text-orange-600 font-semibold hover:underline"
-              >
-                Learn More →
-              </a>
-            </div>
-
-            {/* Feature Grid */}
-            <div className="grid sm:grid-cols-2 gap-x-10 gap-y-8 pt-6 border-t border-gray-200">
-              <div>
-                <h4 className="font-semibold text-gray-900 text-lg">
-                  Accelerate speed to hire
-                </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                  Reduce hiring time by up to 66%. Our AI-driven matching finds the best candidates faster.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-gray-900 text-lg">
-                  Reduce cost per hire
-                </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                  Achieve up to 60% cost savings per hire while maintaining top-tier quality.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-gray-900 text-lg">
-                  Create more agility
-                </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                  Our flexible talent model allows teams to scale quickly as project demands change.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-gray-900 text-lg">
-                  Get projects done faster
-                </h4>
-                <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                  Accelerate project delivery by up to 33% with globally distributed experts.
-                </p>
-              </div>
-            </div>
+          <div>
+            <h4 className="font-semibold text-gray-900 text-lg">
+              Reduce hiring costs
+            </h4>
+            <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+              Cut recruitment costs by up to 60% without compromising quality.
+            </p>
           </div>
+
+          <div>
+            <h4 className="font-semibold text-gray-900 text-lg">
+              Scale with confidence
+            </h4>
+            <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+              A flexible talent model that grows as your project needs evolve.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold text-gray-900 text-lg">
+              Deliver projects faster
+            </h4>
+            <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+              Speed up development cycles with globally distributed specialists.
+            </p>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
 
     {/* Third Section */}
-   <section className="relative w-full min-h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden">
+  <section className="relative w-full min-h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden">
   {/* Background Image */}
   <img
     src={videoThumbnail}
@@ -175,8 +182,9 @@ export default function WhyKiaq() {
       {/* Left Text */}
       <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
         <h2 className="text-4xl md:text-5xl font-semibold leading-snug tracking-tight">
-          Breaking down barriers <br />
-          to change the way the <br /> world works
+          Redefining access to talent <br />
+          and shaping the future <br />
+          of global work
         </h2>
       </div>
     </div>
@@ -186,30 +194,31 @@ export default function WhyKiaq() {
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">150K</h3>
         <p className="text-orange-300 text-xs leading-relaxed">
-          Top-rated, highly skilled <br /> talent pool
+          Verified, highly skilled <br /> global talent
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">135+</h3>
         <p className="text-orange-300 text-xs leading-relaxed">
-          Countries from diverse <br /> regions
+          Countries represented in <br /> our marketplace
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">93%</h3>
         <p className="text-orange-300 text-xs leading-relaxed">
-          Client satisfaction in <br /> overall value
+          Satisfaction with value <br /> & partnership
         </p>
       </div>
       <div className="space-y-1">
         <h3 className="text-2xl font-bold">97%</h3>
         <p className="text-orange-300 text-xs leading-relaxed">
-          Client satisfaction with <br /> talent quality
+          Satisfaction with overall <br /> talent quality
         </p>
       </div>
     </div>
   </div>
 </section>
+
 
     {/* Fourth Section */}
 
@@ -396,7 +405,7 @@ export default function WhyKiaq() {
         {/* 3 Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Card 1 */}
-          <div className="bg-[#F0F7F5] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="font-bold text-gray-900 text-lg mb-3">KIAQ Talent Cloud</h3>
             <p className="text-gray-600 text-sm mb-6">
               Create jobs and receive instant AI-driven recommendations. Schedule interviews and hire quickly.
@@ -411,7 +420,7 @@ export default function WhyKiaq() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#F0F7F5] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="font-bold text-gray-900 text-lg mb-3">Talent Decision Engine™</h3>
             <p className="text-gray-600 text-sm mb-6">
               AI matching algorithms use thousands of data points to match you with ideal talent for your needs.
@@ -426,7 +435,7 @@ export default function WhyKiaq() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#F0F7F5] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="font-bold text-gray-900 text-lg mb-3">KIAQ Connect</h3>
             <p className="text-gray-600 text-sm mb-6">
               Instantly sync with your favorite tools and platforms. Get qualified matches to your open roles in seconds.
@@ -442,7 +451,7 @@ export default function WhyKiaq() {
         </div>
 
         {/* Proof Section */}
-        <div className="mt-24 rounded-2xl p-8 md:p-12 relative overflow-hidden" style={{ backgroundColor: '#CFE5E1' }}>
+        <div className="mt-24 rounded-2xl p-8 md:p-12 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
           {/* Pattern inside Proof Section */}
           <svg
             className="absolute top-0 right-0 w-[400px] h-[400px] opacity-10 pointer-events-none translate-x-10 -translate-y-10"
@@ -470,7 +479,7 @@ export default function WhyKiaq() {
                 Forrester recently conducted a Total Economic Impact (TEI) study and found KIAQ delivers 97% ROI,
                 $80K in cost savings per talent hired, 33% faster project delivery, and 66% faster time to hire.
               </p>
-              <button className="bg-[#008080] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#006666] transition-all">
+              <button className="bg-orange-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-[#006666] transition-all">
                 Download the report
               </button>
             </div>
@@ -487,7 +496,7 @@ export default function WhyKiaq() {
 
     {/* Sixth Section */}
 
-     <section className="relative w-full bg-[#e9f7f5] text-black py-24 overflow-hidden">
+     <section className="relative w-full bg-[#fff2eb] text-black py-24 overflow-hidden">
       {/* Background Flower Pattern */}
       <div
         className="absolute inset-0 opacity-20"
@@ -601,91 +610,92 @@ export default function WhyKiaq() {
     {/* Seventh Section */}
 
         <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
-      {/* Flower Pattern Background */}
-      <div
-        className="absolute inset-0 opacity-15"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 25px 25px, rgba(104,179,157,0.4) 1px, transparent 0),
-            radial-gradient(circle at 75px 75px, rgba(104,179,157,0.4) 1px, transparent 0)
-          `,
-          backgroundSize: "100px 100px",
-        }}
-      ></div>
+  {/* Flower Pattern Background */}
+  <div
+    className="absolute inset-0 opacity-15"
+    style={{
+      backgroundImage: `
+        radial-gradient(circle at 25px 25px, rgba(104,179,157,0.4) 1px, transparent 0),
+        radial-gradient(circle at 75px 75px, rgba(104,179,157,0.4) 1px, transparent 0)
+      `,
+      backgroundSize: "100px 100px",
+    }}
+  ></div>
 
-      {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 z-10">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Put Adaptive Hiring to work for you
-          </h2>
-          <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-            View All Resources
-          </button>
-        </div>
+  {/* Content */}
+  <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 z-10">
+    {/* Header */}
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        Empower your teams with Adaptive Hiring
+      </h2>
+      <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
+        View All Resources
+      </button>
+    </div>
 
-        {/* Cards Grid */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {/* Card 1 */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-            <img src={tenimg} alt="The Future of Hiring" className="w-full h-56 object-cover" />
-            <div className="p-6">
-              <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-                White Paper
-              </p>
-              <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                The Future of Hiring is Borderless
-              </h3>
-              <a
-                href="#"
-                className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-              >
-                Read More <span className="ml-2">→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-            <img src={eleimg} alt="Diversifying Skillsets" className="w-full h-56 object-cover" />
-            <div className="p-6">
-              <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-                Case Study
-              </p>
-              <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                Diversifying Skillsets With The Weather Company
-              </h3>
-              <a
-                href="#"
-                className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-              >
-                Watch Now <span className="ml-2">→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-            <img src={twlimg} alt="Global Remote Tech Talent" className="w-full h-56 object-cover" />
-            <div className="p-6">
-              <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-                Infographic
-              </p>
-              <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                Andela Research Finds Increasing Demand for Global Remote Tech Talent
-              </h3>
-              <a
-                href="#"
-                className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-              >
-                Read More <span className="ml-2">→</span>
-              </a>
-            </div>
-          </div>
+    {/* Cards Grid */}
+    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* Card 1 */}
+      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
+        <img src={tenimg} alt="The Future of Hiring" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
+            White Paper
+          </p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-2">
+            The Future of Hiring Is Global
+          </h3>
+          <a
+            href="#"
+            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
+          >
+            Read More <span className="ml-2">→</span>
+          </a>
         </div>
       </div>
-    </section>
+
+      {/* Card 2 */}
+      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
+        <img src={eleimg} alt="Diversifying Skillsets" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
+            Case Study
+          </p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-2">
+            Expanding Digital Skillsets Through KIAQ
+          </h3>
+          <a
+            href="#"
+            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
+          >
+            Watch Now <span className="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
+        <img src={twlimg} alt="Global Remote Tech Talent" className="w-full h-56 object-cover" />
+        <div className="p-6">
+          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
+            Insight Report
+          </p>
+          <h3 className="text-lg font-semibold text-gray-900 mt-2">
+            Demand for Global Tech Talent Continues to Rise
+          </h3>
+          <a
+            href="#"
+            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
+          >
+            Read More <span className="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* {8th Section} */}
 

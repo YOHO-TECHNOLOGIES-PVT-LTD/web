@@ -96,7 +96,7 @@ export default function WebAppDevelopmentHero() {
 
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
 
-    const [activeTab, setActiveTab] = useState<"Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster">("Deliver Projects Faster");
+    const [activeTab] = useState<"Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster">("Deliver Projects Faster");
 
   const tabs = [
     "Innovative Web Apps",
@@ -112,270 +112,256 @@ export default function WebAppDevelopmentHero() {
 
   return (
     <>
-    <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
-      <img
-        src={webimg}
-        alt="Web app development"
-        className="absolute inset-0 w-full h-full object-cover object-right z-0"
-      />
+   <section
+  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+  style={{ backgroundColor: UI_CONSTANTS.DARK }}
+>
+  {/* Background image */}
+  <img
+    src={webimg}
+    alt="Data Science and AI"
+    className="absolute inset-0 w-full h-full object-cover object-right z-0"
+  />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
+  {/* Dark gradient overlay */}
+  <div
+    className="absolute inset-0 z-10"
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
+    <div className="max-w-[520px] mt-[14vh]">
+      {/* Title */}
+      <h1
+        className="text-white font-bold leading-snug mb-5"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          lineHeight: 1.2,
         }}
-      ></div>
+      >
+        Accelerate Your AI & Data Science
+        <br />
+        Projects with Expert Teams
+      </h1>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-[520px] mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-5"
-            style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", // smaller + balanced
-              lineHeight: 1.2,
-            }}
-          >
-            Drive Your Web Application
-            <br />
-            Development Projects
-          </h1>
+      {/* Description */}
+      <p
+        className="text-gray-200 font-light mb-8"
+        style={{
+          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          lineHeight: 1.65,
+          color: "rgba(255,255,255,0.85)",
+        }}
+      >
+        KIAQ connects you with top-tier AI and Data Science talent to deliver
+        actionable insights, scalable models, and intelligent automation —
+        driving measurable impact for your business.
+      </p>
 
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-8"
-            style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            Our web application experts craft custom solutions that extend from
-            design to launch — aligning your business objectives with intuitive
-            user interfaces, robust back-end systems, and seamless scalability
-            for growth.
-          </p>
+      {/* CTA Button */}
+      <button
+        className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
+        style={{
+          backgroundColor: UI_CONSTANTS.WHITE,
+          color: UI_CONSTANTS.DARK,
+        }}
+      >
+        Start Your AI Journey
+      </button>
+    </div>
 
-          {/* CTA Button */}
-          <button
-            className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Book a discovery call
-          </button>
-        </div>
-
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
-          <div>
-            <p className="text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-sm opacity-90">
-              Of clients satisfied with talent quality
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
-            <p className="text-sm opacity-90">
-              Mobile and web app developers
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">18+</p>
-            <p className="text-sm opacity-90">
-              Month average engagement length
-            </p>
-          </div>
-        </div>
+    {/* Stats Section */}
+    <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
+      <div>
+        <p className="text-2xl font-semibold text-white mb-1">95%</p>
+        <p className="text-sm opacity-90">Client satisfaction with AI solutions</p>
       </div>
-    </section>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">500+</p>
+        <p className="text-sm opacity-90">AI & Data Science experts</p>
+      </div>
+
+      <div className="border-l border-white/20 pl-8">
+        <p className="text-2xl font-semibold text-white mb-1">24+</p>
+        <p className="text-sm opacity-90">Months of average engagement</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   {/* {second section} */}
   <section className="relative w-full bg-white overflow-hidden py-20 px-6 lg:px-12">
-      {/* STAR PATTERN TOP-RIGHT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute top-8 right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="star">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {/* Row 1 */}
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            {/* Row 2 */}
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            {/* Row 3 (trim) */}
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN TOP-RIGHT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute top-8 right-8 pointer-events-none"
+    style={{ opacity: 0.12 }}
+  >
+    <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="star">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {/* Row 1 */}
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="36" y="0" />
+        <use href="#star" x="72" y="0" />
+        <use href="#star" x="108" y="0" />
+        <use href="#star" x="144" y="0" />
+        <use href="#star" x="180" y="0" />
+        {/* Row 2 */}
+        <use href="#star" x="18" y="28" />
+        <use href="#star" x="54" y="28" />
+        <use href="#star" x="90" y="28" />
+        <use href="#star" x="126" y="28" />
+        <use href="#star" x="162" y="28" />
+        <use href="#star" x="198" y="28" />
+        {/* Row 3 (trim) */}
+        <use href="#star" x="36" y="56" />
+        <use href="#star" x="72" y="56" />
+        <use href="#star" x="108" y="56" />
+        <use href="#star" x="144" y="56" />
+      </g>
+    </svg>
+  </div>
 
-      {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="starB">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                // staggered placement
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
+  {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
+  <div
+    aria-hidden
+    className="absolute bottom-0 left-0 pointer-events-none"
+    style={{ opacity: 0.10 }}
+  >
+    <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <g id="starB">
+          <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
+        </g>
+      </defs>
+      <g transform="translate(0,0)" opacity="0.5">
+        {Array.from({ length: 6 }).map((_, row) =>
+          Array.from({ length: 6 }).map((__, col) => (
+            <use
+              key={`b-${row}-${col}`}
+              href="#starB"
+              x={col * 40 + (row % 2 === 0 ? 0 : 20)}
+              y={row * 36}
+            />
+          ))
+        )}
+      </g>
+    </svg>
+  </div>
+
+  <div className="relative z-10 max-w-6xl mx-auto">
+    {/* LEFT aligned top block */}
+    <div className="max-w-[980px]">
+      <div className="pr-12">
+        <h2
+          className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
+        >
+          AI & Data Science solutions tailored for your business
+        </h2>
+        <p
+          className="text-gray-600 mb-8 max-w-[720px]"
+          style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
+        >
+          Leverage advanced analytics, machine learning, and AI to drive actionable insights and smarter business decisions. We deliver solutions that integrate seamlessly with your systems for maximum impact.
+        </p>
+      </div>
+    </div>
+
+    {/* TABS: LEFT-ALIGNED under heading, with separators */}
+    <div className="mt-4">
+      <div className="flex items-center gap-6 max-w-[720px] pb-3">
+        {tabs.map((tab, idx) => {
+          const isActive = tab === activeTab;
+          return (
+            <div key={tab} className="flex items-center">
+              <button
+                // onClick={() => setActiveTab(tab as "Predictive Analytics" | "AI Models" | "Data Pipelines")}
+                className="relative text-sm md:text-base font-medium pb-2 transition-colors"
+                style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
+              >
+                {tab}
+                {isActive && (
+                  <span
+                    className="absolute left-0 right-0"
+                    style={{
+                      height: 3,
+                      bottom: -8,
+                      background: UI_CONSTANTS.orange,
+                      borderRadius: 2,
+                    }}
+                  />
+                )}
+              </button>
+
+              {idx < tabs.length - 1 && (
+                <div
+                  aria-hidden
+                  className="mx-4"
+                  style={{
+                    width: 36,
+                    height: 1,
+                    background: "rgba(1,17,35,0.06)",
+                    borderRadius: 2,
+                  }}
                 />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* LEFT aligned top block */}
-        <div className="max-w-[980px]">
-          <div className="pr-12">
-            <h2
-              className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
-            >
-              Custom web application solutions designed to meet your business’s
-              unique needs
-            </h2>
-            <p
-              className="text-gray-600 mb-8 max-w-[720px]"
-              style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
-            >
-              Enhance the power of the web to ensure a high-performing, digital
-              experience for all customers and users. We deliver custom solutions
-              that seamlessly integrate with existing systems and workflows.
-            </p>
-          </div>
-        </div>
-
-        {/* TABS: LEFT-ALIGNED under heading, with separators */}
-        <div className="mt-4">
-          <div className="flex items-center gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
-                    className="relative text-sm md:text-base font-medium pb-2 transition-colors"
-                    style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
-                  >
-                    {tab}
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: UI_CONSTANTS.orange,
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {/* separator between tabs (except after last) */}
-                  {idx < tabs.length - 1 && (
-                    <div
-                      aria-hidden
-                      className="mx-4"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                        borderRadius: 2,
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* subtle bottom border below the tabs area */}
-          <div className="max-w-[720px] border-b border-gray-200 mt-2" />
-        </div>
-
-        {/* Two-column content: left narrow (text), right image */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-5">
-            <h3
-              className="text-[20px] md:text-[22px] font-semibold mb-3"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
-            >
-              AI-powered platform makes it quick and easy to find the skillsets
-              you need, now
-            </h3>
-
-            <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
-              Nebula was able to advance its development timeline by nine months
-              using Andela Talent Cloud to hire 10 engineers within days,
-              accelerating its growth trajectory.
-            </p>
-
-            <button
-              className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
-              style={{ color: UI_CONSTANTS.DARK }}
-            >
-              Learn More
-            </button>
-          </div>
-
-          <div className="md:col-span-7 flex justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-                style={{ display: "block" }}
-              />
+              )}
             </div>
-          </div>
+          );
+        })}
+      </div>
+
+      <div className="max-w-[720px] border-b border-gray-200 mt-2" />
+    </div>
+
+    {/* Two-column content: left narrow (text), right image */}
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div className="md:col-span-5">
+        <h3
+          className="text-[20px] md:text-[22px] font-semibold mb-3"
+          style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
+        >
+          Quickly access top AI and Data Science talent
+        </h3>
+
+        <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
+          KIAQ helps companies accelerate AI and data projects by connecting them with highly skilled engineers and data scientists, enabling faster delivery and smarter outcomes.
+        </p>
+
+        <button
+          className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
+          style={{ color: UI_CONSTANTS.DARK }}
+        >
+          Learn More
+        </button>
+      </div>
+
+      <div className="md:col-span-7 flex justify-end">
+        <div className="w-full max-w-[520px]">
+          <img
+            src={images[activeTab]}
+            alt={activeTab}
+            className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+            style={{ display: "block" }}
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     {/* {third section} */}
 

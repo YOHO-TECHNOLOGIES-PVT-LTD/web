@@ -3,7 +3,7 @@ import { UI_CONSTANTS } from '../constants/colors';
 export default function CTASection() {
   return (
     <section className="dual-action-button-cta">
-      <div className="dual-action-button-cta-wrapper grid sm:grid-cols-1 lg:grid-cols-2 gap-0 min-h-[300px] sm:min-h-[350px] lg:min-h-[400px]">
+      <div className="dual-action-button-cta-wrapper grid sm:grid-cols-1 lg:grid-cols-2 gap-0 min-h-[220px] sm:min-h-[260px] lg:min-h-[300px]">
         
         {/* LEFT SECTION */}
         <div
@@ -46,7 +46,7 @@ export default function CTASection() {
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
               style={{ color: UI_CONSTANTS.WHITE }}
             >
-              Build the tech team of the future with KIAQ
+              Build your future-ready tech team with KIAQ
             </h2>
 
             <button
@@ -56,7 +56,7 @@ export default function CTASection() {
               }}
               className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity"
             >
-              Request a consultation
+              Get Started
             </button>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function CTASection() {
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
               style={{ color: '#173B3F' }}
             >
-              Let us know how we can help
+              Tell us what you need — we’ll take it from here
             </h2>
 
             <button
@@ -117,6 +117,7 @@ export default function CTASection() {
             </button>
           </div>
         </div>
+
       </div>
     </section>
   );

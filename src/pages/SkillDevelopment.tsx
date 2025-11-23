@@ -222,7 +222,7 @@ const TalentSection = () => {
       </div>
     </section>
 
-       <section className="relative bg-[#E5EFEC] py-14 overflow-hidden">
+       <section className="relative bg-[#fff2eb] py-14 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-lg md:text-xl font-semibold text-gray-900 mb-10">
           KIAQ skill development is recognized by leading technology organizations
@@ -231,7 +231,7 @@ const TalentSection = () => {
         {/* Scrolling wrapper */}
         <div className="relative flex items-center overflow-hidden">
           {/* Left gradient */}
-          <div className="absolute left-0 top-0 w-16 h-full bg-gradient-to-r from-[#E5EFEC] to-transparent z-10" />
+          <div className="absolute left-0 top-0 w-16 h-full bg-gradient-to-r from-[#fff2eb] to-transparent z-10" />
 
           {/* Logos */}
           <div className="flex animate-scroll whitespace-nowrap">
@@ -250,7 +250,7 @@ const TalentSection = () => {
           </div>
 
           {/* Right gradient */}
-          <div className="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-[#E5EFEC] to-transparent z-10" />
+          <div className="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-[#fff2eb] to-transparent z-10" />
         </div>
       </div>
 

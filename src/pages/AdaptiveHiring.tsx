@@ -35,7 +35,7 @@ export default function WebAppDevelopmentHero() {
   const testimonials = [
     {
       title: "GitHub quickly activates scalable global teams to improve their customer experience",
-      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Andela to get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
+      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Kiaqto get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
       name: "Mark Schaefer",
       role: "Sr. Director, Worldwide Partnerships, GitHub",
       image: sol15,
@@ -43,7 +43,7 @@ export default function WebAppDevelopmentHero() {
     },
     {
       title: "The Weather Company diversifies skill sets",
-      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Andela just continues to amaze me and does a phenomenal job.",
+      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Kiaqjust continues to amaze me and does a phenomenal job.",
       name: "Wendy Frazier",
       role: "CTO, The Weather Company",
       image: sol13,
@@ -51,7 +51,7 @@ export default function WebAppDevelopmentHero() {
     },
     {
       title: "Mindshare scales data teams to serve the world's largest advertisers",
-      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Andela de-risks global hiring, so businesses can grow and be competitive.",
+      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Kiaqde-risks global hiring, so businesses can grow and be competitive.",
       name: "Ikechi Okoronkwo",
       role: "EVP, Analytics & Data Science",
       image: sol14,
@@ -59,7 +59,7 @@ export default function WebAppDevelopmentHero() {
     },
     {
       title: "Nebula scales its engineering team to meet goals faster",
-      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Andela meet every single sprint milestone - they have a spotless execution track record.",
+      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Kiaqmeet every single sprint milestone - they have a spotless execution track record.",
       name: "Ed Donner",
       role: "Cofounder and CTO, Nebula",
       image: sol16,
@@ -350,7 +350,7 @@ export default function WebAppDevelopmentHero() {
 
             <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
               Nebula was able to advance its development timeline by nine months
-              using Andela Talent Cloud to hire 10 engineers within days,
+              using KiaqTalent Cloud to hire 10 engineers within days,
               accelerating its growth trajectory.
             </p>
 
@@ -502,7 +502,7 @@ export default function WebAppDevelopmentHero() {
   {/* Heading */}
   <div className="text-center mb-14">
     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-      Here's why industry leaders rely on <br /> Andela talent
+      Here's why industry leaders rely on <br /> Kiaqtalent
     </h2>
   </div>
 
@@ -638,7 +638,7 @@ export default function WebAppDevelopmentHero() {
       </h2>
       <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
         Mastercard Foundry scaled its engineering teams to develop promising
-        products. Over the past four years, 10 Andela engineers have contributed
+        products. Over the past four years, 10 Kiaqengineers have contributed
         to key projects with a focus on financial inclusion. The partnership has
         since expanded to include numerous other initiatives.
       </p>
@@ -743,7 +743,7 @@ export default function WebAppDevelopmentHero() {
             Infographic
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            KiaqResearch Finds Increasing Demand for Global Remote Tech Talent
           </h3>
           <a
             href="#"

@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../assets/whykiaq/66622659f3617ef0668c5907_Our Talent Community_Header-p-2000.webp";
-import img2 from "../assets/whykiaq/666176504057309d3f62a5f6_Qualify-S2@2x.webp" ;
+import img2 from "../assets/talent/case8.webp" ;
 import img3 from "../assets/whykiaq/6641e09ebdb58bed56d6f12d_our-talent.avif" ;
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
 import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
@@ -25,41 +25,42 @@ interface Program {
 
 const programs: Program[] = [
   {
-    icon: <Code className="w-6 h-6 text-white" />,
-    title: "Codewars",
-    description:
-      "More than four million coders take on gamified challenges to foster continuous growth and improvement.",
-  },
-  {
-    icon: <Globe className="w-6 h-6 text-white" />,
-    title: "Google Africa Developer Scholarship (GADS)",
-    description:
-      "Google and Andela partnered to provide training content and hands-on learning experiences in Android Development, GCP, and more.",
-  },
-  {
-    icon: <Users className="w-6 h-6 text-white" />,
-    title: "Andela Technical Leadership Program",
-    description:
-      "An exclusive nine-month training program helps Rwandan technologists kick-start their careers and become world-class engineers.",
-  },
-  {
-    icon: <Brain className="w-6 h-6 text-white" />,
-    title: "Andela Skills Series",
-    description:
-      "Self-directed courses in AI/machine learning, data science, engineering, and prompt engineering.",
-  },
-  {
-    icon: <Atom className="w-6 h-6 text-white" />,
-    title: "Meta React Learning Program",
-    description:
-      "A seven-week course cultivates knowledge and skills in React.",
-  },
-  {
-    icon: <Cpu className="w-6 h-6 text-white" />,
-    title: "NVIDIA RAPIDS Program",
-    description:
-      "RAPIDS skills, competencies, and certifications in GPU-compute space.",
-  },
+  icon: <Code className="w-6 h-6 text-white" />,
+  title: "Codewars",
+  description:
+    "A global platform where developers sharpen their skills through practical, gamified coding challenges.",
+},
+{
+  icon: <Globe className="w-6 h-6 text-white" />,
+  title: "Google Developer Scholarship",
+  description:
+    "A training initiative offering hands-on learning in modern technologies, supported by Google and industry partners.",
+},
+{
+  icon: <Users className="w-6 h-6 text-white" />,
+  title: "Technical Leadership Program",
+  description:
+    "A structured learning experience designed to help emerging engineers accelerate their careers and build leadership skills.",
+},
+{
+  icon: <Brain className="w-6 h-6 text-white" />,
+  title: "KIAQ Skills Series",
+  description:
+    "Self-paced learning tracks covering AI, data science, engineering practices, and advanced problem-solving.",
+},
+{
+  icon: <Atom className="w-6 h-6 text-white" />,
+  title: "React Learning Program",
+  description:
+    "An immersive program focused on mastering React fundamentals and building production-ready applications.",
+},
+{
+  icon: <Cpu className="w-6 h-6 text-white" />,
+  title: "RAPIDS GPU Program",
+  description:
+    "Specialized learning to develop strong competencies in GPU acceleration, data processing, and modern computing workflows.",
+},
+
 ];
 
 const UI_CONSTANTS = {
@@ -70,25 +71,26 @@ const UI_CONSTANTS = {
 
 const features = [
   {
-    icon: <ChartLine size={28} />,
-    title: "Qualified by Andela",
-    desc: "Real-world work simulations assess coding experience, on-the-job performance, and more.",
-  },
-  {
-    icon: <Users size={28} />,
-    title: "Talent Decision Engine™",
-    desc: "AI and data-driven algorithms pair the ideal talent to your specific requirements.",
-  },
-  {
-    icon: <Share2 size={28} />,
-    title: "Andela Community",
-    desc: "Andela talent have free access to dozens of technical development programs.",
-  },
-  {
-    icon: <RefreshCcw size={28} />,
-    title: "Premium Support",
-    desc: "Dedicated customer and talent success experts ensure best practices and superior outcomes.",
-  },
+  icon: <ChartLine size={28} />,
+  title: "Qualified by KIAQ",
+  desc: "Hands-on skill evaluations and real technical tasks ensure every engineer meets global standards.",
+},
+{
+  icon: <Users size={28} />,
+  title: "Talent Intelligence Engine™",
+  desc: "Our AI-driven matching identifies the right talent for your exact project and skill needs.",
+},
+{
+  icon: <Share2 size={28} />,
+  title: "KIAQ Talent Network",
+  desc: "Professionals gain access to continuous training, mentorship, and skill-enhancement programs.",
+},
+{
+  icon: <RefreshCcw size={28} />,
+  title: "Premium Client Support",
+  desc: "A dedicated success team supports your hiring journey to guarantee seamless outcomes.",
+},
+
 
   // {
   //     company: "CloudTech Solutions",
@@ -107,20 +109,25 @@ const features = [
   ];
 
 const testimonials = [
-  {
-    company: "CloudTech Solutions",
-    logo: "https://via.placeholder.com/200x60/ffffff/000000?text=CloudTech",
-    title: "Scaling Infrastructure with African DevOps Expertise",
-    description: "KIAQ connected us with exceptional DevOps engineers from Nigeria and Kenya who transformed our cloud infrastructure. Their expertise in AWS and Kubernetes helped us achieve 99.9% uptime and reduce deployment time by 70%.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&crop=center"
-  },
-  {
-    company: "DataFlow Analytics",
-    logo: "https://via.placeholder.com/200x60/ffffff/000000?text=DataFlow",
-    title: "Unlocking Data Insights with African Data Scientists",
-    description: "Through KIAQ, we found brilliant data scientists from Ghana and South Africa who revolutionized our analytics capabilities. Their innovative approaches to machine learning increased our prediction accuracy by 45% and drove significant business growth.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-  }
+ {
+  company: "CloudTech Solutions",
+  logo: "https://via.placeholder.com/200x60/ffffff/000000?text=CloudTech",
+  title: "Scaling Infrastructure with Elite DevOps Talent",
+  description:
+    "KIAQ connected us with highly-skilled DevOps engineers who modernized our cloud systems, improved reliability, and accelerated deployment speeds.",
+  image:
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&crop=center",
+},
+{
+  company: "DataFlow Analytics",
+  logo: "https://via.placeholder.com/200x60/ffffff/000000?text=DataFlow",
+  title: "Transforming Data Operations with Expert Talent",
+  description:
+    "KIAQ matched us with exceptional data scientists who elevated our analytics, strengthened predictive accuracy, and unlocked deeper insights for growth.",
+  image:
+    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
+}
+
 ];
 
 const logos = [
@@ -165,30 +172,31 @@ const TalentSection = () => {
 
     <>
     <section
-      className="relative w-full h-[85vh] bg-cover bg-center flex items-center"
-      style={{ backgroundImage: `url(${img1})` }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent"></div>
+  className="relative w-full h-[85vh] bg-cover bg-center flex items-center"
+  style={{ backgroundImage: `url(${img1})` }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent"></div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-3xl pl-8 sm:pl-16 md:pl-24 lg:pl-32 xl:pl-44 text-white">
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-[1.15] mb-5">
-          We Don&apos;t Just Find The Best <br />
-          Talent — We Cultivate It
-        </h1>
+  {/* Content */}
+  <div className="relative z-10 max-w-3xl pl-8 sm:pl-16 md:pl-24 lg:pl-32 xl:pl-44 text-white">
+    <h1 className="text-4xl md:text-5xl font-extrabold leading-[1.15] mb-5">
+      We Don&apos;t Just Find Great Talent —
+      <br /> We Develop It
+    </h1>
 
-        <p className="text-base md:text-lg text-gray-200 max-w-2xl leading-relaxed mb-8">
-          Andela technologists have access to numerous programs that encourage,
-          motivate, train, and advance their skills and careers. Because when
-          talent grows, everyone wins.
-        </p>
+    <p className="text-base md:text-lg text-gray-200 max-w-2xl leading-relaxed mb-8">
+      KIAQ empowers global companies with highly skilled technologists through
+      continuous training, support, and advancement programs designed to elevate
+      careers and deliver real impact.
+    </p>
 
-        <button className="bg-orange-400 hover:bg-orange-300 text-black font-semibold text-sm md:text-base px-7 py-3 rounded-md shadow-md transition-all duration-300">
-          Book a discovery call
-        </button>
-      </div>
-    </section>
+    <button className="bg-orange-400 hover:bg-orange-300 text-black font-semibold text-sm md:text-base px-7 py-3 rounded-md shadow-md transition-all duration-300">
+      Book a discovery call
+    </button>
+  </div>
+</section>
+
 
 
      <section className="relative w-full bg-white py-20 px-6 md:px-12 lg:px-20">
@@ -237,16 +245,16 @@ const TalentSection = () => {
       </div>
     </section>
 
-       <section className="relative bg-[#E5EFEC] py-14 overflow-hidden">
+       <section className="relative bg-[#fff2eb] py-14 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-lg md:text-xl font-semibold text-gray-900 mb-10">
-          Andela talent is recognized and proven by global industry leaders
+          Kiaq talent is recognized and proven by global industry leaders
         </h2>
 
         {/* Scrolling wrapper */}
         <div className="relative flex items-center overflow-hidden">
           {/* Left gradient */}
-          <div className="absolute left-0 top-0 w-16 h-full bg-gradient-to-r from-[#E5EFEC] to-transparent z-10" />
+          <div className="absolute left-0 top-0 w-16 h-full bg-gradient-to-r from-[#fff2eb] to-transparent z-10" />
 
           {/* Logos */}
           <div className="flex animate-scroll whitespace-nowrap">
@@ -265,7 +273,7 @@ const TalentSection = () => {
           </div>
 
           {/* Right gradient */}
-          <div className="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-[#E5EFEC] to-transparent z-10" />
+          <div className="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-[#fff2eb] to-transparent z-10" />
         </div>
       </div>
 
@@ -284,86 +292,87 @@ const TalentSection = () => {
 
 
      <section className="bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
-        {/* Top Text Section */}
-        <div className="text-center mb-20">
-          <h2 className="text-[32px] leading-[42px] font-bold text-[#0B0B0C] mb-4">
-            Technical proficiency is only the first step for Andela talent
-          </h2>
-          <p className="text-[#4B5563] text-[16px] leading-[26px] max-w-[720px] mx-auto">
-            There has never been a more thorough, accurate, and transparent model for
-            assessing talent. Rigorous evaluation and investment in our people helps
-            ensure the best outcomes.
-          </p>
-        </div>
+  <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+    
+    {/* Top Text Section */}
+    <div className="text-center mb-20">
+      <h2 className="text-[32px] leading-[42px] font-bold text-[#0B0B0C] mb-4">
+        Technical excellence starts with deeper evaluation
+      </h2>
+      <p className="text-[#4B5563] text-[16px] leading-[26px] max-w-[720px] mx-auto">
+        KIAQ applies a transparent, performance-driven assessment model that helps companies hire with confidence. 
+        We rigorously evaluate skills to ensure extraordinary outcomes.
+      </p>
+    </div>
 
-        {/* Main Two-Column Layout */}
-        <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
-          {/* Left Text Content */}
-          <div className="flex-1">
-            <h3 className="text-[22px] leading-[30px] font-semibold text-[#0B0B0C] mb-4">
-              Qualified by Andela creates a foundation for excellence
-            </h3>
-            <p className="text-[#4B5563] text-[15px] leading-[25px] mb-12 max-w-[520px]">
-              It’s the only performance-based assessment that uses more than 500 coding
-              challenges and real-world work simulations to give you deep insight into
-              technical skills.
+    {/* Main Two-Column Layout */}
+    <div className="flex flex-col-reverse lg:flex-row items-center gap-16">
+
+      {/* Left Text Content */}
+      <div className="flex-1">
+        <h3 className="text-[22px] leading-[30px] font-semibold text-[#0B0B0C] mb-4">
+          The KIAQ Qualification Framework sets a higher standard
+        </h3>
+        <p className="text-[#4B5563] text-[15px] leading-[25px] mb-12 max-w-[520px]">
+          Our evaluation process uses real-world challenges and practical simulations to give companies 
+          a clear view of technical capability, problem-solving, and job readiness.
+        </p>
+
+        {/* Divider line and Sub-sections */}
+        <div className="border-t border-[#E5E7EB] pt-8 flex flex-col sm:flex-row gap-10 sm:gap-12">
+
+          {/* Column 1 */}
+          <div className="max-w-[200px]">
+            <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
+              Communication Skills
+            </h4>
+            <p className="text-[13px] text-[#4B5563] leading-[20px]">
+              Every candidate demonstrates strong communication before moving forward.
             </p>
-
-            {/* Divider line and Sub-sections */}
-            <div className="border-t border-[#E5E7EB] pt-8 flex flex-col sm:flex-row gap-10 sm:gap-12">
-              {/* Column 1 */}
-              <div className="max-w-[200px]">
-                <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
-                  English Fluency
-                </h4>
-                <p className="text-[13px] text-[#4B5563] leading-[20px]">
-                  Talent demonstrates their English language skills in the first stage of
-                  the assessment.
-                </p>
-              </div>
-
-              {/* Divider Line (visible on desktop) */}
-              <div className="hidden sm:block border-l border-[#E5E7EB] h-[60px]" />
-
-              {/* Column 2 */}
-              <div className="max-w-[200px]">
-                <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
-                  1:1 Interviews
-                </h4>
-                <p className="text-[13px] text-[#4B5563] leading-[20px]">
-                  Technically experienced interviewers ensure talent can articulate their
-                  problem-solving process.
-                </p>
-              </div>
-
-              {/* Divider */}
-              <div className="hidden sm:block border-l border-[#E5E7EB] h-[60px]" />
-
-              {/* Column 3 */}
-              <div className="max-w-[200px]">
-                <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
-                  Verified Identity
-                </h4>
-                <p className="text-[13px] text-[#4B5563] leading-[20px]">
-                  Everyone in the Andela talent marketplace is thoroughly vetted to ensure
-                  their identity.
-                </p>
-              </div>
-            </div>
           </div>
 
-          {/* Right Image */}
-          <div className="flex-1 flex justify-center lg:justify-end">
-            <img
-              src={img2}
-              alt="Assessment Illustration"
-              className="rounded-[16px] shadow-[0_8px_24px_rgba(0,0,0,0.08)] w-[520px] h-auto object-cover"
-            />
+          {/* Divider Line (visible on desktop) */}
+          <div className="hidden sm:block border-l border-[#E5E7EB] h-[60px]" />
+
+          {/* Column 2 */}
+          <div className="max-w-[200px]">
+            <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
+              Technical Interviews
+            </h4>
+            <p className="text-[13px] text-[#4B5563] leading-[20px]">
+              Experts evaluate real reasoning, coding clarity, and problem-solving approach.
+            </p>
           </div>
+
+          {/* Divider */}
+          <div className="hidden sm:block border-l border-[#E5E7EB] h-[60px]" />
+
+          {/* Column 3 */}
+          <div className="max-w-[200px]">
+            <h4 className="text-[14px] font-semibold text-[#0B0B0C] mb-1">
+              Verified Profiles
+            </h4>
+            <p className="text-[13px] text-[#4B5563] leading-[20px]">
+              Every professional on the KIAQ network is fully verified for authenticity and trust.
+            </p>
+          </div>
+
         </div>
       </div>
-    </section>
+
+      {/* Right Image */}
+      <div className="flex-1 flex justify-center lg:justify-end">
+        <img
+          src={img2}
+          alt="Assessment Illustration"
+          className="rounded-[16px] shadow-[0_8px_24px_rgba(0,0,0,0.08)] w-[520px] h-auto object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
          <section className="relative py-20 overflow-hidden" style={{ backgroundColor: UI_CONSTANTS.DARK }}>
@@ -399,12 +408,7 @@ const TalentSection = () => {
               }`}
             >
               <div className="py-12">
-                {/* Logo */}
-                <img 
-                  src={testimonial.logo} 
-                  alt={testimonial.company}
-                  className="h-10 w-auto mb-12"
-                />
+                
                 
                 {/* Content Grid */}
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -429,14 +433,7 @@ const TalentSection = () => {
                       {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                       
-                      {/* Play Button */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="w-20 h-20 rounded-full bg-white/90 hover:bg-white transition-all flex items-center justify-center group hover:scale-110 duration-300">
-                          <svg className="w-8 h-8 ml-1" style={{ color: UI_CONSTANTS.DARK }} fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                          </svg>
-                        </button>
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
@@ -557,52 +554,57 @@ const TalentSection = () => {
       </div>
     </section>
 
-   <section className="relative bg-[#e8f1ef] py-20 px-6 md:px-12 lg:px-20">
+   <section className="relative bg-[#fff2eb] py-20 px-6 md:px-12 lg:px-20">
 
+  <div className="max-w-7xl mx-auto grid md:grid-cols-[420px_1fr] gap-12 items-start">
 
-<div className="max-w-7xl mx-auto grid md:grid-cols-[420px_1fr] gap-12 items-start">
-{/* LEFT: Title + description (fixed width column) */}
-<div className="pr-2">
-<h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-Cutting edge programs to develop cutting edge skills
-</h2>
-<p className="mt-6 text-gray-700 max-w-[330px] leading-relaxed">
-These are just some of the extensive upskilling and development
-programs available to Andela talent.
-</p>
-</div>
+    {/* LEFT: Title + description */}
+    <div className="pr-2">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Cutting-edge programs that build world-class talent
+      </h2>
 
+      <p className="mt-6 text-gray-700 max-w-[330px] leading-relaxed">
+        A selection of the advanced learning and growth programs designed to
+        elevate KIAQ talent to global standards.
+      </p>
+    </div>
 
-{/* RIGHT: two-column grid of program cards */}
-<div>
-<div className="grid grid-cols-2 gap-y-10 gap-x-8">
-{programs.map((p, i) => {
-const isRightCol = i % 2 === 1; // 1,3,5 are right-column entries
-return (
-<div
-key={p.title}
-className={`flex items-start gap-4 py-2 ${
-isRightCol ? "border-l border-gray-300 pl-6" : "pl-0"
-}`}
->
-<div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-emerald-600 to-emerald-500 flex items-center justify-center shadow-md">
-{p.icon}
-</div>
-<div>
-<h3 className="text-gray-900 font-semibold text-lg leading-snug">
-{p.title}
-</h3>
-<p className="text-gray-700 text-sm leading-relaxed max-w-[420px]">
-{p.description}
-</p>
-</div>
-</div>
-);
-})}
-</div>
-</div>
-</div>
+    {/* RIGHT: Program cards */}
+    <div>
+      <div className="grid grid-cols-2 gap-y-10 gap-x-8">
+        {programs.map((p, i) => {
+          const isRightCol = i % 2 === 1;
+
+          return (
+            <div
+              key={p.title}
+              className={`flex items-start gap-4 py-2 ${
+                isRightCol ? "border-l border-gray-300 pl-6" : "pl-0"
+              }`}
+            >
+              <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-emerald-600 to-emerald-500 flex items-center justify-center shadow-md">
+                {p.icon}
+              </div>
+
+              <div>
+                <h3 className="text-gray-900 font-semibold text-lg leading-snug">
+                  {p.title}
+                </h3>
+
+                <p className="text-gray-700 text-sm leading-relaxed max-w-[420px]">
+                  {p.description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+  </div>
 </section>
+
 
   {/* {fifth section} */}
 

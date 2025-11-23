@@ -303,21 +303,21 @@ export default function Insights() {
       </section>
 
       {/* Ready to get started Section */}
-      <section className="relative bg-[#1a4d4d] py-24 px-4 overflow-hidden">
+      <section className="relative bg-[#fff2eb] py-24 px-4 overflow-hidden">
         {/* Pattern Overlay */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <svg className="absolute w-full h-full opacity-10" viewBox="0 0 1600 400" preserveAspectRatio="none">
-            <circle cx="400" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-            <circle cx="800" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-            <circle cx="1200" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-            <circle cx="200" cy="100" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
-            <circle cx="1400" cy="300" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-300" />
+            <circle cx="400" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-600" />
+            <circle cx="800" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-600" />
+            <circle cx="1200" cy="200" r="250" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-600" />
+            <circle cx="200" cy="100" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-600" />
+            <circle cx="1400" cy="300" r="180" fill="none" stroke="currentColor" strokeWidth="1" className="text-orange-600" />
           </svg>
         </div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
             Ready to get started?
           </h2>
           
