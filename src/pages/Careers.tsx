@@ -114,8 +114,8 @@ export default function CareersHero() {
                 onClick={() => setActiveTab("who")}
                 className={`flex justify-between items-center px-6 py-4 rounded-xl border text-base font-semibold transition-all duration-300 ${
                   activeTab === "who"
-                    ? "bg-[#24D3AE] text-gray-900 border-transparent shadow-sm"
-                    : "border-[#24D3AE]/40 text-gray-800 hover:border-[#24D3AE]"
+                    ? "bg-[#fff2eb] text-gray-900 border-transparent shadow-sm"
+                    : "border-[#fff2eb]/40 text-gray-800 hover:border-[#fff2eb]"
                 }`}
               >
                 Who We Are <ArrowRight className="w-5 h-5" />
@@ -125,8 +125,8 @@ export default function CareersHero() {
                 onClick={() => setActiveTab("why")}
                 className={`flex justify-between items-center px-6 py-4 rounded-xl border text-base font-semibold transition-all duration-300 ${
                   activeTab === "why"
-                    ? "bg-[#24D3AE] text-gray-900 border-transparent shadow-sm"
-                    : "border-[#24D3AE]/40 text-gray-800 hover:border-[#24D3AE]"
+                    ? "bg-[#fff2eb] text-gray-900 border-transparent shadow-sm"
+                    : "border-[#fff2eb]/40 text-gray-800 hover:border-[#fff2eb]"
                 }`}
               >
                 Why Work Here <ArrowRight className="w-5 h-5" />
@@ -136,8 +136,8 @@ export default function CareersHero() {
                 onClick={() => setActiveTab("believe")}
                 className={`flex justify-between items-center px-6 py-4 rounded-xl border text-base font-semibold transition-all duration-300 ${
                   activeTab === "believe"
-                    ? "bg-[#24D3AE] text-gray-900 border-transparent shadow-sm"
-                    : "border-[#24D3AE]/40 text-gray-800 hover:border-[#24D3AE]"
+                    ? "bg-[#fff2eb] text-gray-900 border-transparent shadow-sm"
+                    : "border-[#fff2eb]/40 text-gray-800 hover:border-[#fff2eb]"
                 }`}
               >
                 We Believe in Opportunity For Everyone{" "}

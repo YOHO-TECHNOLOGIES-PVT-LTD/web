@@ -82,7 +82,7 @@ export default function UseCasesCarousel() {
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: UI_CONSTANTS.DARK }}>
-            Success Stories: African Talent Driving Global Innovation
+           Get all of your initiatives back on the table
           </h2>
         </div>
         
@@ -126,10 +126,10 @@ export default function UseCasesCarousel() {
           100% { transform: translateX(0); }
         }
         .animate-scroll-left {
-          animation: scroll-left 40s linear infinite;
+          animation: scroll-left 20s linear infinite;
         }
         .animate-scroll-right {
-          animation: scroll-right 40s linear infinite;
+          animation: scroll-right 20s linear infinite;
         }
         .animate-scroll-left:hover,
         .animate-scroll-right:hover {

@@ -225,11 +225,11 @@ export default function ResourceCenter() {
           type="email"
           id="email"
           placeholder="Enter your email"
-          className="w-full px-4 py-3 rounded-md bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#24d3ae]"
+          className="w-full px-4 py-3 rounded-md bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#fff2eb]"
         />
         <button
           type="submit"
-          className="bg-[#24d3ae] text-gray-900 font-semibold px-6 py-2.5 rounded-md hover:bg-[#1fc8a4] transition-all duration-300 w-[120px]"
+          className="bg-[#fff2eb] text-gray-900 font-semibold px-6 py-2.5 rounded-md hover:bg-[#1fc8a4] transition-all duration-300 w-[120px]"
         >
           Submit
         </button>

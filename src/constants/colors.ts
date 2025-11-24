@@ -1,5 +1,5 @@
 export const UI_CONSTANTS = {
-  PRIMARY: '#ff4600',
+  PRIMARY: '#0fddcc',
   DARK: '#011123',
   WHITE: '#ffffff',
   orange: '#ff4600',

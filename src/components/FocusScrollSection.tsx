@@ -7,7 +7,8 @@ const UI_CONSTANTS = {
   GRAY: '#64748b'
 };
 
-import imgfocus from '../assets/HOME/Gemini_Generated_Image_x9vr37x9vr37x9vr.png';
+// import imgfocus from '../assets/HOME/Gemini_Generated_Image_x9vr37x9vr37x9vr.png';
+import imgfocus from "../assets/660dcc7f45ad8881324199b5_665edf960bfc2a8fb317836a_Make_work_happen_fast-transcode.webm";
 
 export default function FocusScrollSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -102,10 +103,16 @@ export default function FocusScrollSection() {
           {/* Right Fixed Image Column */}
           <div className="hidden lg:block lg:w-1/2">
             <div className="sticky top-16 sm:top-24 lg:top-32 h-[400px] sm:h-[500px] lg:h-[600px] flex items-center justify-center">
-              <img 
+              {/* <img 
                 src={imgfocus}
                 alt="Global Tech Talent Connection"
                 className="max-w-full max-h-full object-contain"
+              /> */}
+              <video 
+                src={imgfocus}
+                // alt="Global Tech Talent Connection"
+                className="max-w-full max-h-full object-contain loop autoplay muted"
+                
               />
             </div>
           </div>

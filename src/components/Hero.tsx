@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="section_image-hero">
       <div className="z-index-20">
-        <div className="padding-global" style={{paddingLeft: 0, paddingRight: 0}}>
+        <div className="padding-global mt-20" style={{paddingLeft: 0, paddingRight: 0}}>
           <div className="spacer-small sm:spacer-medium"></div>
           <div className="spacer-large sm:spacer-huge"></div>
           <div className="spacer-medium sm:spacer-xlarge"></div>
@@ -33,7 +33,7 @@ export default function Hero() {
               <div>
                 <div className="spacer-large"></div>
                 <div className={`flex flex-col sm:flex-row gap-4 ${isLoaded ? 'animate-in delay-600' : ''}`}>
-                  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-orange-500 text-white rounded-lg font-semibold text-center hover:bg-orange-600 transition-colors">Build Your Team Faster</a>
+                  <a href="/contact" className="px-6 py-3 sm:px-8 sm:py-4 bg-teal-500 text-white rounded-lg font-semibold text-center hover:bg-teal-600 transition-colors">Build Your Team Faster</a>
                   <a href="/about" className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white text-white rounded-lg font-semibold text-center hover:bg-white hover:text-gray-900 transition-colors">Explore KIAQ</a>
                 </div>
               </div>
