@@ -12,6 +12,11 @@
     const location = useLocation();
     const headerRef = useRef<HTMLElement>(null);
 
+    // Scroll to top when route changes
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [location.pathname]);
+
     const getActiveMenu = (path: string) => {
       if (path.startsWith('/why-kiaq') || path.startsWith('/customer-stories') || path.startsWith('/insights') || path.startsWith('/talent-community') || path.startsWith('/untapped-markets') || path.startsWith('/mission-focused') || path.startsWith('/forrester-tei') || path.startsWith('/impact')) return 'why-kiaq';
       if (path.startsWith('/startup-scaling') || path.startsWith('/enterprise-projects') || path.startsWith('/digital-transformation') || path.startsWith('/use-cases') || path.startsWith('/custom-software-development') || path.startsWith('/legacy-system-modernization') || path.startsWith('/web-app-development') || path.startsWith('/genai-engagement') || path.startsWith('/cloud-migrations')) return 'use-cases';
