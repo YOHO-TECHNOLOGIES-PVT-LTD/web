@@ -65,6 +65,9 @@ import Perks from './pages/perks'
 import Codewars from './pages/codewars'
 import Helpcenter from './pages/help-center'
 import Leadership from './pages/leadership'
+import Sustainbility from './pages/sustainability'
+import PressMedia from './pages/press-media'
+import ContactUs from './pages/Contact-us'
 
 function App() {
   return (
@@ -136,6 +139,9 @@ function App() {
           <Route path="/codewars" element={<Codewars />} />
           <Route path="/help-center" element={<Helpcenter />} />
           <Route path="/leadership" element={<Leadership />} />
+          <Route path="/sustainability" element={<Sustainbility />} />
+          <Route path="/press-media" element={<PressMedia />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </div>
