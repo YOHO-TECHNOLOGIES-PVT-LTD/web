@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/whykiaq/66622659f3617ef0668c5907_Our Talent Community_Header-p-2000.webp";
+import img1 from "../assets/whykiaq/6642292b820a2f4d0b2789b0_GettyImages-1435220822_EXT 1.avif";
 import img2 from "../assets/talent/case8.webp" ;
 import img3 from "../assets/whykiaq/6641e09ebdb58bed56d6f12d_our-talent.avif" ;
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';

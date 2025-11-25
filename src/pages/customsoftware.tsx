@@ -1,5 +1,5 @@
 import React from "react";
-import webimg from "../assets/6658c8c8c926b11f314850ce_web app development.avif";
+import webimg from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/66592e243ff567c6d20bf458_shutterstock_1903260658.avif";
 import webimg3 from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";

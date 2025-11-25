@@ -1,7 +1,7 @@
 
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useState, useRef } from 'react';
-import webimg from "../assets/solutions/665f0e6451687baa423524d5_application_engineering_banner_2x-p-2000.webp";
+import webimg from "../assets/solutions/Data engineering and analytics hero.avif";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/66592e243ff567c6d20bf458_shutterstock_1903260658.avif";
 import webimg3 from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";

@@ -68,6 +68,7 @@ import Leadership from './pages/leadership'
 import Sustainbility from './pages/sustainability'
 import PressMedia from './pages/press-media'
 import ContactUs from './pages/Contact-us'
+import LegacySystems from './pages/legacy-system-modernization'
 
 function App() {
   return (
@@ -142,6 +143,7 @@ function App() {
           <Route path="/sustainability" element={<Sustainbility />} />
           <Route path="/press-media" element={<PressMedia />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/legacy-system-modernization" element={<LegacySystems />} />
         </Routes>
         <Footer />
       </div>

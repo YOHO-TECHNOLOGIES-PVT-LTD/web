@@ -278,14 +278,14 @@ useEffect(() => {
                         >
                           › Insights
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/impact"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Impact
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -371,38 +371,17 @@ useEffect(() => {
                     <div className="grid grid-cols-2 gap-x-16 gap-y-1 w-full">
                       {/* Left Column */}
                       <div className="space-y-1">
-                        <Link
-                          to="/adaptive-hiring"
-                          onClick={closeDropdown}
-                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
-                          style={{ color: "#2d4a4a" }}
-                        >
-                          › Adaptive Hiring
-                        </Link>
-                        <Link
+                        
+                        {/* <Link
                           to="/dedicated-teams"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Dedicated Teams
-                        </Link>
-                        <Link
-                          to="/staff-augmentation"
-                          onClick={closeDropdown}
-                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
-                          style={{ color: "#2d4a4a" }}
-                        >
-                          › Staff Augmentation
-                        </Link>
-                        <Link
-                          to="/project-based"
-                          onClick={closeDropdown}
-                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
-                          style={{ color: "#2d4a4a" }}
-                        >
-                          › Project Based
-                        </Link>
+                        </Link> */}
+                      
+                        
                         <Link
                           to="/application-development"
                           onClick={closeDropdown}
@@ -411,10 +390,6 @@ useEffect(() => {
                         >
                           › Application Development
                         </Link>
-                      </div>
-
-                      {/* Right Column */}
-                      <div className="space-y-1">
                         <Link
                           to="/data-science-ai"
                           onClick={closeDropdown}
@@ -439,6 +414,35 @@ useEffect(() => {
                         >
                           › Cloud & DevOps
                         </Link>
+                      </div>
+
+                      {/* Right Column */}
+                      <div className="space-y-1">
+                        <Link
+                          to="/adaptive-hiring"
+                          onClick={closeDropdown}
+                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
+                          style={{ color: "#2d4a4a" }}
+                        >
+                          › Adaptive Hiring
+                        </Link>
+                        
+                          <Link
+                          to="/staff-augmentation"
+                          onClick={closeDropdown}
+                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
+                          style={{ color: "#2d4a4a" }}
+                        >
+                          › Staff Augmentation
+                        </Link>
+                        <Link
+                          to="/project-based"
+                          onClick={closeDropdown}
+                          className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
+                          style={{ color: "#2d4a4a" }}
+                        >
+                          › Project Based
+                        </Link>
                         <Link
                           to="/platform-overview"
                           onClick={closeDropdown}
@@ -447,14 +451,14 @@ useEffect(() => {
                         >
                           › Platform Overview
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/integrations"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Integrations
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -745,14 +749,14 @@ useEffect(() => {
                         >
                           › Case Studies
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/customer-stories"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Customer Stories
-                        </Link>
+                        </Link> */}
                         <Link
                           to="/videos"
                           onClick={closeDropdown}
@@ -898,14 +902,14 @@ useEffect(() => {
 
                       {/* Right Column */}
                       <div className="space-y-1">
-                        <Link
+                        {/* <Link
                           to="/codewars"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Codewars
-                        </Link>
+                        </Link> */}
                         <Link
                           to="/help-center"
                           onClick={closeDropdown}
@@ -1039,14 +1043,14 @@ useEffect(() => {
                         >
                           › Careers
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/press-media"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Press & Media
-                        </Link>
+                        </Link> */}
                       </div>
 
                       {/* Right Column */}
@@ -1059,14 +1063,14 @@ useEffect(() => {
                         >
                           › Contact Us
                         </Link>
-                        <Link
+                        {/* <Link
                           to="/mission"
                           onClick={closeDropdown}
                           className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                           style={{ color: "#2d4a4a" }}
                         >
                           › Our Mission
-                        </Link>
+                        </Link> */}
                         <Link
                           to="/team"
                           onClick={closeDropdown}

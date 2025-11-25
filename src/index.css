@@ -384,3 +384,41 @@ body {
   overflow-x: hidden;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-parallax_image.is-mission-focused {
+  background-image: url('https://cdn.prod.website-files.com/660dcc7f45ad8881324199b5/6659b59efe965967219eb704_Brilliance%20is%20evenly%20distributed.avif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom hover effects */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --sprite-url: url('https://storage.googleapis.com/...svg');
+}

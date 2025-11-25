@@ -1,57 +1,54 @@
-import { UI_CONSTANTS } from "../constants/colors";
+// import React from "react";
+import logo from "../assets/kIAQ_.png";
+import bgImg from "../assets/talent/andela_login_bg.png";
 
 export default function FindOpportunities() {
-    return (
-        <div 
-            className="min-h-screen pt-20 px-6"
-            style={{ backgroundColor: UI_CONSTANTS.WHITE, fontFamily: UI_CONSTANTS.FONT_FAMILY }}
-        >
-            <div className="max-w-5xl mx-auto py-16">
+  return (
+    <div className="min-h-screen w-full flex items-center justify-between bg-[#0F2F32] p-6 relative overflow-hidden">
+      {/* Left Decorative Image */}
+      <img
+        src={bgImg}
+        alt="Decorative"
+        className="absolute left-10 top-1/2 -translate-y-1/2 w-[50%] object-contain opacity-90 pointer-events-none"
+      />
 
-                <h1 
-                    className="text-5xl font-bold mb-6"
-                    style={{ color: UI_CONSTANTS.DARK }}
-                >
-                    Find Opportunities
-                </h1>
-
-                <p 
-                    className="text-xl mb-10"
-                    style={{ color: '#6b7280' }}
-                >
-                    Explore various opportunities available to you. Stay tuned for updates!
-                </p>
-
-                <div 
-                    className="p-10 rounded-2xl shadow-md"
-                    style={{ backgroundColor: "#f9fafb" }}
-                >
-                    <h2 
-                        className="text-2xl font-semibold mb-4"
-                        style={{ color: UI_CONSTANTS.DARK }}
-                    >
-                        Coming Soon
-                    </h2>
-
-                    <p 
-                        className="text-lg"
-                        style={{ color: '#6b7280' }}
-                    >
-                        We are working on bringing you the best opportunities. Check back soon for updates!
-                    </p>
-
-                    <button
-                        className="mt-8 py-3 px-8 rounded-xl font-semibold transition-all"
-                        style={{
-                            backgroundColor: UI_CONSTANTS.PRIMARY,
-                            color: UI_CONSTANTS.WHITE,
-                            fontFamily: UI_CONSTANTS.FONT_FAMILY
-                        }}
-                    >
-                        Notify Me
-                    </button>
-                </div>
-            </div>
+      {/* Login Card */}
+      <div className="relative z-10 w-full max-w-md bg-white rounded-2xl shadow-xl p-10 ml-auto mr-12">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <img src={logo} alt="Logo" className="h-12 object-contain" />
         </div>
-    );
+
+        <h2 className="text-2xl font-semibold text-center mb-6">Log in to Andela</h2>
+
+        {/* Input */}
+        <label className="text-sm font-medium">Email Address</label>
+        <input
+          type="email"
+          placeholder="e.g example@email.com"
+          className="w-full border rounded-lg px-4 py-3 mt-2 mb-6 focus:outline-none focus:ring-2 focus:ring-green-600"
+        />
+
+        {/* Login Button */}
+        <button className="w-full bg-green-700 text-white py-3 rounded-lg text-lg font-medium hover:bg-green-800 transition-all">
+          Log in
+        </button>
+
+        {/* Sign up */}
+        <p className="text-center text-sm mt-6">
+          Don’t have an account? <span className="text-green-700 cursor-pointer">Sign up</span>
+        </p>
+
+        {/* Help center */}
+        <p className="text-center text-sm mt-2">
+          Need help? Check our <span className="text-green-700 cursor-pointer">Help center</span>
+        </p>
+      </div>
+
+      {/* Footer link */}
+      <p className="absolute bottom-6 text-white text-sm right-10">
+        Are you a client? <span className="underline cursor-pointer">Log in here</span>
+      </p>
+    </div>
+  );
 }
