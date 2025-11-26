@@ -9,17 +9,17 @@ const UI_CONSTANTS = {
 export default function UseCasesCarousel() {
   const useCases = [
     {
-      title: "Scaling DevOps Operations with Nigerian Engineers",
-      description: "KIAQ connected TechFlow with senior DevOps engineers from Lagos who implemented CI/CD pipelines and automated infrastructure management, reducing deployment time by 75% and improving system reliability.",
-      category: "DevOps Engineering",
+      title: "AI-Powered Virtual Assistants for Seamless Customer Experiences",
+      description: "AI-driven virtual assistants built to simplify, automate, and enhance customer engagement.",
+      category: "Chatbot & Automation",
       bgColor: "#2C4A4D",
       patternColor: "#3D5F63",
       patternOpacity: "0.6"
     },
     {
-      title: "Building ML Models with Kenyan Data Scientists", 
-      description: "A fintech startup partnered with KIAQ to find data scientists from Nairobi who developed predictive models for fraud detection, reducing false positives by 60% and saving millions in potential losses.",
-      category: "Data Science",
+      title: "Custom Software Built for Real-World Performance", 
+      description: "Custom-built software, from ideation to deployment, engineered for real-world performance.",
+      category: "Software Development",
       bgColor: "#D5E8EC",
       patternColor: "#BDD9DE",
       patternOpacity: "0.5"
@@ -33,25 +33,25 @@ export default function UseCasesCarousel() {
       patternOpacity: "0.5"
     },
     {
-      title: "Cloud Migration Success with Ghanaian DevOps Team",
-      description: "A retail company worked with KIAQ to connect with DevOps engineers from Accra who successfully migrated their entire infrastructure to AWS, reducing costs by 45% while improving performance.",
-      category: "Cloud Engineering", 
+      title: "Transforming Data Into Intelligent Decisions.",
+      description: "Leveraging AI, we empower businesses with intelligent decision-making and forecasting abilities.",
+      category: "Artificial Intelligence", 
       bgColor: "#F5F1E8",
       patternColor: "#E3DCC9",
       patternOpacity: "0.5"
     },
     {
-      title: "Data Pipeline Optimization with Ethiopian Engineers",
-      description: "Through KIAQ, a media company found data engineers from Addis Ababa who built scalable data pipelines processing 10TB daily, enabling real-time analytics and business intelligence.",
-      category: "Data Engineering",
+      title: "Scalable, Secure & Cost-Efficient Cloud Infrastructure",
+      description: "Harness the power of scalable, secure, and budget-friendly cloud solutions tailored to drive business innovation.",
+      category: "Cloud Solutions",
       bgColor: "#F5F1E8",
       patternColor: "#E3DCC9",
       patternOpacity: "0.5"
     },
     {
-      title: "Kubernetes Expertise from Moroccan DevOps Engineers",
-      description: "KIAQ connected an e-commerce platform with Kubernetes specialists from Casablanca who containerized their applications, improving scalability and reducing infrastructure costs by 35%.",
-      category: "Container Orchestration",
+      title: "Strategic Technology Guidance for Sustainable Growth",
+      description: "Delivering expert tech insights and strategic IT consulting to align your systems with business goals.",
+      category: "IT Consulting",
       bgColor: "#C8E4D4",
       patternColor: "#B0D6BE",
       patternOpacity: "0.5"
@@ -65,9 +65,9 @@ export default function UseCasesCarousel() {
       patternOpacity: "0.5"
     },
     {
-      title: "AI-Powered Automation with Ugandan Specialists",
-      description: "Through KIAQ, a manufacturing company connected with AI specialists from Kampala who implemented intelligent automation systems, increasing production efficiency by 50%.",
-      category: "AI Automation",
+      title: "Advanced Protection for Your Digital Infrastructure",
+      description: "Our advanced cybersecurity solutions safeguard your digital assets with cutting-edge tools and proactive defense strategies.",
+      category: "Cybersecurity",
       bgColor: "#E5E5E5",
       patternColor: "#CFCFCF",
       patternOpacity: "0.5"
@@ -78,18 +78,18 @@ export default function UseCasesCarousel() {
   const bottomRowUseCases = useCases.slice(4);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
       <div className="max-w-[1400px] mx-auto">
-        <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: UI_CONSTANTS.DARK }}>
-           Get all of your initiatives back on the table
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
+           Driven by Our IT Excellence, Powered by Your Success
           </h2>
         </div>
         
-        <div className="space-y-4 sm:space-y-6 overflow-hidden">
+        <div className="space-y-3 sm:space-y-4 md:space-y-6 overflow-hidden">
           {/* Top row - scrolls left */}
           <div className="relative">
-            <div className="flex animate-scroll-left hover:pause-animation gap-6">
+            <div className="flex animate-scroll-left hover:pause-animation gap-3 sm:gap-4 md:gap-6">
               {[...topRowUseCases, ...topRowUseCases, ...topRowUseCases].map((useCase, index) => (
                 <UseCaseCard key={index} useCase={useCase} index={index} />
               ))}
@@ -98,7 +98,7 @@ export default function UseCasesCarousel() {
 
           {/* Bottom row - scrolls right */}
           <div className="relative">
-            <div className="flex animate-scroll-right hover:pause-animation gap-6">
+            <div className="flex animate-scroll-right hover:pause-animation gap-3 sm:gap-4 md:gap-6">
               {[...bottomRowUseCases, ...bottomRowUseCases, ...bottomRowUseCases].map((useCase, index) => (
                 <UseCaseCard key={index} useCase={useCase} index={index + 100} />
               ))}
@@ -106,12 +106,13 @@ export default function UseCasesCarousel() {
           </div>
         </div>
         
-        <div className="text-center mt-12 sm:mt-16">
+        <div className="text-center mt-8 sm:mt-12 md:mt-16 px-4">
           <button 
             style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-            className="px-8 py-3 sm:px-10 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition-opacity"
+            className="px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-sm sm:max-w-none"
           >
-            Explore More Success Stories
+            <span className="hidden sm:inline">Explore More Success Stories</span>
+            <span className="sm:hidden">Explore Success Stories</span>
           </button>
         </div>
       </div>
@@ -134,6 +135,14 @@ export default function UseCasesCarousel() {
         .animate-scroll-left:hover,
         .animate-scroll-right:hover {
           animation-play-state: paused;
+        }
+        @media (max-width: 640px) {
+          .animate-scroll-left {
+            animation: scroll-left 30s linear infinite;
+          }
+          .animate-scroll-right {
+            animation: scroll-right 30s linear infinite;
+          }
         }
       `}</style>
     </section>
@@ -164,14 +173,14 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   };
 
   return (
-    <div className="flex-shrink-0 w-[300px] sm:w-[380px] lg:w-[450px] h-[280px] sm:h-[300px] lg:h-[320px] group cursor-pointer" onClick={handleClick}>
+    <div className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[260px] sm:h-[280px] md:h-[300px] lg:h-[320px] group cursor-pointer" onClick={handleClick}>
       <div 
-        className="p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
+        className="p-5 sm:p-6 md:p-8 lg:p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
         style={{ backgroundColor: useCase.bgColor }}
       >
         {/* Hover background overlay */}
         <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl sm:rounded-2xl lg:rounded-3xl"
           style={{ backgroundColor: '#011123' }}
         />
         {/* Pattern SVG - always visible, becomes hidden on hover */}
@@ -200,11 +209,11 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
 
         {/* Content overlay on hover - shows ALL content */}
         <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 sm:p-8 lg:p-10"
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col"
         >
-          <div className="flex items-center mb-4 sm:mb-6">
-            <div className="mr-3">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
+          <div className="flex items-center mb-3 sm:mb-4 md:mb-6 flex-shrink-0">
+            <div className="mr-2 sm:mr-3">
+              <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="w-3 h-3 sm:w-3.5 sm:h-3.5">
                 <path d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z" fill="#FFFFFF"/>
               </svg>
             </div>
@@ -213,20 +222,20 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
             </div>
           </div>
           
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight mb-3 sm:mb-4" style={{ color: '#FFFFFF' }}>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4 flex-shrink-0" style={{ color: '#FFFFFF' }}>
             {useCase.title}
           </h3>
           
-          <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#FFFFFF', opacity: 0.95 }}>
+          <p className="text-xs sm:text-sm md:text-base leading-relaxed overflow-hidden" style={{ color: '#FFFFFF', opacity: 0.95 }}>
             {useCase.description}
           </p>
         </div>
 
         {/* Default Content - hides on hover */}
         <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-500">
-          <div className="flex items-center mb-4 sm:mb-6">
-            <div className="mr-3">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
+          <div className="flex items-center mb-3 sm:mb-4 md:mb-6">
+            <div className="mr-2 sm:mr-3">
+              <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="w-3 h-3 sm:w-3.5 sm:h-3.5">
                 <path d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z" fill={textColor}/>
               </svg>
             </div>
@@ -235,7 +244,7 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
             </div>
           </div>
           
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight" style={{ color: textColor }}>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight" style={{ color: textColor }}>
             {useCase.title}
           </h3>
         </div>

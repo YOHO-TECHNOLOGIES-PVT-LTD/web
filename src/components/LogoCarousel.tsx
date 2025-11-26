@@ -25,7 +25,7 @@ const WalmartTechSection = () => {
   //     image: oneimg
   //   },
   //   {
-  //     title: "Inside KIAQ’s Global Talent Network",
+  //     title: "Inside KIAQ's Global Talent Network",
   //     date: 'Sept 15, 2025',
   //     description: "Discover how global companies are leveraging emerging market engineering talent to accelerate innovation and scale efficiently.",
   //     bgColor: '#7BA7D4',
@@ -72,42 +72,61 @@ const WalmartTechSection = () => {
       <section style={{ 
         backgroundColor: UI_CONSTANTS.WHITE,
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-      }} className="py-12 sm:py-14 lg:py-16">
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="px-4 sm:px-8 lg:px-16">
-          <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
+      }} className="py-8 sm:py-12 md:py-14 lg:py-16">
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }} className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
             
             {/* LEFT SIDE - TEXT */}
-            <div className="w-full sm:flex-shrink-0 sm:w-72 text-center sm:text-left">
-              <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold leading-snug" style={{ 
+            <div className="w-full sm:flex-shrink-0 sm:w-72 md:w-80 lg:w-96 text-center sm:text-left">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold leading-snug" style={{ 
                 color: '#6B7280',
-                letterSpacing: '-0.3px'
+                letterSpacing: '-0.3px',
+                lineHeight: '1.4'
               }}>
-                Tech leaders trust <span style={{ fontWeight: '700', color: '#374151' }}>KIAQ</span> to quickly<br />
-                source qualified talent
+                Tech leaders trust <span style={{ fontWeight: '700', color: '#374151' }}>KIAQ</span> to quickly
+                <br className="hidden sm:block" />
+                <span className="sm:inline"> source qualified talent</span>
               </h2>
             </div>
 
             {/* RIGHT SIDE - LOGO CAROUSEL */}
-            <div className="w-full sm:flex-1 relative overflow-hidden flex items-center">
+            <div className="w-full sm:flex-1 relative overflow-hidden flex items-center" style={{ minHeight: '56px' }}>
               {/* Left Gradient */}
               <div style={{
                 position: 'absolute',
                 left: 0,
                 top: 0,
-                width: '64px',
+                width: '48px',
                 height: '100%',
                 background: 'linear-gradient(to right, white, transparent)',
                 zIndex: 10
-              }}></div>
+              }} className="sm:w-16"></div>
 
               {/* Scrolling Logos */}
-              <div className="flex animate-scroll">
+              <div className="flex animate-scroll" style={{ 
+                display: 'flex',
+                alignItems: 'center',
+                willChange: 'transform'
+              }}>
                 {[...logos, ...logos].map((logo, index) => (
-                  <div key={index} className="flex-shrink-0 mx-6 sm:mx-8 flex items-center justify-center">
+                  <div 
+                    key={index} 
+                    className="flex-shrink-0 flex items-center justify-center"
+                    style={{
+                      marginLeft: '2rem',
+                      marginRight: '2rem',
+                      minWidth: '100px'
+                    }}
+                  >
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-5 sm:h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                      className="w-auto opacity-70 hover:opacity-100 transition-opacity"
+                      style={{
+                        height: '28px',
+                        maxWidth: '120px',
+                        objectFit: 'contain'
+                      }}
                       onMouseOver={(e) => e.currentTarget.style.opacity = '1'}
                       onMouseOut={(e) => e.currentTarget.style.opacity = '0.7'}
                     />
@@ -120,11 +139,11 @@ const WalmartTechSection = () => {
                 position: 'absolute',
                 right: 0,
                 top: 0,
-                width: '64px',
+                width: '48px',
                 height: '100%',
                 background: 'linear-gradient(to left, white, transparent)',
                 zIndex: 10
-              }}></div>
+              }} className="sm:w-16"></div>
             </div>
           </div>
         </div>
@@ -135,7 +154,24 @@ const WalmartTechSection = () => {
             100% { transform: translateX(-50%); }
           }
           .animate-scroll {
-            animation: scroll 9s linear infinite;
+            animation: scroll 20s linear infinite;
+          }
+
+          @media (min-width: 640px) {
+            .animate-scroll {
+              animation: scroll 15s linear infinite;
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .animate-scroll {
+              animation: scroll 12s linear infinite;
+            }
+          }
+
+          /* Pause animation on hover */
+          .animate-scroll:hover {
+            animation-play-state: paused;
           }
         `}</style>
       </section>

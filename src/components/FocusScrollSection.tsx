@@ -16,26 +16,25 @@ export default function FocusScrollSection() {
   
   const features = [
     {
-  title: "Connect with top global tech talent.",
-  description: "Access a curated network of skilled engineers across DevOps, Data, and AI—vetted and ready to accelerate your projects."
-},
-{
-  title: "Build without borders.",
-  description: "KIAQ brings world-class engineering talent to global teams, enabling seamless collaboration and scalable results."
-},
-{
-  title: "Expertise that grows with you.",
-  description: "From DevOps to AI, our specialists deliver high-quality solutions tailored to your evolving business needs."
-},
-{
-  title: "Global collaboration made simple.",
-  description: "Work smoothly across time zones with professionals experienced in remote-first execution and delivery."
-},
-{
-  title: "Innovation through global talent.",
-  description: "Tap into diverse engineering expertise that brings fresh ideas and drives continuous innovation."
-}
-
+      title: "Advanced AI-Powered Systems Designed to Transform Customer Interaction",
+      description: "Our advanced AI-driven chatbots and automation tools are designed to simplify operations, automate routine workflows, and enhance customer engagement."
+    },
+    {
+      title: "Custom Software Built for Real-World Performance",
+      description: "We design, develop, and deploy tailored software solutions that solve real business challenges. Whether it’s a web app, mobile app, or enterprise platform, our development process ensures reliability, scalability, and seamless performance."
+    },
+    {
+      title: "Transforming Data Into Intelligent Decisions",
+      description: "Leveraging the power of AI, we help businesses unlock smarter decision-making, automate complex processes, and predict future trends with precision."
+    },
+    {
+      title: "Scalable, Secure & Cost-Efficient Cloud Infrastructure.",
+      description: "We design and manage cloud environments that support business innovation, ensure seamless scalability, and reduce operational costs."
+    },
+    {
+      title: "Strategic Technology Guidance for Sustainable Growth.",
+      description: "From system optimization to long-term digital strategy, we help you make informed technology decisions that maximize efficiency and future-proof your operations."
+    }
   ];
 
   useEffect(() => {
@@ -67,6 +66,20 @@ export default function FocusScrollSection() {
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row lg:gap-16">
+          {/* Mobile/Tablet Video - Shows First on Mobile */}
+          <div className="lg:hidden w-full mb-8 sm:mb-12">
+            <div className="w-full max-w-md mx-auto">
+              <video 
+                src={imgfocus}
+                className="w-full h-auto object-contain rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
+          </div>
+
           {/* Left Content Column - Scrollable */}
           <div className="w-full lg:w-1/2">
             {features.map((feature, index) => (
@@ -100,19 +113,16 @@ export default function FocusScrollSection() {
             ))}
           </div>
           
-          {/* Right Fixed Image Column */}
+          {/* Right Fixed Image Column - Desktop Only */}
           <div className="hidden lg:block lg:w-1/2">
             <div className="sticky top-16 sm:top-24 lg:top-32 h-[400px] sm:h-[500px] lg:h-[600px] flex items-center justify-center">
-              {/* <img 
-                src={imgfocus}
-                alt="Global Tech Talent Connection"
-                className="max-w-full max-h-full object-contain"
-              /> */}
               <video 
                 src={imgfocus}
-                // alt="Global Tech Talent Connection"
-                className="max-w-full max-h-full object-contain loop autoplay muted"
-                
+                className="max-w-full max-h-full object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
           </div>

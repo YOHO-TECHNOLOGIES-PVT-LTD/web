@@ -1,658 +1,636 @@
-import { useState, useRef } from "react";
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import webimg from "../assets/solutions/665f0e6451687baa423524d5_application_engineering_banner_2x-p-2000.webp";
-import { UI_CONSTANTS } from "../constants/colors";
-import webimg2 from "../assets/66592e243ff567c6d20bf458_shutterstock_1903260658.avif";
-import webimg3 from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";
-import webimg4 from "../assets/6659318549edab4cae8985df_v617-bb-18-technology 1.webp";
-
-import webimg8 from "../assets/usecase/6626c1bf2f6333755ec893d1_Layer_1 (2).svg";
-import webimg9 from "../assets/usecase/6626c1bf2f6333755ec893f5_Coursera-Logo_600x600 (1).svg";
-import webimg10 from "../assets/usecase/6626c1bf2f6333755ec893fa_ViacomCBS (2).svg";
-import webimg11 from "../assets/usecase/6626c1c02f6333755ec89435_Casper_Sleep_logo (2).svg";
-import webimg12 from "../assets/usecase/6626c1c02f6333755ec89474_Cloudflare_Logo (2).svg";
-import webimg13 from "../assets/usecase/66347e6ccfb7ada3bdf3ce34_Vector (3).svg";
-import webimg14 from "../assets/usecase/665e67458fbe05d52c24cf21_groupm-logo.svg";
-// import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
+import { useState, useEffect, useRef } from "react";
+import img1 from "../assets/solutions/cn-001.svg";
+import img2 from "../assets/solutions/cn-002.svg";
+import img3 from "../assets/solutions/cn-003.svg";
+import img4 from "../assets/solutions/cn-004.svg";
+import img5 from "../assets/solutions/icn-005.svg";
+import img6 from "../assets/solutions/cn-006.svg";
+import img7 from "../assets/solutions/Cloud and DevOps.avif";
+import imgfocus from "../assets/solutions/adaptive-4.webp";
+import img8 from "../assets/solutions/head-h.svg";
+import img9 from "../assets/solutions/hire-h.svg";
+import img10 from "../assets/solutions/icn-005.svg";
+import img11 from "../assets/solutions/succ-h.svg";
+import img12 from "../assets/solutions/Quality, Global Talent@2x.webp";
+import img13 from "../assets/solutions/Rapid Scalability@2x.webp";
+import img14 from "../assets/solutions/_Cost Optimization@2x.webp";
+import img15 from "../assets/solutions/Agile Deployment@2x.webp";
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
 import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
 import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
-import sol13 from '../assets/solutions/66551e33b51a48a01a04b49e_TWC _ 370 x 442.avif';
-import sol14 from '../assets/solutions/66551e5ea419e51fd8602370_Mindshare.avif';
-import sol15 from '../assets/solutions/66551df754960be0f32df34b_Frame 1073714194.avif';
-import sol16 from '../assets/solutions/6655d8d4de6e142a88be6431_Nebula _ 370 x 446.avif';
-import sol17 from '../assets/solutions/6657c42407afdd44de5fd97b_github logo.webp';
-import sol18 from '../assets/solutions/6657c45988183db22b904624_TWC logo.webp';
-import sol19 from '../assets/solutions/6657c49b629db5fe891a5454_mindshare logo.webp';
-import sol20 from '../assets/solutions/6657c518ad72fe6656c7b9d6_nebula logo (1).webp';
-import sol21 from '../assets/solutions/66343fa7e9d0576bd06f8b42_master-card-img.webp';
-export default function WebAppDevelopmentHero() {
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
+import { Check, X } from "lucide-react";
 
-  const testimonials = [
-    {
-      title: "GitHub quickly activates scalable global teams to improve their customer experience",
-      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Kiaqto get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
-      name: "Mark Schaefer",
-      role: "Sr. Director, Worldwide Partnerships, GitHub",
-      image: sol15,
-      logo: sol17
-    },
-    {
-      title: "The Weather Company diversifies skill sets",
-      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Kiaqjust continues to amaze me and does a phenomenal job.",
-      name: "Wendy Frazier",
-      role: "CTO, The Weather Company",
-      image: sol13,
-      logo: sol18
-    },
-    {
-      title: "Mindshare scales data teams to serve the world's largest advertisers",
-      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Kiaqde-risks global hiring, so businesses can grow and be competitive.",
-      name: "Ikechi Okoronkwo",
-      role: "EVP, Analytics & Data Science",
-      image: sol14,
-      logo: sol19
-    },
-    {
-      title: "Nebula scales its engineering team to meet goals faster",
-      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Kiaqmeet every single sprint milestone - they have a spotless execution track record.",
-      name: "Ed Donner",
-      role: "Cofounder and CTO, Nebula",
-      image: sol16,
-      logo: sol20
-    }
-  ];
+const tabs = [
+  {
+    label: "Quality Global Talent",
+    icon: img8,
+    image: img12,
+    title: "Quality, global talent",
+    desc: "Unlock a vast pool of untapped global talent, with 60% from emerging tech hubs in Africa and LATAM. Our borderless marketplace spans 135 countries, connecting you with the right skills to drive innovation, regardless of location.",
+  },
+  {
+    label: "Cost Optimization",
+    icon: img9,
+    image: img14,
+    title: "Cost Optimization",
+    desc: "Reduce hiring and operational costs with globally distributed teams while keeping top-tier engineering quality.",
+  },
+  {
+    label: "Agile Deployment",
+    icon: img10,
+    image: img15,
+    title: "Agile Deployment",
+    desc: "Deploy vetted engineering talent in days, not weeks. Scale your team dynamically with business needs.",
+  },
+  {
+    label: "Rapid Scalability",
+    icon: img11,
+    image: img13,
+    title: "Rapid Scalability",
+    desc: "Expand engineering capacity instantly with access to diverse global talent across multiple time zones.",
+  },
+];
 
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 720;
-      const newScrollLeft = direction === 'left' 
-        ? scrollContainerRef.current.scrollLeft - scrollAmount
-        : scrollContainerRef.current.scrollLeft + scrollAmount;
-      
-      scrollContainerRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: 'smooth'
+const data = [
+  {
+    title: "Location",
+    traditional: {
+      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
+      heading: "MOSTLY LOCAL",
+      desc: "Limits hiring pool and diversity of ideas",
+    },
+    adaptive: {
+      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
+      heading: "BORDERLESS",
+      desc: "Larger hiring pool and more diversity",
+    },
+  },
+  {
+    title: "Hiring Time",
+    traditional: {
+      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
+      heading: "12+ WEEKS",
+      desc: "Lack of global network and matching tech",
+    },
+    adaptive: {
+      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
+      heading: "48 HOURS",
+      desc: "Global network & tech powers fast hiring",
+    },
+  },
+  {
+    title: "Deployment",
+    traditional: {
+      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
+      heading: "LAGGING ROI",
+      desc: "Slow onboarding periods for new talent",
+    },
+    adaptive: {
+      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
+      heading: "QUICK ROI",
+      desc: "Talent onboards in days, not months",
+    },
+  },
+  {
+    title: "Scalability",
+    traditional: {
+      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
+      heading: "LIMITED SCALABILITY",
+      desc: "MSA limits ability to scale up and down",
+    },
+    adaptive: {
+      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
+      heading: "MAXIMUM SCALABILITY",
+      desc: "Scale up & down with business demands",
+    },
+  },
+  {
+    title: "Turnover",
+    traditional: {
+      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
+      heading: "HIGH TURNOVER",
+      desc: "Highly-skilled talent turnover up by 30%",
+    },
+    adaptive: {
+      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
+      heading: "LOW TURNOVER",
+      desc: "Talent retention is 25% higher",
+    },
+  },
+];
+
+const UI_CONSTANTS = {
+  PRIMARY: "#ff4600",
+  DARK: "#011123",
+  WHITE: "#ffffff",
+  GRAY: "#64748b",
+};
+
+const checkItems = [
+  "Scale development with qualified talent, on demand",
+  "Reduce complexity and enhance user experience",
+  "Get your critical projects done faster",
+];
+
+const dropdowns = [
+  "Data Science and Artificial Intelligence",
+  "Data Engineering and Analytics",
+  "Cloud and DevOps",
+  "Cybersecurity & Infrastructure",
+];
+
+const features = [
+  {
+    title: "Connect with top global tech talent.",
+    description:
+      "Access a curated network of skilled engineers across DevOps, Data, and AI.",
+  },
+  {
+    title: "Build without borders.",
+    description:
+      "KIAQ brings world-class engineering talent to global teams.",
+  },
+  {
+    title: "Expertise that grows with you.",
+    description:
+      "From DevOps to AI, specialists deliver high-quality solutions.",
+  },
+  {
+    title: "Global collaboration made simple.",
+    description: "Work smoothly across time zones with remote-first delivery.",
+  },
+  {
+    title: "Innovation through global talent.",
+    description: "Tap into diverse engineering expertise.",
+  },
+];
+
+export default function AdaptiveHiring() {
+  const [openFirst, setOpenFirst] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [selected, setSelected] = useState(0);
+
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const mid = window.scrollY + window.innerHeight / 2;
+
+      contentRefs.current.forEach((ref, index) => {
+        if (!ref) return;
+        const top = ref.offsetTop;
+        const height = ref.offsetHeight;
+
+        if (mid >= top && mid < top + height) {
+          setActiveIndex(index);
+        }
       });
-    }
-  };
+    };
 
-  const handleScroll = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-      setShowLeftArrow(scrollLeft > 10);
-      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
-    }
-  };
+    const onScroll = () => requestAnimationFrame(handleScroll);
 
-  
+    window.addEventListener("scroll", onScroll, { passive: true });
+    handleScroll();
 
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-
-  const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
-
-    const [activeTab, setActiveTab] = useState<"Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster">("Deliver Projects Faster");
-
-  const tabs = [
-    "Innovative Web Apps",
-    "Outsource Projects",
-    "Deliver Projects Faster",
-  ];
-
-  const images = {
-    "Innovative Web Apps": webimg2,
-    "Outsource Projects": webimg3,
-    "Deliver Projects Faster": webimg4,
-  };
+  const toggleAccordion = (i: number) =>
+    setActiveIndex((prev) => (prev === i ? -1 : i));
 
   return (
     <>
-    <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
+      {/* FIRST SECTION */}
+      <section className="relative w-full bg-[#062C2C] text-white py-24 px-6 overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-20 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('/mnt/data/d629bbbb-541e-423e-82c6-129bbddad2a5.png')",
+          }}
+        />
+
+        <div className="relative max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl sm:text-6xl font-bold leading-tight">
+            What is <br /> Adaptive Hiring?
+          </h2>
+
+          <p className="mt-8 text-lg sm:text-xl leading-relaxed text-gray-200">
+            Adaptive Hiring brings agile principles to technical hiring...
+          </p>
+        </div>
+      </section>
+
+      {/* SECOND SECTION */}
+      <section className="w-full bg-[#F2FBF9] py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-16">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+              Simply put,<br /> important work<br /> isn't getting done
+            </h1>
+            <p className="text-gray-600 text-lg">
+              Organizations need an innovation partner...
+            </p>
+          </div>
+
+          <div className="hidden md:block border-l border-gray-300"></div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-14">
+            {[img1, img2, img3, img4, img5, img6].map((img, i) => (
+              <div key={i} className="flex gap-4">
+                <img src={img} className="w-12 h-12" alt="" />
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900">
+                    {[
+                      "Skill Gaps",
+                      "Limited Capacity",
+                      "High FTE Costs",
+                      "Long Hiring Periods",
+                      "Slow Deployment",
+                      "High Turnover",
+                    ][i]}
+                  </h3>
+                  <p className="text-gray-600 text-[15px]">Description...</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* USE CASES SECTION */}
+      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-10 md:mb-12">
+      Common use cases for Adaptive Hiring
+    </h2>
+
+    <div className="grid md:grid-cols-[auto_1fr] gap-6 sm:gap-8 md:gap-10">
       <img
-        src={webimg}
-        alt="Web app development"
-        className="absolute inset-0 w-full h-full object-cover object-right z-0"
+        src={img7}
+        className="w-full md:w-[260px] lg:w-[300px] h-[200px] sm:h-[220px] md:h-[180px] lg:h-[200px] rounded-xl sm:rounded-2xl shadow-md object-cover"
+        alt=""
       />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
-        }}
-      ></div>
+      <div className="bg-gradient-to-br from-white to-gray-50 shadow-xl border border-gray-200 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:shadow-2xl transition-shadow duration-300">
+        <div
+          className="flex justify-between items-start cursor-pointer group"
+          onClick={() => setOpenFirst(!openFirst)}
+        >
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 pr-4 group-hover:text-[#0fddcc] transition-colors">
+            Application Development
+          </h3>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-[520px] mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-5"
-            style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", // smaller + balanced
-              lineHeight: 1.2,
-            }}
+          <span
+            className={`transition-all duration-300 flex-shrink-0 text-lg sm:text-xl text-[#0fddcc] ${
+              openFirst ? "rotate-180" : ""
+            }`}
           >
-            Drive Your Web Application
-            <br />
-            Development Projects
-          </h1>
-
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-8"
-            style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            Our web application experts craft custom solutions that extend from
-            design to launch — aligning your business objectives with intuitive
-            user interfaces, robust back-end systems, and seamless scalability
-            for growth.
-          </p>
-
-          {/* CTA Button */}
-          <button
-            className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Book a discovery call
-          </button>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
         </div>
 
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
+        <div
+          className={`transition-all duration-300 overflow-hidden ${
+            openFirst ? "max-h-[600px] mt-4 sm:mt-5 md:mt-6 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          {checkItems.map((item, i) => (
+            <div key={i} className="flex gap-2 sm:gap-3 mb-3 sm:mb-4 items-start">
+              <span className="w-5 h-5 sm:w-6 sm:h-6 bg-[#0fddcc] rounded-full flex items-center justify-center flex-shrink-0 text-white text-xs sm:text-sm mt-0.5">
+                ✓
+              </span>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-6 sm:mt-8 md:mt-10 space-y-3 sm:space-y-4">
+      {dropdowns.map((label, i) => {
+        const isOpen = activeIndex === i;
+
+        return (
+          <div
+            key={i}
+            className={`bg-white border-2 rounded-xl sm:rounded-2xl cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-lg ${
+              isOpen 
+                ? "border-[#0fddcc] shadow-md" 
+                : "border-gray-200 hover:border-gray-300"
+            }`}
+            onClick={() => toggleAccordion(i)}
+          >
+            <div className={`p-4 sm:p-5 md:p-6 ${isOpen ? "bg-[#0fddcc]/5" : ""} transition-colors duration-300`}>
+              <div className="flex justify-between items-center">
+                <span className={`text-base sm:text-lg md:text-xl font-semibold pr-4 transition-colors ${
+                  isOpen ? "text-[#0fddcc]" : "text-gray-900"
+                }`}>
+                  {label}
+                </span>
+                <span
+                  className={`transition-all duration-300 flex-shrink-0 ${
+                    isOpen ? "rotate-180 text-[#0fddcc]" : "text-gray-400"
+                  }`}
+                >
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div
+              className={`transition-all duration-300 overflow-hidden ${
+                isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6 pt-2">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  Content for <b>{label}</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+      {/* SCROLL SECTION WITH IMAGE */}
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
+    {/* Image Section - Shows first on mobile */}
+    <div className="w-full lg:w-1/2 order-1 lg:order-2">
+      <div className="lg:sticky lg:top-28 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center">
+        <img
+          src={imgfocus}
+          className="max-w-full max-h-full object-contain"
+          alt="focus"
+        />
+      </div>
+    </div>
+
+    {/* Content Section */}
+    <div className="w-full lg:w-1/2 order-2 lg:order-1">
+      {features.map((feature, i) => (
+        <div
+          key={i}
+          ref={(el) => {
+            contentRefs.current[i] = el;
+          }}
+          className="min-h-[50vh] sm:min-h-[60vh] lg:min-h-[75vh] flex items-center py-6 sm:py-8"
+        >
           <div>
-            <p className="text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-sm opacity-90">
-              Of clients satisfied with talent quality
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
-            <p className="text-sm opacity-90">
-              Mobile and web app developers
-            </p>
-          </div>
-
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">18+</p>
-            <p className="text-sm opacity-90">
-              Month average engagement length
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  {/* {second section} */}
-  <section className="relative w-full bg-white overflow-hidden py-20 px-6 lg:px-12">
-      {/* STAR PATTERN TOP-RIGHT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute top-8 right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="280" height="160" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="star">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {/* Row 1 */}
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            {/* Row 2 */}
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            {/* Row 3 (trim) */}
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
-
-      {/* STAR PATTERN BOTTOM-LEFT (SVG) */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="340" height="260" viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="starB">
-              <path d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z" fill={UI_CONSTANTS.orange} />
-            </g>
-          </defs>
-          <g transform="translate(0,0)" opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                // staggered placement
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
-                />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* LEFT aligned top block */}
-        <div className="max-w-[980px]">
-          <div className="pr-12">
-            <h2
-              className="text-[28px] md:text-[36px] font-semibold text-[#011123] mb-4"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.08 }}
-            >
-              Custom web application solutions designed to meet your business’s
-              unique needs
-            </h2>
-            <p
-              className="text-gray-600 mb-8 max-w-[720px]"
-              style={{ fontSize: "1.03rem", lineHeight: 1.65 }}
-            >
-              Enhance the power of the web to ensure a high-performing, digital
-              experience for all customers and users. We deliver custom solutions
-              that seamlessly integrate with existing systems and workflows.
-            </p>
-          </div>
-        </div>
-
-        {/* TABS: LEFT-ALIGNED under heading, with separators */}
-        <div className="mt-4">
-          <div className="flex items-center gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() => setActiveTab(tab as "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster")}
-                    className="relative text-sm md:text-base font-medium pb-2 transition-colors"
-                    style={{ color: isActive ? UI_CONSTANTS.DARK : "rgba(1,17,35,0.6)" }}
-                  >
-                    {tab}
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: UI_CONSTANTS.orange,
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {/* separator between tabs (except after last) */}
-                  {idx < tabs.length - 1 && (
-                    <div
-                      aria-hidden
-                      className="mx-4"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                        borderRadius: 2,
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* subtle bottom border below the tabs area */}
-          <div className="max-w-[720px] border-b border-gray-200 mt-2" />
-        </div>
-
-        {/* Two-column content: left narrow (text), right image */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-5">
             <h3
-              className="text-[20px] md:text-[22px] font-semibold mb-3"
-              style={{ color: UI_CONSTANTS.DARK, lineHeight: 1.12 }}
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 transition-all leading-tight"
+              style={{
+                opacity: activeIndex === i ? 1 : 0.3,
+                color: UI_CONSTANTS.DARK,
+              }}
             >
-              AI-powered platform makes it quick and easy to find the skillsets
-              you need, now
+              {feature.title}
             </h3>
 
-            <p className="text-gray-600 mb-5" style={{ lineHeight: 1.7 }}>
-              Nebula was able to advance its development timeline by nine months
-              using KiaqTalent Cloud to hire 10 engineers within days,
-              accelerating its growth trajectory.
-            </p>
-
-            <button
-              className="text-sm font-semibold border-b border-current hover:text-[rgba(0,212,170,1)] transition-colors"
-              style={{ color: UI_CONSTANTS.DARK }}
+            <p
+              className="text-base sm:text-lg transition-all leading-relaxed"
+              style={{
+                opacity: activeIndex === i ? 1 : 0.3,
+                color: UI_CONSTANTS.GRAY,
+              }}
             >
-              Learn More
-            </button>
+              {feature.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div className="text-center mt-12 sm:mt-16 md:mt-20 px-4">
+    <button
+      className="px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
+      style={{
+        backgroundColor: UI_CONSTANTS.PRIMARY,
+        color: UI_CONSTANTS.WHITE,
+      }}
+    >
+      Connect with Global Tech Talent
+    </button>
+  </div>
+</section>
+
+      {/* COMPARISON TABLE SECTION */}
+      <section className="bg-[#EAF4F1] py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0A3A36] leading-tight mb-6 sm:mb-8 md:mb-10">
+      Why you need a new kind of partner to
+      <br className="hidden sm:inline" />
+      deliver Adaptive Hiring
+    </h2>
+
+    <div className="bg-white rounded-xl shadow-md overflow-hidden border border-[#DCE7E4]">
+      {/* Desktop Header */}
+      <div className="hidden md:grid grid-cols-3 bg-[#D5E8E1]">
+        <div className="py-4 md:py-5 px-4 md:px-6"></div>
+        <div className="py-4 md:py-5 px-4 md:px-6 font-semibold text-[#0A3A36] text-sm md:text-base">
+          Traditional Hiring
+        </div>
+        <div className="py-4 md:py-5 px-4 md:px-6 font-semibold text-white bg-[#0A3A36] text-sm md:text-base">
+          Adaptive Hiring
+        </div>
+      </div>
+
+      {data.map((row, index) => (
+        <div
+          key={index}
+          className="border-t border-[#E4EBE8] flex flex-col md:grid md:grid-cols-3"
+        >
+          {/* Title - Full width on mobile */}
+          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 font-semibold text-[#0A3A36] text-base sm:text-lg md:text-base bg-[#F8FAF9] md:bg-transparent">
+            {row.title}
           </div>
 
-          <div className="md:col-span-7 flex justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-                style={{ display: "block" }}
-              />
+          {/* Traditional Hiring */}
+          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 border-t md:border-t-0 border-[#E4EBE8]">
+            <div className="flex items-start gap-2 sm:gap-3">
+              <div className="flex-shrink-0">{row.traditional.icon}</div>
+              <div>
+                <p className="font-semibold text-[#0A3A36] uppercase text-xs sm:text-sm mb-1">
+                  Traditional Hiring
+                </p>
+                <p className="font-semibold text-[#0A3A36] text-xs sm:text-sm mb-1">
+                  {row.traditional.heading}
+                </p>
+                <p className="text-[#5A6F68] text-xs sm:text-sm leading-relaxed">
+                  {row.traditional.desc}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Adaptive Hiring */}
+          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 bg-[#F4FAF8] border-t md:border-t-0 border-[#E4EBE8]">
+            <div className="flex items-start gap-2 sm:gap-3">
+              <div className="flex-shrink-0">{row.adaptive.icon}</div>
+              <div>
+                <p className="font-semibold text-[#0A3A36] uppercase text-xs sm:text-sm mb-1">
+                  Adaptive Hiring
+                </p>
+                <p className="font-semibold text-[#0A3A36] text-xs sm:text-sm mb-1">
+                  {row.adaptive.heading}
+                </p>
+                <p className="text-[#5A6F68] text-xs sm:text-sm leading-relaxed">
+                  {row.adaptive.desc}
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* TABS SECTION */}
+      <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-16 md:pb-20">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-[#0A3A36] px-4">
+    Andela makes Adaptive Hiring easier
+  </h2>
+
+  <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 border-b border-gray-200 pb-6 sm:pb-8 px-4 sm:px-6">
+    {tabs.map((tab, index) => (
+      <div
+        key={index}
+        onClick={() => setSelected(index)}
+        className={`flex items-center gap-2 sm:gap-3 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-full cursor-pointer transition-all border ${
+          selected === index
+            ? "bg-gradient-to-r from-[#0A3A36] to-[#00695C] text-white shadow-md border-transparent"
+            : "bg-white border-gray-200 text-[#0A3A36] hover:shadow-sm"
+        }`}
+      >
+        <img src={tab.icon} className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" alt="" />
+        <span className="font-medium text-xs sm:text-sm whitespace-nowrap">{tab.label}</span>
       </div>
-    </section>
+    ))}
+  </div>
 
-    {/* {third section} */}
+  <div className="max-w-7xl mx-auto mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 md:px-8">
+    <div className="relative bg-[#C8E0D8] rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg overflow-hidden min-h-[280px] sm:min-h-[340px] md:min-h-[380px] lg:min-h-[420px] flex items-center justify-center order-1 lg:order-1">
+      <img
+        src={tabs[selected].image}
+        alt=""
+        className="w-full h-full object-contain"
+      />
+    </div>
 
-   <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12">
-  {/* Scrollable SVG Pattern Background */}
-  <div
-    className="absolute inset-0 opacity-15"
-    style={{
-      backgroundImage: `
-        radial-gradient(circle at 20px 20px, rgba(0, 0, 0, 0.15) 1px, transparent 1px),
-        radial-gradient(circle at 60px 60px, rgba(0, 0, 0, 0.1) 1px, transparent 1px)
-      `,
-      backgroundSize: "80px 80px",
-      backgroundAttachment: "scroll",
-    }}
-  ></div>
+    <div className="flex flex-col justify-center px-2 sm:px-4 lg:px-0 order-2 lg:order-2">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0A3A36] mb-3 sm:mb-4 leading-tight">
+        {tabs[selected].title}
+      </h3>
+      <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+        {tabs[selected].desc}
+      </p>
+    </div>
+  </div>
+</section>
+
+      {/* ANDELA ROI METRICS SECTION */}
+      <section className="w-full bg-slate-950 relative overflow-hidden">
+  {/* Background Pattern - Circular Grid */}
+  <div className="absolute inset-0 opacity-5">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern
+          id="circles"
+          x="0"
+          y="0"
+          width="120"
+          height="120"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle
+            cx="60"
+            cy="60"
+            r="50"
+            fill="none"
+            stroke="rgb(20, 184, 166)"
+            strokeWidth="1"
+          />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#circles)" />
+    </svg>
+  </div>
 
   {/* Content */}
-  <div className="relative z-10 max-w-7xl mx-auto text-center">
-    {/* Heading */}
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
-      Get the talent you need for all your application projects
-    </h2>
-
-    {/* Cards */}
-    {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
-  {[
-    {
-      title: "Develop custom software",
-      desc: "Tailored for seamless integration and enhanced efficiency",
-      gradient: "from-[#e3f3e9] to-[#f1faf4]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Innovate web apps",
-      desc: "Improve and energize the customer experience",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Transform mobile apps",
-      desc: "Optimize for brand, customer engagement, and revenue",
-      gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Modernize legacy systems",
-      desc: "Upgrade to the most modern, scalable, and useful iteration",
-      gradient: "from-[#e7f6dc] to-[#f1fbef]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Craft engaging UX designs",
-      desc: "Delight customers with more intuitive user experiences",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-  ].map((card, idx) => (
-    <div
-      key={idx}
-      className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-    >
-      <div>
-        <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
-          {card.title}
-        </h3>
-        <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
-      </div>
-      <div
-        className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
-        style={{
-          backgroundImage: card.pattern,
-          backgroundSize: "24px 24px",
-          backgroundRepeat: "repeat-x",
-          backgroundPosition: "bottom",
-          opacity: 0.6,
-        }}
-      ></div>
-    </div>
-  ))}
-</div>
-
-
-
-    {/* Auto Scrolling Logos Row */}
-    <div className="relative overflow-hidden mt-20">
-      <div className="flex items-center justify-start gap-16 md:gap-20 opacity-70 animate-scroll">
-        {[...logos, ...logos].map((logo, idx) => (
-          <img
-            key={idx}
-            src={logo}
-            alt="client logo"
-            className="h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
-          />
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<style>
-{`
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  .animate-scroll {
-    animation: scroll 25s linear infinite;
-  }
-`}
-</style>
-
-
-
-
-        {/* {fourth section} */}
-             <section className="relative w-full bg-gray-50 py-20 px-6 lg:px-12 overflow-hidden">
-  {/* Heading */}
-  <div className="text-center mb-14">
-    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-      Here's why industry leaders rely on <br /> Kiaqtalent
-    </h2>
-  </div>
-
-  {/* Scrollable Cards Container */}
-  <div className="relative">
-    {/* Left Arrow */}
-    {showLeftArrow && (
-      <button
-        onClick={() => scroll('left')}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowLeft className="w-6 h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Right Arrow */}
-    {showRightArrow && (
-      <button
-        onClick={() => scroll('right')}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-16 h-16 bg-white rounded-full shadow-xl flex items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowRight className="w-6 h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Horizontal Scroll Section */}
-    <div
-      ref={scrollContainerRef}
-      onScroll={handleScroll}
-      className="overflow-x-auto scrollbar-hide scroll-smooth pb-6"
-      style={{
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-        WebkitOverflowScrolling: 'touch'
-      }}
-    >
-      <div className="flex gap-8 w-max px-10">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="flex bg-white rounded-3xl shadow-lg overflow-hidden w-[800px] h-[420px] flex-shrink-0 hover:shadow-2xl transition-all duration-300"
-          >
-            {/* Text Section */}
-            <div className="flex flex-col justify-between p-10 w-full md:w-[55%]">
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-5 leading-snug">
-                  {testimonial.title}
-                </h3>
-                <p className="text-gray-600 text-base leading-relaxed mb-8">
-                  "{testimonial.quote}"
-                </p>
-              </div>
-              <div className="mt-auto">
-                <p className="text-base font-semibold text-gray-900">
-                  {testimonial.name}
-                </p>
-                <p className="text-sm text-gray-500 mt-1">
-                  {testimonial.role}
-                </p>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="relative w-[45%] bg-gray-200">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-
-  {/* Company Logos */}
-  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-20 opacity-60">
-    <img src={sol17} alt="GitHub" className="h-5 md:h-7 object-contain" />
-    <img src={sol18} alt="The Weather Company" className="h-5 md:h-7 object-contain" />
-    <img src={sol19} alt="Mindshare" className="h-5 md:h-7 object-contain" />
-    <img src={sol20} alt="Nebula" className="h-5 md:h-7 object-contain" />
-  </div>
-
-  <style>{`
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-  `}</style>
-</section>
-  
-    {/* fourth.one section */}
-
-    {/* Mastercard Foundry Section */}
-<section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
-  {/* Background Pattern */}
-  <div
-    className="absolute inset-0 opacity-15 pointer-events-none"
-    style={{
-      backgroundImage: `
-        radial-gradient(circle at 20px 20px, rgba(0,0,0,0.1) 1px, transparent 1px),
-        radial-gradient(circle at 60px 60px, rgba(0,0,0,0.1) 1px, transparent 1px)
-      `,
-      backgroundSize: "70px 70px",
-    }}
-  />
-
-  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
-    {/* Left Image */}
-    <div className="relative w-full lg:w-1/2">
-      <div className="rounded-2xl overflow-hidden shadow-md">
-        <img
-          src={sol21}
-          alt="Mastercard Foundry"
-          className="w-full h-[380px] object-cover"
-        />
-      </div>
-
-      {/* Mastercard Logo Overlay */}
-      <div className="absolute bottom-5 left-5">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-          alt="Mastercard Logo"
-          className="h-10 w-auto"
-        />
-      </div>
-    </div>
-
-    {/* Right Content */}
-    <div className="w-full lg:w-1/2">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
-        How Mastercard Foundry expanded into new global product offerings
+  <div className="relative z-10 px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20">
+    {/* Header */}
+    <div className="max-w-6xl mx-auto text-center mb-10 sm:mb-12 md:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight px-2">
+        Adaptive Hiring with Andela gives optimal outcomes
       </h2>
-      <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-        Mastercard Foundry scaled its engineering teams to develop promising
-        products. Over the past four years, 10 Kiaqengineers have contributed
-        to key projects with a focus on financial inclusion. The partnership has
-        since expanded to include numerous other initiatives.
+      <p className="text-gray-400 text-sm sm:text-base max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 leading-relaxed px-2">
+        Forrester Total Economic Impact™ (TEI) of Andela, based on
+        aggregation of four customer interviews, 30 surveys, and
+        three-year risk adjusted present value
       </p>
-      <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        Learn More
+      <button className="bg-teal-400 hover:bg-teal-300 text-slate-950 font-semibold px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-lg transition-all shadow-lg shadow-teal-500/20 text-sm sm:text-base w-full sm:w-auto">
+        Calculate ROI
       </button>
+    </div>
+
+    {/* Metrics Cards Grid */}
+    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+      {/* Hiring Efficiency Card */}
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+          Hiring Efficiency
+        </h3>
+        <div className="text-teal-400 mb-6 sm:mb-8 md:mb-10">
+          <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">106+</span>
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-2">hours</span>
+        </div>
+        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+          <p className="text-gray-300 text-base sm:text-lg">Saved per hire</p>
+        </div>
+      </div>
+
+      {/* Project Productivity Card */}
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+          Project Productivity
+        </h3>
+        <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">33%</div>
+        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+          <p className="text-gray-300 text-base sm:text-lg">Faster completion time</p>
+        </div>
+      </div>
+
+      {/* Talent Compliance Risk Card */}
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all sm:col-span-2 md:col-span-1">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+          Talent Compliance Risk
+        </h3>
+        <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
+          $640K
+        </div>
+        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+          <p className="text-gray-300 text-base sm:text-lg">
+            Avoided compliance infraction costs
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-        {/* {fifth section} */}
-
-    <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
+      <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
   {/* Flower Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -743,7 +721,7 @@ export default function WebAppDevelopmentHero() {
             Infographic
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            KiaqResearch Finds Increasing Demand for Global Remote Tech Talent
+            Andela Research Finds Increasing Demand for Global Remote Tech Talent
           </h3>
           <a
             href="#"
@@ -756,130 +734,6 @@ export default function WebAppDevelopmentHero() {
     </div>
   </div>
 </section>
-
-
-          {/* {6th Section} */}
-
-         <section className="dual-action-button-cta">
-              <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[400px]">
-                
-                {/* LEFT SECTION */}
-                <div
-                  className="dual-action-button-cta-left-div relative px-12 py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-                  style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
-                >
-                  {/* Pattern Background */}
-                  <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-                    <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                      <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                      <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                      <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                      <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                      <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
-                      <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
-                      <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
-                    </svg>
-                  </div>
-        
-                  {/* Text Content */}
-                  <div className="relative z-20">
-                    <div className="dual-action-button-cta-tag-wrapper flex items-center mb-8">
-                      <div className="dual-action-button-cta-left-div-img mr-3">
-                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
-                          <path
-                            d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </div>
-                      <p
-                        className="text-sm font-semibold tracking-[0.2em] uppercase"
-                        style={{ color: UI_CONSTANTS.WHITE }}
-                      >
-                        GET STARTED
-                      </p>
-                    </div>
-        
-                    <h2
-                      className="text-4xl lg:text-5xl font-bold mb-12 leading-tight"
-                      style={{ color: UI_CONSTANTS.WHITE }}
-                    >
-                      Build the tech team of the future with KIAQ
-                    </h2>
-        
-                    <button
-                      style={{
-                        backgroundColor: UI_CONSTANTS.DARK,
-                        color: UI_CONSTANTS.WHITE,
-                      }}
-                      className="px-8 py-4 rounded-lg text-lg font-bold hover:opacity-90 transition-opacity"
-                    >
-                      Request a consultation
-                    </button>
-                  </div>
-                </div>
-        
-                {/* RIGHT SECTION */}
-                <div
-                  className="dual-action-button-cta-right-div relative px-12 py-16 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-                  style={{ backgroundColor: UI_CONSTANTS.WHITE }}
-                >
-                  {/* Pattern Background */}
-                  <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-                    <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                      <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                      <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                      <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                      <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                      <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
-                      <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
-                      <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
-                    </svg>
-                  </div>
-        
-                  {/* Text Content */}
-                  <div className="relative z-20">
-                    <div className="flex items-center mb-8">
-                      <div className="mr-3">
-                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none">
-                          <path
-                            d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                            fill="#173B3F"
-                          />
-                        </svg>
-                      </div>
-                      <p
-                        className="text-sm font-semibold tracking-[0.2em] uppercase"
-                        style={{ color: '#173B3F' }}
-                      >
-                        SCHEDULE A CALL
-                      </p>
-                    </div>
-        
-                    <h2
-                      className="text-4xl lg:text-5xl font-bold mb-12 leading-tight"
-                      style={{ color: '#173B3F' }}
-                    >
-                      Let us know how we can help
-                    </h2>
-        
-                    <button
-                      style={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                        color: '#173B3F',
-                        border: '2px solid rgba(23, 59, 63, 0.2)',
-                      }}
-                      className="px-8 py-4 rounded-lg text-lg font-bold hover:bg-white transition-colors"
-                    >
-                      Schedule Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </section>
-
     </>
   );
 }
-
-
