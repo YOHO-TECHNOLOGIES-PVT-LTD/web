@@ -1,4 +1,3 @@
-
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useState, useRef } from 'react';
 import webimg from "../assets/usecase/Cloud Migration-p-2000.webp";
@@ -35,34 +34,34 @@ export default function WebAppDevelopmentHero() {
 
   const testimonials = [
     {
-      title: "GitHub quickly activates scalable global teams to improve their customer experience",
-      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Andela to get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
-      name: "Mark Schaefer",
-      role: "Sr. Director, Worldwide Partnerships, GitHub",
+      title: "Enterprise cloud migration achieving 99.9% uptime with 40% cost reduction",
+      quote: "KIAQ's cloud engineering team executed a flawless migration of our entire infrastructure to AWS. Their expertise in cloud architecture and DevOps practices not only improved our system reliability but also significantly reduced our operational costs while enhancing scalability.",
+      name: "Michael Rodriguez",
+      role: "CTO, Financial Services Enterprise",
       image: sol15,
       logo: sol17
     },
     {
-      title: "The Weather Company diversifies skill sets",
-      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Andela just continues to amaze me and does a phenomenal job.",
-      name: "Wendy Frazier",
-      role: "CTO, The Weather Company",
+      title: "Containerized microservices architecture scaling to handle 10M+ daily users",
+      quote: "The DevOps implementation by KIAQ transformed our monolithic application into a scalable microservices architecture. Their containerization strategy and CI/CD pipeline automation enabled us to deploy updates seamlessly while maintaining exceptional performance under heavy load.",
+      name: "Sarah Chen",
+      role: "VP of Engineering, E-commerce Platform",
       image: sol13,
       logo: sol18
     },
     {
-      title: "Mindshare scales data teams to serve the world's largest advertisers",
-      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Andela de-risks global hiring, so businesses can grow and be competitive.",
-      name: "Ikechi Okoronkwo",
-      role: "EVP, Analytics & Data Science",
+      title: "Multi-cloud strategy implementation reducing vendor lock-in risks",
+      quote: "KIAQ designed and implemented a sophisticated multi-cloud infrastructure that distributed our workloads across AWS and Azure. This strategic approach not only optimized our costs but also provided the flexibility and redundancy our business-critical applications required.",
+      name: "David Thompson",
+      role: "Cloud Infrastructure Director, Healthcare Solutions",
       image: sol14,
       logo: sol19
     },
     {
-      title: "Nebula scales its engineering team to meet goals faster",
-      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Andela meet every single sprint milestone - they have a spotless execution track record.",
-      name: "Ed Donner",
-      role: "Cofounder and CTO, Nebula",
+      title: "Infrastructure as Code implementation reducing deployment time by 80%",
+      quote: "The DevOps team from KIAQ revolutionized our infrastructure management through comprehensive IaC implementation. Our deployment processes that previously took days now complete in hours, with consistent, repeatable results across all environments.",
+      name: "Jennifer Martinez",
+      role: "Head of DevOps, SaaS Platform",
       image: sol16,
       logo: sol20
     }
@@ -90,37 +89,35 @@ export default function WebAppDevelopmentHero() {
     }
   };
 
-  
-
-
-
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
 
-    const [activeTab, setActiveTab] = useState<"Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster">("Deliver Projects Faster");
+  const [activeTab, setActiveTab] = useState<
+  "Cloud Migration" | "DevOps Implementation" | "Infrastructure Automation"
+>("Infrastructure Automation");
 
-  const tabs = [
-    "Innovative Web Apps",
-    "Outsource Projects",
-    "Deliver Projects Faster",
-  ];
+const tabs = [
+  "Cloud Migration",
+  "DevOps Implementation", 
+  "Infrastructure Automation",
+];
 
-  const images = {
-    "Innovative Web Apps": webimg2,
-    "Outsource Projects": webimg3,
-    "Deliver Projects Faster": webimg4,
-  };
+const images = {
+  "Cloud Migration": webimg2,
+  "DevOps Implementation": webimg3,
+  "Infrastructure Automation": webimg4,
+};
 
   return (
     <>
-    <section
+   <section
       className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
       style={{ backgroundColor: UI_CONSTANTS.DARK }}
     >
       {/* Background image */}
       <img
         src={webimg}
-        alt="Web app development"
-        className="absolute inset-0 w-full h-full object-cover object-right z-0"
+        alt="Cloud & DevOps Solutions"
+        className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
       />
 
       {/* Dark gradient overlay */}
@@ -133,74 +130,72 @@ export default function WebAppDevelopmentHero() {
       ></div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-[520px] mt-[14vh]">
+      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
+        <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
           {/* Title */}
           <h1
-            className="text-white font-bold leading-snug mb-5"
+            className="text-white font-bold leading-snug mb-4 sm:mb-5"
             style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", // smaller + balanced
+              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
               lineHeight: 1.2,
             }}
           >
-            Drive Your Web Application
+            Enterprise Cloud & DevOps Solutions
             <br />
-            Development Projects
+            Accelerating Digital Transformation
           </h1>
 
           {/* Description */}
           <p
-            className="text-gray-200 font-light mb-8"
+            className="text-gray-200 font-light mb-6 sm:mb-8"
             style={{
               fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
               lineHeight: 1.65,
               color: "rgba(255,255,255,0.85)",
             }}
           >
-            Our web application experts craft custom solutions that extend from
-            design to launch — aligning your business objectives with intuitive
-            user interfaces, robust back-end systems, and seamless scalability
-            for growth.
+            KIAQ delivers comprehensive cloud infrastructure and DevOps services 
+            that enable organizations to achieve scalability, reliability, and 
+            operational efficiency through modern engineering practices.
           </p>
 
           {/* CTA Button */}
           <button
-            className="px-6 py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90"
+            className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
             style={{
               backgroundColor: UI_CONSTANTS.WHITE,
               color: UI_CONSTANTS.DARK,
             }}
           >
-            Book a discovery call
+            Explore Cloud Solutions
           </button>
         </div>
 
         {/* Stats Section */}
-        <div className="flex flex-wrap gap-10 mt-14 text-gray-200">
+        <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
           <div>
-            <p className="text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-sm opacity-90">
-              Of clients satisfied with talent quality
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">99.9%</p>
+            <p className="text-xs sm:text-sm opacity-90">
+              Infrastructure uptime guarantee
             </p>
           </div>
 
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">3,000+</p>
-            <p className="text-sm opacity-90">
-              Mobile and web app developers
+          <div className="border-l border-white/20 pl-6 sm:pl-8">
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">150+</p>
+            <p className="text-xs sm:text-sm opacity-90">
+              Cloud & DevOps experts
             </p>
           </div>
 
-          <div className="border-l border-white/20 pl-8">
-            <p className="text-2xl font-semibold text-white mb-1">18+</p>
-            <p className="text-sm opacity-90">
-              Month average engagement length
+          <div className="border-l border-white/20 pl-6 sm:pl-8">
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">24+</p>
+            <p className="text-xs sm:text-sm opacity-90">
+              Month average partnership
             </p>
           </div>
         </div>
       </div>
     </section>
-
 
   {/* {second section} */}
   <section className="relative w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12">
@@ -276,11 +271,13 @@ export default function WebAppDevelopmentHero() {
         {/* HEADING */}
         <div className="max-w-[980px] pr-0 sm:pr-12">
           <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-semibold text-[#011123] leading-tight">
-            AI & Data Science solutions tailored for your business
+            Comprehensive Cloud & DevOps Services for Modern Enterprises
           </h2>
 
           <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65]">
-            Leverage advanced analytics, machine learning, and AI to drive actionable insights and smarter business decisions.
+            From cloud migration to DevOps implementation and infrastructure automation, 
+            we build scalable, secure, and efficient technology foundations that drive 
+            business agility and digital innovation.
           </p>
         </div>
 
@@ -295,9 +292,9 @@ export default function WebAppDevelopmentHero() {
                     onClick={() =>
                       setActiveTab(
                         tab as
-                          | "Innovative Web Apps"
-                          | "Outsource Projects"
-                          | "Deliver Projects Faster"
+                          | "Cloud Migration"
+                          | "DevOps Implementation"
+                          | "Infrastructure Automation"
                       )
                     }
                     className="relative text-xs sm:text-sm md:text-base font-medium pb-2 transition-colors whitespace-nowrap"
@@ -344,15 +341,17 @@ export default function WebAppDevelopmentHero() {
         <div className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
           <div className="md:col-span-5">
             <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-3">
-              Quickly access top AI and Data Science talent
+              Expert Cloud & DevOps Teams
             </h3>
 
             <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5">
-              KIAQ helps companies accelerate AI and data projects by connecting them with top engineers & data scientists.
+              KIAQ provides certified cloud architects, DevOps engineers, and 
+              infrastructure specialists with deep expertise in AWS, Azure, GCP, 
+              and modern DevOps toolchains to optimize your technology operations.
             </p>
 
             <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-              Learn More
+              View Our Expertise
             </button>
           </div>
 
@@ -389,74 +388,71 @@ export default function WebAppDevelopmentHero() {
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
     <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
-      Get the talent you need for all your application projects
+      Comprehensive Cloud & DevOps Service Portfolio
     </h2>
 
     {/* Cards */}
-    {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
-  {[
-    {
-      title: "Develop custom software",
-      desc: "Tailored for seamless integration and enhanced efficiency",
-      gradient: "from-[#e3f3e9] to-[#f1faf4]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Innovate web apps",
-      desc: "Improve and energize the customer experience",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Transform mobile apps",
-      desc: "Optimize for brand, customer engagement, and revenue",
-      gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Modernize legacy systems",
-      desc: "Upgrade to the most modern, scalable, and useful iteration",
-      gradient: "from-[#e7f6dc] to-[#f1fbef]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Craft engaging UX designs",
-      desc: "Delight customers with more intuitive user experiences",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-  ].map((card, idx) => (
-    <div
-      key={idx}
-      className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-    >
-      <div>
-        <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
-          {card.title}
-        </h3>
-        <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
-      </div>
-      <div
-        className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
-        style={{
-          backgroundImage: card.pattern,
-          backgroundSize: "24px 24px",
-          backgroundRepeat: "repeat-x",
-          backgroundPosition: "bottom",
-          opacity: 0.6,
-        }}
-      ></div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
+      {[
+        {
+          title: "Cloud Migration Services",
+          desc: "Seamless migration of on-premise infrastructure to cloud platforms with optimized performance and security",
+          gradient: "from-[#e3f3e9] to-[#f1faf4]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "DevOps Implementation",
+          desc: "End-to-end DevOps practices including CI/CD, infrastructure automation, and deployment pipelines",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Containerization & Orchestration",
+          desc: "Docker, Kubernetes, and container management for scalable, portable application deployment",
+          gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Infrastructure as Code",
+          desc: "Terraform, CloudFormation, and Ansible for automated, version-controlled infrastructure management",
+          gradient: "from-[#e7f6dc] to-[#f1fbef]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Cloud Security & Compliance",
+          desc: "Security architecture, compliance frameworks, and monitoring for protected cloud environments",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+      ].map((card, idx) => (
+        <div
+          key={idx}
+          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+        >
+          <div>
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+              {card.title}
+            </h3>
+            <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
+          </div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
+            style={{
+              backgroundImage: card.pattern,
+              backgroundSize: "24px 24px",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "bottom",
+              opacity: 0.6,
+            }}
+          ></div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
-
 
     {/* Auto Scrolling Logos Row */}
     <div className="relative overflow-hidden mt-20">
@@ -474,7 +470,6 @@ export default function WebAppDevelopmentHero() {
   </div>
 </section>
 
-
 <style>
 {`
   @keyframes scroll {
@@ -487,15 +482,12 @@ export default function WebAppDevelopmentHero() {
 `}
 </style>
 
-
-
-
         {/* {fourth section} */}
             <section className="relative w-full bg-gray-50 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
   {/* Heading */}
   <div className="text-center mb-8 sm:mb-10 md:mb-14">
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-2">
-      Here's why industry leaders rely on <br className="hidden sm:inline" /> Andela talent
+      Trusted by Industry Leaders for Cloud & DevOps Excellence
     </h2>
   </div>
 
@@ -589,7 +581,7 @@ export default function WebAppDevelopmentHero() {
   
     {/* fourth.one section */}
 
-    {/* Mastercard Foundry Section */}
+    {/* Enterprise Cloud Solutions Section */}
 <section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
   {/* Background Pattern */}
   <div
@@ -609,39 +601,36 @@ export default function WebAppDevelopmentHero() {
       <div className="rounded-2xl overflow-hidden shadow-md">
         <img
           src={sol21}
-          alt="Mastercard Foundry"
+          alt="Enterprise Cloud Solutions"
           className="w-full h-[380px] object-cover"
         />
       </div>
 
-      {/* Mastercard Logo Overlay */}
+      {/* Cloud Solutions Logo Overlay */}
       <div className="absolute bottom-5 left-5">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-          alt="Mastercard Logo"
-          className="h-10 w-auto"
-        />
+        <div className="bg-white px-4 py-2 rounded-lg shadow-md">
+          <span className="text-sm font-semibold text-gray-900">Cloud Solutions</span>
+        </div>
       </div>
     </div>
 
     {/* Right Content */}
     <div className="w-full lg:w-1/2">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
-        How Mastercard Foundry expanded into new global product offerings
+        Enterprise Cloud Infrastructure Driving Digital Transformation
       </h2>
       <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-        Mastercard Foundry scaled its engineering teams to develop promising
-        products. Over the past four years, 10 Andela engineers have contributed
-        to key projects with a focus on financial inclusion. The partnership has
-        since expanded to include numerous other initiatives.
+        KIAQ partners with global enterprises to build scalable cloud infrastructure 
+        and implement DevOps practices that transform technology operations. Our 
+        expertise in cloud platforms and automation delivers measurable ROI through 
+        improved efficiency, enhanced security, and accelerated innovation cycles.
       </p>
       <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        Learn More
+        View Cloud Case Studies
       </button>
     </div>
   </div>
 </section>
-
 
         {/* {fifth section} */}
 
@@ -663,7 +652,7 @@ export default function WebAppDevelopmentHero() {
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Put Adaptive Hiring to work for you
+        Cloud & DevOps Insights & Resources
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
         View All Resources
@@ -677,7 +666,7 @@ export default function WebAppDevelopmentHero() {
         <div className="overflow-hidden">
           <img
             src={tenimg}
-            alt="The Future of Hiring"
+            alt="Cloud Migration Strategy"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -686,7 +675,7 @@ export default function WebAppDevelopmentHero() {
             White Paper
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            Cloud Migration Strategy: Best Practices & Implementation Guide
           </h3>
           <a
             href="#"
@@ -702,7 +691,7 @@ export default function WebAppDevelopmentHero() {
         <div className="overflow-hidden">
           <img
             src={eleimg}
-            alt="Diversifying Skillsets"
+            alt="DevOps Transformation"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -711,13 +700,13 @@ export default function WebAppDevelopmentHero() {
             Case Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            DevOps Transformation: Accelerating Software Delivery
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Watch Now <span className="ml-2">→</span>
+            Read Case Study <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -727,29 +716,28 @@ export default function WebAppDevelopmentHero() {
         <div className="overflow-hidden">
           <img
             src={twlimg}
-            alt="Global Remote Tech Talent"
+            alt="Cloud Security Best Practices"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Infographic
+            Technical Guide
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            Cloud Security & Compliance: Enterprise Best Practices
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read More <span className="ml-2">→</span>
+            Download Guide <span className="ml-2">→</span>
           </a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
           {/* {6th Section} */}
 
@@ -797,7 +785,7 @@ export default function WebAppDevelopmentHero() {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: UI_CONSTANTS.WHITE }}
         >
-          Build the tech team of the future with KIAQ
+          Transform Your Business with Advanced Cloud & DevOps
         </h2>
 
         <button
@@ -807,7 +795,7 @@ export default function WebAppDevelopmentHero() {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
         >
-          Request a consultation
+          Start Your Cloud Journey
         </button>
       </div>
     </div>
@@ -845,7 +833,7 @@ export default function WebAppDevelopmentHero() {
             className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
             style={{ color: '#173B3F' }}
           >
-            SCHEDULE A CALL
+            CONSULT OUR EXPERTS
           </p>
         </div>
 
@@ -853,7 +841,7 @@ export default function WebAppDevelopmentHero() {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: '#173B3F' }}
         >
-          Let us know how we can help
+          Discuss Your Cloud & DevOps Requirements
         </h2>
 
         <button
@@ -864,7 +852,7 @@ export default function WebAppDevelopmentHero() {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
         >
-          Schedule Now
+          Schedule Cloud Consultation
         </button>
       </div>
     </div>
@@ -874,5 +862,3 @@ export default function WebAppDevelopmentHero() {
     </>
   );
 }
-
-

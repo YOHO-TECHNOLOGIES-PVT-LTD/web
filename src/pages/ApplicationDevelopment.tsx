@@ -1,4 +1,3 @@
-
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useState, useRef } from 'react';
 import webimg from "../assets/solutions/665f0e6451687baa423524d5_application_engineering_banner_2x-p-2000.webp";
@@ -35,34 +34,34 @@ export default function WebAppDevelopmentHero() {
 
   const testimonials = [
     {
-      title: "GitHub quickly activates scalable global teams to improve their customer experience",
-      quote: "When we needed help with our expert services delivery, our certifications, and our partner enablement, we worked with Andela to get the people in place. Being able to have the right resource, in the right region, at the right time, has been transformational for us.",
-      name: "Mark Schaefer",
-      role: "Sr. Director, Worldwide Partnerships, GitHub",
+      title: "Enterprise-grade web applications delivered with precision and scalability",
+      quote: "KIAQ's development team demonstrated exceptional technical expertise and project management skills. They delivered a complex web application that seamlessly integrated with our existing systems while maintaining the highest security standards.",
+      name: "Sarah Johnson",
+      role: "CTO, Enterprise Solutions Inc.",
       image: sol15,
       logo: sol17
     },
     {
-      title: "The Weather Company diversifies skill sets",
-      quote: "We want to leverage large language modeling, supercomputers, and GenAI to really bring outcomes to our users in a more robust and quick manner. Being the first to market in that space is going to be key. And Andela just continues to amaze me and does a phenomenal job.",
-      name: "Wendy Frazier",
-      role: "CTO, The Weather Company",
+      title: "Digital transformation through modern web application development",
+      quote: "Partnering with KIAQ enabled us to modernize our legacy systems and create intuitive web applications that significantly improved our customer engagement and operational efficiency. Their agile methodology ensured we met all project milestones.",
+      name: "Michael Chen",
+      role: "Digital Transformation Director, Global Finance Corp",
       image: sol13,
       logo: sol18
     },
     {
-      title: "Mindshare scales data teams to serve the world's largest advertisers",
-      quote: "With Andela, we scale up or down easily as business needs change. They help us quickly find people who are highly motivated, highly skilled and that embodies a culture of excellence and delivery. The talent hits the ground running which drives maximum value for our clients. Andela de-risks global hiring, so businesses can grow and be competitive.",
-      name: "Ikechi Okoronkwo",
-      role: "EVP, Analytics & Data Science",
+      title: "Scalable e-commerce platform driving 300% growth in online sales",
+      quote: "KIAQ developed a robust e-commerce platform that handles our peak traffic seamlessly. Their attention to user experience and performance optimization resulted in a 40% increase in conversion rates and 300% growth in online revenue.",
+      name: "Jennifer Martinez",
+      role: "E-commerce Director, Retail Innovations Ltd",
       image: sol14,
       logo: sol19
     },
     {
-      title: "Nebula scales its engineering team to meet goals faster",
-      quote: "We reached our product initiatives 6-9 months faster than we would have with traditional hiring. The engineering teams from Andela meet every single sprint milestone - they have a spotless execution track record.",
-      name: "Ed Donner",
-      role: "Cofounder and CTO, Nebula",
+      title: "Real-time SaaS application with exceptional performance metrics",
+      quote: "The KIAQ team delivered a sophisticated SaaS application that processes millions of data points in real-time. Their expertise in cloud architecture and microservices ensured our platform maintains 99.9% uptime while scaling to meet growing user demand.",
+      name: "David Thompson",
+      role: "Product Director, Tech Solutions Group",
       image: sol16,
       logo: sol20
     }
@@ -90,115 +89,101 @@ export default function WebAppDevelopmentHero() {
     }
   };
 
-  
-
-
-
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
 
-    const [activeTab, setActiveTab] = useState<
-  "Innovative Web Apps" | "Outsource Projects" | "Deliver Projects Faster"
->("Deliver Projects Faster");
+  const [activeTab, setActiveTab] = useState<
+  "Enterprise Web Solutions" | "Custom Application Development" | "Digital Transformation"
+>("Digital Transformation");
 
 const tabs = [
-  "Innovative Web Apps",
-  "Outsource Projects",
-  "Deliver Projects Faster",
+  "Enterprise Web Solutions",
+  "Custom Application Development",
+  "Digital Transformation",
 ];
 
 const images = {
-  "Innovative Web Apps": webimg2,
-  "Outsource Projects": webimg3,
-  "Deliver Projects Faster": webimg4,
+  "Enterprise Web Solutions": webimg2,
+  "Custom Application Development": webimg3,
+  "Digital Transformation": webimg4,
 };
-
 
   return (
     <>
-   <section
-  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-  style={{ backgroundColor: UI_CONSTANTS.DARK }}
->
-  {/* Background image */}
-  <img
-    src={webimg}
-    alt="Data Science and AI"
-    className="absolute inset-0 w-full h-full object-cover object-right sm:object-right object-center z-0"
-  />
-
-  {/* Dark gradient overlay */}
-  <div
-    className="absolute inset-0 z-10"
-    style={{
-      background:
-        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
-    }}
-  ></div>
-
-  {/* Content */}
-  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-    <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
-      {/* Title */}
-      <h1
-        className="text-white font-bold leading-snug mb-4 sm:mb-5"
+    <section
+      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+      style={{ backgroundColor: UI_CONSTANTS.DARK }}
+    >
+      {/* Background image */}
+      <img
+        src={webimg}
+        alt="Web Application Development"
+        className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
+      />
+      {/* Dark gradient overlay */}
+      <div
+        className="absolute inset-0 z-10"
         style={{
-          fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
-          lineHeight: 1.2,
+          background:
+            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
         }}
-      >
-        Accelerate Your AI & Data Science
-        <br className="hidden sm:block" />
-        <span className="sm:hidden"> </span>
-        Projects with Expert Teams
-      </h1>
-
-      {/* Description */}
-      <p
-        className="text-gray-200 font-light mb-6 sm:mb-8"
-        style={{
-          fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
-          lineHeight: 1.65,
-          color: "rgba(255,255,255,0.85)",
-        }}
-      >
-        KIAQ connects you with top-tier AI and Data Science talent to deliver
-        actionable insights, scalable models, and intelligent automation —
-        driving measurable impact for your business.
-      </p>
-
-      {/* CTA Button */}
-      <button
-        className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
-        style={{
-          backgroundColor: UI_CONSTANTS.WHITE,
-          color: UI_CONSTANTS.DARK,
-        }}
-      >
-        Start Your AI Journey
-      </button>
-    </div>
-
-    {/* Stats Section */}
-    <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
-      <div>
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">95%</p>
-        <p className="text-xs sm:text-sm opacity-90">Client satisfaction with AI solutions</p>
+      ></div>
+      {/* Content */}
+      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
+        <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
+          {/* Title */}
+          <h1
+            className="text-white font-bold leading-snug mb-4 sm:mb-5"
+            style={{
+              fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
+              lineHeight: 1.2,
+            }}
+          >
+            Enterprise-Grade Web Application Development
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
+            Tailored for Business Success
+          </h1>
+          {/* Description */}
+          <p
+            className="text-gray-200 font-light mb-6 sm:mb-8"
+            style={{
+              fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
+              lineHeight: 1.65,
+              color: "rgba(255,255,255,0.85)",
+            }}
+          >
+            KIAQ delivers robust, scalable web applications that drive digital transformation. 
+            Our expert developers create custom solutions that enhance user experience, 
+            optimize business processes, and deliver measurable ROI.
+          </p>
+          {/* CTA Button */}
+          <button
+            className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
+            style={{
+              backgroundColor: UI_CONSTANTS.WHITE,
+              color: UI_CONSTANTS.DARK,
+            }}
+          >
+            Start Your Project
+          </button>
+        </div>
+        {/* Stats Section */}
+        <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
+          <div>
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">98%</p>
+            <p className="text-xs sm:text-sm opacity-90">Client satisfaction rate</p>
+          </div>
+          <div className="border-l border-white/20 pl-6 sm:pl-8">
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">200+</p>
+            <p className="text-xs sm:text-sm opacity-90">Web applications delivered</p>
+          </div>
+          <div className="border-l border-white/20 pl-6 sm:pl-8">
+            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">36+</p>
+            <p className="text-xs sm:text-sm opacity-90">Months average client partnership</p>
+          </div>
+        </div>
       </div>
-
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">500+</p>
-        <p className="text-xs sm:text-sm opacity-90">AI & Data Science experts</p>
-      </div>
-
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">24+</p>
-        <p className="text-xs sm:text-sm opacity-90">Months of average engagement</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
   {/* {second section} */}
    <section className="relative w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12">
@@ -274,11 +259,12 @@ const images = {
         {/* HEADING */}
         <div className="max-w-[980px] pr-0 sm:pr-12">
           <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-semibold text-[#011123] leading-tight">
-            AI & Data Science solutions tailored for your business
+            Comprehensive Web Application Solutions for Modern Businesses
           </h2>
 
           <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65]">
-            Leverage advanced analytics, machine learning, and AI to drive actionable insights and smarter business decisions.
+            From concept to deployment, we build high-performance web applications 
+            that solve complex business challenges and drive digital innovation.
           </p>
         </div>
 
@@ -293,9 +279,9 @@ const images = {
                     onClick={() =>
                       setActiveTab(
                         tab as
-                          | "Innovative Web Apps"
-                          | "Outsource Projects"
-                          | "Deliver Projects Faster"
+                          | "Enterprise Web Solutions"
+                          | "Custom Application Development"
+                          | "Digital Transformation"
                       )
                     }
                     className="relative text-xs sm:text-sm md:text-base font-medium pb-2 transition-colors whitespace-nowrap"
@@ -342,15 +328,17 @@ const images = {
         <div className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
           <div className="md:col-span-5">
             <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-3">
-              Quickly access top AI and Data Science talent
+              Expert Web Application Development Teams
             </h3>
 
             <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5">
-              KIAQ helps companies accelerate AI and data projects by connecting them with top engineers & data scientists.
+              KIAQ provides dedicated development teams with expertise in modern 
+              frameworks, cloud technologies, and agile methodologies to deliver 
+              enterprise-grade web applications on time and within budget.
             </p>
 
             <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-              Learn More
+              View Our Expertise
             </button>
           </div>
 
@@ -366,7 +354,6 @@ const images = {
         </div>
       </div>
     </section>
-
 
     {/* {third section} */}
 
@@ -388,74 +375,71 @@ const images = {
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
     <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
-      Get the talent you need for all your application projects
+      Comprehensive Web Application Development Services
     </h2>
 
     {/* Cards */}
-    {/* Cards */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
-  {[
-    {
-      title: "Develop custom software",
-      desc: "Tailored for seamless integration and enhanced efficiency",
-      gradient: "from-[#e3f3e9] to-[#f1faf4]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Innovate web apps",
-      desc: "Improve and energize the customer experience",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Transform mobile apps",
-      desc: "Optimize for brand, customer engagement, and revenue",
-      gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Modernize legacy systems",
-      desc: "Upgrade to the most modern, scalable, and useful iteration",
-      gradient: "from-[#e7f6dc] to-[#f1fbef]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-    {
-      title: "Craft engaging UX designs",
-      desc: "Delight customers with more intuitive user experiences",
-      gradient: "from-[#b6d9d2] to-[#d3efea]",
-      pattern:
-        "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-    },
-  ].map((card, idx) => (
-    <div
-      key={idx}
-      className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-    >
-      <div>
-        <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
-          {card.title}
-        </h3>
-        <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
-      </div>
-      <div
-        className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
-        style={{
-          backgroundImage: card.pattern,
-          backgroundSize: "24px 24px",
-          backgroundRepeat: "repeat-x",
-          backgroundPosition: "bottom",
-          opacity: 0.6,
-        }}
-      ></div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
+      {[
+        {
+          title: "Custom Web Application Development",
+          desc: "Tailored solutions designed to meet your specific business requirements and objectives",
+          gradient: "from-[#e3f3e9] to-[#f1faf4]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Enterprise Portal Development",
+          desc: "Secure, scalable portals that streamline internal processes and enhance collaboration",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "E-commerce Platform Development",
+          desc: "Feature-rich online stores optimized for conversion, security, and user experience",
+          gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Legacy System Modernization",
+          desc: "Transform outdated systems into modern, efficient, and scalable web applications",
+          gradient: "from-[#e7f6dc] to-[#f1fbef]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+        {
+          title: "Progressive Web Applications",
+          desc: "Native-like web experiences with offline capabilities and enhanced performance",
+          gradient: "from-[#b6d9d2] to-[#d3efea]",
+          pattern:
+            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+        },
+      ].map((card, idx) => (
+        <div
+          key={idx}
+          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+        >
+          <div>
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+              {card.title}
+            </h3>
+            <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
+          </div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
+            style={{
+              backgroundImage: card.pattern,
+              backgroundSize: "24px 24px",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "bottom",
+              opacity: 0.6,
+            }}
+          ></div>
+        </div>
+      ))}
     </div>
-  ))}
-</div>
-
-
 
     {/* Auto Scrolling Logos Row */}
     <div className="relative overflow-hidden mt-20">
@@ -473,7 +457,6 @@ const images = {
   </div>
 </section>
 
-
 <style>
 {`
   @keyframes scroll {
@@ -486,15 +469,12 @@ const images = {
 `}
 </style>
 
-
-
-
         {/* {fourth section} */}
            <section className="relative w-full bg-gray-50 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
   {/* Heading */}
   <div className="text-center mb-8 sm:mb-10 md:mb-14">
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-2">
-      Here's why industry leaders rely on <br className="hidden sm:inline" /> Andela talent
+      Trusted by Industry Leaders for Web Application Excellence
     </h2>
   </div>
 
@@ -585,9 +565,10 @@ const images = {
     }
   `}</style>
 </section>
+
     {/* fourth.one section */}
 
-    {/* Mastercard Foundry Section */}
+    {/* Enterprise Solutions Section */}
 <section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
   {/* Background Pattern */}
   <div
@@ -607,39 +588,36 @@ const images = {
       <div className="rounded-2xl overflow-hidden shadow-md">
         <img
           src={sol21}
-          alt="Mastercard Foundry"
+          alt="Enterprise Web Solutions"
           className="w-full h-[380px] object-cover"
         />
       </div>
 
-      {/* Mastercard Logo Overlay */}
+      {/* Solutions Logo Overlay */}
       <div className="absolute bottom-5 left-5">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-          alt="Mastercard Logo"
-          className="h-10 w-auto"
-        />
+        <div className="bg-white px-4 py-2 rounded-lg shadow-md">
+          <span className="text-sm font-semibold text-gray-900">Enterprise Solutions</span>
+        </div>
       </div>
     </div>
 
     {/* Right Content */}
     <div className="w-full lg:w-1/2">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
-        How Mastercard Foundry expanded into new global product offerings
+        Enterprise Web Solutions Driving Digital Transformation
       </h2>
       <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-        Mastercard Foundry scaled its engineering teams to develop promising
-        products. Over the past four years, 10 Andela engineers have contributed
-        to key projects with a focus on financial inclusion. The partnership has
-        since expanded to include numerous other initiatives.
+        KIAQ partners with global enterprises to develop scalable web applications 
+        that transform business operations. Our solutions integrate seamlessly with 
+        existing infrastructure while delivering enhanced performance, security, 
+        and user experience across all digital touchpoints.
       </p>
       <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        Learn More
+        Explore Case Studies
       </button>
     </div>
   </div>
 </section>
-
 
         {/* {fifth section} */}
 
@@ -661,7 +639,7 @@ const images = {
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Put Adaptive Hiring to work for you
+        Web Application Development Insights & Resources
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
         View All Resources
@@ -675,7 +653,7 @@ const images = {
         <div className="overflow-hidden">
           <img
             src={tenimg}
-            alt="The Future of Hiring"
+            alt="Modern Web Development Trends"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -684,7 +662,7 @@ const images = {
             White Paper
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            Modern Web Development Trends for Enterprise Applications
           </h3>
           <a
             href="#"
@@ -700,7 +678,7 @@ const images = {
         <div className="overflow-hidden">
           <img
             src={eleimg}
-            alt="Diversifying Skillsets"
+            alt="Scalable Architecture"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -709,7 +687,7 @@ const images = {
             Case Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            Building Scalable Web Architecture for High-Growth Businesses
           </h3>
           <a
             href="#"
@@ -725,16 +703,16 @@ const images = {
         <div className="overflow-hidden">
           <img
             src={twlimg}
-            alt="Global Remote Tech Talent"
+            alt="Web Application Security"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Infographic
+            Technical Guide
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            Enterprise Web Application Security Best Practices 2024
           </h3>
           <a
             href="#"
@@ -747,7 +725,6 @@ const images = {
     </div>
   </div>
 </section>
-
 
           {/* {6th Section} */}
 
@@ -795,7 +772,7 @@ const images = {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: UI_CONSTANTS.WHITE }}
         >
-          Build the tech team of the future with KIAQ
+          Transform Your Business with Expert Web Applications
         </h2>
 
         <button
@@ -805,7 +782,7 @@ const images = {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
         >
-          Request a consultation
+          Start Your Project
         </button>
       </div>
     </div>
@@ -843,7 +820,7 @@ const images = {
             className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
             style={{ color: '#173B3F' }}
           >
-            SCHEDULE A CALL
+            CONSULT OUR EXPERTS
           </p>
         </div>
 
@@ -851,7 +828,7 @@ const images = {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: '#173B3F' }}
         >
-          Let us know how we can help
+          Discuss Your Web Application Requirements
         </h2>
 
         <button
@@ -862,7 +839,7 @@ const images = {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
         >
-          Schedule Now
+          Schedule Consultation
         </button>
       </div>
     </div>
@@ -872,5 +849,3 @@ const images = {
     </>
   );
 }
-
-

@@ -41,7 +41,7 @@ export default function ConsultingServices() {
           {/* Header */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-5 sm:mb-6 lg:mb-8">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-              Put Adaptive Hiring to work for you
+              Technology that drives your business forward.
             </h1>
             <button className="px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 border-2 border-gray-900 text-gray-900 font-semibold rounded hover:bg-gray-900 hover:text-white transition-colors text-sm sm:text-base whitespace-nowrap">
               View All Resources
@@ -53,14 +53,13 @@ export default function ConsultingServices() {
             <div className="p-5 sm:p-6 lg:p-8 flex flex-col justify-between transition-all duration-500 group-hover:text-white order-2 lg:order-1">
               <div>
                 <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-3 sm:mb-4 group-hover:text-gray-300">
-                  DIGITAL TRANSFORMATION
+                  AI-Driven Security Monitoring
                 </p>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
-                  Building an AI-Ready Workforce
+                  Real-Time Threat Detection
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-5 sm:mb-6 lg:mb-8 group-hover:text-gray-300">
-                  AI is reshaping how companies operate and build their teams. This guide explores the essential steps to develop a workforce equipped for modern AI-driven environments and future-ready innovation.
-                </p>
+Monitor, detect, and mitigate cybersecurity threats in real time with intelligent AI-powered systems. Stay protected against evolving risks with continuous surveillance designed to keep your data and operations secure.                </p>
               </div>
               <a
                 href="#"
@@ -96,10 +95,9 @@ export default function ConsultingServices() {
               </div>
               <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
                 <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
-                  DIGITAL TRANSFORMATION
-                </p>
+Scalable, Secure, Modern Infrastructure                </p>
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
-                  Simplify cloud migration with the right talent
+                 Cloud Solutions
                 </h3>
                 <a
                   href="#"
@@ -121,10 +119,10 @@ export default function ConsultingServices() {
               </div>
               <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
                 <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
-                  UPSKILL / RESKILL
+                  Data-Driven Growth Strategies
                 </p>
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
-                  Building modern apps with real-time capabilities
+                  Digital Marketing
                 </h3>
                 <a
                   href="#"
@@ -152,10 +150,10 @@ export default function ConsultingServices() {
               </div>
               <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
                 <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
-                  ABOUT KIAQ
+                  UPSKILL / RESKILL
                 </p>
                 <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
-                  A quick introduction to KIAQ
+                  Building modern apps with real-time capabilities
                 </h3>
                 <a
                   href="#"

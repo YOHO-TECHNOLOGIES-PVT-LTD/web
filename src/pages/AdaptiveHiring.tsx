@@ -26,29 +26,29 @@ const tabs = [
     label: "Quality Global Talent",
     icon: img8,
     image: img12,
-    title: "Quality, global talent",
-    desc: "Unlock a vast pool of untapped global talent, with 60% from emerging tech hubs in Africa and LATAM. Our borderless marketplace spans 135 countries, connecting you with the right skills to drive innovation, regardless of location.",
+    title: "Quality, Global Talent",
+    desc: "Access a curated network of pre-vetted technical professionals across 135+ countries. KIAQ's rigorous screening process ensures you connect with top-tier engineers, data scientists, and cloud specialists who deliver exceptional results from day one.",
   },
   {
     label: "Cost Optimization",
     icon: img9,
     image: img14,
-    title: "Cost Optimization",
-    desc: "Reduce hiring and operational costs with globally distributed teams while keeping top-tier engineering quality.",
+    title: "Strategic Cost Optimization",
+    desc: "Reduce technical hiring costs by up to 40% while maintaining enterprise-grade quality. Our global talent model eliminates geographical compensation barriers while ensuring fair market rates and sustainable partnerships.",
   },
   {
     label: "Agile Deployment",
     icon: img10,
     image: img15,
-    title: "Agile Deployment",
-    desc: "Deploy vetted engineering talent in days, not weeks. Scale your team dynamically with business needs.",
+    title: "Agile Talent Deployment",
+    desc: "Deploy fully vetted technical teams within 48 hours, not weeks. Our streamlined onboarding process and ready-to-work professionals ensure immediate project impact and accelerated time-to-value for your critical initiatives.",
   },
   {
     label: "Rapid Scalability",
     icon: img11,
     image: img13,
-    title: "Rapid Scalability",
-    desc: "Expand engineering capacity instantly with access to diverse global talent across multiple time zones.",
+    title: "Enterprise Scalability",
+    desc: "Scale your technical capacity dynamically across multiple time zones and skill sets. From individual specialists to complete project teams, KIAQ provides the flexibility to align resources with evolving business demands.",
   },
 ];
 
@@ -57,65 +57,65 @@ const data = [
     title: "Location",
     traditional: {
       icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "MOSTLY LOCAL",
-      desc: "Limits hiring pool and diversity of ideas",
+      heading: "GEOGRAPHICALLY LIMITED",
+      desc: "Constrained by local talent pools and limited diversity",
     },
     adaptive: {
       icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "BORDERLESS",
-      desc: "Larger hiring pool and more diversity",
+      heading: "GLOBALLY DISTRIBUTED",
+      desc: "Access to 135+ countries with diverse technical expertise",
     },
   },
   {
     title: "Hiring Time",
     traditional: {
       icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "12+ WEEKS",
-      desc: "Lack of global network and matching tech",
+      heading: "12+ WEEKS AVERAGE",
+      desc: "Extended recruitment cycles delay critical projects",
     },
     adaptive: {
       icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "48 HOURS",
-      desc: "Global network & tech powers fast hiring",
+      heading: "48 HOURS DEPLOYMENT",
+      desc: "Rapid matching and deployment of pre-vetted talent",
     },
   },
   {
     title: "Deployment",
     traditional: {
       icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "LAGGING ROI",
-      desc: "Slow onboarding periods for new talent",
+      heading: "SLOW TIME-TO-PRODUCTIVITY",
+      desc: "Extended onboarding and ramp-up periods",
     },
     adaptive: {
       icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "QUICK ROI",
-      desc: "Talent onboards in days, not months",
+      heading: "IMMEDIATE IMPACT",
+      desc: "Ready-to-work professionals delivering value from day one",
     },
   },
   {
     title: "Scalability",
     traditional: {
       icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "LIMITED SCALABILITY",
-      desc: "MSA limits ability to scale up and down",
+      heading: "RIGID CAPACITY",
+      desc: "Fixed team sizes limit adaptability to changing demands",
     },
     adaptive: {
       icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "MAXIMUM SCALABILITY",
-      desc: "Scale up & down with business demands",
+      heading: "DYNAMIC SCALING",
+      desc: "Flexible team composition aligned with project requirements",
     },
   },
   {
     title: "Turnover",
     traditional: {
       icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "HIGH TURNOVER",
-      desc: "Highly-skilled talent turnover up by 30%",
+      heading: "HIGH ATTRITION RISK",
+      desc: "30% higher turnover rates in competitive markets",
     },
     adaptive: {
       icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "LOW TURNOVER",
-      desc: "Talent retention is 25% higher",
+      heading: "ENHANCED RETENTION",
+      desc: "25% higher retention through meaningful global opportunities",
     },
   },
 ];
@@ -128,9 +128,9 @@ const UI_CONSTANTS = {
 };
 
 const checkItems = [
-  "Scale development with qualified talent, on demand",
-  "Reduce complexity and enhance user experience",
-  "Get your critical projects done faster",
+  "Scale development capacity with pre-vetted technical talent",
+  "Reduce recruitment complexity and accelerate project timelines",
+  "Deliver critical business initiatives with predictable outcomes",
 ];
 
 const dropdowns = [
@@ -142,27 +142,27 @@ const dropdowns = [
 
 const features = [
   {
-    title: "Connect with top global tech talent.",
+    title: "Connect with elite global technical talent.",
     description:
-      "Access a curated network of skilled engineers across DevOps, Data, and AI.",
+      "Access a rigorously screened network of specialized engineers across DevOps, Data Science, AI, and Cloud technologies.",
   },
   {
-    title: "Build without borders.",
+    title: "Build without geographical constraints.",
     description:
-      "KIAQ brings world-class engineering talent to global teams.",
+      "KIAQ delivers world-class engineering expertise to distributed teams, breaking down traditional hiring barriers.",
   },
   {
-    title: "Expertise that grows with you.",
+    title: "Expertise that evolves with your needs.",
     description:
-      "From DevOps to AI, specialists deliver high-quality solutions.",
+      "From initial prototypes to enterprise-scale solutions, our specialists provide scalable technical leadership.",
   },
   {
-    title: "Global collaboration made simple.",
-    description: "Work smoothly across time zones with remote-first delivery.",
+    title: "Seamless global collaboration.",
+    description: "Advanced remote work infrastructure enables productive cross-timezone partnerships.",
   },
   {
-    title: "Innovation through global talent.",
-    description: "Tap into diverse engineering expertise.",
+    title: "Innovation through diverse perspectives.",
+    description: "Leverage global engineering talent to drive creative problem-solving and technical excellence.",
   },
 ];
 
@@ -217,7 +217,9 @@ export default function AdaptiveHiring() {
           </h2>
 
           <p className="mt-8 text-lg sm:text-xl leading-relaxed text-gray-200">
-            Adaptive Hiring brings agile principles to technical hiring...
+            Adaptive Hiring applies agile methodology to technical recruitment, enabling organizations 
+            to rapidly scale engineering capacity with pre-vetted global talent. This modern approach 
+            transforms how enterprises access specialized skills and deliver digital innovation.
           </p>
         </div>
       </section>
@@ -227,10 +229,12 @@ export default function AdaptiveHiring() {
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-16">
           <div>
             <h1 className="text-4xl font-bold text-gray-900 mb-6">
-              Simply put,<br /> important work<br /> isn't getting done
+              The Technical Talent<br />Challenge is Real<br />and Growing
             </h1>
             <p className="text-gray-600 text-lg">
-              Organizations need an innovation partner...
+              Organizations face increasing pressure to deliver digital transformation 
+              while constrained by traditional hiring limitations. KIAQ's Adaptive Hiring 
+              model provides the strategic solution for sustainable technical capacity.
             </p>
           </div>
 
@@ -243,15 +247,24 @@ export default function AdaptiveHiring() {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900">
                     {[
-                      "Skill Gaps",
-                      "Limited Capacity",
-                      "High FTE Costs",
-                      "Long Hiring Periods",
-                      "Slow Deployment",
-                      "High Turnover",
+                      "Critical Skill Gaps",
+                      "Limited Engineering Capacity",
+                      "Escalating Talent Costs",
+                      "Extended Recruitment Cycles",
+                      "Slow Team Deployment",
+                      "High Technical Turnover",
                     ][i]}
                   </h3>
-                  <p className="text-gray-600 text-[15px]">Description...</p>
+                  <p className="text-gray-600 text-[15px">
+                    {[
+                      "Specialized roles remain unfilled for months",
+                      "Insufficient bandwidth for innovation projects",
+                      "Competitive markets drive compensation inflation",
+                      "Traditional hiring processes delay project starts",
+                      "Lengthy onboarding reduces immediate impact",
+                      "Top talent seeks dynamic global opportunities",
+                    ][i]}
+                  </p>
                 </div>
               </div>
             ))}
@@ -263,14 +276,14 @@ export default function AdaptiveHiring() {
       <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-10 md:mb-12">
-      Common use cases for Adaptive Hiring
+      Strategic Applications for Adaptive Hiring
     </h2>
 
     <div className="grid md:grid-cols-[auto_1fr] gap-6 sm:gap-8 md:gap-10">
       <img
         src={img7}
         className="w-full md:w-[260px] lg:w-[300px] h-[200px] sm:h-[220px] md:h-[180px] lg:h-[200px] rounded-xl sm:rounded-2xl shadow-md object-cover"
-        alt=""
+        alt="Strategic Talent Solutions"
       />
 
       <div className="bg-gradient-to-br from-white to-gray-50 shadow-xl border border-gray-200 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:shadow-2xl transition-shadow duration-300">
@@ -279,7 +292,7 @@ export default function AdaptiveHiring() {
           onClick={() => setOpenFirst(!openFirst)}
         >
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 pr-4 group-hover:text-[#0fddcc] transition-colors">
-            Application Development
+            Enterprise Application Development
           </h3>
 
           <span
@@ -350,7 +363,8 @@ export default function AdaptiveHiring() {
             >
               <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6 pt-2">
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  Content for <b>{label}</b>
+                  KIAQ delivers specialized {label.toLowerCase()} expertise through pre-vetted professionals 
+                  who integrate seamlessly with your teams to drive innovation and deliver measurable business outcomes.
                 </p>
               </div>
             </div>
@@ -370,7 +384,7 @@ export default function AdaptiveHiring() {
         <img
           src={imgfocus}
           className="max-w-full max-h-full object-contain"
-          alt="focus"
+          alt="Strategic Global Talent"
         />
       </div>
     </div>
@@ -428,9 +442,7 @@ export default function AdaptiveHiring() {
       <section className="bg-[#EAF4F1] py-12 sm:py-16 md:py-20 px-4 sm:px-6">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0A3A36] leading-tight mb-6 sm:mb-8 md:mb-10">
-      Why you need a new kind of partner to
-      <br className="hidden sm:inline" />
-      deliver Adaptive Hiring
+      Transform Your Technical Hiring Strategy with KIAQ
     </h2>
 
     <div className="bg-white rounded-xl shadow-md overflow-hidden border border-[#DCE7E4]">
@@ -499,7 +511,7 @@ export default function AdaptiveHiring() {
       {/* TABS SECTION */}
       <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-16 md:pb-20">
   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-[#0A3A36] px-4">
-    Andela makes Adaptive Hiring easier
+    KIAQ Makes Adaptive Hiring Accessible
   </h2>
 
   <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 border-b border-gray-200 pb-6 sm:pb-8 px-4 sm:px-6">
@@ -539,7 +551,7 @@ export default function AdaptiveHiring() {
   </div>
 </section>
 
-      {/* ANDELA ROI METRICS SECTION */}
+      {/* KIAQ ROI METRICS SECTION */}
       <section className="w-full bg-slate-950 relative overflow-hidden">
   {/* Background Pattern - Circular Grid */}
   <div className="absolute inset-0 opacity-5">
@@ -572,15 +584,14 @@ export default function AdaptiveHiring() {
     {/* Header */}
     <div className="max-w-6xl mx-auto text-center mb-10 sm:mb-12 md:mb-16">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight px-2">
-        Adaptive Hiring with Andela gives optimal outcomes
+        Adaptive Hiring Delivers Measurable Business Outcomes
       </h2>
       <p className="text-gray-400 text-sm sm:text-base max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 leading-relaxed px-2">
-        Forrester Total Economic Impact™ (TEI) of Andela, based on
-        aggregation of four customer interviews, 30 surveys, and
-        three-year risk adjusted present value
+        Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model, 
+        based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
       </p>
       <button className="bg-teal-400 hover:bg-teal-300 text-slate-950 font-semibold px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-lg transition-all shadow-lg shadow-teal-500/20 text-sm sm:text-base w-full sm:w-auto">
-        Calculate ROI
+        Calculate Your ROI
       </button>
     </div>
 
@@ -596,32 +607,32 @@ export default function AdaptiveHiring() {
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-2">hours</span>
         </div>
         <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
-          <p className="text-gray-300 text-base sm:text-lg">Saved per hire</p>
+          <p className="text-gray-300 text-base sm:text-lg">Recruitment time saved per technical hire</p>
         </div>
       </div>
 
       {/* Project Productivity Card */}
       <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
-          Project Productivity
+          Project Velocity
         </h3>
         <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">33%</div>
         <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
-          <p className="text-gray-300 text-base sm:text-lg">Faster completion time</p>
+          <p className="text-gray-300 text-base sm:text-lg">Accelerated project completion timelines</p>
         </div>
       </div>
 
       {/* Talent Compliance Risk Card */}
       <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all sm:col-span-2 md:col-span-1">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
-          Talent Compliance Risk
+          Risk Mitigation
         </h3>
         <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
           $640K
         </div>
         <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
           <p className="text-gray-300 text-base sm:text-lg">
-            Avoided compliance infraction costs
+            Avoided compliance and operational risks
           </p>
         </div>
       </div>
@@ -648,10 +659,10 @@ export default function AdaptiveHiring() {
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Put Adaptive Hiring to work for you
+        Strategic Resources for Modern Talent Acquisition
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        View All Resources
+        Access All Resources
       </button>
     </div>
 
@@ -662,22 +673,22 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={tenimg}
-            alt="The Future of Hiring"
+            alt="Future of Technical Hiring"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            White Paper
+            Industry Report
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            The Future of Technical Talent is Borderless
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read More <span className="ml-2">→</span>
+            Download Report <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -687,7 +698,7 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={eleimg}
-            alt="Diversifying Skillsets"
+            alt="Enterprise Talent Strategy"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
@@ -696,13 +707,13 @@ export default function AdaptiveHiring() {
             Case Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            Enterprise Digital Transformation Through Global Talent
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Watch Now <span className="ml-2">→</span>
+            Read Analysis <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -712,22 +723,22 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={twlimg}
-            alt="Global Remote Tech Talent"
+            alt="Global Talent Trends"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Infographic
+            Market Research
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            Global Technical Talent: Market Trends & Strategic Insights
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read More <span className="ml-2">→</span>
+            Access Research <span className="ml-2">→</span>
           </a>
         </div>
       </div>

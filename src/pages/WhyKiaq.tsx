@@ -20,32 +20,34 @@ import { UI_CONSTANTS } from '../constants/colors';
 export default function WhyKiaq() {
   const tabs = [
     {
-      name: "Top Global Talent",
+      name: "Strategic Tech Partnership",
       image: secimg,
-      tag: "Top Global Talent",
+      tag: "Strategic Tech Partnership",
       title: "Build stronger teams with elite digital talent",
-      desc: "KIAQ gives companies access to a private network of highly skilled technologists from emerging markets, enabling faster, smarter, and more scalable hiring."
+      desc: "We are a team of tech innovators, building smart IT solutions that fuel business transformation and accelerate growth."
     },
     {
-      name: "High-Growth Regions",
-      image: fourth, // 👉 YOU SAID YOU WANT THIS IMAGE ON CLICK
-      tag: "High-Growth Regions",
-      title: "Hire from world-class high-growth markets",
-      desc: "Expand your talent pipeline with skilled developers from rapidly growing tech regions across the globe."
+      name: "Innovation & Impact",
+      image: fourth,
+      tag: "Innovation & Impact",
+      title: "Where Innovation Meets Impact",
+      desc: "Welcome to Kiaq Technologies - Where Innovation Meets Impact. We deliver cutting-edge software solutions tailored to your business needs, empowering digital transformation and driving growth through technology."
     },
     {
-      name: "Verified & Skilled",
-      image: tirth,  // 👉 YOU SAID YOU WANT THIS IMAGE ON CLICK
-      tag: "Verified & Skilled",
-      title: "Work with rigorously vetted professionals",
-      desc: "Every developer undergoes multi-layer screening, including coding tests and live technical interviews."
+      name: "Experience & Excellence",
+      image: tirth,
+      tag: "Experience & Excellence",
+      title: "5+ Years of IT Industry Excellence",
+      desc: "With a 05-year track record in IT, we create reliable, forward-thinking technology solutions designed to help businesses scale and excel in the evolving digital era. Excellence is the cornerstone of our work."
     }
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0]);
   return (
     <>
-      <section
+     
+     {/* First Section */}
+     <section
         className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${kiaqimag})` }}
       >
@@ -59,18 +61,15 @@ export default function WhyKiaq() {
             {/* Left Content */}
            <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
   <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
-    WHY KIAQ?
+    WHY KIAQ TECHNOLOGIES?
   </p>
 
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
-    Connecting Global Teams <br />
-    with Exceptional Talent
+    Strategic Tech Partner for Business Transformation
   </h1>
 
   <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-    Finding reliable digital talent is tough — but KIAQ makes it simple. Through our
-    global talent network and intelligent matching, we help companies hire skilled
-    engineers faster, smarter, and more efficiently.
+    Beyond IT Services - From IT Support to Strategic Tech Partnership. At Kiaq Technologies, we go beyond traditional IT support to become your strategic technology partner. Our mission is to align innovative software solutions with your long-term business goals, ensuring seamless operations, enhanced efficiency, and sustainable growth.
   </p>
 
   <button className="mt-4 sm:mt-5 bg-orange-500 text-black font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
@@ -86,73 +85,74 @@ export default function WhyKiaq() {
       </section>
 
       {/* Second Section */}
-      <section className="bg-white text-gray-900 py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-12 lg:px-20">
-      <div className="max-w-7xl mx-auto">
+   <section className="bg-white text-gray-900 py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-10 lg:px-20">
+  <div className="max-w-7xl mx-auto">
 
-        {/* Heading */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-            Hire world-class talent from high-growth markets
-          </h2>
-        </div>
+    {/* Heading */}
+    <div className="text-center mb-8 sm:mb-10 md:mb-14">
+      <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight px-2">
+        Trusted Tech Professionals for Your Most Demanding IT Needs
+      </h2>
+    </div>
 
-        {/* Tabs */}
-        <div className="flex justify-center gap-4 sm:gap-6 md:gap-10 border-b border-gray-200 mb-10 sm:mb-12 md:mb-16 overflow-x-auto">
-          {tabs.map((tab) => (
-            <button
-              key={tab.name}
-              onClick={() => setActiveTab(tab)}
-              className={`pb-3 font-semibold transition whitespace-nowrap text-sm sm:text-base
-                ${
-                  activeTab.name === tab.name
-                    ? "border-b-4 border-orange-500 text-orange-600"
-                    : "text-gray-500 hover:text-orange-600"
-                }`}
-            >
-              {tab.name}
-            </button>
-          ))}
-        </div>
+    {/* Tabs */}
+    <div className="flex justify-start sm:justify-center gap-4 sm:gap-6 md:gap-10 border-b border-gray-200 mb-8 sm:mb-10 md:mb-14 overflow-x-auto no-scrollbar pb-2">
+      {tabs.map((tab) => (
+        <button
+          key={tab.name}
+          onClick={() => setActiveTab(tab)}
+          className={`pb-3 font-semibold transition whitespace-nowrap text-sm sm:text-base
+            ${
+              activeTab.name === tab.name
+                ? "border-b-4 border-orange-500 text-orange-600"
+                : "text-gray-500 hover:text-orange-600"
+            }`}
+        >
+          {tab.name}
+        </button>
+      ))}
+    </div>
 
-        {/* Main Two-Column Layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 md:gap-16">
+    {/* Main Two-Column Layout */}
+    <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 sm:gap-12 md:gap-16">
 
-          {/* Left Image */}
-          <div className="w-full lg:w-[48%] flex justify-center">
-            <img
-              src={activeTab.image}
-              alt={activeTab.name}
-              className="w-full max-w-sm sm:max-w-md rounded-2xl shadow-lg object-cover"
-            />
-          </div>
+      {/* Left Image */}
+      <div className="w-full lg:w-[48%] flex justify-center">
+        <img
+          src={activeTab.image}
+          alt={activeTab.name}
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-2xl shadow-lg object-cover"
+        />
+      </div>
 
-          {/* Right Content */}
-          <div className="w-full lg:w-[48%] space-y-6 sm:space-y-8">
-            <div>
-              <p className="uppercase text-xs sm:text-sm font-semibold text-orange-600 tracking-wider">
-                {activeTab.tag}
-              </p>
+      {/* Right Content */}
+      <div className="w-full lg:w-[48%] space-y-5 sm:space-y-6 md:space-y-8 text-center lg:text-left px-2">
+        <div>
+          <p className="uppercase text-xs sm:text-sm font-semibold text-orange-600 tracking-wider">
+            {activeTab.tag}
+          </p>
 
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2 leading-snug">
-                {activeTab.title}
-              </h3>
+          <h3 className="text-xl sm:text-3xl md:text-4xl font-bold mt-2 leading-snug">
+            {activeTab.title}
+          </h3>
 
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mt-3 sm:mt-4">
-                {activeTab.desc}
-              </p>
+          <p className="text-gray-600 text-sm sm:text-lg leading-relaxed mt-3 sm:mt-4">
+            {activeTab.desc}
+          </p>
 
-              <a
-                href="#"
-                className="inline-flex items-center mt-3 sm:mt-4 text-orange-600 font-semibold hover:underline text-sm sm:text-base"
-              >
-                Learn More →
-              </a>
-            </div>
-          </div>
-
+          <a
+            href="#"
+            className="inline-flex items-center mt-3 sm:mt-4 text-orange-600 font-semibold hover:underline text-sm sm:text-base"
+          >
+            Learn More →
+          </a>
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
+
 
 
 
@@ -176,9 +176,7 @@ export default function WhyKiaq() {
       {/* Left Text */}
       <div className="w-full lg:w-1/2 text-center lg:text-left space-y-3 sm:space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight">
-          Redefining access to talent <br className="hidden sm:inline" />
-          and shaping the future <br className="hidden sm:inline" />
-          of global work
+          Tech-Driven Plans, Perfectly Aligned with Your Business Needs
         </h2>
       </div>
     </div>
@@ -186,27 +184,27 @@ export default function WhyKiaq() {
     {/* Bottom Stats */}
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mt-4 sm:mt-6 md:mt-8 border-t border-white/20 pt-6 sm:pt-8 md:pt-10 text-center lg:text-left">
       <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">150K</h3>
+        <h3 className="text-xl sm:text-2xl font-bold">120+</h3>
         <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Verified, highly skilled <br /> global talent
+          Clients Worldwide
         </p>
       </div>
       <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">135+</h3>
+        <h3 className="text-xl sm:text-2xl font-bold">60+</h3>
         <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Countries represented in <br /> our marketplace
+          Experience Engineers
         </p>
       </div>
       <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">93%</h3>
+        <h3 className="text-xl sm:text-2xl font-bold">70+</h3>
         <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Satisfaction with value <br /> & partnership
+          Completed Projects
         </p>
       </div>
       <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">97%</h3>
+        <h3 className="text-xl sm:text-2xl font-bold">120%</h3>
         <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Satisfaction with overall <br /> talent quality
+          Customer Satisfaction
         </p>
       </div>
     </div>
@@ -222,23 +220,30 @@ export default function WhyKiaq() {
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6">
           <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
-            ✦ Flexible Engagements
+            ✦ Our Mission & Vision
           </p>
           <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
-            Engage the talent you need, <br className="hidden sm:block" /> however you need them
+            Innovative Technologies That Drive Business Success
           </h2>
           <h3 className="text-xl font-semibold text-gray-900">
-            Fill out teams or get individual contributors — all with the specific skills you need.
+            Our Mission
           </h3>
           <p className="text-gray-600">
-            KIAQ technologists can drive your most pressing projects efficiently and effectively.
+            Our mission is to be the technology partner that empowers businesses to unlock their full potential with intelligent, scalable IT solutions.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900">
+            Our Vision
+          </h3>
+          <p className="text-gray-600">
+            To be the leading provider of innovative technology solutions that transform businesses and drive sustainable growth in the digital era.
           </p>
 
           <a
             href="#"
             className="inline-flex items-center text-primary font-semibold hover:underline"
           >
-            Learn More
+            Read More About Our Mission
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 ml-2"
@@ -253,27 +258,27 @@ export default function WhyKiaq() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 pt-10 border-t border-gray-200">
             <div>
-              <h4 className="font-semibold text-gray-900">They’re certified</h4>
+              <h4 className="font-semibold text-gray-900">Strategic Analysis</h4>
               <p className="text-gray-600 text-sm mt-1">
-                Every KIAQ talent is fully tested and verified for skills and expertise.
+                90% success rate in strategic technology planning and implementation.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">They’re experts</h4>
+              <h4 className="font-semibold text-gray-900">Enterprise Solutions</h4>
               <p className="text-gray-600 text-sm mt-1">
-                You can count on KIAQ professionals to bring deep technical experience.
+                95% client satisfaction with our enterprise-grade solutions.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">They’re fluent in English</h4>
+              <h4 className="font-semibold text-gray-900">Development Experience</h4>
               <p className="text-gray-600 text-sm mt-1">
-                English fluency is a prerequisite — many are multilingual too.
+                80% faster development with our experienced engineering team.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">They’re committed</h4>
+              <h4 className="font-semibold text-gray-900">Quality Assurance</h4>
               <p className="text-gray-600 text-sm mt-1">
-                KIAQ talent average engagement with clients exceeds 18 months.
+                100% commitment to delivering high-quality, reliable technology solutions.
               </p>
             </div>
           </div>
@@ -283,7 +288,7 @@ export default function WhyKiaq() {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
           <img
             src={frimg}
-            alt="Flexible Engagements"
+            alt="Our Mission & Vision"
             className="w-full max-w-lg rounded-2xl shadow-lg object-contain"
           />
         </div>
@@ -301,7 +306,7 @@ export default function WhyKiaq() {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
           <img
             src={fvimg}
-            alt="Project Completion"
+            alt="Strategic Tech Partnership"
             className="w-full max-w-lg rounded-2xl shadow-lg object-contain"
           />
         </div>
@@ -309,23 +314,23 @@ export default function WhyKiaq() {
         {/* Right Content */}
         <div className="w-full lg:w-1/2 space-y-6">
           <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
-            ✦ Get Your Projects Completed
+            ✦ Strategic Tech Partner
           </p>
           <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
-            Clear backlog and drive new initiatives
+            Not Just Another IT Provider
           </h2>
           <h3 className="text-xl font-semibold text-gray-900">
-            KIAQ can form a team on your behalf and take full accountability for project completion.
+            Kiaq Technologies brings deep technical expertise across modern software development, cloud computing, cybersecurity, and enterprise IT solutions.
           </h3>
           <p className="text-gray-600">
-            Provide your project requirements, and we’ll assemble a functional team and dedicated project managers in days.
+            Our skilled team leverages cutting-edge technologies to design, develop, and deploy scalable systems tailored to your unique business needs. With a focus on innovation, quality, and performance, we help businesses embrace digital transformation and stay ahead in a rapidly evolving tech landscape.
           </p>
 
           <a
             href="#"
             className="inline-flex items-center text-primary font-semibold hover:underline"
           >
-            Learn More
+            Learn More About Our Expertise
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4 ml-2"
@@ -340,27 +345,27 @@ export default function WhyKiaq() {
           {/* Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 pt-10 border-t border-gray-200">
             <div>
-              <h4 className="font-semibold text-gray-900">Depend on full accountability</h4>
+              <h4 className="font-semibold text-gray-900">End-to-End Solutions</h4>
               <p className="text-gray-600 text-sm mt-1">
-                Once your project is in our docket, you can be sure about meeting every milestone.
+                From custom software development and cloud integration to data analytics and automation.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">Count on world-class skill</h4>
+              <h4 className="font-semibold text-gray-900">Industry Insight</h4>
               <p className="text-gray-600 text-sm mt-1">
-                KIAQ talent is the best of the best, ensuring top-tier execution.
+                We combine technical depth with industry insight to solve real business challenges.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">Get the best project managers</h4>
+              <h4 className="font-semibold text-gray-900">Future-Ready Solutions</h4>
               <p className="text-gray-600 text-sm mt-1">
-                It all happens on time and within budget. We make sure of it.
+                Our team stays ahead of the curve with the latest tools and frameworks.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900">See results</h4>
+              <h4 className="font-semibold text-gray-900">Secure & Agile</h4>
               <p className="text-gray-600 text-sm mt-1">
-                Complete projects up to 33% faster with our expert-managed workflow.
+                Ensuring secure, agile, and future-ready solutions for enterprises of all sizes.
               </p>
             </div>
           </div>
@@ -817,4 +822,3 @@ export default function WhyKiaq() {
 
   );
 }
-    

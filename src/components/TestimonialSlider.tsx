@@ -138,25 +138,21 @@ export default function TestimonialSlider() {
             </h2>
 
             <p className="text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 lg:mb-10 text-gray-600">
-              Andela's Adaptive Hiring approach offers a flexible engagement model that
-              lets you create and manage teams in any configuration.
+              We start by gaining a deep understanding of your business goals, challenges, and target audience. This discovery phase ensures that every solution we propose directly aligns with your objectives and delivers meaningful impact.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-6 sm:mb-8 lg:mb-10">
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Hire Individuals</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Design Tailored Solutions</h3>
                 <p className="text-sm sm:text-base leading-relaxed text-gray-600">
-                  Fill a critical gap or place a highly skilled problem solver. Have someone
-                  cover maternity leave. Or put a full-time, project‑driven technologist in
-                  place.
+                 Using the insights gathered, our team crafts strategic, scalable, and fully customized solutions. Every detail is designed to match your vision—ensuring the final output is functional, user-centric, and built to solve real business problems.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Create Managed Projects</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Deliver and Support</h3>
                 <p className="text-sm sm:text-base leading-relaxed text-gray-600">
-                  We ensure on‑time, on‑budget delivery for the most demanding projects, like
-                  custom application development and AI rapid prototyping.
+                  We ensure smooth, on-time delivery with a focus on quality and transparency. After launch, we continue to support your growth through ongoing improvements, optimizations, and reliable assistance—so your solution stays effective as your business evolves.
                 </p>
               </div>
             </div>
@@ -174,15 +170,14 @@ export default function TestimonialSlider() {
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-              We're recognized as a leader by G2
+              Your Questions, Answered – Clarity Starts Here.
             </h2>
             <p className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 text-gray-700 max-w-md mx-auto lg:mx-0">
-              The world's best brands trust Andela, including GitHub, Mastercard Foundry,
-              ViacomCBS, and Mindshare.
+              In today’s fast-paced tech world, understanding complex solutions can be challenging. We simplify the process by providing clear, straightforward answers to your toughest questions. From innovative software to cutting-edge infrastructure, we help you make informed decisions with confidence and clarity.
             </p>
 
             <button className="bg-white text-gray-800 font-semibold px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl shadow hover:shadow-md transition-all border border-gray-200 text-sm sm:text-base">
-              Request A Demo
+              FAQ's
             </button>
           </div>
 
@@ -201,17 +196,14 @@ export default function TestimonialSlider() {
         {/* Content Container */}
         <div className="max-w-3xl w-full mx-auto text-center mb-8 sm:mb-10 z-10">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4 px-2">
-            Harness the power of people + AI
+           Empowering Innovation, Leading with Expertise.
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-white/80 px-2">
-            Andela Talent Cloud automates and streamlines the complete global hiring lifecycle.
-            The Talent Decision Engine uses proprietary AI matching algorithms to identify
-            best-fit candidates at speed and scale. Expert technical hiring managers and
-            talent and client success partners support the entire process to ensure a seamless experience.
+            At the core of our mission is empowering innovation through cutting-edge technology and deep industry expertise. We lead with passion and precision, delivering smart solutions that drive growth and keep your business ahead in an ever-evolving digital landscape. With us, your future is built on innovation and expert guidance.
           </p>
 
           <button className="mt-5 sm:mt-6 bg-teal-400 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-xl font-medium hover:bg-teal-500 transition-all text-sm sm:text-base">
-            Learn More About Andela Talent Cloud
+            Lead The Team
           </button>
         </div>
 

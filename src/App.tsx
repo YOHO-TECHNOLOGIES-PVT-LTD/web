@@ -77,15 +77,15 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/why-kiaq" element={<WhyKiaq />} />
+          <Route path="/who-we-are" element={<WhyKiaq />} />
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/startup-scaling" element={<StartupScaling />} />
           <Route path="/enterprise-projects" element={<EnterpriseProjects />} />
           <Route path="/digital-transformation" element={<DigitalTransformation />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/dedicated-teams" element={<DedicatedTeams />} />
-          <Route path="/staff-augmentation" element={<StaffAugmentation />} />
-          <Route path="/project-based" element={<ProjectBased />} />
+          <Route path="/how-kiaq-works" element={<StaffAugmentation />} />
+          <Route path="/successfully-manage-remote" element={<ProjectBased />} />
           <Route path="/platform" element={<Platform />} />
           <Route path="/talent-matching" element={<TalentMatching />} />
           <Route path="/project-management" element={<ProjectManagement />} />
@@ -131,7 +131,7 @@ function App() {
           <Route path="/genai-engagement" element={<GenaiEngagement />} />
           <Route path="/cloud-migrations" element={<CloudMigrations />} />
           <Route path="/infographics" element={<Infographics />} />
-          <Route path="/humans-of-kiaq" element={<HumansOfKiaq />} />
+          <Route path="/our-expertise" element={<HumansOfKiaq />} />
           <Route path="/profiles-in-brilliance" element={<ProfilesInBrilliance />} />
           <Route path="/our-process" element={<Ourprocess />} />
           <Route path="/find-opportunities" element={<FindOpportunities />} />

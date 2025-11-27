@@ -10,15 +10,15 @@ import { UI_CONSTANTS } from '../constants/colors';
 const useCases = [
   {
     title: "Digital Transformation in Oil & Gas Energy Sector",
-    description: "Kiaq Technologies brings deep technological expertise to the oil and gas energy sector, delivering digital solutions that enhance operational efficiency, safety, and sustainability. Our services include real-time data monitoring, predictive maintenance systems, asset management platforms, and automation of field operations. By integrating IoT, cloud infrastructure, and advanced analytics, we help energy companies optimize resource utilization, reduce downtime, and drive intelligent decision-making. With a focus on innovation and reliability.",
-    category: "Oil &Gas Energy",
+    description: "Kiaq Technologies delivers comprehensive digital solutions for the oil and gas industry, enhancing operational efficiency, safety, and sustainability. Our expertise includes real-time monitoring systems, predictive maintenance platforms, asset management solutions, and operational automation. By leveraging IoT, cloud infrastructure, and advanced analytics, we enable energy companies to optimize resource allocation, minimize downtime, and facilitate data-driven decision-making.",
+    category: "Oil & Gas Energy",
     bgColor: "#2C4A4D",
     patternColor: "#3D5F63",
     patternOpacity: "0.6"
   },
   {
     title: "Smart Manufacturing & Industrial Automation Solutions", 
-    description: "At Kiaq Technologies, we specialize in delivering smart IT solutions tailored for the manufacturing industry. Our expertise helps manufacturers modernize operations through automation, IoT integration, real-time data analytics, and custom ERP systems. We streamline production workflows, enhance supply chain visibility, and enable predictive maintenance—driving efficiency, reducing downtime, and increasing output quality. With a focus on digital transformation, we equip manufacturing businesses with the tools to stay competitive, agile, and future-ready in an evolving industrial landscape.",
+    description: "Kiaq Technologies provides specialized IT solutions for manufacturing enterprises, driving operational modernization through automation, IoT integration, real-time analytics, and customized ERP implementations. We optimize production workflows, enhance supply chain transparency, and implement predictive maintenance strategies—improving efficiency, reducing operational interruptions, and elevating product quality. Our digital transformation focus equips manufacturing organizations with competitive, agile, and future-ready capabilities.",
     category: "Manufacturing",
     bgColor: "#D5E8EC",
     patternColor: "#BDD9DE",
@@ -26,7 +26,7 @@ const useCases = [
   },
   {
     title: "Digital Commerce & Supply Chain Optimization",
-    description: "At Kiaq Technologies, we bring deep technological expertise to the consumer goods sector, helping brands stay competitive in an increasingly digital marketplace. Our solutions are designed to optimize supply chains, enhance customer engagement, and enable real-time decision-making through data analytics and automation. From developing robust inventory management systems to delivering personalized e-commerce platforms and integrating AI-driven insights, we empower consumer goods companies to streamline operations and adapt quickly to market demands. With a focus on innovation and efficiency.",
+    description: "Kiaq Technologies delivers advanced technological solutions for the consumer goods sector, enabling brands to maintain competitive advantage in evolving digital marketplaces. Our comprehensive approach optimizes supply chain operations, enhances customer engagement strategies, and facilitates real-time business intelligence through sophisticated analytics and automation. From enterprise inventory management systems to personalized e-commerce platforms and AI-powered insights, we empower consumer goods organizations to streamline operations and rapidly adapt to market dynamics.",
     category: "Consumer Goods",
     bgColor: "#C8E4D4",
     patternColor: "#B0D6BE",
@@ -34,7 +34,7 @@ const useCases = [
   },
   {
     title: "Renewable Energy Management & Grid Optimization",
-    description: "At Kiaq Technologies, we bring cutting-edge digital solutions to the renewable energy sector, enabling smarter, more efficient, and sustainable energy management. Our expertise spans IoT-based monitoring systems, energy data analytics, grid automation, and AI-powered forecasting tools. We help renewable energy companies optimize performance, reduce downtime, and make data-driven decisions through custom-built software and integrated platforms. Whether it's solar, wind, or hybrid energy systems, our technology solutions are designed to support operational efficiency, compliance, and long-term scalability—paving the way for a cleaner, tech-driven energy future.",
+    description: "Kiaq Technologies implements cutting-edge digital solutions for the renewable energy sector, enabling intelligent, efficient, and sustainable energy management. Our technical expertise encompasses IoT monitoring systems, energy analytics platforms, grid automation, and AI-driven forecasting capabilities. We support renewable energy providers in optimizing operational performance, reducing system downtime, and implementing data-informed decision processes through customized software solutions and integrated technology platforms.",
     category: "Renewable Energy", 
     bgColor: "#F5F1E8",
     patternColor: "#E3DCC9",
@@ -42,7 +42,7 @@ const useCases = [
   },
   {
     title: "Digital Governance & Public Service Transformation",
-    description: "At Kiaq Technologies, we specialize in delivering secure, scalable, and citizen-centric digital solutions tailored for the public sector. Our expertise spans e-governance platforms, data-driven decision systems, cloud infrastructure, and automation tools designed to modernize government operations. We understand the unique challenges of public institutions — from compliance and transparency to performance and accessibility — and craft technology that enhances service delivery, improves efficiency, and fosters trust. By aligning with government digital transformation goals, we help build smarter, more connected communities through innovative IT solutions.",
+    description: "Kiaq Technologies specializes in delivering secure, scalable, and citizen-focused digital solutions for public sector organizations. Our expertise includes e-governance platforms, data-driven policy systems, cloud infrastructure, and automation tools designed to modernize governmental operations. We address the distinctive challenges of public institutions—including regulatory compliance, operational transparency, performance optimization, and service accessibility—developing technology solutions that enhance service delivery, improve operational efficiency, and strengthen public trust.",
     category: "Public Sector",
     bgColor: "#F5F1E8",
     patternColor: "#E3DCC9",
@@ -50,7 +50,7 @@ const useCases = [
   },
   {
     title: "Healthcare Digital Transformation & Telemedicine Platforms",
-    description: "At Kiaq Technologies, we specialize in delivering advanced IT solutions tailored for the healthcare sector. Our expertise includes developing secure, HIPAA-compliant software, telemedicine platforms, patient management systems, and data-driven health analytics tools. We help healthcare providers enhance operational efficiency, ensure data security, and deliver seamless patient experiences through intuitive digital interfaces and automated workflows. By combining innovation with industry compliance, we enable healthcare organizations to modernize their infrastructure, improve care delivery, and make informed, real-time decisions that positively impact patient outcomes.",
+    description: "Kiaq Technologies delivers advanced IT solutions specifically designed for healthcare organizations. Our capabilities include developing secure, compliant software systems, telemedicine platforms, patient management solutions, and healthcare analytics tools. We assist healthcare providers in enhancing operational efficiency, ensuring data security, and delivering superior patient experiences through intuitive digital interfaces and automated clinical workflows. Combining innovation with regulatory compliance, we enable healthcare institutions to modernize infrastructure and improve care delivery outcomes.",
     category: "Healthcare",
     bgColor: "#C8E4D4",
     patternColor: "#B0D6BE",
@@ -58,7 +58,7 @@ const useCases = [
   },
   {
     title: "HSSE Compliance & Risk Management Systems",
-    description: "At Kiaq Technologies, we integrate Health, Safety, Security, and Environmental (HSSE) standards into every layer of our operations and solutions. Our expertise ensures that all technology deployments, infrastructure implementations, and digital transformations adhere to the highest safety protocols and regulatory compliance. From secure data environments and cyber risk mitigation to workplace safety in tech-driven projects, we prioritize a culture of responsibility and sustainability. Our commitment to HSSE not only protects people and systems but also enhances operational reliability and long-term trust with our clients.",
+    description: "Kiaq Technologies integrates comprehensive Health, Safety, Security, and Environmental standards throughout our operational framework and solution delivery. Our expertise ensures all technology deployments, infrastructure implementations, and digital transformation initiatives adhere to stringent safety protocols and regulatory requirements. From secure data environments and cybersecurity risk mitigation to workplace safety in technology projects, we maintain a culture of responsibility and sustainability. Our HSSE commitment protects personnel and systems while enhancing operational reliability and client trust.",
     category: "HSSE",
     bgColor: "#E5E5E5",
     patternColor: "#CFCFCF",
@@ -66,7 +66,7 @@ const useCases = [
   },
   {
     title: "FinTech Innovation & Digital Banking Solutions",
-    description: "At Kiaq Technologies, we specialize in delivering secure, high-performance IT solutions tailored for the financial services industry. From developing custom fintech applications and digital payment platforms to implementing robust cybersecurity frameworks and data analytics tools, we help financial institutions streamline operations, enhance customer experiences, and ensure regulatory compliance. Our deep understanding of banking, insurance, and investment sectors allows us to build scalable, agile systems that drive innovation while maintaining the highest standards of security and reliability. Partner with us to transform your financial services through technology that’s built for trust and performance.",
+    description: "Kiaq Technologies specializes in delivering secure, high-performance IT solutions for financial services organizations. Our services include custom fintech application development, digital payment platforms, robust cybersecurity frameworks, and advanced data analytics tools. We assist financial institutions in streamlining operations, enhancing customer experiences, and maintaining regulatory compliance. Our deep understanding of banking, insurance, and investment sectors enables us to build scalable, agile systems that drive innovation while upholding the highest security and reliability standards.",
     category: "Financial Services",
     bgColor: "#E5E5E5",
     patternColor: "#CFCFCF",
@@ -74,7 +74,7 @@ const useCases = [
   },
   {
     title: "Telecom Infrastructure & Network Modernization",
-    description: "At Kiaq Technologies, we deliver advanced IT solutions tailored for the telecommunications industry, enabling seamless connectivity, infrastructure optimization, and service innovation. Our expertise spans network management systems, VoIP integration, real-time data processing, and scalable cloud platforms that support high-demand environments. With a focus on performance, security, and customer experience, we help telecom providers modernize their operations, accelerate digital transformation, and stay ahead in a rapidly evolving landscape.",
+    description: "Kiaq Technologies delivers advanced IT solutions for telecommunications providers, enabling seamless connectivity, infrastructure optimization, and service innovation. Our expertise spans network management systems, VoIP integration, real-time data processing, and scalable cloud platforms supporting high-demand environments. With emphasis on performance, security, and customer experience, we assist telecom operators in modernizing operations, accelerating digital transformation, and maintaining competitive advantage in rapidly evolving markets.",
     category: "Telecommunications",
     bgColor: "#E5E5E5",
     patternColor: "#CFCFCF",
@@ -206,20 +206,20 @@ export default function WhyKiaq() {
       {/* Left Content */}
       <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
         <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
-          KIAQ
+          KIAQ TECHNOLOGIES
         </p>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
-          Our <br />
-          Expertise
+          Enterprise Technology <br />
+          Solutions
         </h1>
 
         <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-          Kiaq Technologies excels in delivering innovative, scalable tech solutions that drive digital transformation and business growth.
+          Kiaq Technologies delivers innovative, scalable technology solutions that drive digital transformation and accelerate business growth across diverse industry sectors.
         </p>
 
         <button className="mt-4 sm:mt-5 bg-orange-500 text-black font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
-          Book a discovery call
+          Schedule Consultation
         </button>
       </div>
 
@@ -240,7 +240,7 @@ export default function WhyKiaq() {
     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
       <img
         src={fvimg}
-        alt="Project Completion"
+        alt="Industry Solutions"
         className="w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl shadow-lg object-contain"
       />
     </div>
@@ -248,14 +248,14 @@ export default function WhyKiaq() {
     {/* Right Content */}
     <div className="w-full lg:w-1/2 space-y-4 sm:space-y-5 lg:space-y-6">
       <p className="text-xs sm:text-sm font-semibold tracking-widest text-gray-500 uppercase">
-        ✦ What We're Great At
+        ✦ Core Capabilities
       </p>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight sm:leading-snug text-gray-900">
-        Scalable Tech Built for Industry-Focused Digital Execution
+        Industry-Specific Digital Transformation Solutions
       </h2>
       
       <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-        At Kiaq Technologies, we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance, or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience, and accelerate digital growth. With a deep understanding of sector-specific challenges, we align technology with business goals—ensuring every solution is both future-ready and impact-driven.
+        Kiaq Technologies specializes in delivering scalable technology solutions tailored to the unique digital requirements of diverse industrial sectors. Our expertise spans manufacturing, healthcare, financial services, retail, and beyond. We develop agile, high-performance systems designed to optimize operations, enhance user experiences, and accelerate digital maturity. With comprehensive understanding of sector-specific challenges, we align technology with strategic business objectives—ensuring every solution delivers measurable impact and future-ready capabilities.
       </p>
     </div>
   </div>
@@ -266,11 +266,11 @@ export default function WhyKiaq() {
   <div className="max-w-[1400px] mx-auto">
     <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0">
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
-        Fueling Industrial Transformation Through Smart IT Solutions
+        Driving Industrial Evolution Through Intelligent Technology Solutions
       </h2>
 
       <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto">
-        At Kiaq Technologies, we empower industries to evolve and thrive in the digital era through intelligent, future-ready IT solutions. By leveraging cutting-edge technologies such as cloud computing, automation, data analytics, and custom software development, we address the unique operational needs of various sectors. Our industry-specific approach ensures seamless integration, optimized workflows, and enhanced productivity. From manufacturing to retail, logistics to healthcare, we deliver scalable, secure, and agile tech solutions that drive real impact—transforming traditional processes into smart, efficient systems that fuel sustainable growth.
+        Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors. Our industry-focused methodology ensures seamless integration, optimized workflows, and enhanced productivity. From manufacturing to healthcare, financial services to telecommunications, we deliver scalable, secure, and agile technology solutions that generate tangible business value—transforming conventional processes into intelligent, efficient systems that fuel sustainable growth.
       </p>
     </div>
     
@@ -299,7 +299,7 @@ export default function WhyKiaq() {
         style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
         className="px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
       >
-        Expertise
+        Explore Solutions
       </button>
     </div>
   </div>
@@ -351,16 +351,16 @@ export default function WhyKiaq() {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 relative z-10">
     {/* Heading */}
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 sm:mb-12 lg:mb-16 leading-tight">
-      AI-Powered Technology Ensures Success
+      Advanced Technology Solutions for Business Success
     </h2>
 
     {/* 3 Feature Cards */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
       {/* Card 1 */}
       <div className="bg-[#ffe8dc] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">KIAQ Talent Cloud</h3>
+        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">Enterprise Talent Solutions</h3>
         <p className="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
-          Create job postings and receive instant AI-driven candidate recommendations. Schedule interviews and hire faster with intelligent automation.
+          Create comprehensive position requirements and receive AI-powered candidate matching. Streamline recruitment processes and accelerate hiring through intelligent automation and scheduling.
         </p>
         <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
           Learn More
@@ -368,14 +368,14 @@ export default function WhyKiaq() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </a>
-        <img src={sximg} alt="KIAQ Talent Cloud" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
+        <img src={sximg} alt="Enterprise Talent Solutions" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
       </div>
 
       {/* Card 2 */}
       <div className="bg-[#ffe8dc] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">Talent Decision Engine™</h3>
+        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">Intelligent Decision Platform™</h3>
         <p className="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
-          Our AI-powered matching engine analyzes thousands of data points to connect you with the most qualified talent for your requirements—quickly and accurately.
+          Our AI-powered analytics engine processes extensive data parameters to connect organizations with optimally qualified resources for their specific requirements—delivering precision and efficiency.
         </p>
         <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
           Learn More
@@ -383,14 +383,14 @@ export default function WhyKiaq() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </a>
-        <img src={svnimg} alt="Talent Decision Engine" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
+        <img src={svnimg} alt="Intelligent Decision Platform" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
       </div>
 
       {/* Card 3 */}
       <div className="bg-[#ffe8dc] rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-all duration-300">
-        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">KIAQ Connect</h3>
+        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-2 sm:mb-3">Enterprise Integration Hub</h3>
         <p className="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
-         Instantly sync with your preferred platforms and tools. Get highly qualified matches for your open roles in seconds.
+          Seamlessly integrate with your existing enterprise systems and preferred technology platforms. Access highly qualified resource matches for organizational requirements with exceptional efficiency.
         </p>
         <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
           Learn More
@@ -398,7 +398,7 @@ export default function WhyKiaq() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </a>
-        <img src={ethimg} alt="KIAQ Connect" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
+        <img src={ethimg} alt="Enterprise Integration Hub" className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-md" />
       </div>
     </div>
 
@@ -426,18 +426,18 @@ export default function WhyKiaq() {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 relative z-10">
         {/* Left Text */}
         <div className="w-full lg:w-2/3">
-          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">Expertise That Powers Digital Excellence Book a Free Consultation</h3>
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">Expertise That Powers Digital Excellence</h3>
           <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-           At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
+            Kiaq Technologies establishes the foundation for every solution through comprehensive technical expertise and industry knowledge. With deep understanding of emerging technologies and sector-specific requirements, we design intelligent, scalable, and secure systems that address complex business challenges. Our team of seasoned professionals combines innovation, precision, and strategic insight to drive digital transformation across industries. From conceptualization through implementation, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your organization for sustained success in an evolving technological landscape.
           </p>
           <button className="bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover:bg-[#006666] transition-all w-full sm:w-auto">
-            Shedule Now
+            Schedule Consultation
           </button>
         </div>
 
         {/* Right Image */}
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-          <img src={ninth} alt="KIAQ TEI Report" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
+          <img src={ninth} alt="Technology Excellence" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
         </div>
       </div>
     </div>
@@ -495,7 +495,7 @@ export default function WhyKiaq() {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: UI_CONSTANTS.WHITE }}
         >
-          Build the tech team of the future with KIAQ
+          Build Your Future Technology Team with KIAQ
         </h2>
 
         <button
@@ -505,7 +505,7 @@ export default function WhyKiaq() {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
         >
-          Request a consultation
+          Request Consultation
         </button>
       </div>
     </div>
@@ -543,7 +543,7 @@ export default function WhyKiaq() {
             className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
             style={{ color: '#173B3F' }}
           >
-            SCHEDULE A CALL
+            CONNECT WITH US
           </p>
         </div>
 
@@ -551,7 +551,7 @@ export default function WhyKiaq() {
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
           style={{ color: '#173B3F' }}
         >
-          Let us know how we can help
+          Let Us Understand Your Technology Requirements
         </h2>
 
         <button
@@ -562,7 +562,7 @@ export default function WhyKiaq() {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
         >
-          Schedule Now
+          Schedule Meeting
         </button>
       </div>
     </div>

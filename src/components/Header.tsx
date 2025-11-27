@@ -8,20 +8,72 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<Array<{name: string, path: string}>>([]);
   const location = useLocation();
   const headerRef = useRef<HTMLElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   
   const navigate = useNavigate();
+
+  // All searchable pages
+  const pages = [
+    { name: 'Home', path: '/' },
+    { name: 'Who We Are', path: '/who-we-are' },
+    { name: 'Customer Stories', path: '/customer-stories' },
+    { name: 'Insights', path: '/insights' },
+    { name: 'Talent Community', path: '/talent-community' },
+    { name: 'Untapped Markets', path: '/untapped-markets' },
+    { name: 'Mission Focused', path: '/mission-focused' },
+    { name: 'Forrester TEI', path: '/forrester-tei' },
+    { name: 'Impact', path: '/impact' },
+    { name: 'Application Development', path: '/application-development' },
+    { name: 'Data Science & AI', path: '/data-science-ai' },
+    { name: 'Data Engineering', path: '/data-engineering-analytics' },
+    { name: 'Cloud & DevOps', path: '/cloud-devops' },
+    { name: 'Adaptive Hiring', path: '/adaptive-hiring' },
+    { name: 'How KIAQ Works', path: '/how-kiaq-works' },
+    { name: 'Successfully Manage Remote Teams', path: '/successfully-manage-remote' },
+    { name: 'Our Expertise', path: '/our-expertise' },
+    { name: 'Request Consultation', path: '/request-consultation' },
+    { name: 'Use Cases', path: '/use-cases' },
+    { name: 'Custom Software Development', path: '/custom-software-development' },
+    { name: 'Legacy System Modernization', path: '/legacy-system-modernization' },
+    { name: 'Web App Development', path: '/web-app-development' },
+    { name: 'GenAI Engagement', path: '/genai-engagement' },
+    { name: 'Cloud Migrations', path: '/cloud-migrations' },
+  ];
 
   // Scroll to top when route changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  // Focus search input when opened
+  useEffect(() => {
+    if (isSearchOpen && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [isSearchOpen]);
+
+  // Handle search
+  useEffect(() => {
+    if (searchQuery.trim() === '') {
+      setSearchResults([]);
+      return;
+    }
+
+    const filtered = pages.filter(page =>
+      page.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setSearchResults(filtered);
+  }, [searchQuery]);
+
   const getActiveMenu = (path: string) => {
-    if (path.startsWith('/why-kiaq') || path.startsWith('/customer-stories') || path.startsWith('/insights') || path.startsWith('/talent-community') || path.startsWith('/untapped-markets') || path.startsWith('/mission-focused') || path.startsWith('/forrester-tei') || path.startsWith('/impact')) return 'why-kiaq';
+    if (path.startsWith('/who-we-are') || path.startsWith('/customer-stories') || path.startsWith('/insights') || path.startsWith('/talent-community') || path.startsWith('/untapped-markets') || path.startsWith('/mission-focused') || path.startsWith('/forrester-tei') || path.startsWith('/impact')) return 'who-we-are';
     if (path.startsWith('/startup-scaling') || path.startsWith('/enterprise-projects') || path.startsWith('/digital-transformation') || path.startsWith('/use-cases') || path.startsWith('/custom-software-development') || path.startsWith('/legacy-system-modernization') || path.startsWith('/web-app-development') || path.startsWith('/genai-engagement') || path.startsWith('/cloud-migrations')) return 'use-cases';
-    if (path.startsWith('/dedicated-teams') || path.startsWith('/staff-augmentation') || path.startsWith('/project-based') || path.startsWith('/solutions') || path.startsWith('/cloud-devops') || path.startsWith('/adaptive-hiring') || path.startsWith('/how-it-works') || path.startsWith('/manage-remote-teams') || path.startsWith('/flexible-engagement') || path.startsWith('/browse-talent') || path.startsWith('/application-development') || path.startsWith('/data-science-ai') || path.startsWith('/data-engineering-analytics') || path.startsWith('/skills')) return 'solutions';
+    if (path.startsWith('/dedicated-teams') || path.startsWith('/how-kiaq-works') || path.startsWith('/successfully-manage-remote') || path.startsWith('/solutions') || path.startsWith('/cloud-devops') || path.startsWith('/adaptive-hiring') || path.startsWith('/how-it-works') || path.startsWith('/manage-remote-teams') || path.startsWith('/flexible-engagement') || path.startsWith('/browse-talent') || path.startsWith('/application-development') || path.startsWith('/data-science-ai') || path.startsWith('/data-engineering-analytics') || path.startsWith('/skills')) return 'solutions';
     if (path.startsWith('/platform') || path.startsWith('/platform-overview') || path.startsWith('/integrations') || path.startsWith('/andela-pay') || path.startsWith('/qualified-by-andela')) return 'platform';
     if (path.startsWith('/blog') || path.startsWith('/case-studies') || path.startsWith('/whitepapers') || path.startsWith('/resources') || path.startsWith('/resource-center') || path.startsWith('/ebooks') || path.startsWith('/humans-of-andela') || path.startsWith('/profiles-in-brilliance') || path.startsWith('/infographics') || path.startsWith('/videos') || path.startsWith('/webinars')) return 'resources';
     if (path.startsWith('/apply') || path.startsWith('/talent-success') || path.startsWith('/skill-development') || path.startsWith('/talent') || path.startsWith('/why-join-andela') || path.startsWith('/our-process') || path.startsWith('/find-opportunities') || path.startsWith('/talent-experience') || path.startsWith('/perks') || path.startsWith('/codewars') || path.startsWith('/help-center')) return 'talent';
@@ -45,6 +97,7 @@ export default function Header() {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
         setActiveDropdown(null);
+        setIsSearchOpen(false);
       }
     };
 
@@ -63,6 +116,20 @@ export default function Header() {
   const closeDropdown = () => {
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);
+  };
+
+  const handleSearchClick = () => {
+    setIsSearchOpen(!isSearchOpen);
+    setSearchQuery('');
+    setSearchResults([]);
+    setActiveDropdown(null);
+  };
+
+  const handleSearchResultClick = (path: string) => {
+    navigate(path);
+    setIsSearchOpen(false);
+    setSearchQuery('');
+    setSearchResults([]);
   };
 
   // Desktop dropdown container styles
@@ -176,9 +243,9 @@ export default function Header() {
             </button>
 
             <button
-              onClick={() => navigate('/why-kiaq')}
+              onClick={() => navigate('/who-we-are')}
               className={`${
-                location.pathname === '/why-kiaq'
+                location.pathname === '/who-we-are'
                   ? 'text-orange-400 border-b-2 border-orange-400'
                   : isScrolled
                     ? 'text-gray-700'
@@ -202,9 +269,9 @@ export default function Header() {
             </button>
 
             <button
-              onClick={() => navigate('/humans-of-Kiaq')}
+              onClick={() => navigate('/our-expertise')}
               className={`${
-                location.pathname === '/humans-of-Kiaq'
+                location.pathname === '/our-expertise'
                   ? 'text-orange-400 border-b-2 border-orange-400'
                   : isScrolled
                     ? 'text-gray-700'
@@ -213,14 +280,6 @@ export default function Header() {
             >
               Our Expertise
             </button>
-
-            {/* <button
-              className={`${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              } hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1 whitespace-nowrap`}
-            >
-              Portfolio
-            </button> */}
 
            <button
               onClick={() => {
@@ -240,6 +299,32 @@ export default function Header() {
 
           {/* Right Side Icons */}
           <div className="flex items-center space-x-2 sm:space-x-3">
+            {/* Mobile Search Icon - Visible on all screens */}
+            <button
+              onClick={handleSearchClick}
+              className={`sm:hidden ${
+                isScrolled ? 'text-gray-700' : 'text-white'
+              } hover:text-orange-400 p-2 transition-colors`}
+              aria-label="Search"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
+            {/* Desktop Search Icon - Hidden on mobile */}
+            <button
+              onClick={handleSearchClick}
+              className={`hidden sm:block ${
+                isScrolled ? 'text-gray-700' : 'text-white'
+              } hover:text-orange-400 p-2 transition-colors`}
+              aria-label="Search"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
             <button
               className={`hidden sm:block ${
                 isScrolled ? 'text-gray-700' : 'text-white'
@@ -250,16 +335,7 @@ export default function Header() {
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
             </button>
-            <button
-              className={`hidden sm:block ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              } hover:text-orange-400 p-2 transition-colors`}
-              aria-label="Search"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
+            
             <Link
               to="/request-consultation"
               className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 hover:scale-105 whitespace-nowrap"
@@ -274,6 +350,55 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white shadow-lg border-t border-gray-200 absolute left-0 right-0 top-16 max-h-[calc(100vh-4rem)] overflow-y-auto">
             <div className="px-4 py-4 space-y-2">
+
+              {/* Search Bar in Mobile Menu */}
+              <div className="px-4 py-3">
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search for pages..."
+                    className="w-full px-4 py-3 pr-10 rounded-lg focus:outline-none text-gray-700 border border-gray-300 focus:border-orange-400 transition-colors"
+                  />
+                  <svg
+                    className="absolute right-3 top-3.5 w-5 h-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+
+                {/* Search Results in Mobile Menu */}
+                {searchQuery && (
+                  <div className="mt-2 max-h-48 overflow-y-auto">
+                    {searchResults.length > 0 ? (
+                      <div className="space-y-1">
+                        {searchResults.map((result, index) => (
+                          <button
+                            key={index}
+                            onClick={() => handleSearchResultClick(result.path)}
+                            className="w-full text-left px-3 py-2 rounded-lg transition-all bg-gray-50 border border-gray-200 hover:bg-orange-50 hover:border-orange-200"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="text-gray-700 font-medium text-sm">{result.name}</span>
+                              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-center py-4 text-gray-500 text-sm">
+                        No pages found matching "{searchQuery}"
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
 
               {/* Home */}
               <button
@@ -291,11 +416,11 @@ export default function Header() {
               {/* Why KIAQ */}
               <button
                 onClick={() => {
-                  navigate('/why-kiaq');
+                  navigate('/who-we-are');
                   setIsMobileMenuOpen(false);
                 }}
                 className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm
-                  ${location.pathname === '/why-kiaq' ? 'text-orange-400 bg-gray-50' : 'text-gray-700'}
+                  ${location.pathname === '/who-we-are' ? 'text-orange-400 bg-gray-50' : 'text-gray-700'}
                   hover:bg-gray-50 hover:text-orange-400`}
               >
                 Who We Are
@@ -361,14 +486,14 @@ export default function Header() {
                       Adaptive Hiring
                     </Link>
                     <Link
-                      to="/staff-augmentation"
+                      to="/how-kiaq-works"
                       onClick={closeDropdown}
                       className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-400 hover:bg-gray-50 rounded transition-colors"
                     >
                       How Kiaq Works
                     </Link>
                     <Link
-                      to="/project-based"
+                      to="/successfully-manage-remote"
                       onClick={closeDropdown}
                       className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-400 hover:bg-gray-50 rounded transition-colors"
                     >
@@ -381,25 +506,15 @@ export default function Header() {
               {/* Our Expertise */}
               <button
                 onClick={() => {
-                  navigate('/humans-of-Kiaq');
+                  navigate('/our-expertise');
                   setIsMobileMenuOpen(false);
                 }}
                 className={`block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm
-                  ${location.pathname === '/humans-of-Kiaq' ? 'text-orange-400 bg-gray-50' : 'text-gray-700'}
+                  ${location.pathname === '/our-expertise' ? 'text-orange-400 bg-gray-50' : 'text-gray-700'}
                   hover:bg-gray-50 hover:text-orange-400`}
               >
                 Our Expertise
               </button>
-
-              {/* Portfolio */}
-              {/* <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                }}
-                className="block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
-              >
-                Portfolio
-              </button> */}
 
               {/* Careers */}
               <button
@@ -417,6 +532,63 @@ export default function Header() {
         )}
 
       </nav>
+
+      {/* Search Bar Dropdown - For both desktop and mobile */}
+      {isSearchOpen && (
+        <div className="absolute left-0 right-0 top-16 z-40 bg-transparent">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="relative">
+              <input
+                ref={searchInputRef}
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search for pages..."
+                className="w-full px-4 py-3 pr-10 rounded-lg focus:outline-none text-white border border-gray-300 focus:border-orange-400 transition-colors placeholder-gray-300"
+                style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+              />
+              <svg
+                className="absolute right-3 top-3.5 w-5 h-5 text-gray-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+
+            {/* Search Results */}
+            {searchQuery && (
+              <div className="mt-4 max-h-96 overflow-y-auto">
+                {searchResults.length > 0 ? (
+                  <div className="space-y-2">
+                    {searchResults.map((result, index) => (
+                      <button
+                        key={index}
+                        onClick={() => handleSearchResultClick(result.path)}
+                        className="w-full text-left px-4 py-3 rounded-lg transition-all border border-gray-300 hover:bg-orange-50 hover:border-orange-200"
+                        style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className="text-white font-medium">{result.name}</span>
+                          <svg className="w-4 h-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                        <span className="text-sm text-gray-300">{result.path}</span>
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8 text-gray-300">
+                    No pages found matching "{searchQuery}"
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Desktop Solutions Dropdown */}
       {activeDropdown === 'solutions' && (
@@ -495,7 +667,7 @@ export default function Header() {
                         › Adaptive Hiring
                       </Link>
                       <Link
-                        to="/staff-augmentation"
+                        to="/how-kiaq-works"
                         onClick={closeDropdown}
                         className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                         style={{ color: "#2d4a4a" }}
@@ -503,7 +675,7 @@ export default function Header() {
                         › How Kiaq Works
                       </Link>
                       <Link
-                        to="/project-based"
+                        to="/successfully-manage-remote"
                         onClick={closeDropdown}
                         className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                         style={{ color: "#2d4a4a" }}

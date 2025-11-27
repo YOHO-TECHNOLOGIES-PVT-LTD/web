@@ -1,4 +1,3 @@
-
 import { Clock, Sparkles } from "lucide-react";
 import insightimg from "../assets/6643e549495270ffe8edb1e8_ForCompanies_AdaptiveHiring_5-steps-to-building-a-successful-global-team_InteriorPageHero-p-2000.avif";
 import inimg from "../assets/6737bae590f5e024e63981b5_Blog - John_Winsor_Webinar 570x570.avif";
@@ -8,20 +7,20 @@ import inimg3 from "../assets/6643e549495270ffe8edb1e8_ForCompanies_AdaptiveHiri
 export default function Insights() {
   const articles = [
     {
-      date: "NOV 15, 2024",
-      title: "Harnessing AI and Open Talent: Key Insights from John Winsor",
+      date: "NOV 15, 2025",
+      title: "Leveraging AI and Global Talent: Strategic Insights from Industry Leaders",
       author: "Ashley Rendall",
       image: inimg
     },
     {
-      date: "OCT 10, 2024",
-      title: "Honoring World Mental Health Day: Andela and SafetyWing",
+      date: "OCT 10, 2025",
+      title: "Prioritizing Mental Health: KIAQ's Commitment to Employee Well-being",
       author: "Eliza Power",
       image: inimg2
     },
     {
-      date: "SEP 25, 2024",
-      title: "Why Adaptive Hiring is Your Secret Weapon in the Tech Talent War",
+      date: "SEP 25, 2025",
+      title: "Why Strategic Talent Acquisition is Essential in Today's Technology Landscape",
       author: "Ashley Rendall",
       image: inimg3
     }
@@ -32,7 +31,7 @@ export default function Insights() {
       <div className="relative w-full h-[80vh]">
         <img
           src={insightimg}
-          alt="5 steps to build a successful global team"
+          alt="Strategic framework for building high-performing global teams"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
@@ -42,14 +41,14 @@ export default function Insights() {
           <div className="bg-white rounded-2xl shadow-2xl p-8 text-center">
             {/* Tag and Date */}
             <div className="flex items-center justify-center gap-2 text-xs font-semibold text-gray-500 mb-3 uppercase tracking-wide">
-              <span>ADAPTIVE HIRING</span>
+              <span>STRATEGIC TALENT ACQUISITION</span>
               <Sparkles className="w-3.5 h-3.5 text-orange-500" />
               <span>AUG 29, 2023</span>
             </div>
 
             {/* Title */}
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              5 steps to build a successful global team
+              Strategic Framework for Building High-Performing Global Teams
             </h1>
 
             {/* Read Time */}
@@ -64,132 +63,70 @@ export default function Insights() {
       {/* Main Article Content */}
       <div className="max-w-4xl mx-auto mt-32 px-6 md:px-10 pb-20 text-gray-700 leading-relaxed text-lg space-y-6">
         <p>
-          By recruiting and hiring internationally, companies can hire from a
-          larger and more diverse talent pool, and have access to more
-          specialized knowledge and skill sets. Financially, it could save money
-          on development and engineering costs, as well as overhead costs like
-          office space. Plus, having staff in different time zones allows
-          companies to provide a more comprehensive customer service experience
-          and attract even more business in new markets, keeping you ahead of
-          the curve.
+          By implementing strategic international recruitment and hiring practices, organizations can access expanded and more diverse talent pools, while gaining specialized knowledge and advanced skill sets. From a financial perspective, this approach can optimize development and engineering expenditures, while reducing overhead costs associated with physical infrastructure. Furthermore, maintaining teams across multiple time zones enables organizations to deliver comprehensive customer service experiences and expand business operations into new markets, establishing competitive advantage.
         </p>
 
         <p>
-          Retention, too, becomes easier with a distributed workforce: One 2022
-          study found that employees who are able to work remotely report higher
-          levels of happiness and stronger commitments to their organizations.
+          Employee retention also demonstrates improvement within distributed workforce models: Recent research indicates that professionals with remote work capabilities report enhanced job satisfaction and stronger organizational commitment.
         </p>
 
         <p>
-          Of course, recruiting top talent abroad requires a unique approach.
-          Here’s how to build a successful global team:
+          Naturally, attracting premium international talent requires specialized methodologies. The following framework outlines strategic approaches for building successful global teams:
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10">
-          1. Identify your needs
+          1. Strategic Requirement Analysis
         </h2>
         <p>
-          Companies and hiring managers should consider these types of questions
-          before putting out a job description: What projects or teams need
-          support? Or, what new project is upcoming that needs a new or
-          different skill set? Is this a permanent position, or can a contractor
-          fulfill it?
+          Organizations and hiring managers should conduct comprehensive analysis by addressing key considerations prior to position development: Which projects or teams require additional support? What upcoming initiatives demand new or specialized capabilities? Does this represent a permanent organizational need, or can it be fulfilled through contractual engagement?
         </p>
         <p>
-          Make a list of projects, the skills required, the estimated timeline,
-          and any other key points. It’s important to get concrete about the gap
-          that needs to be filled to better understand the type of developer and
-          their expertise.
+          Develop detailed project inventories, required competency frameworks, estimated timelines, and other critical parameters. Precise identification of organizational gaps enables more accurate definition of required developer profiles and expertise levels.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10">
-          2. Put remote software and processes in place
+          2. Implementation of Remote Collaboration Infrastructure
         </h2>
         <p>
-          Candidates are likely going to wonder how the company collaborates
-          across time zones and regions efficiently and effectively. They’re
-          also going to be looking for a team that has a strong remote culture.
-          Investing in software and putting it into place before you start
-          recruiting shows you’re on top of all of this. Online tools can also
-          create transparency and reduce silos when your workforce is
-          distributed, as well as replace more expensive alternatives — such as
-          hiring a full-time staffer to run point on projects or manage the
-          employee experience.
+          Prospective candidates will naturally inquire about cross-timezone collaboration methodologies and regional operational efficiency. They will also seek organizations demonstrating mature remote work cultures. Strategic investment in collaboration technologies prior to recruitment initiatives demonstrates organizational preparedness and operational excellence. Digital tools additionally foster transparency and reduce operational silos within distributed teams, while providing cost-effective alternatives to traditional staffing models.
         </p>
         <p>
-          Consider what each team and division needs to be productive.
-          Project-management software like Trello or Jira may be useful for
-          product development and engineering, while design tools like Figma or
-          Miro may be better for user-interface and user-experience work. Apps
-          like Slack or Loom can help with both synchronous and asynchronous
-          communication in lieu of popping over to someone’s desk in an office.
-          And HR software is crucial no matter the type of company to ensure
-          employees have easy access to benefits, legal documents, paystubs, and
-          other important information from afar.
+          Evaluate specific requirements across teams and functional divisions. Project management platforms such as Trello or Jira may optimize product development and engineering workflows, while design collaboration tools like Figma or Miro enhance user-interface and user-experience development. Communication applications including Slack or Loom facilitate both synchronous and asynchronous interaction, replacing traditional office-based communication. Human resources management systems remain essential regardless of organizational structure, ensuring employee access to benefits, legal documentation, compensation information, and other critical resources.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10">
-          3. Start with a short technical assessment
+          3. Initial Technical Competency Assessment
         </h2>
         <p>
-          Frontloading the technical portion of your hiring process can save
-          time and set expectations with candidates from the get-go, and you’ll
-          be able to quickly weed out the applicants who are serious about the
-          role and have the chops to do it well. Starting out with a skills test
-          also ensures there’s no human bias turning great potential hires away.
-          Andela talent is assessed using Andela Qualified, so hiring managers
-          know the developers they hire are in fact skilled, offering
-          reassurance and a better match.
+          Front-loading technical evaluation within recruitment processes optimizes time utilization and establishes clear candidate expectations, while enabling rapid identification of qualified applicants demonstrating both commitment and capability. Initiating with skills assessment additionally mitigates potential human bias in candidate evaluation. KIAQ professionals undergo comprehensive assessment through our proprietary evaluation system, providing hiring managers with verified skill validation and optimal talent matching.
         </p>
         <p>
-          Once you’ve identified the applicants who are up for the job, then you
-          can take the time via phone or video to vet for relevant soft skills
-          and culture fit, such as how they stay organized or meet deadlines, or
-          what they look for in a team dynamic.
+          Following identification of technically qualified candidates, organizations can proceed with comprehensive evaluation of relevant soft skills and cultural alignment, including organizational methodologies, deadline management approaches, and team dynamic preferences.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10">
-          4. Align on a checklist of requirements
+          4. Standardized Evaluation Framework Alignment
         </h2>
         <p>
-          If you’re planning to use a hiring committee to evaluate candidates,
-          make sure everyone involved is aligned on what skills or qualities
-          you’re vetting for to avoid bias. For example, you could require each
-          interviewer to ask the same behavioral questions, or create a rubric
-          or checklist for everyone to follow and fill out during or after each
-          interview. You should also make your hiring committee as diverse and
-          inclusive as possible — not just in terms of demographics but also
-          experience level, department, and expertise — if you want to appeal to
-          a larger pool of candidates.
+          For organizations utilizing hiring committees in candidate evaluation, ensure complete alignment regarding evaluation criteria and qualification standards to prevent assessment bias. Implementation strategies may include standardized behavioral questioning across interviewers, or development of comprehensive evaluation rubrics for systematic candidate assessment. Additionally, cultivate diverse and inclusive hiring committees—encompassing demographic diversity, experience levels, departmental representation, and specialized expertise—to enhance appeal to broader candidate pools.
         </p>
 
         <h2 className="text-2xl font-semibold text-gray-900 mt-10">
-          5. Pay attention to candidates’ questions
+          5. Strategic Candidate Inquiry Analysis
         </h2>
         <p>
-          The kinds of questions candidates ask can say as much about how they’ll
-          fit into a team as the answers they provide to your questions.
+          The nature and quality of candidate inquiries can provide significant insight into team integration potential, complementing responses to organizational questions.
         </p>
         <p>
-          A good candidate should show a genuine curiosity not just for the role
-          itself but general processes, other teams they might interact with,
-          and the company’s goals. If their questions feel generic or focus
-          solely on benefits or salary, that could be a sign they’re not excited
-          about the product or building a long-term career at your company.
+          Qualified candidates should demonstrate genuine curiosity extending beyond position specifics to encompass operational processes, cross-functional collaboration opportunities, and organizational strategic objectives. Generic inquiries or exclusive focus on compensation and benefits may indicate limited enthusiasm for organizational products or long-term career development within your company.
         </p>
 
         <p>
-          While building a successful global team takes time and effort, the
-          benefits can extend across the company. Not only does a global team
-          come with diversity of thought and experiences, but allows
-          organizations to hire the exact skill set required to complete a key
-          project. These five steps will put you well on your way to hiring a
-          global team of talented developers.
+          While developing high-performing global teams requires strategic investment and dedicated effort, the organizational benefits demonstrate extensive impact. Global teams not only introduce diverse perspectives and experiences, but enable organizations to acquire precisely calibrated skill sets for critical project execution. These five strategic components establish foundation for successful recruitment of global technology professionals.
         </p>
 
         <p className="font-medium text-gray-900 mt-6">
-          Looking to expand your global footprint and hire skilled developers?
-          Discover how Andela can help.
+          Seeking to expand global operational capabilities and recruit skilled technology professionals? Discover how KIAQ can facilitate your strategic objectives.
         </p>
       </div>
 
@@ -219,14 +156,14 @@ export default function Insights() {
           {/* Left Text */}
           <div className="flex items-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-              Interested in<br />Learning More?
+              Interested in<br />Strategic Insights?
             </h1>
           </div>
 
           {/* Right Form */}
           <div className="flex flex-col justify-center space-y-6">
             <p className="text-white text-lg leading-relaxed">
-              Subscribe today to stay informed and get regular updates from Andela.
+              Subscribe to receive strategic insights and regular updates from KIAQ Technologies.
             </p>
 
             <div className="space-y-4">
@@ -243,7 +180,7 @@ export default function Insights() {
               </div>
 
               <button className="w-full md:w-auto px-8 py-3 bg-orange-400 hover:bg-orange-300 text-orange-900 font-semibold rounded-lg transition-colors duration-200">
-                Submit
+                Subscribe
               </button>
             </div>
           </div>
@@ -257,7 +194,7 @@ export default function Insights() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
-            You might also be interested in
+            Additional Strategic Resources
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -285,7 +222,7 @@ export default function Insights() {
                   </p>
                   
                   <button className="flex items-center gap-2 text-orange-700 font-semibold hover:text-orange-400 transition-colors group-hover:text-orange-400">
-                    Learn More
+                    Access Resource
                     <svg 
                       className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
                       fill="none" 
@@ -318,11 +255,11 @@ export default function Insights() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-            Ready to get started?
+            Ready to Implement Strategic Solutions?
           </h2>
           
           <button className="px-10 py-4 bg-orange-400 hover:bg-orange-300 text-orange-900 font-semibold rounded-lg transition-colors duration-200 text-lg">
-            Contact Us
+            Schedule Consultation
           </button>
         </div>
       </section>

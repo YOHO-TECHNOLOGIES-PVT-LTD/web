@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import webimg from "../assets/solutions/how-andela-works-hero-image-768.webp";
 import webimg1 from "../assets/solutions/frame 1073714193 (8).webp";
@@ -11,8 +10,6 @@ import imgfocus from "../assets/660dcc7f45ad8881324199b5_665edf960bfc2a8fb317836
 import webimg26 from "../assets/solutions/Group 290084.webp";
 import webimg27 from "../assets/solutions/Group.webp";
 import webimg28 from "../assets/solutions/roup 290193.webp";
-
-
 
 // import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
@@ -30,28 +27,28 @@ export default function WebAppDevelopmentHero() {
 
 const steps = [
   {
-    title: "Applicant Screening",
-    desc: "All applications are reviewed to ensure they meet our qualification standards, have the right professional experience, and pass background checks.",
+    title: "Candidate Qualification Screening",
+    desc: "All applications undergo comprehensive review to verify qualification standards, validate professional experience, and complete necessary background verification processes.",
     img: webimg24,
   },
   {
-    title: "English Language Proficiency",
-    desc: "We test your English level based on your listening and conversation skills and your vocabulary.",
+    title: "Technical Competency Assessment",
+    desc: "We evaluate technical proficiency through specialized assessments that measure core engineering capabilities and problem-solving skills.",
     img: webimg23,
   },
   {
-    title: "Technical Coding Challenges",
-    desc: "You will complete technical coding assessments to demonstrate your core engineering skills.",
+    title: "Advanced Technical Evaluation",
+    desc: "Candidates complete sophisticated technical challenges designed to demonstrate engineering expertise and practical application skills.",
     img: webimg25,
   },
   {
-    title: "Live Technical Interview",
-    desc: "A final technical interview with our expert team to validate your problem-solving and experience.",
+    title: "Expert Technical Interview",
+    desc: "A comprehensive technical interview conducted by our specialist team to validate problem-solving methodologies and professional experience.",
     img: webimg22,
   },
   {
-    title: "Profile Setup and Verification",
-    desc: "Once certified, you finish setting up your profile and complete final verifications.",
+    title: "Profile Verification and Onboarding",
+    desc: "Following certification, candidates complete profile establishment and final verification procedures for platform integration.",
     img: webimg21,
   },
 ];
@@ -63,24 +60,24 @@ const steps = [
   
   const features = [
     {
-  title: "Connect with top global tech talent.",
-  description: "Access a curated network of skilled engineers across DevOps, Data, and AI—vetted and ready to accelerate your projects."
+  title: "Access Elite Global Technology Talent",
+  description: "Connect with a curated network of specialized engineers across DevOps, Data Science, and Artificial Intelligence—thoroughly vetted and prepared to accelerate your strategic initiatives."
 },
 {
-  title: "Build without borders.",
-  description: "KIAQ brings world-class engineering talent to global teams, enabling seamless collaboration and scalable results."
+  title: "Build Without Geographical Constraints",
+  description: "KIAQ delivers world-class engineering expertise to international teams, enabling seamless collaboration and scalable project outcomes across global operations."
 },
 {
-  title: "Expertise that grows with you.",
-  description: "From DevOps to AI, our specialists deliver high-quality solutions tailored to your evolving business needs."
+  title: "Specialized Expertise for Evolving Requirements",
+  description: "From DevOps infrastructure to AI implementation, our technical specialists provide high-quality solutions customized to your dynamic business objectives and growth trajectory."
 },
 {
-  title: "Global collaboration made simple.",
-  description: "Work smoothly across time zones with professionals experienced in remote-first execution and delivery."
+  title: "Streamlined Global Collaboration Framework",
+  description: "Operate efficiently across multiple time zones with professionals experienced in remote-first execution methodologies and international project delivery."
 },
 {
-  title: "Innovation through global talent.",
-  description: "Tap into diverse engineering expertise that brings fresh ideas and drives continuous innovation."
+  title: "Innovation Through Global Technical Excellence",
+  description: "Leverage diverse engineering expertise that introduces fresh perspectives and drives continuous technological innovation within your organization."
 }
 
   ];
@@ -116,13 +113,13 @@ const steps = [
   return (
     <>
    <section
-  className="relative w-full min-h-[85vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden"
+  className="relative w-full min-h-[75vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
   {/* Background image */}
   <img
     src={webimg}
-    alt="Data Science and AI"
+    alt="AI and Data Science Solutions"
     className="absolute inset-0 w-full h-full object-cover object-center sm:object-right z-0"
   />
 
@@ -131,38 +128,39 @@ const steps = [
     className="absolute inset-0 z-10"
     style={{
       background:
-        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+        "linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.35) 70%, rgba(0,0,0,0.1) 100%)",
     }}
   ></div>
 
   {/* Content */}
-  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-    <div className="max-w-full sm:max-w-[520px] mt-8 sm:mt-[10vh] md:mt-[12vh] lg:mt-[14vh]">
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-10 sm:py-0">
+    <div className="max-w-full sm:max-w-[520px] mt-6 sm:mt-[10vh] md:mt-[12vh] lg:mt-[14vh]">
+
       {/* Title */}
       <h1
         className="text-white font-bold leading-snug mb-4 sm:mb-5"
         style={{
-          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
-          lineHeight: 1.2,
+          fontSize: "clamp(1.5rem, 4vw, 2.7rem)",
+          lineHeight: 1.22,
         }}
       >
         Accelerate Your AI & Data Science
         <br className="hidden sm:inline" />
-        Projects with Expert Teams
+        Initiatives with Expert Teams
       </h1>
 
       {/* Description */}
       <p
         className="text-gray-200 font-light mb-6 sm:mb-8"
         style={{
-          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          fontSize: "clamp(0.9rem, 2vw, 1rem)",
           lineHeight: 1.65,
           color: "rgba(255,255,255,0.85)",
         }}
       >
-        KIAQ connects you with top-tier AI and Data Science talent to deliver
-        actionable insights, scalable models, and intelligent automation —
-        driving measurable impact for your business.
+        KIAQ connects organizations with premier AI and Data Science expertise to deliver
+        actionable intelligence, scalable analytical models, and intelligent automation
+        solutions—driving measurable business impact and competitive advantage.
       </p>
 
       {/* CTA Button */}
@@ -173,29 +171,38 @@ const steps = [
           color: UI_CONSTANTS.DARK,
         }}
       >
-        Start Your AI Journey
+        Initiate AI Transformation
       </button>
     </div>
 
     {/* Stats Section */}
     <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-12 md:mt-14 text-gray-200">
-      <div className="text-center sm:text-left">
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">95%</p>
-        <p className="text-xs sm:text-sm opacity-90">Client satisfaction with AI solutions</p>
+
+      <div className="text-center sm:text-left min-w-[140px]">
+        <p className="text-lg sm:text-2xl font-semibold text-white mb-1">95%</p>
+        <p className="text-xs sm:text-sm opacity-90">
+          Client satisfaction with AI implementation
+        </p>
       </div>
 
-      <div className="sm:border-l border-white/20 sm:pl-6 md:pl-8 text-center sm:text-left">
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">500+</p>
-        <p className="text-xs sm:text-sm opacity-90">AI & Data Science experts</p>
+      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-center sm:text-left min-w-[140px]">
+        <p className="text-lg sm:text-2xl font-semibold text-white mb-1">500+</p>
+        <p className="text-xs sm:text-sm opacity-90">
+          AI & Data Science specialists
+        </p>
       </div>
 
-      <div className="sm:border-l border-white/20 sm:pl-6 md:pl-8 text-center sm:text-left">
-        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">24+</p>
-        <p className="text-xs sm:text-sm opacity-90">Months of average engagement</p>
+      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-center sm:text-left min-w-[140px]">
+        <p className="text-lg sm:text-2xl font-semibold text-white mb-1">24+</p>
+        <p className="text-xs sm:text-sm opacity-90">
+          Average engagement duration (months)
+        </p>
       </div>
+
     </div>
   </div>
 </section>
+
 
 
 
@@ -220,7 +227,7 @@ const steps = [
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-8 sm:mb-10 md:mb-12">
-      Discover the Andela difference
+      Experience the KIAQ Advantage
     </h1>
 
     {/* Two-column main area: left image (with patterned rounded panel), right text */}
@@ -266,7 +273,7 @@ const steps = [
             >
               <img
                 src={webimg1}
-                alt="Andela dashboard"
+                alt="KIAQ platform dashboard"
                 className="w-full h-auto block object-cover"
                 style={{ display: "block" }}
               />
@@ -278,14 +285,13 @@ const steps = [
       {/* Right text block */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
-          Get quality talent in a fraction
+          Access Premium Talent with
           <br className="hidden sm:inline" />
-          of the time
+          Exceptional Efficiency
         </h2>
 
         <p className="mt-4 sm:mt-5 md:mt-6 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed">
-          Our proprietary approach brings together an AI-powered platform and seasoned hiring
-          professionals.
+          Our integrated methodology combines AI-powered technology platforms with experienced recruitment professionals to deliver optimal talent solutions.
         </p>
       </div>
     </div>
@@ -293,31 +299,30 @@ const steps = [
     {/* Bottom four-column features */}
     <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 border-t border-gray-200 pt-8 sm:pt-10 md:pt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
       <div className="pr-0 sm:pr-6">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Make hiring easier</h3>
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Streamlined Recruitment Process</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
-          Andela Talent Cloud drives an intelligent and frictionless process throughout the
-          hiring lifecycle.
+          KIAQ Talent Platform facilitates intelligent and efficient processes throughout the complete recruitment lifecycle.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-6 sm:border-l lg:border-l border-gray-200 sm:pl-6 pt-6 sm:pt-0 border-t sm:border-t-0">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Count on certified top talent</h3>
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Certified Elite Professionals</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
-          We provide industry leading upskilling, education, and networking.
+          We provide industry-leading professional development, continuous education, and strategic networking opportunities.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-6 lg:border-l border-gray-200 lg:pl-6 pt-6 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Get the support you need</h3>
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Comprehensive Support Services</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
-          Through recruitment, acquisition, training, qualification, matching, and delivery.
+          End-to-end assistance through recruitment, acquisition, training, qualification, matching, and project delivery phases.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-6 sm:border-l lg:border-l border-gray-200 sm:pl-6 pt-6 sm:pt-0 border-t sm:border-t-0">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Enjoy premium service</h3>
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Premium Client Experience</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
-          You get all-inclusive service from customer and talent success teams.
+          Comprehensive service delivery from dedicated customer success and talent management teams.
         </p>
       </div>
     </div>
@@ -350,12 +355,11 @@ const steps = [
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl">
-      Tap into the world's largest, certified, global talent pool
+      Access the World's Premier Certified Global Talent Network
     </h1>
 
     <p className="text-base sm:text-lg text-gray-600 mt-3 sm:mt-4 max-w-2xl leading-relaxed">
-      Highly skilled digital talent is vetted by a multi-step certification process. That's why
-      Andela clients report 98% satisfaction.
+      Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.
     </p>
 
     {/* MAIN LAYOUT */}
@@ -393,7 +397,7 @@ const steps = [
           {/* DYNAMIC IMAGE */}
           <img
             src={steps[openIndex].img}
-            alt="Assessment"
+            alt="Professional Assessment"
             className="relative rounded-lg sm:rounded-xl w-full h-auto shadow-lg z-10"
           />
         </div>
@@ -520,7 +524,7 @@ const steps = [
               color: UI_CONSTANTS.WHITE
             }}
           >
-            <span className="hidden sm:inline">Connect with Global Tech Talent</span><span className="sm:hidden">Connect with Talent</span>
+            <span className="hidden sm:inline">Connect with Global Technology Experts</span><span className="sm:hidden">Connect with Experts</span>
           </button>
         </div>
       </div>
@@ -532,7 +536,7 @@ const steps = [
 
       {/* Title */}
       <h2 className="text-4xl font-bold text-center text-gray-900">
-        Andela Talent Cloud makes better matches
+        KIAQ Talent Platform Delivers Superior Matching
       </h2>
 
       {/* Cards Wrapper */}
@@ -543,17 +547,17 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg26}
-              alt="Global Reach"
+              alt="Global Talent Network"
               className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Diverse Global Reach
+            Extensive Global Network
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            Andela Talent Cloud accesses our private marketplace spanning more than 135 countries.
+            KIAQ Talent Platform accesses our exclusive marketplace spanning more than 135 countries with diverse technical expertise.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
@@ -566,17 +570,17 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg27}
-              alt="Decision Engine"
+              alt="Intelligent Matching Platform"
               className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Talent Decision Engine
+            Advanced Matching Technology
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            Powerful AI matching algorithms scan our global talent marketplace in seconds.
+            Sophisticated AI matching algorithms analyze our global talent marketplace with exceptional speed and precision.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
@@ -589,21 +593,21 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg28}
-              alt="Certified Talent"
+              alt="Certified Technical Professionals"
               className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Certified Technical Talent
+            Certified Technical Specialists
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            Andela technologists are experts in the most sought-after skill sets.
+            KIAQ technology professionals demonstrate expertise in the most in-demand technical skill sets and methodologies.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
-            Meet The Talent →
+            Explore Our Talent →
           </button>
         </div>
 
@@ -632,10 +636,10 @@ const steps = [
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Put Adaptive Hiring to work for you
+        Implement Strategic Talent Solutions for Your Organization
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        View All Resources
+        Access All Resources
       </button>
     </div>
 
@@ -646,22 +650,22 @@ const steps = [
         <div className="overflow-hidden">
           <img
             src={tenimg}
-            alt="The Future of Hiring"
+            alt="Strategic Talent Acquisition"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            White Paper
+            Industry Analysis
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Hiring is Borderless
+            The Evolution of Strategic Talent Acquisition
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read More <span className="ml-2">→</span>
+            Read Analysis <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -671,22 +675,22 @@ const steps = [
         <div className="overflow-hidden">
           <img
             src={eleimg}
-            alt="Diversifying Skillsets"
+            alt="Skillset Diversification Strategy"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Case Study
+            Implementation Study
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Diversifying Skillsets With The Weather Company
+            Strategic Skillset Diversification Implementation
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Watch Now <span className="ml-2">→</span>
+            Review Study <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -696,22 +700,22 @@ const steps = [
         <div className="overflow-hidden">
           <img
             src={twlimg}
-            alt="Global Remote Tech Talent"
+            alt="Global Remote Technology Talent"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Infographic
+            Market Research
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Andela Research Finds Increasing Demand for Global Remote Tech Talent
+            KIAQ Research Identifies Growing Demand for Global Technology Expertise
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read More <span className="ml-2">→</span>
+            Access Research <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -766,7 +770,7 @@ const steps = [
                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
                    style={{ color: UI_CONSTANTS.WHITE }}
                  >
-                   Build the tech team of the future with KIAQ
+                   Build Your Future Technology Team with KIAQ
                  </h2>
          
                  <button
@@ -776,7 +780,7 @@ const steps = [
                    }}
                    className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
                  >
-                   Request a consultation
+                   Request Strategic Consultation
                  </button>
                </div>
              </div>
@@ -814,7 +818,7 @@ const steps = [
                      className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
                      style={{ color: '#173B3F' }}
                    >
-                     SCHEDULE A CALL
+                     CONNECT WITH US
                    </p>
                  </div>
          
@@ -822,7 +826,7 @@ const steps = [
                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
                    style={{ color: '#173B3F' }}
                  >
-                   Let us know how we can help
+                   Let Us Understand Your Technology Requirements
                  </h2>
          
                  <button
@@ -833,7 +837,7 @@ const steps = [
                    }}
                    className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
                  >
-                   Schedule Now
+                   Schedule Strategic Meeting
                  </button>
                </div>
              </div>
@@ -843,5 +847,3 @@ const steps = [
     </>
   );
 }
-
-
