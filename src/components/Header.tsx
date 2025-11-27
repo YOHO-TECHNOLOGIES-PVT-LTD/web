@@ -36,7 +36,7 @@ export default function Header() {
     { name: 'How KIAQ Works', path: '/how-kiaq-works' },
     { name: 'Successfully Manage Remote Teams', path: '/successfully-manage-remote' },
     { name: 'Our Expertise', path: '/our-expertise' },
-    { name: 'Request Consultation', path: '/request-consultation' },
+    { name: 'Contact Us', path: '/Contact-us' },
     { name: 'Use Cases', path: '/use-cases' },
     { name: 'Custom Software Development', path: '/custom-software-development' },
     { name: 'Legacy System Modernization', path: '/legacy-system-modernization' },
@@ -337,7 +337,7 @@ export default function Header() {
             </button>
             
             <Link
-              to="/request-consultation"
+              to="/Contact-us"
               className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 hover:scale-105 whitespace-nowrap"
               style={{ backgroundColor: '#0fddcc', color: '#ffffff' }}
             >

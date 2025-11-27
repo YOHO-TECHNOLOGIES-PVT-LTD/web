@@ -61,7 +61,7 @@ export default function WhyKiaq() {
             {/* Left Content */}
            <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
   <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
-    WHY KIAQ TECHNOLOGIES?
+    KIAQ TECHNOLOGIES
   </p>
 
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">

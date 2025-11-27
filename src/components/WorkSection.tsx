@@ -1,5 +1,10 @@
 import { useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import img1 from "../assets/Home1/h1.jpg";
+import img2 from "../assets/Home1/c1.jpg";
+import img3 from "../assets/Home1/d1.jpg";
+import img4 from "../assets/Home1/u1.jpg";
+
 
 export default function ConsultingServices() {
   const testimonials = [
@@ -27,17 +32,15 @@ export default function ConsultingServices() {
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-    }, 4000);
+    const interval = setInterval(() => {}, 4000);
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
   return (
     <>
-      {/* Adaptive Hiring Resources Section */}
       <div className="min-h-screen bg-gray-50 p-3 sm:p-6 lg:p-8">
         <div className="max-w-7xl mx-auto">
+
           {/* Header */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-5 sm:mb-6 lg:mb-8">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
@@ -48,8 +51,10 @@ export default function ConsultingServices() {
             </button>
           </div>
 
-          {/* Featured Card */}
+          {/* Featured Card (now uses img1) */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-5 sm:mb-6 lg:mb-8 bg-white rounded-lg shadow-sm overflow-hidden group hover:bg-[#011123] transition-all duration-500">
+            
+            {/* Text Section */}
             <div className="p-5 sm:p-6 lg:p-8 flex flex-col justify-between transition-all duration-500 group-hover:text-white order-2 lg:order-1">
               <div>
                 <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-3 sm:mb-4 group-hover:text-gray-300">
@@ -59,112 +64,87 @@ export default function ConsultingServices() {
                   Real-Time Threat Detection
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-5 sm:mb-6 lg:mb-8 group-hover:text-gray-300">
-Monitor, detect, and mitigate cybersecurity threats in real time with intelligent AI-powered systems. Stay protected against evolving risks with continuous surveillance designed to keep your data and operations secure.                </p>
+                  Monitor, detect, and mitigate cybersecurity threats in real time with intelligent AI-powered systems.
+                </p>
               </div>
-              <a
-                href="#"
-                className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group-hover:text-white text-sm sm:text-base"
-              >
+              <a href="#" className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group-hover:text-white text-sm sm:text-base">
                 Read More
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-            <div className="relative min-h-[200px] sm:min-h-[250px] lg:min-h-[300px] bg-gradient-to-br from-orange-500 via-purple-800 to-purple-900 overflow-hidden order-1 lg:order-2">
-              <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 group-hover:scale-110">
-                <div className="relative w-full h-full">
-                  <div className="absolute bottom-0 left-0 w-3/5 h-4/5 bg-orange-500"></div>
-                  <div className="absolute bottom-0 left-[20%] w-8 sm:w-10 lg:w-12 h-[70%] bg-purple-800"></div>
-                  <div className="absolute bottom-0 left-[35%] w-8 sm:w-10 lg:w-12 h-[55%] bg-purple-800"></div>
-                  <div className="absolute bottom-0 left-[50%] w-8 sm:w-10 lg:w-12 h-[40%] bg-purple-800"></div>
-                  <div className="absolute top-4 sm:top-6 lg:top-8 right-6 sm:right-8 lg:right-12 w-0 h-0 border-l-[40px] sm:border-l-[50px] lg:border-l-[60px] border-l-transparent border-r-[40px] sm:border-r-[50px] lg:border-r-[60px] border-r-transparent border-b-[70px] sm:border-b-[85px] lg:border-b-[100px] border-b-amber-400 rotate-12"></div>
-                </div>
-              </div>
-            </div>
+
+            {/* Image Section (replaced gradient with img1) */}
+            <div
+              className="relative min-h-[200px] sm:min-h-[250px] lg:min-h-[300px] bg-cover bg-center order-1 lg:order-2 transition-transform duration-700 group-hover:scale-110"
+              style={{ backgroundImage: `url(${img1})` }}
+            ></div>
           </div>
 
-          {/* Three Column Cards */}
+          {/* Three Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
-              <div className="relative h-40 sm:h-44 lg:h-48 bg-gradient-to-br from-purple-400 via-purple-600 to-indigo-900 overflow-hidden">
-                <div className="absolute inset-0 overflow-hidden transition-transform duration-700 group-hover:scale-110">
-                  <div className="absolute top-1/4 left-1/4 w-24 sm:w-28 lg:w-32 h-24 sm:h-28 lg:h-32 bg-purple-300 opacity-60 blur-2xl"></div>
-                  <div className="absolute top-1/3 right-1/4 w-32 sm:w-36 lg:w-40 h-32 sm:h-36 lg:h-40 bg-pink-400 opacity-50 blur-3xl"></div>
-                  <div className="absolute bottom-1/4 left-1/3 w-28 sm:w-32 lg:w-36 h-28 sm:h-32 lg:h-36 bg-indigo-400 opacity-40 blur-2xl"></div>
-                </div>
-              </div>
-              <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
-                <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
-Scalable, Secure, Modern Infrastructure                </p>
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
-                 Cloud Solutions
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img2})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
+                  Scalable, Secure, Modern Infrastructure
+                </p>
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                  Cloud Solutions
                 </h3>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group-hover:text-white text-sm sm:text-base"
-                >
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
                 </a>
               </div>
             </div>
 
             {/* Card 2 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
-              <div className="relative h-40 sm:h-44 lg:h-48 bg-gradient-to-br from-orange-900 via-slate-900 to-black overflow-hidden">
-                <div className="absolute inset-0 overflow-hidden transition-transform duration-700 group-hover:scale-110">
-                  <div className="absolute top-1/4 right-1/3 w-1 h-24 sm:h-28 lg:h-32 bg-gradient-to-b from-orange-300 to-transparent rotate-45 blur-sm"></div>
-                  <div className="absolute top-1/2 right-1/2 w-1 h-20 sm:h-22 lg:h-24 bg-gradient-to-b from-emerald-300 to-transparent -rotate-12 blur-sm"></div>
-                </div>
-              </div>
-              <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
-                <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img3})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   Data-Driven Growth Strategies
                 </p>
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Digital Marketing
                 </h3>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group-hover:text-white text-sm sm:text-base"
-                >
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
                 </a>
               </div>
             </div>
 
             {/* Card 3 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
-              <div className="relative h-40 sm:h-44 lg:h-48 bg-gradient-to-br from-amber-100 to-amber-200 overflow-hidden">
-                <div className="absolute inset-0 flex items-end justify-center px-3 sm:px-4 pb-3 sm:pb-4 transition-transform duration-700 group-hover:scale-110">
-                  <div className="grid grid-cols-6 gap-1 sm:gap-1.5 lg:gap-2 w-full">
-                    {[...Array(18)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="aspect-square rounded-full bg-gradient-to-br from-amber-600 to-orange-700 shadow-md"
-                      ></div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 sm:p-5 lg:p-6 transition-all duration-500 group-hover:text-white">
-                <p className="text-xs sm:text-xs font-semibold text-gray-500 tracking-wider mb-2 sm:mb-3 group-hover:text-gray-300">
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img4})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   UPSKILL / RESKILL
                 </p>
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-white leading-tight">
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Building modern apps with real-time capabilities
                 </h3>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-gray-900 font-semibold hover:gap-2 transition-all group-hover:text-white text-sm sm:text-base"
-                >
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
                 </a>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </>

@@ -83,9 +83,9 @@ const WalmartTechSection = () => {
                 letterSpacing: '-0.3px',
                 lineHeight: '1.4'
               }}>
-                Tech leaders trust <span style={{ fontWeight: '700', color: '#374151' }}>KIAQ</span> to quickly
+                Tech leaders trust <span style={{ fontWeight: '700', color: '#ff5402' }}>KIAQ</span><br/> to quickly source 
                 <br className="hidden sm:block" />
-                <span className="sm:inline"> source qualified talent</span>
+                <span className="sm:inline">qualified talent</span>
               </h2>
             </div>
 

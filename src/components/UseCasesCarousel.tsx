@@ -7,72 +7,72 @@ const UI_CONSTANTS = {
 };
 
 export default function UseCasesCarousel() {
-  const useCases = [
-    {
-      title: "AI-Powered Virtual Assistants for Seamless Customer Experiences",
-      description: "AI-driven virtual assistants built to simplify, automate, and enhance customer engagement.",
-      category: "Chatbot & Automation",
-      bgColor: "#2C4A4D",
-      patternColor: "#3D5F63",
-      patternOpacity: "0.6"
-    },
-    {
-      title: "Custom Software Built for Real-World Performance", 
-      description: "Custom-built software, from ideation to deployment, engineered for real-world performance.",
-      category: "Software Development",
-      bgColor: "#D5E8EC",
-      patternColor: "#BDD9DE",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Implementing AI Solutions with South African Specialists",
-      description: "KIAQ facilitated the connection between a healthcare company and AI specialists from Cape Town who developed intelligent diagnostic tools, improving accuracy by 40% and reducing diagnosis time.",
-      category: "AI & Machine Learning",
-      bgColor: "#C8E4D4",
-      patternColor: "#B0D6BE",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Transforming Data Into Intelligent Decisions.",
-      description: "Leveraging AI, we empower businesses with intelligent decision-making and forecasting abilities.",
-      category: "Artificial Intelligence", 
-      bgColor: "#F5F1E8",
-      patternColor: "#E3DCC9",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Scalable, Secure & Cost-Efficient Cloud Infrastructure",
-      description: "Harness the power of scalable, secure, and budget-friendly cloud solutions tailored to drive business innovation.",
-      category: "Cloud Solutions",
-      bgColor: "#F5F1E8",
-      patternColor: "#E3DCC9",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Strategic Technology Guidance for Sustainable Growth",
-      description: "Delivering expert tech insights and strategic IT consulting to align your systems with business goals.",
-      category: "IT Consulting",
-      bgColor: "#C8E4D4",
-      patternColor: "#B0D6BE",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Advanced Analytics with Tanzanian Data Scientists",
-      description: "A logistics company partnered with KIAQ to find data scientists from Dar es Salaam who developed route optimization algorithms, reducing delivery times by 30% and fuel costs by 25%.",
-      category: "Data Science",
-      bgColor: "#E5E5E5",
-      patternColor: "#CFCFCF",
-      patternOpacity: "0.5"
-    },
-    {
-      title: "Advanced Protection for Your Digital Infrastructure",
-      description: "Our advanced cybersecurity solutions safeguard your digital assets with cutting-edge tools and proactive defense strategies.",
-      category: "Cybersecurity",
-      bgColor: "#E5E5E5",
-      patternColor: "#CFCFCF",
-      patternOpacity: "0.5"
-    }
-  ];
+const useCases = [
+  {
+    title: "AI-Powered Virtual Assistants for Seamless Customer Experiences",
+    description: "AI-powered virtual assistants automate customer support and enhance engagement 24/7. Using natural language processing, they respond in real time, improving satisfaction and reducing operational costs.",
+    category: "Chatbot & Automation",
+    bgColor: "#2C4A4D",
+    patternColor: "#3D5F63",
+    patternOpacity: "0.6"
+  },
+  {
+    title: "Custom Software Built for Real-World Performance", 
+    description: "Custom software delivers tailored solutions optimized for performance and scalability. Agile development ensures faster releases and seamless integration with existing systems.",
+    category: "Software Development",
+    bgColor: "#D5E8EC",
+    patternColor: "#BDD9DE",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Implementing AI Solutions with Expert Specialists",
+    description: "Connect with top AI specialists for high-impact solutions. AI-driven tools improve accuracy, automate workflows, and deliver measurable ROI for your business.",
+    category: "AI & Machine Learning",
+    bgColor: "#C8E4D4",
+    patternColor: "#B0D6BE",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Transforming Data Into Intelligent Decisions",
+    description: "Advanced AI and analytics turn raw data into actionable business insights. Predictive modeling and machine learning optimize strategies and reduce operational risks.",
+    category: "Artificial Intelligence", 
+    bgColor: "#F5F1E8",
+    patternColor: "#E3DCC9",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Scalable, Secure & Cost-Efficient Cloud Infrastructure",
+    description: "Scalable cloud solutions allow businesses to grow without capacity constraints. Secure platforms protect data while cost-efficient strategies reduce overhead.",
+    category: "Cloud Solutions",
+    bgColor: "#F5F1E8",
+    patternColor: "#E3DCC9",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Strategic Technology Guidance for Sustainable Growth",
+    description: "Expert IT guidance aligns technology with strategic business goals. Consultants optimize systems, implement modern solutions, and boost scalability.",
+    category: "IT Consulting",
+    bgColor: "#C8E4D4",
+    patternColor: "#B0D6BE",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Advanced Analytics with Data Science Experts",
+    description: "Connect with skilled data scientists for analytics solutions. Predictive modeling and optimization improve efficiency and enable smarter, data-driven decisions.",
+    category: "Data Science",
+    bgColor: "#E5E5E5",
+    patternColor: "#CFCFCF",
+    patternOpacity: "0.5"
+  },
+  {
+    title: "Advanced Protection for Your Digital Infrastructure",
+    description: "Our cybersecurity solutions safeguard your digital assets with cutting-edge tools and proactive defense strategies for comprehensive protection.",
+    category: "Cybersecurity",
+    bgColor: "#E5E5E5",
+    patternColor: "#CFCFCF",
+    patternOpacity: "0.5"
+  }
+];
 
   const topRowUseCases = useCases.slice(0, 4);
   const bottomRowUseCases = useCases.slice(4);
@@ -173,9 +173,9 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   };
 
   return (
-    <div className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] h-[260px] sm:h-[280px] md:h-[300px] lg:h-[320px] group cursor-pointer" onClick={handleClick}>
+    <div className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[400px] lg:w-[470px] h-[300px] sm:h-[320px] md:h-[340px] lg:h-[360px] group cursor-pointer" onClick={handleClick}>
       <div 
-        className="p-5 sm:p-6 md:p-8 lg:p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
+        className="p-6 sm:p-7 md:p-9 lg:p-11 rounded-xl sm:rounded-2xl lg:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
         style={{ backgroundColor: useCase.bgColor }}
       >
         {/* Hover background overlay */}
@@ -191,12 +191,9 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
           <defs>
             <pattern id={uniqueId} x="0" y="0" width="90" height="78" patternUnits="userSpaceOnUse">
               <g fill="none" stroke={useCase.patternColor} strokeWidth="1.5" opacity={useCase.patternOpacity}>
-                {/* Hexagon pattern */}
                 <path d="M45,0 L67.5,13 L67.5,39 L45,52 L22.5,39 L22.5,13 Z" />
                 <path d="M0,26 L22.5,39 L22.5,65 L0,78 L-22.5,65 L-22.5,39 Z" />
                 <path d="M90,26 L112.5,39 L112.5,65 L90,78 L67.5,65 L67.5,39 Z" />
-                
-                {/* Four-pointed star in center */}
                 <path d="M45,20 L47,26 L53,26 L48,30 L50,36 L45,32 L40,36 L42,30 L37,26 L43,26 Z" 
                       fill={useCase.patternColor} 
                       opacity={useCase.patternOpacity} 
@@ -207,9 +204,9 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
           <rect width="100%" height="100%" fill={`url(#${uniqueId})`} />
         </svg>
 
-        {/* Content overlay on hover - shows ALL content */}
+        {/* Content overlay on hover */}
         <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col"
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 sm:p-7 md:p-9 lg:p-11 flex flex-col"
         >
           <div className="flex items-center mb-3 sm:mb-4 md:mb-6 flex-shrink-0">
             <div className="mr-2 sm:mr-3">
@@ -226,12 +223,12 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
             {useCase.title}
           </h3>
           
-          <p className="text-xs sm:text-sm md:text-base leading-relaxed overflow-hidden" style={{ color: '#FFFFFF', opacity: 0.95 }}>
+          <p className="text-xs sm:text-sm md:text-base leading-relaxed overflow-hidden text-justify" style={{ color: '#FFFFFF', opacity: 0.95 }}>
             {useCase.description}
           </p>
         </div>
 
-        {/* Default Content - hides on hover */}
+        {/* Default Content */}
         <div className="relative z-10 group-hover:opacity-0 transition-opacity duration-500">
           <div className="flex items-center mb-3 sm:mb-4 md:mb-6">
             <div className="mr-2 sm:mr-3">
@@ -239,12 +236,12 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
                 <path d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z" fill={textColor}/>
               </svg>
             </div>
-            <div className="text-xs sm:text-sm font-semibold tracking-wider uppercase" style={{ color: textColor, letterSpacing: '0.05em' }}>
+            <div className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-justify" style={{ color: textColor, letterSpacing: '0.05em' }}>
               {useCase.category}
             </div>
           </div>
           
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight" style={{ color: textColor }}>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight text-justify" style={{ color: textColor }}>
             {useCase.title}
           </h3>
         </div>

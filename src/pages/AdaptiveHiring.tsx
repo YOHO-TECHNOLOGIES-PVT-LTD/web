@@ -590,7 +590,7 @@ export default function AdaptiveHiring() {
         Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model, 
         based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
       </p>
-      <button className="bg-teal-400 hover:bg-teal-300 text-slate-950 font-semibold px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-lg transition-all shadow-lg shadow-teal-500/20 text-sm sm:text-base w-full sm:w-auto">
+      <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
         Calculate Your ROI
       </button>
     </div>
@@ -598,39 +598,39 @@ export default function AdaptiveHiring() {
     {/* Metrics Cards Grid */}
     <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
       {/* Hiring Efficiency Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
           Hiring Efficiency
         </h3>
-        <div className="text-teal-400 mb-6 sm:mb-8 md:mb-10">
+        <div className="text-orange-400 mb-6 sm:mb-8 md:mb-10">
           <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">106+</span>
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-2">hours</span>
         </div>
-        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
           <p className="text-gray-300 text-base sm:text-lg">Recruitment time saved per technical hire</p>
         </div>
       </div>
 
       {/* Project Productivity Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
           Project Velocity
         </h3>
-        <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">33%</div>
-        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">33%</div>
+        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
           <p className="text-gray-300 text-base sm:text-lg">Accelerated project completion timelines</p>
         </div>
       </div>
 
       {/* Talent Compliance Risk Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-teal-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-teal-700/60 transition-all sm:col-span-2 md:col-span-1">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all sm:col-span-2 md:col-span-1">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
           Risk Mitigation
         </h3>
-        <div className="text-teal-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
+        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
           $640K
         </div>
-        <div className="border-t border-teal-900/40 pt-4 sm:pt-5 md:pt-6">
+        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
           <p className="text-gray-300 text-base sm:text-lg">
             Avoided compliance and operational risks
           </p>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import vd1 from "../assets/Home1/hv.mp4";
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,7 +34,7 @@ export default function Hero() {
               <div>
                 <div className="spacer-large"></div>
                 <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 ${isLoaded ? 'animate-in delay-600' : ''}`}>
-                  <a href="/contact" className="px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-teal-500 text-white rounded-lg font-semibold text-sm sm:text-base text-center hover:bg-teal-600 transition-colors">Build Your Team Faster</a>
+                  <a href="/contact" className="px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-orange-500 text-white rounded-lg font-semibold text-sm sm:text-base text-center hover:bg-orange-600 transition-colors">Build Your Team Faster</a>
                   <a href="/about" className="px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 border-2 border-white text-white rounded-lg font-semibold text-sm sm:text-base text-center hover:bg-white hover:text-gray-900 transition-colors">Explore KIAQ</a>
                 </div>
               </div>
@@ -58,26 +59,28 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="image-hero_bg-video w-embed w-iframe">
-            <iframe 
-              src="https://play.vidyard.com/TrGTy95HjNi21m7LAtH5e8?autoplay=1&embed_button=0&viral_sharing=0&loop=1" 
-              scrolling="no" 
-              frameBorder="0" 
-              allowTransparency={true} 
-              allowFullScreen 
-              title="Background video"
+          <div className="image-hero_bg-video">
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              className="w-full h-full object-cover"
               style={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: '177.77777778vh',
-                height: '56.25vw',
+                width: '100%',
+                height: '100%',
                 minWidth: '100%',
                 minHeight: '100%',
                 objectFit: 'cover'
               }}
-            />
+            >
+              <source src={vd1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

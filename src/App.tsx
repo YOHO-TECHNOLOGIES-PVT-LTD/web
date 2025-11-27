@@ -114,7 +114,7 @@ function App() {
           <Route path="/adaptive-hiring" element={<AdaptiveHiring />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/manage-remote-teams" element={<ManageRemoteTeams />} />
-          <Route path="/request-consultation" element={<RequestConsultation />} />
+          <Route path="/Contact-us" element={<RequestConsultation />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/case-study" element={<CaseStudyDetail />} />

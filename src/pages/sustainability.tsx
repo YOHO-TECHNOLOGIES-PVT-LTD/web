@@ -121,11 +121,11 @@ export default function SustainabilityHero() {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           
           {/* Card 1 */}
-          <div className="border border-teal-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
-            <h3 className="text-xl font-semibold text-teal-400">
+          <div className="border border-orange-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
+            <h3 className="text-xl font-semibold text-orange-400">
               Reduced Emissions
             </h3>
-            <div className="w-20 h-[2px] bg-teal-400 mt-2 mb-4"></div>
+            <div className="w-20 h-[2px] bg-orange-400 mt-2 mb-4"></div>
             <p className="text-gray-200 text-sm leading-relaxed">
               In 2023, Andela's total GHG emissions were 2,088 metric tons CO₂e, 
               a 68% decrease from 3,075 metric tons CO₂e in 2022.
@@ -133,11 +133,11 @@ export default function SustainabilityHero() {
           </div>
 
           {/* Card 2 */}
-          <div className="border border-teal-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
-            <h3 className="text-xl font-semibold text-teal-400">
+          <div className="border border-orange-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
+            <h3 className="text-xl font-semibold text-orange-400">
               Significant Carbon Savings
             </h3>
-            <div className="w-20 h-[2px] bg-teal-400 mt-2 mb-4"></div>
+            <div className="w-20 h-[2px] bg-orange-400 mt-2 mb-4"></div>
             <p className="text-gray-200 text-sm leading-relaxed">
               Andela prevented an estimated 365 metric tons CO₂e emissions from 
               transportation in 2023. We also helped our clients prevent 1,992 
@@ -146,11 +146,11 @@ export default function SustainabilityHero() {
           </div>
 
           {/* Card 3 */}
-          <div className="border border-teal-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
-            <h3 className="text-xl font-semibold text-teal-400">
+          <div className="border border-orange-400 rounded-xl p-8 backdrop-blur-sm bg-white/5">
+            <h3 className="text-xl font-semibold text-orange-400">
               Improved Efficiency
             </h3>
-            <div className="w-20 h-[2px] bg-teal-400 mt-2 mb-4"></div>
+            <div className="w-20 h-[2px] bg-orange-400 mt-2 mb-4"></div>
             <p className="text-gray-200 text-sm leading-relaxed">
               Andela has reduced its GHG intensity per employee from 6.71 metric 
               tons CO₂e in 2022 to 6.59 metric tons CO₂e in 2023.
