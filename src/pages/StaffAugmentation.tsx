@@ -1,20 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import webimg from "../assets/solutions/how-andela-works-hero-image-768.webp";
-import webimg1 from "../assets/solutions/frame 1073714193 (8).webp";
-import webimg21 from "../assets/solutions/p1.webp";
-import webimg22 from "../assets/solutions/p2.webp";
-import webimg23 from "../assets/solutions/p3.webp";
-import webimg24 from "../assets/solutions/Profile.webp";
-import webimg25 from "../assets/solutions/Verification@2x.webp";
+import webimg1 from "../assets/solutions/trans-person-working-office-with-colleagues (1).jpg";
+import webimg21 from "../assets/solutions/business-people-working-using-technology-connect-with-others.jpg";
+import webimg22 from "../assets/solutions/businessman-holding-tablet-with-virtual-application.jpg";
+import webimg23 from "../assets/solutions/standard-quality-control-concept-m.jpg";
+import webimg24 from "../assets/solutions/person-office-analyzing-checking-finance-graphs.jpg";
+import webimg25 from "../assets/solutions/businesspeople-planning-tasks-with-sticky-notes.jpg";
 import imgfocus from "../assets/660dcc7f45ad8881324199b5_665edf960bfc2a8fb317836a_Make_work_happen_fast-transcode.webm";
-import webimg26 from "../assets/solutions/Group 290084.webp";
-import webimg27 from "../assets/solutions/Group.webp";
-import webimg28 from "../assets/solutions/roup 290193.webp";
+import webimg26 from "../assets/solutions/network-graphic-overlay-banner-background.jpg";
+import webimg27 from "../assets/solutions/two-factor-authentication-concept.jpg";
+import webimg28 from "../assets/solutions/colleagues-discussing-work-project.jpg";
 
 // import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
-import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
-import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
-import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
+
 
 export default function WebAppDevelopmentHero() {
 
@@ -618,110 +616,7 @@ const steps = [
 
         {/* {fifth section} */}
 
-    <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
-  {/* Flower Pattern Background */}
-  <div
-    className="absolute inset-0 opacity-15"
-    style={{
-      backgroundImage: `
-        radial-gradient(circle at 25px 25px, rgba(104,179,157,0.4) 1px, transparent 0),
-        radial-gradient(circle at 75px 75px, rgba(104,179,157,0.4) 1px, transparent 0)
-      `,
-      backgroundSize: "100px 100px",
-    }}
-  ></div>
-
-  {/* Content */}
-  <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 z-10">
-    {/* Header */}
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Implement Strategic Talent Solutions for Your Organization
-      </h2>
-      <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        Access All Resources
-      </button>
-    </div>
-
-    {/* Cards Grid */}
-    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {/* Card 1 */}
-      <div className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-500 hover:bg-[#011123] hover:text-white">
-        <div className="overflow-hidden">
-          <img
-            src={tenimg}
-            alt="Strategic Talent Acquisition"
-            className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Industry Analysis
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Evolution of Strategic Talent Acquisition
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
-          >
-            Read Analysis <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-
-      {/* Card 2 */}
-      <div className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-500 hover:bg-[#011123] hover:text-white">
-        <div className="overflow-hidden">
-          <img
-            src={eleimg}
-            alt="Skillset Diversification Strategy"
-            className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Implementation Study
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Strategic Skillset Diversification Implementation
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
-          >
-            Review Study <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-
-      {/* Card 3 */}
-      <div className="group bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-500 hover:bg-[#011123] hover:text-white">
-        <div className="overflow-hidden">
-          <img
-            src={twlimg}
-            alt="Global Remote Technology Talent"
-            className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Market Research
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            KIAQ Research Identifies Growing Demand for Global Technology Expertise
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
-          >
-            Access Research <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  
 
 
           {/* {6th Section} */}
