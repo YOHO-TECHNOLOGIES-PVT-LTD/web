@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import type { ChangeEvent } from "react";
 import tecki from "../assets/teccipark3.jpeg";
 import tech1 from "../assets/teccipark3.jpeg";
 import tech2 from "../assets/Olympia Technology Park (Chennai).jpg";
 import tech3 from "../assets/tech.webp";
-import teck4 from "../assets/central.png";
+import teck4 from "../assets/chennai-clipart-18-removebg-preview.png";
 
 // Define types for office data
 interface OfficeInfo {
@@ -95,13 +95,20 @@ const ContactUs = () => {
   const images = [tech1, tech2, tech3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  // Auto slide function
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
+
+  // Auto slide effect
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+    return () => clearInterval(slideInterval);
+  }, [nextSlide]);
 
   return (
     <>
@@ -112,7 +119,7 @@ const ContactUs = () => {
         <div className="absolute inset-0 bg-[#002b38] opacity-95"></div>
 
         {/* Header */}
-        <div className="relative z-10 flex flex-col items-center text-center text-white px-4 mb-16">
+        <div className="relative z-10 flex flex-col items-center text-center text-white px-4 mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
             Contact Us
           </h2>
@@ -124,12 +131,12 @@ const ContactUs = () => {
 
         {/* Contact Card */}
         <div className="relative z-10 flex justify-center px-4">
-          <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-6xl p-6 sm:p-10 md:p-12 border border-gray-200/80">
+          <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-6xl p-6 sm:p-8 md:p-10 border border-gray-200/80">
 
             {/* Title row */}
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full mb-12 gap-6">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full mb-8 gap-4">
               <div>
-                <h1 className="text-3xl sm:text-4xl font-semibold mb-4 text-gray-900">
+                <h1 className="text-3xl sm:text-4xl font-semibold mb-3 text-gray-900">
                   Our Offices
                 </h1>
                 <p className="text-gray-700 max-w-xl leading-relaxed text-base sm:text-lg opacity-90">
@@ -159,24 +166,29 @@ const ContactUs = () => {
             </div>
 
             {/* MAIN CONTENT */}
-            <div className="border border-gray-200 rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row gap-12 bg-white shadow-xl">
+            <div className="border border-gray-200 rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-6 bg-white shadow-xl">
 
               {/* LEFT INFO */}
               <div className="flex-1">
-                <div className="flex items-center mb-10">
-                  <img src={teck4} alt="Location" className="w-8 h-8 mr-4 opacity-90" />
+                <div className="flex items-center mb-6">
                   <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight">
                     {currentOffice.title}
                   </h2>
+                  <img src={teck4} alt="Location" className="w-12 h-12 ml-4 opacity-90" />
                 </div>
 
-                <div className="space-y-8 text-base sm:text-lg text-gray-800">
+                <div className="space-y-6 text-base sm:text-lg text-gray-800">
                   <div>
-                    <p className="font-semibold text-lg sm:text-xl mb-3">Address:</p>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-[#002b38]" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                      </svg>
+                      <p className="font-semibold text-lg sm:text-xl">Address:</p>
+                    </div>
                     {currentOffice.address.map((line, index) => (
                       <p
                         key={index}
-                        className="text-gray-700 leading-relaxed mb-1 text-base sm:text-lg opacity-90"
+                        className="text-gray-700 leading-relaxed mb-1 text-base sm:text-lg opacity-90 ml-7"
                       >
                         {line}
                       </p>
@@ -184,30 +196,46 @@ const ContactUs = () => {
                   </div>
 
                   <div>
-                    <p className="font-semibold text-lg sm:text-xl mb-3">Mobile:</p>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-[#002b38]" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                      </svg>
+                      <p className="font-semibold text-lg sm:text-xl">Mobile:</p>
+                    </div>
                     <a
                       href={`tel:${currentOffice.mobile}`}
-                      className="text-[#002b38] hover:text-[#ff5500] transition font-medium"
+                      className="text-[#002b38] hover:text-[#ff5500] transition font-medium ml-7"
                     >
                       {currentOffice.mobile}
                     </a>
                   </div>
 
                   <div>
-                    <p className="font-semibold text-lg sm:text-xl mb-3">Mail ID:</p>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-[#002b38]" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                      <p className="font-semibold text-lg sm:text-xl">Mail ID:</p>
+                    </div>
                     <a
                       href={`mailto:${currentOffice.email}`}
-                      className="text-[#002b38] hover:text-[#ff5500] transition font-medium"
+                      className="text-[#002b38] hover:text-[#ff5500] transition font-medium ml-7"
                     >
                       {currentOffice.email}
                     </a>
                   </div>
 
                   <div>
-                    <p className="font-semibold text-lg sm:text-xl mb-3">
-                      Working Hours:
-                    </p>
-                    <p className="text-gray-700 opacity-90">{currentOffice.hours}</p>
+                    <div className="flex items-center mb-2">
+                      <svg className="w-5 h-5 mr-2 text-[#002b38]" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                      </svg>
+                      <p className="font-semibold text-lg sm:text-xl">
+                        Working Hours:
+                      </p>
+                    </div>
+                    <p className="text-gray-700 opacity-90 ml-7">{currentOffice.hours}</p>
                   </div>
                 </div>
 
@@ -215,7 +243,7 @@ const ContactUs = () => {
                   href={currentOffice.mapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-lg mt-12 font-medium text-[#002b38] border-b-2 border-[#ff5500] pb-1 hover:text-[#ff5500] hover:border-[#002b38] transition-all"
+                  className="inline-flex items-center gap-2 text-lg mt-8 font-medium text-[#002b38] border-b-2 border-[#ff5500] pb-1 hover:text-[#ff5500] hover:border-[#002b38] transition-all ml-7"
                 >
                   Open in Google Maps →
                 </a>
@@ -223,32 +251,12 @@ const ContactUs = () => {
 
               {/* RIGHT SLIDER */}
               <div className="flex-1">
-                <div className="w-full h-[260px] sm:h-[340px] md:h-[420px] lg:h-[450px] rounded-2xl overflow-hidden shadow-2xl relative group">
+                <div className="w-full h-[300px] sm:h-[380px] md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl relative group">
                   <img
                     src={images[currentIndex]}
                     alt="Office Slide"
-                    className="w-full h-full object-cover rounded-2xl transition-all duration-700 group-hover:scale-[1.03]"
+                    className="w-full h-full object-contain rounded-2xl transition-all duration-500 ease-in-out transform bg-gray-100"
                   />
-
-                  {/* Prev */}
-                  <button
-                    onClick={prevSlide}
-                    className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg backdrop-blur-md transition"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                  </button>
-
-                  {/* Next */}
-                  <button
-                    onClick={nextSlide}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg backdrop-blur-md transition"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
 
                   {/* Dots */}
                   <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex space-x-2">
