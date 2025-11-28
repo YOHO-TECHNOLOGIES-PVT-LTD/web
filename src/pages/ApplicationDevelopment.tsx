@@ -1,10 +1,9 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import webimg from "../assets/solutions/665f0e6451687baa423524d5_application_engineering_banner_2x-p-2000.webp";
 import { UI_CONSTANTS } from "../constants/colors";
-import webimg2 from "../assets/66592e243ff567c6d20bf458_shutterstock_1903260658.avif";
-import webimg3 from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";
-import webimg4 from "../assets/6659318549edab4cae8985df_v617-bb-18-technology 1.webp";
+import webimg2 from "../assets/people-analyzing-checking-finance-graphs-office.jpg";
+import webimg3 from "../assets/representation-user-experience-interface-design.jpg";
+import webimg4 from "../assets/technology-global-ai-race-information-network-connection.jpg";
 
 import webimg8 from "../assets/usecase/6626c1bf2f6333755ec893d1_Layer_1 (2).svg";
 import webimg9 from "../assets/usecase/6626c1bf2f6333755ec893f5_Coursera-Logo_600x600 (1).svg";
@@ -17,81 +16,17 @@ import webimg14 from "../assets/usecase/665e67458fbe05d52c24cf21_groupm-logo.svg
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
 import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
 import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
-import sol13 from '../assets/solutions/66551e33b51a48a01a04b49e_TWC _ 370 x 442.avif';
-import sol14 from '../assets/solutions/66551e5ea419e51fd8602370_Mindshare.avif';
-import sol15 from '../assets/solutions/66551df754960be0f32df34b_Frame 1073714194.avif';
-import sol16 from '../assets/solutions/6655d8d4de6e142a88be6431_Nebula _ 370 x 446.avif';
-import sol17 from '../assets/solutions/6657c42407afdd44de5fd97b_github logo.webp';
-import sol18 from '../assets/solutions/6657c45988183db22b904624_TWC logo.webp';
-import sol19 from '../assets/solutions/6657c49b629db5fe891a5454_mindshare logo.webp';
-import sol20 from '../assets/solutions/6657c518ad72fe6656c7b9d6_nebula logo (1).webp';
-import sol21 from '../assets/solutions/66343fa7e9d0576bd06f8b42_master-card-img.webp';
+import sol21 from '../assets/solutions/standard-quality-control-concept-m.jpg';
 export default function WebAppDevelopmentHero() {
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
+  
 
-  const testimonials = [
-    {
-      title: "Enterprise-grade web applications delivered with precision and scalability",
-      quote: "KIAQ's development team demonstrated exceptional technical expertise and project management skills. They delivered a complex web application that seamlessly integrated with our existing systems while maintaining the highest security standards.",
-      name: "Sarah Johnson",
-      role: "CTO, Enterprise Solutions Inc.",
-      image: sol15,
-      logo: sol17
-    },
-    {
-      title: "Digital transformation through modern web application development",
-      quote: "Partnering with KIAQ enabled us to modernize our legacy systems and create intuitive web applications that significantly improved our customer engagement and operational efficiency. Their agile methodology ensured we met all project milestones.",
-      name: "Michael Chen",
-      role: "Digital Transformation Director, Global Finance Corp",
-      image: sol13,
-      logo: sol18
-    },
-    {
-      title: "Scalable e-commerce platform driving 300% growth in online sales",
-      quote: "KIAQ developed a robust e-commerce platform that handles our peak traffic seamlessly. Their attention to user experience and performance optimization resulted in a 40% increase in conversion rates and 300% growth in online revenue.",
-      name: "Jennifer Martinez",
-      role: "E-commerce Director, Retail Innovations Ltd",
-      image: sol14,
-      logo: sol19
-    },
-    {
-      title: "Real-time SaaS application with exceptional performance metrics",
-      quote: "The KIAQ team delivered a sophisticated SaaS application that processes millions of data points in real-time. Their expertise in cloud architecture and microservices ensured our platform maintains 99.9% uptime while scaling to meet growing user demand.",
-      name: "David Thompson",
-      role: "Product Director, Tech Solutions Group",
-      image: sol16,
-      logo: sol20
-    }
-  ];
+  
 
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 720;
-      const newScrollLeft = direction === 'left' 
-        ? scrollContainerRef.current.scrollLeft - scrollAmount
-        : scrollContainerRef.current.scrollLeft + scrollAmount;
-      
-      scrollContainerRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const handleScroll = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-      setShowLeftArrow(scrollLeft > 10);
-      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
-    }
-  };
+  
 
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
-
-  const [activeTab, setActiveTab] = useState<
+const [activeTab, setActiveTab] = useState<
   "Enterprise Web Solutions" | "Custom Application Development" | "Digital Transformation"
 >("Digital Transformation");
 
@@ -186,7 +121,7 @@ const images = {
     </section>
 
   {/* {second section} */}
-   <section className="relative w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12">
+  <section className="relative w-full bg-white overflow-hidden py-10 sm:py-14 lg:py-18 px-4 sm:px-6 lg:px-12">
 
       {/* STAR PATTERN TOP-RIGHT */}
       <div
@@ -262,14 +197,14 @@ const images = {
             Comprehensive Web Application Solutions for Modern Businesses
           </h2>
 
-          <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65]">
+          <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65] text-justify">
             From concept to deployment, we build high-performance web applications 
             that solve complex business challenges and drive digital innovation.
           </p>
         </div>
 
         {/* TABS */}
-        <div className="mt-6 sm:mt-8">
+        <div className="mt-5 sm:mt-6">
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 max-w-[720px] pb-3">
             {tabs.map((tab, idx) => {
               const isActive = tab === activeTab;
@@ -325,13 +260,13 @@ const images = {
         </div>
 
         {/* CONTENT + IMAGE */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
+        <div className="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
           <div className="md:col-span-5">
             <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-3">
               Expert Web Application Development Teams
             </h3>
 
-            <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5">
+            <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5 text-justify">
               KIAQ provides dedicated development teams with expertise in modern 
               frameworks, cloud technologies, and agile methodologies to deliver 
               enterprise-grade web applications on time and within budget.
@@ -353,7 +288,9 @@ const images = {
           </div>
         </div>
       </div>
-    </section>
+</section>
+
+
 
     {/* {third section} */}
 
@@ -470,101 +407,7 @@ const images = {
 </style>
 
         {/* {fourth section} */}
-           <section className="relative w-full bg-gray-50 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
-  {/* Heading */}
-  <div className="text-center mb-8 sm:mb-10 md:mb-14">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-2">
-      Trusted by Industry Leaders for Web Application Excellence
-    </h2>
-  </div>
-
-  {/* Scrollable Cards Container */}
-  <div className="relative">
-    {/* Left Arrow */}
-    {showLeftArrow && (
-      <button
-        onClick={() => scroll('left')}
-        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-xl items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Right Arrow */}
-    {showRightArrow && (
-      <button
-        onClick={() => scroll('right')}
-        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-xl items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Horizontal Scroll Section */}
-    <div
-      ref={scrollContainerRef}
-      onScroll={handleScroll}
-      className="overflow-x-auto scrollbar-hide scroll-smooth pb-4 sm:pb-6"
-      style={{
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-        WebkitOverflowScrolling: 'touch'
-      }}
-    >
-      <div className="flex gap-4 sm:gap-6 md:gap-8 w-max px-4 sm:px-6 md:px-10">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="flex flex-col sm:flex-row bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden w-[320px] sm:w-[600px] md:w-[700px] lg:w-[800px] min-h-[450px] sm:h-[380px] md:h-[420px] flex-shrink-0 hover:shadow-2xl transition-all duration-300"
-          >
-            {/* Text Section */}
-            <div className="flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full sm:w-[55%]">
-              <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-5 leading-snug">
-                  {testimonial.title}
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 md:mb-8">
-                  "{testimonial.quote}"
-                </p>
-              </div>
-              <div className="mt-auto">
-                <p className="text-sm sm:text-base font-semibold text-gray-900">
-                  {testimonial.name}
-                </p>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                  {testimonial.role}
-                </p>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="relative w-full sm:w-[45%] h-[200px] sm:h-auto bg-gray-200">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-
-  {/* Company Logos */}
-  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12 mt-12 sm:mt-16 md:mt-20 opacity-60 px-4">
-    <img src={sol17} alt="GitHub" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol18} alt="The Weather Company" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol19} alt="Mindshare" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol20} alt="Nebula" className="h-4 sm:h-5 md:h-7 object-contain" />
-  </div>
-
-  <style>{`
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-  `}</style>
-</section>
+           
 
     {/* fourth.one section */}
 

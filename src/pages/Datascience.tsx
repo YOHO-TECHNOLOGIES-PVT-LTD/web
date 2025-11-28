@@ -1,10 +1,9 @@
-import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import webimg from "../assets/solutions/Data science and ai hero.avif";
 import { UI_CONSTANTS } from "../constants/colors";
-import webimg2 from "../assets/66592e243ff567c6d20bf458_shutterstock_1903260658.avif";
-import webimg3 from "../assets/665931b9c3884b006d99aea7_shutterstock_2178995507 1.avif";
-import webimg4 from "../assets/6659318549edab4cae8985df_v617-bb-18-technology 1.webp";
+import webimg2 from "../assets/freelancer-woman-comparing-graphics-from-clipboard-with-grafics-from-computer-business-office.jpg";
+import webimg3 from "../assets/data-center-programmers-collaborating-working-neural-networks-ai-databases.jpg";
+import webimg4 from "../assets/3d-rendering-biorobots-concept.jpg";
 
 import webimg8 from "../assets/usecase/6626c1bf2f6333755ec893d1_Layer_1 (2).svg";
 import webimg9 from "../assets/usecase/6626c1bf2f6333755ec893f5_Coursera-Logo_600x600 (1).svg";
@@ -17,77 +16,11 @@ import webimg14 from "../assets/usecase/665e67458fbe05d52c24cf21_groupm-logo.svg
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
 import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
 import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
-import sol13 from '../assets/solutions/66551e33b51a48a01a04b49e_TWC _ 370 x 442.avif';
-import sol14 from '../assets/solutions/66551e5ea419e51fd8602370_Mindshare.avif';
-import sol15 from '../assets/solutions/66551df754960be0f32df34b_Frame 1073714194.avif';
-import sol16 from '../assets/solutions/6655d8d4de6e142a88be6431_Nebula _ 370 x 446.avif';
-import sol17 from '../assets/solutions/6657c42407afdd44de5fd97b_github logo.webp';
-import sol18 from '../assets/solutions/6657c45988183db22b904624_TWC logo.webp';
-import sol19 from '../assets/solutions/6657c49b629db5fe891a5454_mindshare logo.webp';
-import sol20 from '../assets/solutions/6657c518ad72fe6656c7b9d6_nebula logo (1).webp';
-import sol21 from '../assets/solutions/66343fa7e9d0576bd06f8b42_master-card-img.webp';
+
+import sol21 from '../assets/solutions/male-suit-with-virtual-reality-glasses-his-head-working-virtual-financial-world.jpg';
 export default function WebAppDevelopmentHero() {
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
-
-  const testimonials = [
-    {
-      title: "Advanced predictive analytics driving 40% improvement in business forecasting",
-      quote: "KIAQ's data science team implemented sophisticated machine learning models that transformed our forecasting accuracy. Their expertise in time-series analysis and predictive modeling delivered insights that directly impacted our strategic decision-making process.",
-      name: "Dr. Sarah Mitchell",
-      role: "Chief Data Officer, Global Finance Corp",
-      image: sol15,
-      logo: sol17
-    },
-    {
-      title: "Enterprise AI implementation reducing operational costs by 35%",
-      quote: "The KIAQ team delivered a comprehensive AI solution that automated our key business processes. Their deep understanding of both technical requirements and business objectives resulted in a system that exceeded our ROI expectations within the first year.",
-      name: "Michael Chen",
-      role: "VP of Operations, Manufacturing Solutions Ltd",
-      image: sol13,
-      logo: sol18
-    },
-    {
-      title: "Real-time data platform processing 10M+ events daily with 99.9% accuracy",
-      quote: "KIAQ engineered a scalable data infrastructure that handles our massive data volumes while maintaining exceptional performance. Their solution enables real-time decision making across our entire organization, driving significant competitive advantage.",
-      name: "Jennifer Rodriguez",
-      role: "CTO, E-commerce Innovations Inc",
-      image: sol14,
-      logo: sol19
-    },
-    {
-      title: "Computer vision system achieving 98% accuracy in quality control automation",
-      quote: "The AI solution developed by KIAQ revolutionized our manufacturing quality control. Their computer vision algorithms detect defects with unprecedented accuracy, reducing manual inspection costs by 75% while improving product quality standards.",
-      name: "David Thompson",
-      role: "Head of Innovation, Industrial Automation Group",
-      image: sol16,
-      logo: sol20
-    }
-  ];
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 720;
-      const newScrollLeft = direction === 'left' 
-        ? scrollContainerRef.current.scrollLeft - scrollAmount
-        : scrollContainerRef.current.scrollLeft + scrollAmount;
-      
-      scrollContainerRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const handleScroll = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-      setShowLeftArrow(scrollLeft > 10);
-      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
-    }
-  };
+ 
 
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
 
@@ -192,175 +125,171 @@ const images = {
     </section>
 
   {/* {second section} */}
-  <section className="relative w-full bg-white overflow-hidden py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-12">
+ <section className="relative w-full bg-white overflow-hidden py-9 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12">
 
-      {/* STAR PATTERN TOP-RIGHT */}
-      <div
-        aria-hidden
-        className="absolute top-4 sm:top-8 right-4 sm:right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="180" height="100" viewBox="0 0 280 160" className="w-[180px] sm:w-[280px] h-auto">
-          <defs>
-            <g id="star">
-              <path
-                d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
-                fill="#FF6600"
-              />
-            </g>
-          </defs>
-          <g opacity="0.5">
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN TOP-RIGHT */}
+  <div
+    aria-hidden
+    className="absolute top-3 sm:top-5 right-4 sm:right-8 pointer-events-none"
+    style={{ opacity: 0.12 }}
+  >
+    <svg width="180" height="100" viewBox="0 0 280 160" className="w-[150px] sm:w-[230px] h-auto">
+      <defs>
+        <g id="star">
+          <path
+            d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
+            fill="#FF6600"
+          />
+        </g>
+      </defs>
+      <g opacity="0.5">
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="36" y="0" />
+        <use href="#star" x="72" y="0" />
+        <use href="#star" x="108" y="0" />
+        <use href="#star" x="144" y="0" />
+        <use href="#star" x="180" y="0" />
+        <use href="#star" x="18" y="28" />
+        <use href="#star" x="54" y="28" />
+        <use href="#star" x="90" y="28" />
+        <use href="#star" x="126" y="28" />
+        <use href="#star" x="162" y="28" />
+        <use href="#star" x="198" y="28" />
+      </g>
+    </svg>
+  </div>
 
-      {/* STAR PATTERN BOTTOM-LEFT */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="220" height="180" viewBox="0 0 340 260" className="w-[220px] sm:w-[340px] h-auto">
-          <defs>
-            <g id="starB">
-              <path
-                d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
-                fill="#FF6600"
-              />
-            </g>
-          </defs>
-          <g opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
-                />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN BOTTOM-LEFT */}
+  <div
+    aria-hidden
+    className="absolute bottom-0 left-0 pointer-events-none"
+    style={{ opacity: 0.10 }}
+  >
+    <svg width="220" height="180" viewBox="0 0 340 260" className="w-[190px] sm:w-[300px] h-auto">
+      <defs>
+        <g id="starB">
+          <path
+            d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
+            fill="#FF6600"
+          />
+        </g>
+      </defs>
+      <g opacity="0.5">
+        {Array.from({ length: 6 }).map((_, row) =>
+          Array.from({ length: 6 }).map((__, col) => (
+            <use
+              key={`b-${row}-${col}`}
+              href="#starB"
+              x={col * 38 + (row % 2 === 0 ? 0 : 18)}
+              y={row * 34}
+            />
+          ))
+        )}
+      </g>
+    </svg>
+  </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+  <div className="relative z-10 max-w-6xl mx-auto">
 
-        {/* HEADING */}
-        <div className="max-w-[980px] pr-0 sm:pr-12">
-          <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-semibold text-[#011123] leading-tight">
-            Comprehensive Data Science & AI Services for Enterprise Excellence
-          </h2>
+    {/* HEADING */}
+    <div className="max-w-[900px] pr-0 sm:pr-10">
+      <h2 className="text-[22px] sm:text-[26px] md:text-[32px] font-semibold text-[#011123] leading-tight">
+        Comprehensive Data Science & AI Services for Enterprise Excellence
+      </h2>
 
-          <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65]">
-            From predictive analytics to enterprise AI implementation, we deliver 
-            data-driven solutions that solve complex business challenges and drive 
-            measurable results.
-          </p>
-        </div>
+      <p className="text-gray-600 mt-2 max-w-[700px] text-[0.9rem] sm:text-[1rem] leading-[1.55] text-justify">
+        From predictive analytics to enterprise AI implementation, we deliver 
+        data-driven solutions that solve complex business challenges and drive 
+        measurable results.
+      </p>
+    </div>
 
-        {/* TABS */}
-        <div className="mt-6 sm:mt-8">
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() =>
-                      setActiveTab(
-                        tab as
-                          | "Predictive Analytics"
-                          | "Machine Learning"
-                          | "AI Solutions"
-                      )
-                    }
-                    className="relative text-xs sm:text-sm md:text-base font-medium pb-2 transition-colors whitespace-nowrap"
+    {/* TABS */}
+    <div className="mt-4 sm:mt-6">
+      <div className="flex flex-wrap items-center gap-3 sm:gap-5 max-w-[700px] pb-2">
+        {tabs.map((tab, idx) => {
+          const isActive = tab === activeTab;
+          return (
+            <div key={tab} className="flex items-center">
+              <button
+                onClick={() =>
+                  setActiveTab(
+                    tab as
+                      | "Predictive Analytics"
+                      | "Machine Learning"
+                      | "AI Solutions"
+                  )
+                }
+                className="relative text-xs sm:text-sm md:text-base font-medium pb-1 transition-colors whitespace-nowrap"
+                style={{
+                  color: isActive ? "#011123" : "rgba(1,17,35,0.6)",
+                }}
+              >
+                {tab}
+
+                {isActive && (
+                  <span
+                    className="absolute left-0 right-0"
                     style={{
-                      color: isActive
-                        ? "#011123"
-                        : "rgba(1,17,35,0.6)",
+                      height: 2.5,
+                      bottom: -5,
+                      background: "#FF6600",
+                      borderRadius: 2,
                     }}
-                  >
-                    {tab}
+                  />
+                )}
+              </button>
 
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: "#FF6600",
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {idx < tabs.length - 1 && (
-                    <div
-                      className="mx-2 sm:mx-4 hidden sm:block"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="max-w-[720px] border-b border-gray-200" />
-        </div>
-
-        {/* CONTENT + IMAGE */}
-        <div className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
-          <div className="md:col-span-5">
-            <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-3">
-              Expert Data Science & AI Teams
-            </h3>
-
-            <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5">
-              KIAQ provides specialized data scientists, ML engineers, and AI 
-              specialists with deep expertise in modern frameworks, cloud platforms, 
-              and industry-specific applications to deliver transformative solutions.
-            </p>
-
-            <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-              View Our Capabilities
-            </button>
-          </div>
-
-          <div className="md:col-span-7 flex justify-center md:justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-              />
+              {idx < tabs.length - 1 && (
+                <div
+                  className="mx-2 sm:mx-4 hidden sm:block"
+                  style={{
+                    width: 28,
+                    height: 1,
+                    background: "rgba(1,17,35,0.06)",
+                  }}
+                />
+              )}
             </div>
-          </div>
+          );
+        })}
+      </div>
+
+      <div className="max-w-[700px] border-b border-gray-200" />
+    </div>
+
+    {/* CONTENT + IMAGE */}
+    <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
+      <div className="md:col-span-5">
+        <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#011123] mb-2">
+          Expert Data Science & AI Teams
+        </h3>
+
+        <p className="text-gray-600 text-[0.92rem] sm:text-base leading-[1.6] mb-3 text-justify">
+          KIAQ provides specialized data scientists, ML engineers, and AI 
+          specialists with deep expertise in modern frameworks, cloud platforms, 
+          and industry-specific applications to deliver transformative solutions.
+        </p>
+
+        <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
+          View Our Capabilities
+        </button>
+      </div>
+
+      <div className="md:col-span-7 flex justify-center md:justify-end">
+        <div className="w-full max-w-[460px]">
+          <img
+            src={images[activeTab]}
+            alt={activeTab}
+            className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_8px_22px_rgba(2,6,23,0.09)] object-cover"
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+
 
     {/* {third section} */}
 
@@ -477,101 +406,7 @@ const images = {
 </style>
 
         {/* {fourth section} */}
-           <section className="relative w-full bg-gray-50 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
-  {/* Heading */}
-  <div className="text-center mb-8 sm:mb-10 md:mb-14">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight px-2">
-      Trusted by Industry Leaders for Data Science Excellence
-    </h2>
-  </div>
-
-  {/* Scrollable Cards Container */}
-  <div className="relative">
-    {/* Left Arrow */}
-    {showLeftArrow && (
-      <button
-        onClick={() => scroll('left')}
-        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-xl items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowLeft className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Right Arrow */}
-    {showRightArrow && (
-      <button
-        onClick={() => scroll('right')}
-        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 md:w-16 md:h-16 bg-white rounded-full shadow-xl items-center justify-center hover:bg-gray-100 transition-all"
-      >
-        <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-gray-900" />
-      </button>
-    )}
-
-    {/* Horizontal Scroll Section */}
-    <div
-      ref={scrollContainerRef}
-      onScroll={handleScroll}
-      className="overflow-x-auto scrollbar-hide scroll-smooth pb-4 sm:pb-6"
-      style={{
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-        WebkitOverflowScrolling: 'touch'
-      }}
-    >
-      <div className="flex gap-4 sm:gap-6 md:gap-8 w-max px-4 sm:px-6 md:px-10">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="flex flex-col sm:flex-row bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden w-[320px] sm:w-[600px] md:w-[700px] lg:w-[800px] min-h-[450px] sm:h-[380px] md:h-[420px] flex-shrink-0 hover:shadow-2xl transition-all duration-300"
-          >
-            {/* Text Section */}
-            <div className="flex flex-col justify-between p-6 sm:p-8 md:p-10 w-full sm:w-[55%]">
-              <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-5 leading-snug">
-                  {testimonial.title}
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 md:mb-8">
-                  "{testimonial.quote}"
-                </p>
-              </div>
-              <div className="mt-auto">
-                <p className="text-sm sm:text-base font-semibold text-gray-900">
-                  {testimonial.name}
-                </p>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                  {testimonial.role}
-                </p>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="relative w-full sm:w-[45%] h-[200px] sm:h-auto bg-gray-200">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-
-  {/* Company Logos */}
-  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12 mt-12 sm:mt-16 md:mt-20 opacity-60 px-4">
-    <img src={sol17} alt="GitHub" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol18} alt="The Weather Company" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol19} alt="Mindshare" className="h-4 sm:h-5 md:h-7 object-contain" />
-    <img src={sol20} alt="Nebula" className="h-4 sm:h-5 md:h-7 object-contain" />
-  </div>
-
-  <style>{`
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-  `}</style>
-</section>
+           
   
     {/* fourth.one section */}
 

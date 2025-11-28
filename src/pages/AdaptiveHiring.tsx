@@ -6,20 +6,20 @@ import img4 from "../assets/solutions/cn-004.svg";
 import img5 from "../assets/solutions/icn-005.svg";
 import img6 from "../assets/solutions/cn-006.svg";
 import img7 from "../assets/solutions/Cloud and DevOps.avif";
-import imgfocus from "../assets/solutions/adaptive-4.webp";
+import imgfocus from "../assets/solutions/job-interview-candidate-selection-employment.jpg";
 import img8 from "../assets/solutions/head-h.svg";
 import img9 from "../assets/solutions/hire-h.svg";
 import img10 from "../assets/solutions/icn-005.svg";
 import img11 from "../assets/solutions/succ-h.svg";
-import img12 from "../assets/solutions/Quality, Global Talent@2x.webp";
-import img13 from "../assets/solutions/Rapid Scalability@2x.webp";
-import img14 from "../assets/solutions/_Cost Optimization@2x.webp";
-import img15 from "../assets/solutions/Agile Deployment@2x.webp";
+import img12 from "../assets/solutions/business-people-working-using-technology-connect-with-others.jpg";
+import img13 from "../assets/solutions/top-view-office-desk-with-growth-chart-analyzed-with-magnifying-glass.jpg";
+import img14 from "../assets/solutions/businesspeople-planning-tasks-with-sticky-notes.jpg";
+import img15 from "../assets/solutions/person-office-analyzing-checking-finance-graphs.jpg";
 import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
 import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
 import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
 
-import { Check, X } from "lucide-react";
+// import { Check, X } from "lucide-react";
 
 const tabs = [
   {
@@ -52,73 +52,7 @@ const tabs = [
   },
 ];
 
-const data = [
-  {
-    title: "Location",
-    traditional: {
-      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "GEOGRAPHICALLY LIMITED",
-      desc: "Constrained by local talent pools and limited diversity",
-    },
-    adaptive: {
-      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "GLOBALLY DISTRIBUTED",
-      desc: "Access to 135+ countries with diverse technical expertise",
-    },
-  },
-  {
-    title: "Hiring Time",
-    traditional: {
-      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "12+ WEEKS AVERAGE",
-      desc: "Extended recruitment cycles delay critical projects",
-    },
-    adaptive: {
-      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "48 HOURS DEPLOYMENT",
-      desc: "Rapid matching and deployment of pre-vetted talent",
-    },
-  },
-  {
-    title: "Deployment",
-    traditional: {
-      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "SLOW TIME-TO-PRODUCTIVITY",
-      desc: "Extended onboarding and ramp-up periods",
-    },
-    adaptive: {
-      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "IMMEDIATE IMPACT",
-      desc: "Ready-to-work professionals delivering value from day one",
-    },
-  },
-  {
-    title: "Scalability",
-    traditional: {
-      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "RIGID CAPACITY",
-      desc: "Fixed team sizes limit adaptability to changing demands",
-    },
-    adaptive: {
-      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "DYNAMIC SCALING",
-      desc: "Flexible team composition aligned with project requirements",
-    },
-  },
-  {
-    title: "Turnover",
-    traditional: {
-      icon: <X className="w-5 h-5 text-[#A7B1A9]" />,
-      heading: "HIGH ATTRITION RISK",
-      desc: "30% higher turnover rates in competitive markets",
-    },
-    adaptive: {
-      icon: <Check className="w-5 h-5 text-[#0A3A36]" />,
-      heading: "ENHANCED RETENTION",
-      desc: "25% higher retention through meaningful global opportunities",
-    },
-  },
-];
+
 
 const UI_CONSTANTS = {
   PRIMARY: "#ff4600",
@@ -144,27 +78,30 @@ const features = [
   {
     title: "Connect with elite global technical talent.",
     description:
-      "Access a rigorously screened network of specialized engineers across DevOps, Data Science, AI, and Cloud technologies.",
+      "Access a rigorously screened network of specialized engineers across DevOps, Data Science, AI, and Cloud technologies. Collaborate with experts who bring proven experience and innovative solutions. Scale your team quickly without compromising quality. Unlock strategic technical insights that accelerate project success.",
   },
   {
     title: "Build without geographical constraints.",
     description:
-      "KIAQ delivers world-class engineering expertise to distributed teams, breaking down traditional hiring barriers.",
+      "KIAQ delivers world-class engineering expertise to distributed teams, breaking down traditional hiring barriers. Engage top-tier talent regardless of location. Ensure seamless integration with your existing workflows. Empower your projects with global knowledge and diverse skill sets.",
   },
   {
     title: "Expertise that evolves with your needs.",
     description:
-      "From initial prototypes to enterprise-scale solutions, our specialists provide scalable technical leadership.",
+      "From initial prototypes to enterprise-scale solutions, our specialists provide scalable technical leadership. Adapt your team dynamically as requirements grow. Benefit from continuous guidance and technical mentorship. Drive innovation with flexible, forward-thinking strategies.",
   },
   {
     title: "Seamless global collaboration.",
-    description: "Advanced remote work infrastructure enables productive cross-timezone partnerships.",
+    description:
+      "Advanced remote work infrastructure enables productive cross-timezone partnerships. Communicate effortlessly across teams with modern collaboration tools. Reduce delays and increase efficiency with synchronized workflows. Foster a culture of accountability and transparency at scale.",
   },
   {
     title: "Innovation through diverse perspectives.",
-    description: "Leverage global engineering talent to drive creative problem-solving and technical excellence.",
+    description:
+      "Leverage global engineering talent to drive creative problem-solving and technical excellence. Gain insights from professionals with varied backgrounds and expertise. Encourage bold thinking that challenges conventional approaches. Deliver solutions that are both innovative and reliable.",
   },
 ];
+
 
 export default function AdaptiveHiring() {
   const [openFirst, setOpenFirst] = useState(true);
@@ -376,11 +313,11 @@ export default function AdaptiveHiring() {
 </section>
 
       {/* SCROLL SECTION WITH IMAGE */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
+      <section className="py-8 sm:py-12 md:py-14 lg:py-18 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-5 sm:gap-8 lg:gap-12">
     {/* Image Section - Shows first on mobile */}
     <div className="w-full lg:w-1/2 order-1 lg:order-2">
-      <div className="lg:sticky lg:top-28 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center">
+      <div className="lg:sticky lg:top-24 h-[260px] sm:h-[360px] md:h-[460px] lg:h-[560px] flex items-center justify-center">
         <img
           src={imgfocus}
           className="max-w-full max-h-full object-contain"
@@ -397,11 +334,11 @@ export default function AdaptiveHiring() {
           ref={(el) => {
             contentRefs.current[i] = el;
           }}
-          className="min-h-[50vh] sm:min-h-[60vh] lg:min-h-[75vh] flex items-center py-6 sm:py-8"
+          className="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[65vh] flex items-center py-3 sm:py-5"
         >
           <div>
             <h3
-              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 transition-all leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-2.5 transition-all leading-tight text-justify"
               style={{
                 opacity: activeIndex === i ? 1 : 0.3,
                 color: UI_CONSTANTS.DARK,
@@ -411,7 +348,7 @@ export default function AdaptiveHiring() {
             </h3>
 
             <p
-              className="text-base sm:text-lg transition-all leading-relaxed"
+              className="text-base sm:text-lg transition-all leading-relaxed text-justify"
               style={{
                 opacity: activeIndex === i ? 1 : 0.3,
                 color: UI_CONSTANTS.GRAY,
@@ -425,7 +362,7 @@ export default function AdaptiveHiring() {
     </div>
   </div>
 
-  <div className="text-center mt-12 sm:mt-16 md:mt-20 px-4">
+  <div className="text-center mt-8 sm:mt-12 md:mt-14 px-4">
     <button
       className="px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
       style={{
@@ -438,75 +375,10 @@ export default function AdaptiveHiring() {
   </div>
 </section>
 
+
+
       {/* COMPARISON TABLE SECTION */}
-      <section className="bg-[#EAF4F1] py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0A3A36] leading-tight mb-6 sm:mb-8 md:mb-10">
-      Transform Your Technical Hiring Strategy with KIAQ
-    </h2>
-
-    <div className="bg-white rounded-xl shadow-md overflow-hidden border border-[#DCE7E4]">
-      {/* Desktop Header */}
-      <div className="hidden md:grid grid-cols-3 bg-[#D5E8E1]">
-        <div className="py-4 md:py-5 px-4 md:px-6"></div>
-        <div className="py-4 md:py-5 px-4 md:px-6 font-semibold text-[#0A3A36] text-sm md:text-base">
-          Traditional Hiring
-        </div>
-        <div className="py-4 md:py-5 px-4 md:px-6 font-semibold text-white bg-[#0A3A36] text-sm md:text-base">
-          Adaptive Hiring
-        </div>
-      </div>
-
-      {data.map((row, index) => (
-        <div
-          key={index}
-          className="border-t border-[#E4EBE8] flex flex-col md:grid md:grid-cols-3"
-        >
-          {/* Title - Full width on mobile */}
-          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 font-semibold text-[#0A3A36] text-base sm:text-lg md:text-base bg-[#F8FAF9] md:bg-transparent">
-            {row.title}
-          </div>
-
-          {/* Traditional Hiring */}
-          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 border-t md:border-t-0 border-[#E4EBE8]">
-            <div className="flex items-start gap-2 sm:gap-3">
-              <div className="flex-shrink-0">{row.traditional.icon}</div>
-              <div>
-                <p className="font-semibold text-[#0A3A36] uppercase text-xs sm:text-sm mb-1">
-                  Traditional Hiring
-                </p>
-                <p className="font-semibold text-[#0A3A36] text-xs sm:text-sm mb-1">
-                  {row.traditional.heading}
-                </p>
-                <p className="text-[#5A6F68] text-xs sm:text-sm leading-relaxed">
-                  {row.traditional.desc}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Adaptive Hiring */}
-          <div className="px-4 sm:px-6 py-4 sm:py-5 md:py-6 bg-[#F4FAF8] border-t md:border-t-0 border-[#E4EBE8]">
-            <div className="flex items-start gap-2 sm:gap-3">
-              <div className="flex-shrink-0">{row.adaptive.icon}</div>
-              <div>
-                <p className="font-semibold text-[#0A3A36] uppercase text-xs sm:text-sm mb-1">
-                  Adaptive Hiring
-                </p>
-                <p className="font-semibold text-[#0A3A36] text-xs sm:text-sm mb-1">
-                  {row.adaptive.heading}
-                </p>
-                <p className="text-[#5A6F68] text-xs sm:text-sm leading-relaxed">
-                  {row.adaptive.desc}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+     
 
       {/* TABS SECTION */}
       <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-16 md:pb-20">
@@ -628,7 +500,7 @@ export default function AdaptiveHiring() {
           Risk Mitigation
         </h3>
         <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
-          $640K
+          640K
         </div>
         <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
           <p className="text-gray-300 text-base sm:text-lg">

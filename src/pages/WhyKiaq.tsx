@@ -1,48 +1,62 @@
-import { useState } from "react";
 import kiaqimag from '../assets/whykiaq/665a571d3afa925ba1844fcd_Why Join Andela - Hero.avif'
-import secimg from '../assets/whykiaq/6662ffb0eb1555ee15a857a0_Top Global Talent@2x.webp'
-import videoThumbnail from '../assets/whykiaq/665a571d3afa925ba1844fcd_Why Join Andela - Hero.avif';
-import frimg from '../assets/whykiaq/home-01-001.webp';
-import fvimg from '../assets/whykiaq/case5-1.webp';
-import sximg from '../assets/whykiaq/case4-1.webp';
-import svnimg from '../assets/whykiaq/665f017906055188a91e32cb_Talent Decision Engine@2x.webp';
-import ethimg from '../assets/whykiaq/665f02ad1a0373467ab3c7cf_Integrations@2x.webp';
-import ninth from '../assets/whykiaq/6674b5009b8b21f1393a29a4_tei hero image.webp';
-import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
-import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
-import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
-import tirth from '../assets/whykiaq/Rigorously Vetted@2x.webp';
-import fourth from '../assets/whykiaq/Untapped Markets@2x.webp';
+
+import imgwh from "../assets/Home1/image.png";
 import { FaGlobe, FaChalkboardTeacher, FaSmile, FaUsers, FaHandshake, FaShareAlt } from "react-icons/fa";
-import { UI_CONSTANTS } from '../constants/colors';
+import ourimg from '../assets/Home1/our-team01.webp';
+import { Heart, TrendingUp, Shield, Briefcase, ArrowUpRight,Globe2, Users,  Smile } from 'lucide-react';
+import { useEffect, useState } from "react";
+
+interface StatBoxProps {
+  label: string;
+  value: number;
+  suffix?: string;
+  description: string;
+  Icon: any;
+}
+
+const StatBox = ({ label, value, suffix = "", description, Icon }: StatBoxProps) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const duration = 1500;
+    const increment = value / (duration / 16);
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= value) {
+        start = value;
+        clearInterval(timer);
+      }
+      setCount(Math.floor(start));
+    }, 16);
+
+    return () => clearInterval(timer);
+  }, [value]);
+
+  return (
+    <div className="bg-[#002b38] rounded-2xl p-8 text-center shadow-lg w-full transition-transform duration-300 hover:scale-[1.02]">
+      
+      {/* Icon */}
+      <div className="flex justify-center mb-4">
+        <Icon size={48} strokeWidth={1.5} className="text-[#ff5500]" />
+      </div>
+
+      <h3 className="text-[#ffffff] text-lg font-semibold mb-3">{label}</h3>
+
+      <p className="text-[#ff5500] text-5xl font-bold leading-tight">
+        {count}{suffix}
+      </p>
+
+      <p className="text-gray-300 text-sm mt-3 leading-relaxed">{description}</p>
+    </div>
+  );
+};
+
 
 
 export default function WhyKiaq() {
-  const tabs = [
-    {
-      name: "Strategic Tech Partnership",
-      image: secimg,
-      tag: "Strategic Tech Partnership",
-      title: "Build stronger teams with elite digital talent",
-      desc: "We are a team of tech innovators, building smart IT solutions that fuel business transformation and accelerate growth."
-    },
-    {
-      name: "Innovation & Impact",
-      image: fourth,
-      tag: "Innovation & Impact",
-      title: "Where Innovation Meets Impact",
-      desc: "Welcome to Kiaq Technologies - Where Innovation Meets Impact. We deliver cutting-edge software solutions tailored to your business needs, empowering digital transformation and driving growth through technology."
-    },
-    {
-      name: "Experience & Excellence",
-      image: tirth,
-      tag: "Experience & Excellence",
-      title: "5+ Years of IT Industry Excellence",
-      desc: "With a 05-year track record in IT, we create reliable, forward-thinking technology solutions designed to help businesses scale and excel in the evolving digital era. Excellence is the cornerstone of our work."
-    }
-  ];
-
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+ 
   return (
     <>
      
@@ -77,7 +91,6 @@ export default function WhyKiaq() {
   </button>
 </div>
 
-
             {/* Spacer for layout balance */}
             <div className="hidden md:block md:flex-1" />
           </div>
@@ -85,71 +98,35 @@ export default function WhyKiaq() {
       </section>
 
       {/* Second Section */}
-   <section className="bg-white text-gray-900 py-10 sm:py-14 md:py-20 px-4 sm:px-6 md:px-10 lg:px-20">
-  <div className="max-w-7xl mx-auto">
+   
+    <section className="w-full bg-white py-20 px-6">
+  <div className="max-w-7xl mx-auto bg-[#fff2eb] rounded-2xl shadow-sm overflow-hidden">
+    <div className="flex flex-col md:flex-row">
 
-    {/* Heading */}
-    <div className="text-center mb-8 sm:mb-10 md:mb-14">
-      <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight px-2">
-        Trusted Tech Professionals for Your Most Demanding IT Needs
-      </h2>
-    </div>
+  {/* LEFT SIDE — Explore More Heading with Pattern */}
+  <div className="relative flex flex-col justify-center items-start p-16 md:w-[32%] bg-[#fff2eb] border-b md:border-b-0 md:border-r border-[#D7E0D2]">
+    <h2 className="text-4xl font-extrabold text-[#0F3E40] leading-snug mb-2">
+      Why Choose Kiaq ?
+    </h2>
+  </div>
 
-    {/* Tabs */}
-    <div className="flex justify-start sm:justify-center gap-4 sm:gap-6 md:gap-10 border-b border-gray-200 mb-8 sm:mb-10 md:mb-14 overflow-x-auto no-scrollbar pb-2">
-      {tabs.map((tab) => (
-        <button
-          key={tab.name}
-          onClick={() => setActiveTab(tab)}
-          className={`pb-3 font-semibold transition whitespace-nowrap text-sm sm:text-base
-            ${
-              activeTab.name === tab.name
-                ? "border-b-4 border-orange-500 text-orange-600"
-                : "text-gray-500 hover:text-orange-600"
-            }`}
-        >
-          {tab.name}
-        </button>
-      ))}
-    </div>
+  {/* RIGHT SIDE — Paragraph + Bullet Points */}
+  <div className="p-12 flex flex-col justify-start items-start bg-[#fff2eb]">
+    {/* Paragraph */}
+    <h1 className="text-xl text-gray-700 mb-6 leading-relaxed">
+      With a 05-year track record in IT, we create reliable, forward-thinking technology solutions designed to help businesses scale and excel in the evolving digital era. Excellence is the cornerstone of our work.
+    </h1>
 
-    {/* Main Two-Column Layout */}
-    <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 sm:gap-12 md:gap-16">
+    {/* Bullet Points */}
+    <ul className="list-disc pl-5 space-y-4 text-sm text-gray-700">
+      <li>Trusted Tech Professionals for Your Most Demanding IT Needs</li>
+      <li>Tech-Driven Plans, Perfectly Aligned with Your Business Needs</li>
+      <li>Innovative Technologies That Drive Business Success</li>
+    </ul>
+  </div>
 
-      {/* Left Image */}
-      <div className="w-full lg:w-[48%] flex justify-center">
-        <img
-          src={activeTab.image}
-          alt={activeTab.name}
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-2xl shadow-lg object-cover"
-        />
-      </div>
+</div>
 
-      {/* Right Content */}
-      <div className="w-full lg:w-[48%] space-y-5 sm:space-y-6 md:space-y-8 text-center lg:text-left px-2">
-        <div>
-          <p className="uppercase text-xs sm:text-sm font-semibold text-orange-600 tracking-wider">
-            {activeTab.tag}
-          </p>
-
-          <h3 className="text-xl sm:text-3xl md:text-4xl font-bold mt-2 leading-snug">
-            {activeTab.title}
-          </h3>
-
-          <p className="text-gray-600 text-sm sm:text-lg leading-relaxed mt-3 sm:mt-4">
-            {activeTab.desc}
-          </p>
-
-          <a
-            href="#"
-            className="inline-flex items-center mt-3 sm:mt-4 text-orange-600 font-semibold hover:underline text-sm sm:text-base"
-          >
-            Learn More →
-          </a>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
@@ -158,344 +135,77 @@ export default function WhyKiaq() {
 
 
     {/* Third Section */}
-  <section className="relative w-full min-h-[85vh] flex items-center justify-center bg-black text-white overflow-hidden">
-  {/* Background Image */}
-  <img
-    src={videoThumbnail}
-    alt="Breaking barriers"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-  />
+  
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
 
-  {/* Content */}
-  <div className="relative z-20 max-w-6xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-16 py-12 sm:py-16 md:py-20 flex flex-col justify-center gap-8 sm:gap-12 md:gap-16">
-    {/* Top Section */}
-    <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 lg:gap-16">
-      {/* Left Text */}
-      <div className="w-full lg:w-1/2 text-center lg:text-left space-y-3 sm:space-y-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight">
-          Tech-Driven Plans, Perfectly Aligned with Your Business Needs
-        </h2>
-      </div>
-    </div>
+ <section className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-12 gap-8">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12">
+            <button className="bg-slate-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-700 transition whitespace-nowrap">
+              Why Choose Us
+            </button>
+            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight max-w-2xl">
+              From Vision to Execution, Building Tomorrow's Technology Today
+            </h1>
+          </div>
+          <p className="text-slate-700 max-w-xs text-justify leading-relaxed">
+            <span className="font-semibold">Kiaq</span> is built on a foundation of relentless improvement. We sharpen our technical skills daily and pursue excellence in all our solutions.
+          </p>
+        </div>
 
-    {/* Bottom Stats */}
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mt-4 sm:mt-6 md:mt-8 border-t border-white/20 pt-6 sm:pt-8 md:pt-10 text-center lg:text-left">
-      <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">120+</h3>
-        <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Clients Worldwide
-        </p>
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left Image/Video */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[500px] lg:h-[600px]">
+            <img
+              src={ourimg}
+              alt="Team collaboration"
+              className="w-full h-full object-cover"
+            />
+          
+          </div>
+
+          {/* Right Values Grid */}
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 sm:p-12 relative shadow-2xl min-h-[500px] lg:min-h-[600px]">
+            <div className="grid grid-cols-2 gap-6 sm:gap-8 h-full">
+              {[ 
+                { icon: <Heart className="w-7 h-7 text-purple-300" />, title: 'Empathy', desc: 'We prioritize deep understanding and empathy to deliver tech solutions tailored to each client\'s unique needs.' },
+                { icon: <TrendingUp className="w-7 h-7 text-purple-300" />, title: 'Performance Driven', desc: "We're dedicated to delivering top-tier solutions while continuously enhancing performance to surpass expectations." },
+                { icon: <Shield className="w-7 h-7 text-purple-300" />, title: 'Honest & Integrity', desc: 'Our tech foundation is built on trust and transparency, driving ethical innovation in every project.' },
+                { icon: <Briefcase className="w-7 h-7 text-purple-300" />, title: 'Teamwork & Collaboration', desc: 'Our commitment to collaborative innovation creates a teamwork-driven environment that propels us toward shared success.' },
+              ].map((item, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center">
+                  <div className="bg-slate-700/50 rounded-full p-5 mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-white text-lg sm:text-xl font-semibold mb-3">{item.title}</h3>
+                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Center Circle */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-200 rounded-full w-28 h-28 sm:w-32 sm:h-32 flex flex-col items-center justify-center shadow-xl z-10">
+              <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-slate-800 mb-1" />
+              <p className="text-slate-800 font-semibold text-xs sm:text-sm text-center leading-tight px-2">
+                Commitment To<br />Growth!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">60+</h3>
-        <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Experience Engineers
-        </p>
-      </div>
-      <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">70+</h3>
-        <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Completed Projects
-        </p>
-      </div>
-      <div className="space-y-1 sm:space-y-2">
-        <h3 className="text-xl sm:text-2xl font-bold">120%</h3>
-        <p className="text-orange-300 text-xs sm:text-sm leading-relaxed">
-          Customer Satisfaction
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     {/* Fourth Section */}
 
-        <section className="w-full bg-white text-black py-24">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-16">
-        
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2 space-y-6">
-          <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
-            ✦ Our Mission & Vision
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
-            Innovative Technologies That Drive Business Success
-          </h2>
-          <h3 className="text-xl font-semibold text-gray-900">
-            Our Mission
-          </h3>
-          <p className="text-gray-600">
-            Our mission is to be the technology partner that empowers businesses to unlock their full potential with intelligent, scalable IT solutions.
-          </p>
-
-          <h3 className="text-xl font-semibold text-gray-900">
-            Our Vision
-          </h3>
-          <p className="text-gray-600">
-            To be the leading provider of innovative technology solutions that transform businesses and drive sustainable growth in the digital era.
-          </p>
-
-          <a
-            href="#"
-            className="inline-flex items-center text-primary font-semibold hover:underline"
-          >
-            Read More About Our Mission
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 ml-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 pt-10 border-t border-gray-200">
-            <div>
-              <h4 className="font-semibold text-gray-900">Strategic Analysis</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                90% success rate in strategic technology planning and implementation.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Enterprise Solutions</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                95% client satisfaction with our enterprise-grade solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Development Experience</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                80% faster development with our experienced engineering team.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Quality Assurance</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                100% commitment to delivering high-quality, reliable technology solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-          <img
-            src={frimg}
-            alt="Our Mission & Vision"
-            className="w-full max-w-lg rounded-2xl shadow-lg object-contain"
-          />
-        </div>
-      </div>
-    </section>
+     
 
     {/* Fifth Section */}
-     <section className="w-full bg-gray-50 text-black py-24 relative overflow-hidden">
-      {/* Background Pattern (optional subtle circles) */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://www.andela.com/_next/static/media/circle-pattern.1c4b7dc2.svg')] opacity-10 bg-no-repeat bg-right" />
-
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-16">
-        
-        {/* Left Image */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-          <img
-            src={fvimg}
-            alt="Strategic Tech Partnership"
-            className="w-full max-w-lg rounded-2xl shadow-lg object-contain"
-          />
-        </div>
-
-        {/* Right Content */}
-        <div className="w-full lg:w-1/2 space-y-6">
-          <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
-            ✦ Strategic Tech Partner
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-900">
-            Not Just Another IT Provider
-          </h2>
-          <h3 className="text-xl font-semibold text-gray-900">
-            Kiaq Technologies brings deep technical expertise across modern software development, cloud computing, cybersecurity, and enterprise IT solutions.
-          </h3>
-          <p className="text-gray-600">
-            Our skilled team leverages cutting-edge technologies to design, develop, and deploy scalable systems tailored to your unique business needs. With a focus on innovation, quality, and performance, we help businesses embrace digital transformation and stay ahead in a rapidly evolving tech landscape.
-          </p>
-
-          <a
-            href="#"
-            className="inline-flex items-center text-primary font-semibold hover:underline"
-          >
-            Learn More About Our Expertise
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 ml-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 pt-10 border-t border-gray-200">
-            <div>
-              <h4 className="font-semibold text-gray-900">End-to-End Solutions</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                From custom software development and cloud integration to data analytics and automation.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Industry Insight</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                We combine technical depth with industry insight to solve real business challenges.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Future-Ready Solutions</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                Our team stays ahead of the curve with the latest tools and frameworks.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900">Secure & Agile</h4>
-              <p className="text-gray-600 text-sm mt-1">
-                Ensuring secure, agile, and future-ready solutions for enterprises of all sizes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    {/* Fifth Section */}
-    <section className="w-full bg-white text-black py-24 relative overflow-hidden">
-      {/* Diagonal Grid Pattern - Background */}
-      <svg
-        className="absolute top-0 right-0 w-[700px] h-[700px] opacity-10 pointer-events-none translate-x-24 -translate-y-12"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 200 200"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern id="diagonalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path
-              d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-              stroke="#00b3a4"
-              strokeWidth="0.8"
-              opacity="0.5"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#diagonalGrid)" />
-      </svg>
-
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-16">
-          AI-powered technology ensures success
-        </h2>
-
-        {/* 3 Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Card 1 */}
-          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="font-bold text-gray-900 text-lg mb-3">KIAQ Talent Cloud</h3>
-            <p className="text-gray-600 text-sm mb-6">
-              Create jobs and receive instant AI-driven recommendations. Schedule interviews and hire quickly.
-            </p>
-            <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-sm mb-6">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-            <img src={sximg} alt="KIAQ Talent Cloud" className="w-full max-w-sm mx-auto rounded-lg shadow-md" />
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="font-bold text-gray-900 text-lg mb-3">Talent Decision Engine™</h3>
-            <p className="text-gray-600 text-sm mb-6">
-              AI matching algorithms use thousands of data points to match you with ideal talent for your needs.
-            </p>
-            <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-sm mb-6">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-            <img src={svnimg} alt="Talent Decision Engine" className="w-full max-w-sm mx-auto rounded-lg shadow-md" />
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-[#ffe8dc] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
-            <h3 className="font-bold text-gray-900 text-lg mb-3">KIAQ Connect</h3>
-            <p className="text-gray-600 text-sm mb-6">
-              Instantly sync with your favorite tools and platforms. Get qualified matches to your open roles in seconds.
-            </p>
-            <a href="#" className="inline-flex items-center text-[#008080] font-semibold text-sm mb-6">
-              Learn More
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-            <img src={ethimg} alt="KIAQ Connect" className="w-full max-w-sm mx-auto rounded-lg shadow-md" />
-          </div>
-        </div>
-
-        {/* Proof Section */}
-        <div className="mt-24 rounded-2xl p-8 md:p-12 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
-          {/* Pattern inside Proof Section */}
-          <svg
-            className="absolute top-0 right-0 w-[400px] h-[400px] opacity-10 pointer-events-none translate-x-10 -translate-y-10"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 200"
-          >
-            <defs>
-              <pattern id="diagonalGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path
-                  d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-                  stroke="#008080"
-                  strokeWidth="0.8"
-                  opacity="0.5"
-                />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#diagonalGrid2)" />
-          </svg>
-
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
-            {/* Left Text */}
-            <div className="w-full lg:w-2/3">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Here's our proof</h3>
-              <p className="text-gray-700 mb-6">
-                Forrester recently conducted a Total Economic Impact (TEI) study and found KIAQ delivers 97% ROI,
-                $80K in cost savings per talent hired, 33% faster project delivery, and 66% faster time to hire.
-              </p>
-              <button className="bg-orange-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-[#006666] transition-all">
-                Download the report
-              </button>
-            </div>
-
-            {/* Right Image */}
-            <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-              <img src={ninth} alt="KIAQ TEI Report" className="w-full max-w-sm rounded-lg shadow-lg object-contain" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    {/* Sixth Section */}
-
-     <section className="relative w-full bg-[#fff2eb] text-black py-24 overflow-hidden">
+  
+<section className="relative w-full bg-[#fff2eb] text-black py-24 overflow-hidden">
       {/* Background Flower Pattern */}
       <div
         className="absolute inset-0 opacity-20"
@@ -605,216 +315,95 @@ export default function WhyKiaq() {
         </div>
       </div>
     </section>
+    {/* Fifth Section */}
+       <section className="w-full py-20 bg-white flex flex-col items-center px-6">
+      <h2 className="text-4xl font-bold text-center mb-14 text-[#011123]">
+       KIAQ At A Glance
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl">
+        
+        <StatBox
+          label="Clients Worldwide"
+          value={120}
+          suffix="+"
+          description="Global clients trust KIAQ for reliable solutions."
+          Icon={Globe2}
+        />
+
+        <StatBox
+          label="Experience Engineers"
+          value={60}
+          suffix="+"
+          description="Skilled engineers delivering high-quality work worldwide."
+          Icon={Users}
+        />
+
+        <StatBox
+          label="Completed Projects"
+          value={70}
+          suffix="+"
+          description="Successfully completed projects across multiple industries."
+          Icon={Briefcase}
+        />
+
+        <StatBox
+          label="Satisfaction"
+          value={120}
+          suffix="%"
+          description="Customers consistently rate KIAQ with top satisfaction scores."
+          Icon={Smile}
+        />
+
+      </div>
+    </section>
+
+    {/* Sixth Section */}
+
+     
 
     {/* Seventh Section */}
 
-        <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
-  {/* Flower Pattern Background */}
-  <div
-    className="absolute inset-0 opacity-15"
-    style={{
-      backgroundImage: `
-        radial-gradient(circle at 25px 25px, rgba(104,179,157,0.4) 1px, transparent 0),
-        radial-gradient(circle at 75px 75px, rgba(104,179,157,0.4) 1px, transparent 0)
-      `,
-      backgroundSize: "100px 100px",
-    }}
-  ></div>
+        
+<section className="w-full py-20 px-6 bg-white flex justify-center">
+<div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-2 items-center gap-0">
 
-  {/* Content */}
-  <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 z-10">
-    {/* Header */}
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Empower your teams with Adaptive Hiring
-      </h2>
-      <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-        View All Resources
-      </button>
-    </div>
 
-    {/* Cards Grid */}
-    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {/* Card 1 */}
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-        <img src={tenimg} alt="The Future of Hiring" className="w-full h-56 object-cover" />
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-            White Paper
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2">
-            The Future of Hiring Is Global
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-          >
-            Read More <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
+{/* LEFT IMAGE */}
+<div className="w-full h-[520px] rounded-l-2xl overflow-hidden">
+<img src={imgwh} alt="Tech" className="w-full h-full object-cover" />
+</div>
 
-      {/* Card 2 */}
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-        <img src={eleimg} alt="Diversifying Skillsets" className="w-full h-56 object-cover" />
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-            Case Study
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2">
-            Expanding Digital Skillsets Through KIAQ
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-          >
-            Watch Now <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
 
-      {/* Card 3 */}
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
-        <img src={twlimg} alt="Global Remote Tech Talent" className="w-full h-56 object-cover" />
-        <div className="p-6">
-          <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide">
-            Insight Report
-          </p>
-          <h3 className="text-lg font-semibold text-gray-900 mt-2">
-            Demand for Global Tech Talent Continues to Rise
-          </h3>
-          <a
-            href="#"
-            className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline"
-          >
-            Read More <span className="ml-2">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+{/* RIGHT CONTENT */}
+<div className="bg-[#032C33] text-white p-14 rounded-r-2xl h-full flex flex-col justify-center">
+<h2 className="text-[32px] font-semibold leading-snug text-center mb-8">
+Strategic Tech Partner, Not Just <br /> Another IT Provider
+</h2>
+
+
+<p className="text-gray-200 text-[15px] leading-relaxed mb-6 text-justify">
+Kiaq Technologies brings deep technical expertise across modern software development, cloud computing,
+cybersecurity, and enterprise IT solutions. Our skilled team leverages cutting-edge technologies to design,
+develop, and deploy scalable systems tailored to your unique business needs. With a focus on innovation,
+quality, and performance, we help businesses embrace digital transformation and stay ahead in a rapidly
+evolving tech landscape.
+</p>
+
+
+<p className="text-gray-200 text-[15px] leading-relaxed text-justify">
+At Kiaq Technologies, our strength lies in delivering advanced, end-to-end technology solutions that solve
+real business challenges. From custom software development and cloud integration to data analytics and
+automation, we combine technical depth with industry insight. Our team stays ahead of the curve with the
+latest tools and frameworks to ensure secure, agile, and future-ready solutions for enterprises of all sizes.
+</p>
+</div>
+</div>
 </section>
-
 
         {/* {8th Section} */}
 
-        <section className="dual-action-button-cta">
-  <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
-    
-    {/* LEFT SECTION */}
-    <div
-      className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
-    >
-      {/* Pattern Background */}
-      <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-        <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-          <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
-          <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
-          <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
-          <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
-          <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
-          <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
-          <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
-        </svg>
-      </div>
-
-      {/* Text Content */}
-      <div className="relative z-20">
-        <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
-          <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
-            <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-              <path
-                d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-          <p
-            className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-            style={{ color: UI_CONSTANTS.WHITE }}
-          >
-            GET STARTED
-          </p>
-        </div>
-
-        <h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-          style={{ color: UI_CONSTANTS.WHITE }}
-        >
-          Build the tech team of the future with KIAQ
-        </h2>
-
-        <button
-          style={{
-            backgroundColor: UI_CONSTANTS.DARK,
-            color: UI_CONSTANTS.WHITE,
-          }}
-          className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
-        >
-          Request a consultation
-        </button>
-      </div>
-    </div>
-
-    {/* RIGHT SECTION */}
-    <div
-      className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.WHITE }}
-    >
-      {/* Pattern Background */}
-      <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-        <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-          <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
-          <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
-          <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
-          <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
-          <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
-          <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
-          <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
-        </svg>
-      </div>
-
-      {/* Text Content */}
-      <div className="relative z-20">
-        <div className="flex items-center mb-6 sm:mb-8">
-          <div className="mr-2.5 sm:mr-3">
-            <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-              <path
-                d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                fill="#173B3F"
-              />
-            </svg>
-          </div>
-          <p
-            className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-            style={{ color: '#173B3F' }}
-          >
-            SCHEDULE A CALL
-          </p>
-        </div>
-
-        <h2
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-          style={{ color: '#173B3F' }}
-        >
-          Let us know how we can help
-        </h2>
-
-        <button
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.8)',
-            color: '#173B3F',
-            border: '2px solid rgba(23, 59, 63, 0.2)',
-          }}
-          className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
-        >
-          Schedule Now
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
+        
     </>
 
 

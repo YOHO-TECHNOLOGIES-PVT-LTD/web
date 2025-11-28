@@ -4,6 +4,9 @@ import img1 from "../assets/Home1/h1.jpg";
 import img2 from "../assets/Home1/c1.jpg";
 import img3 from "../assets/Home1/d1.jpg";
 import img4 from "../assets/Home1/u1.jpg";
+import img5 from "../assets/Home1/af1.jpg";
+import img6 from "../assets/Home1/bc1.jpg";
+import img7 from "../assets/Home1/ioy1.jpg";
 
 
 export default function ConsultingServices() {
@@ -81,7 +84,72 @@ export default function ConsultingServices() {
           </div>
 
           {/* Three Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+
+            {/* Card 1 */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img5})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
+                  AI & Machine Learning Solutions
+                </p>
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                  Artificial Intelligence
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img6})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
+                  Blockchain & Web3 Development
+                </p>
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                  Blockchain Technology
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
+              <div
+                className="relative h-40 sm:h-44 lg:h-65 bg-cover bg-center"
+                style={{ backgroundImage: `url(${img7})` }}
+              ></div>
+              <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
+                <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
+                  IoT & Edge Computing
+                </p>
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                  Internet of Things
+                </h3>
+                <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
+                  Read More
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Three Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-10 lg:mt-12">
 
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-500 group hover:bg-[#011123]">
@@ -91,7 +159,7 @@ export default function ConsultingServices() {
               ></div>
               <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
-                  Scalable, Secure, Modern Infrastructure
+                  Cloud Native & Microservices
                 </p>
                 <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Cloud Solutions
@@ -111,10 +179,10 @@ export default function ConsultingServices() {
               ></div>
               <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
-                  Data-Driven Growth Strategies
+                  Data Science & Analytics
                 </p>
                 <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
-                  Digital Marketing
+                  Big Data Analytics
                 </h3>
                 <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
@@ -131,10 +199,10 @@ export default function ConsultingServices() {
               ></div>
               <div className="p-4 sm:p-5 lg:p-6 group-hover:text-white">
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
-                  UPSKILL / RESKILL
+                  Cybersecurity & DevSecOps
                 </p>
                 <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
-                  Building modern apps with real-time capabilities
+                  Cybersecurity
                 </h3>
                 <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More

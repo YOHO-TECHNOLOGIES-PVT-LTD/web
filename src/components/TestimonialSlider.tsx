@@ -4,6 +4,9 @@ import img2 from "../assets/Home1/t2.jpg";
 import img3 from "../assets/Home1/t4.jpg";
 import img5 from "../assets/Home1/t5.jpg";
 import img4 from "../assets/Home1/t3.jpg";
+import img6 from "../assets/Home1/h11.jpg";
+import img7 from "../assets/Home1/h12.jpg";
+
 
 const UI_CONSTANTS = {
   PRIMARY: '#ff4600',
@@ -20,36 +23,37 @@ export default function TestimonialSlider() {
       title: "Your IT Challenges, Met with Precision and Thoughtful Solutions",
       description:
         "KIAQ delivered experts who transformed our cloud operations with strategic automation. Their deep technical expertise improved reliability, increased deployment efficiency, and ensured our systems scaled effortlessly with demand.",
-      image: img1,
+      image: img2,
     },
     {
       company: "DataFlow Analytics",
-      title: "From Vision to Execution, Building Tomorrow’s Technology Today",
+      title: "From Vision to Execution, Building Tomorrow's Technology Today",
       description:
         "Our analytics capabilities grew exponentially after working with highly skilled engineers from KIAQ. Their advanced approach to data architecture strengthened performance, enhanced decision-making, and unlocked measurable business value.",
-      image: img2, // SAME IMAGE
+      image: img1, // SAME IMAGE
     },
     {
-      company: "NextGen Innovations",
-      title: "Smart Solutions Engineered to Accelerate Your Digital Growth",
-      description:
-        "KIAQ empowered our tech initiatives with exceptional developers who elevated our digital infrastructure. Their seamless integration, strong technical planning, and performance-driven mindset improved efficiency across our entire ecosystem.",
-      image: img3, // SAME IMAGE
-    },
+  company: "TechCorp Global",
+  title: "Elite Engineering Talent That Scaled Our Platform with Precision",
+  description:
+    "KIAQ enabled us to onboard senior engineers who integrated seamlessly into our product teams. Their expertise in AI, cloud, and backend systems accelerated our development cycles and strengthened our overall technical execution.",
+  image: img3,
+},
     {
-      company: "NextGen Innovations",
-      title: "Smart Solutions Engineered to Accelerate Your Digital Growth",
-      description:
-        "KIAQ empowered our tech initiatives with exceptional developers who elevated our digital infrastructure. Their seamless integration, strong technical planning, and performance-driven mindset improved efficiency across our entire ecosystem.",
-      image: img4, // SAME IMAGE
-    },
+  company: "NovaByte Systems",
+  title: "High-Performance Talent That Transformed Our Engineering Delivery",
+  description:
+    "Partnering with KIAQ helped us fill critical engineering roles faster than ever. The developers we hired brought exceptional problem-solving skills and elevated the quality, speed, and reliability of our digital transformation projects.",
+  image: img6,
+},
     {
-      company: "NextGen Innovations",
-      title: "Smart Solutions Engineered to Accelerate Your Digital Growth",
-      description:
-        "KIAQ empowered our tech initiatives with exceptional developers who elevated our digital infrastructure. Their seamless integration, strong technical planning, and performance-driven mindset improved efficiency across our entire ecosystem.",
-      image: img5, // SAME IMAGE
-    }
+  company: "Apex Digital Labs",
+  title: "Future-Ready Teams Built with World-Class Talent from KIAQ",
+  description:
+    "KIAQ connected us with highly skilled engineers who quickly became key contributors across AI, data engineering, and cloud automation. Their technical depth and ownership-driven approach significantly boosted our product innovation roadmap.",
+  image: img7,
+}
+
   ];
 
   const nextSlide = () => {
@@ -87,49 +91,50 @@ export default function TestimonialSlider() {
             </svg>
           </button>
 
-          {/* Slides */}
-          <div className="relative px-8 sm:px-10 lg:px-12">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`transition-all duration-700 ease-in-out ${
-                  index === currentSlide
-                    ? "opacity-100 translate-x-0"
-                    : "opacity-0 absolute inset-0 translate-x-10 pointer-events-none"
-                }`}
-              >
-                <div className="py-6 sm:py-8 lg:py-12">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Slides Container */}
+          <div className="relative overflow-hidden">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="w-full flex-shrink-0 px-4"
+                >
+                  <div className="py-6 sm:py-8 lg:py-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-                    {/* Left Text */}
-                    <div className="space-y-6">
-                      <h2
-                        className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight"
-                      >
-                        {testimonial.title}
-                      </h2>
+                      {/* Left Text */}
+                      <div className="space-y-6">
+                        <h2
+                          className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight"
+                        >
+                          {testimonial.title}
+                        </h2>
 
-                      <p className="text-lg xl:text-xl text-white/90 leading-relaxed">
-                        {testimonial.description}
-                      </p>
-                    </div>
-
-                    {/* Right Image */}
-                    <div className="relative mt-4 lg:mt-0">
-                      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                        <img
-                          src={testimonial.image}
-                          alt={testimonial.company}
-                          className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
+                        <p className="text-lg xl:text-xl text-white/90 leading-relaxed text-justify">
+                          {testimonial.description}
+                        </p>
                       </div>
-                    </div>
 
+                      {/* Right Image */}
+                      <div className="relative mt-4 lg:mt-0">
+                        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.company}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Indicators */}
@@ -169,7 +174,7 @@ export default function TestimonialSlider() {
               Work the way that <br className="hidden sm:block" /> works for you
             </h2>
 
-            <p className="text-base sm:text-lg leading-relaxed mb-8 text-gray-600">
+            <p className="text-base sm:text-lg leading-relaxed mb-8 text-gray-600 text-justify">
               We start by gaining a deep understanding of your business goals, challenges, and target audience. This discovery phase ensures that every solution we propose aligns with your objectives.
             </p>
 
@@ -177,14 +182,14 @@ export default function TestimonialSlider() {
 
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3">Design Tailored Solutions</h3>
-                <p className="text-sm sm:text-base leading-relaxed text-gray-600">
+                <p className="text-sm sm:text-base leading-relaxed text-gray-600 text-justify">
                   Using gathered insights, our team creates strategic, scalable, and customized solutions crafted to match your vision.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3">Deliver and Support</h3>
-                <p className="text-sm sm:text-base leading-relaxed text-gray-600">
+                <p className="text-sm sm:text-base leading-relaxed text-gray-600 text-justify">
                   We ensure smooth delivery with strong support, helping your solution evolve as your business grows.
                 </p>
               </div>
@@ -207,7 +212,7 @@ export default function TestimonialSlider() {
               Your Questions, Answered – Clarity Starts Here.
             </h2>
 
-            <p className="text-base leading-relaxed mb-8 text-gray-700 max-w-md mx-auto lg:mx-0">
+            <p className="text-base leading-relaxed mb-8 text-gray-700 max-w-md mx-auto lg:mx-0 text-justify">
               We simplify complex technology with clear, insightful answers that help you make confident decisions.
             </p>
 
@@ -233,7 +238,7 @@ export default function TestimonialSlider() {
             Empowering Innovation, Leading with Expertise.
           </h2>
 
-          <p className="text-base leading-relaxed text-white/80">
+          <p className="text-base leading-relaxed text-white/80 text-justify">
             We deliver innovation powered by technology and expertise, helping businesses grow in a fast-changing digital landscape.
           </p>
 

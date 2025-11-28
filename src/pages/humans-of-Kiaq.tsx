@@ -1,5 +1,5 @@
 import kiaqimag from '../assets/6643e549495270ffe8edb1e8_ForCompanies_AdaptiveHiring_5-steps-to-building-a-successful-global-team_InteriorPageHero-p-2000.avif'
-import fvimg from '../assets/whykiaq/case5-1.webp';
+import fvimg from '../assets/whykiaq/img7.jpg';
 import sximg from '../assets/whykiaq/case4-1.webp';
 import svnimg from '../assets/whykiaq/665f017906055188a91e32cb_Talent Decision Engine@2x.webp';
 import ethimg from '../assets/whykiaq/665f02ad1a0373467ab3c7cf_Integrations@2x.webp';
@@ -251,12 +251,10 @@ export default function WhyKiaq() {
         ✦ Core Capabilities
       </p>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight sm:leading-snug text-gray-900">
-        Industry-Specific Digital Transformation Solutions
-      </h2>
+Scalable Tech Built for Industry-Focused Digital Execution      </h2>
       
       <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-        Kiaq Technologies specializes in delivering scalable technology solutions tailored to the unique digital requirements of diverse industrial sectors. Our expertise spans manufacturing, healthcare, financial services, retail, and beyond. We develop agile, high-performance systems designed to optimize operations, enhance user experiences, and accelerate digital maturity. With comprehensive understanding of sector-specific challenges, we align technology with strategic business objectives—ensuring every solution delivers measurable impact and future-ready capabilities.
-      </p>
+At Kiaq Technologies, we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance, or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience, and accelerate digital growth. With a deep understanding of sector-specific challenges, we align technology with business goals—ensuring every solution is both future-ready and impact-driven.      </p>
     </div>
   </div>
 </section>

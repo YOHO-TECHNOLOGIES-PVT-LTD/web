@@ -45,11 +45,6 @@ export default function Header() {
     { name: 'Cloud Migrations', path: '/cloud-migrations' },
   ];
 
-  // Scroll to top when route changes
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
-
   // Focus search input when opened
   useEffect(() => {
     if (isSearchOpen && searchInputRef.current) {

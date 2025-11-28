@@ -1,6 +1,6 @@
 export const UI_CONSTANTS = {
-  PRIMARY: '#0fddcc',
-  DARK: '#011123',
+  PRIMARY: '#ff5500',
+  DARK: '#002b38',
   WHITE: '#ffffff',
   orange: '#ff4600',
   FONT_FAMILY: 'Arial, sans-serif'
