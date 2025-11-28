@@ -1,4 +1,4 @@
-import kiaqimag from '../assets/whykiaq/665a571d3afa925ba1844fcd_Why Join Andela - Hero.avif'
+import kiaqimag from '../assets/whykiaq/who wen  are banner.png'
 
 import imgwh from "../assets/Home1/image.png";
 import { FaGlobe, FaChalkboardTeacher, FaSmile, FaUsers, FaHandshake, FaShareAlt } from "react-icons/fa";
@@ -66,7 +66,7 @@ export default function WhyKiaq() {
         style={{ backgroundImage: `url(${kiaqimag})` }}
       >
         {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent z-10" />
 
         {/* Content */}
         <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-20 py-12 sm:py-16 md:py-20">
