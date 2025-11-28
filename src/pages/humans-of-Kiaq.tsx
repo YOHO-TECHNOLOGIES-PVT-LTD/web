@@ -248,134 +248,137 @@ export default function WhyKiaq() {
       </section>
 
       {/* Fourth Section */}
-      <section className="w-full bg-gray-50 text-black py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
-        {/* Background Pattern (optional subtle circles) */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://www.andela.com/_next/static/media/circle-pattern.1c4b7dc2.svg')] opacity-10 bg-no-repeat bg-right" />
+     <section className="w-full bg-gray-50 text-black py-10 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden">
+  {/* Background Pattern (optional subtle circles) */}
+  <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://www.andela.com/_next/static/media/circle-pattern.1c4b7dc2.svg')] opacity-10 bg-no-repeat bg-right" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16">
-          
-          {/* Left Image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-            <img
-              src={fvimg}
-              alt="Industry Solutions"
-              className="w-full max-w-sm sm:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl shadow-lg object-contain"
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 lg:gap-12">
+    
+    {/* Left Image */}
+    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-6 lg:mb-0">
+      <img
+        src={fvimg}
+        alt="Industry Solutions"
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-xl sm:rounded-2xl shadow-lg object-contain"
+      />
+    </div>
+
+    {/* Right Content */}
+    <div className="w-full lg:w-1/2 space-y-3 sm:space-y-4 lg:space-y-5">
+      <p className="text-xs sm:text-sm font-semibold tracking-widest text-gray-500 uppercase">
+        ✦ Core Capabilities
+      </p>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug sm:leading-snug text-gray-900">
+        Scalable Tech Built for Industry-Focused Digital Execution
+      </h2>
+      
+      <p className="text-sm sm:text-base text-gray-600 leading-relaxed  text-justify">
+        At Kiaq Technologies, we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance, or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience, and accelerate digital growth.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+      {/* Fifth Section */}
+    <section className="py-6 sm:py-10 md:py-14 lg:py-16 px-3 sm:px-6" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
+  <div className="max-w-[1400px] mx-auto">
+    <div className="text-center mb-6 sm:mb-10 lg:mb-12 px-2 sm:px-0">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
+        Driving Industrial Evolution Through Intelligent Technology Solutions
+      </h2>
+
+      <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto text-justify">
+        Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors.
+      </p>
+    </div>
+    
+    {/* Static Grid Layout */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+      {useCases.map((useCase, index) => (
+        <UseCaseCard key={index} useCase={useCase} index={index} />
+      ))}
+    </div>
+    
+    <div className="text-center mt-6 sm:mt-10 lg:mt-12">
+      <button 
+        style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
+        className="px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
+      >
+        Explore Solutions
+      </button>
+    </div>
+  </div>
+</section>
+
+
+      {/* Fifth Section */}
+      <section className="w-full bg-white text-black py-10 sm:py-14 md:py-16 lg:py-20 relative overflow-hidden">
+  {/* Diagonal Grid Pattern - Background */}
+  <svg
+    className="absolute top-0 right-0 w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] opacity-10 pointer-events-none translate-x-8 sm:translate-x-16 -translate-y-4 sm:-translate-y-8"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="diagonalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path
+          d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
+          stroke="#00b3a4"
+          strokeWidth="0.8"
+          opacity="0.5"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#diagonalGrid)" />
+  </svg>
+
+  <div className="relative max-w-7xl mx-auto px-3 sm:px-6 md:px-10 lg:px-20 z-10">
+    {/* Proof Section */}
+    <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
+      {/* Pattern inside Proof Section */}
+      <svg
+        className="absolute top-0 right-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] opacity-10 pointer-events-none translate-x-4 sm:translate-x-8 -translate-y-4 sm:-translate-y-8"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 200"
+      >
+        <defs>
+          <pattern id="diagonalGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
+              stroke="#008080"
+              strokeWidth="0.8"
+              opacity="0.5"
             />
-          </div>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#diagonalGrid2)" />
+      </svg>
 
-          {/* Right Content */}
-          <div className="w-full lg:w-1/2 space-y-4 sm:space-y-5 lg:space-y-6">
-            <p className="text-xs sm:text-sm font-semibold tracking-widest text-gray-500 uppercase">
-              ✦ Core Capabilities
-            </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight sm:leading-snug text-gray-900">
-              Scalable Tech Built for Industry-Focused Digital Execution
-            </h2>
-            
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              At Kiaq Technologies, we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance, or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience, and accelerate digital growth.
-            </p>
-          </div>
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6 relative z-10">
+        {/* Left Text */}
+        <div className="w-full lg:w-2/3">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight text-justify">
+            Expertise That Powers Digital Excellence Book a Free Consultation
+          </h3>
+          <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-5 leading-relaxed text-justify">
+            At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
+          </p>
+          <button className="bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover:bg-[#006666] transition-all w-full sm:w-auto">
+            Schedule Consultation
+          </button>
         </div>
-      </section>
 
-      {/* Fifth Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
-        <div className="max-w-[1400px] mx-auto">
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16 px-2 sm:px-0">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
-              Driving Industrial Evolution Through Intelligent Technology Solutions
-            </h2>
-
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto">
-              Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors.
-            </p>
-          </div>
-          
-          {/* Static Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            {useCases.map((useCase, index) => (
-              <UseCaseCard key={index} useCase={useCase} index={index} />
-            ))}
-          </div>
-          
-          <div className="text-center mt-8 sm:mt-12 lg:mt-16">
-            <button 
-              style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-              className="px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
-            >
-              Explore Solutions
-            </button>
-          </div>
+        {/* Right Image */}
+        <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
+          <img src={ninth} alt="Technology Excellence" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Fifth Section */}
-      <section className="w-full bg-white text-black py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
-        {/* Diagonal Grid Pattern - Background */}
-        <svg
-          className="absolute top-0 right-0 w-[400px] sm:w-[500px] md:w-[600px] lg:w-[700px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] opacity-10 pointer-events-none translate-x-12 sm:translate-x-24 -translate-y-6 sm:-translate-y-12"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 200 200"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern id="diagonalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path
-                d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-                stroke="#00b3a4"
-                strokeWidth="0.8"
-                opacity="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#diagonalGrid)" />
-        </svg>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 z-10">
-         
-
-          {/* Proof Section */}
-          <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
-            {/* Pattern inside Proof Section */}
-            <svg
-              className="absolute top-0 right-0 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] opacity-10 pointer-events-none translate-x-6 sm:translate-x-10 -translate-y-6 sm:-translate-y-10"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 200 200"
-            >
-              <defs>
-                <pattern id="diagonalGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path
-                    d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-                    stroke="#008080"
-                    strokeWidth="0.8"
-                    opacity="0.5"
-                  />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#diagonalGrid2)" />
-            </svg>
-
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 relative z-10">
-              {/* Left Text */}
-              <div className="w-full lg:w-2/3">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">Expertise That Powers Digital Excellence Book a Free Consultation</h3>
-                <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                  At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
-                </p>
-                <button className="bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover:bg-[#006666] transition-all w-full sm:w-auto">
-                  Schedule Consultation
-                </button>
-              </div>
-
-              {/* Right Image */}
-              <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
-                <img src={ninth} alt="Technology Excellence" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Eighth Section */}
       <section className="dual-action-button-cta">

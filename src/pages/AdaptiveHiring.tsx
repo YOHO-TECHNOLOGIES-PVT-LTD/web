@@ -139,101 +139,108 @@ export default function AdaptiveHiring() {
   return (
     <>
       {/* FIRST SECTION */}
-      <section className="relative w-full bg-[#062C2C] text-white py-24 px-6 overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-20 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/mnt/data/d629bbbb-541e-423e-82c6-129bbddad2a5.png')",
-          }}
-        />
+      <section className="relative w-full bg-[#062C2C] text-white py-16 sm:py-20 px-4 sm:px-6 overflow-hidden">
+  <div
+    className="absolute inset-0 opacity-20 bg-cover bg-center"
+    style={{
+      backgroundImage:
+        "url('/mnt/data/d629bbbb-541e-423e-82c6-129bbddad2a5.png')",
+    }}
+  />
 
-        <div className="relative max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl sm:text-6xl font-bold leading-tight">
-            What is <br /> Adaptive Hiring?
-          </h2>
+  <div className="relative max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+      What is <br /> Adaptive Hiring?
+    </h2>
 
-          <p className="mt-8 text-lg sm:text-xl leading-relaxed text-gray-200">
-            Adaptive Hiring applies agile methodology to technical recruitment, enabling organizations 
-            to rapidly scale engineering capacity with pre-vetted global talent. This modern approach 
-            transforms how enterprises access specialized skills and deliver digital innovation.
-          </p>
-        </div>
-      </section>
+    <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 text-justify sm:text-center">
+      Adaptive Hiring applies agile methodology to technical recruitment, enabling organizations 
+      to rapidly scale engineering capacity with pre-vetted global talent. This modern approach 
+      transforms how enterprises access specialized skills and deliver digital innovation.
+    </p>
+  </div>
+</section>
+
 
       {/* SECOND SECTION */}
-      <section className="w-full bg-[#F2FBF9] py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-16">
+      <section className="w-full bg-[#F2FBF9] py-16 sm:py-20 md:py-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-10 sm:gap-12 md:gap-16">
+    
+    {/* Left Content */}
+    <div className="text-justify">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        The Technical Talent<br />Challenge is Real<br />and Growing
+      </h1>
+      <p className="text-gray-600 text-base sm:text-lg">
+        Organizations face increasing pressure to deliver digital transformation 
+        while constrained by traditional hiring limitations. KIAQ's Adaptive Hiring 
+        model provides the strategic solution for sustainable technical capacity.
+      </p>
+    </div>
+
+    {/* Divider for larger screens */}
+    <div className="hidden md:block border-l border-gray-300"></div>
+
+    {/* Right Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 sm:gap-x-12 gap-y-10 sm:gap-y-14">
+      {[img1, img2, img3, img4, img5, img6].map((img, i) => (
+        <div key={i} className="flex gap-3 sm:gap-4">
+          <img src={img} className="w-12 h-12" alt="" />
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">
-              The Technical Talent<br />Challenge is Real<br />and Growing
-            </h1>
-            <p className="text-gray-600 text-lg">
-              Organizations face increasing pressure to deliver digital transformation 
-              while constrained by traditional hiring limitations. KIAQ's Adaptive Hiring 
-              model provides the strategic solution for sustainable technical capacity.
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">
+              {[
+                "Critical Skill Gaps",
+                "Limited Engineering Capacity",
+                "Escalating Talent Costs",
+                "Extended Recruitment Cycles",
+                "Slow Team Deployment",
+                "High Technical Turnover",
+              ][i]}
+            </h3>
+            <p className="text-gray-600 text-[14px] sm:text-[15px]">
+              {[
+                "Specialized roles remain unfilled for months",
+                "Insufficient bandwidth for innovation projects",
+                "Competitive markets drive compensation inflation",
+                "Traditional hiring processes delay project starts",
+                "Lengthy onboarding reduces immediate impact",
+                "Top talent seeks dynamic global opportunities",
+              ][i]}
             </p>
           </div>
-
-          <div className="hidden md:block border-l border-gray-300"></div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-14">
-            {[img1, img2, img3, img4, img5, img6].map((img, i) => (
-              <div key={i} className="flex gap-4">
-                <img src={img} className="w-12 h-12" alt="" />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
-                    {[
-                      "Critical Skill Gaps",
-                      "Limited Engineering Capacity",
-                      "Escalating Talent Costs",
-                      "Extended Recruitment Cycles",
-                      "Slow Team Deployment",
-                      "High Technical Turnover",
-                    ][i]}
-                  </h3>
-                  <p className="text-gray-600 text-[15px">
-                    {[
-                      "Specialized roles remain unfilled for months",
-                      "Insufficient bandwidth for innovation projects",
-                      "Competitive markets drive compensation inflation",
-                      "Traditional hiring processes delay project starts",
-                      "Lengthy onboarding reduces immediate impact",
-                      "Top talent seeks dynamic global opportunities",
-                    ][i]}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 
       {/* USE CASES SECTION */}
-      <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+      <section className="w-full py-10 sm:py-12 md:py-16 lg:py-20 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 sm:mb-10 md:mb-12">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-10 text-justify">
       Strategic Applications for Adaptive Hiring
     </h2>
 
-    <div className="grid md:grid-cols-[auto_1fr] gap-6 sm:gap-8 md:gap-10">
+    <div className="grid md:grid-cols-[auto_1fr] gap-4 sm:gap-6 md:gap-8">
       <img
         src={img7}
-        className="w-full md:w-[260px] lg:w-[300px] h-[200px] sm:h-[220px] md:h-[180px] lg:h-[200px] rounded-xl sm:rounded-2xl shadow-md object-cover"
+        className="w-full md:w-[240px] lg:w-[280px] h-[180px] sm:h-[200px] md:h-[180px] lg:h-[200px] rounded-xl sm:rounded-2xl shadow-md object-cover"
         alt="Strategic Talent Solutions"
       />
 
-      <div className="bg-gradient-to-br from-white to-gray-50 shadow-xl border border-gray-200 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 hover:shadow-2xl transition-shadow duration-300">
+      <div className="bg-gradient-to-br from-white to-gray-50 shadow-xl border border-gray-200 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow duration-300">
         <div
           className="flex justify-between items-start cursor-pointer group"
           onClick={() => setOpenFirst(!openFirst)}
         >
-          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 pr-4 group-hover:text-[#0fddcc] transition-colors">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 pr-3 group-hover:text-[#ff5500] transition-colors text-justify">
             Enterprise Application Development
           </h3>
 
           <span
-            className={`transition-all duration-300 flex-shrink-0 text-lg sm:text-xl text-[#0fddcc] ${
+            className={`transition-all duration-300 flex-shrink-0 text-lg sm:text-xl text-[#ff5500] ${
               openFirst ? "rotate-180" : ""
             }`}
           >
@@ -245,22 +252,22 @@ export default function AdaptiveHiring() {
 
         <div
           className={`transition-all duration-300 overflow-hidden ${
-            openFirst ? "max-h-[600px] mt-4 sm:mt-5 md:mt-6 opacity-100" : "max-h-0 opacity-0"
+            openFirst ? "max-h-[600px] mt-3 sm:mt-4 md:mt-5 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           {checkItems.map((item, i) => (
-            <div key={i} className="flex gap-2 sm:gap-3 mb-3 sm:mb-4 items-start">
-              <span className="w-5 h-5 sm:w-6 sm:h-6 bg-[#0fddcc] rounded-full flex items-center justify-center flex-shrink-0 text-white text-xs sm:text-sm mt-0.5">
+            <div key={i} className="flex gap-2 sm:gap-3 mb-2 sm:mb-3 items-start">
+              <span className="w-5 h-5 sm:w-6 sm:h-6 bg-[#ff5500] rounded-full flex items-center justify-center flex-shrink-0 text-white text-xs sm:text-sm mt-0.5">
                 ✓
               </span>
-              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{item}</p>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">{item}</p>
             </div>
           ))}
         </div>
       </div>
     </div>
 
-    <div className="mt-6 sm:mt-8 md:mt-10 space-y-3 sm:space-y-4">
+    <div className="mt-4 sm:mt-6 md:mt-8 space-y-2 sm:space-y-3">
       {dropdowns.map((label, i) => {
         const isOpen = activeIndex === i;
 
@@ -268,22 +275,22 @@ export default function AdaptiveHiring() {
           <div
             key={i}
             className={`bg-white border-2 rounded-xl sm:rounded-2xl cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-lg ${
-              isOpen 
-                ? "border-[#0fddcc] shadow-md" 
-                : "border-gray-200 hover:border-gray-300"
+              isOpen ? "border-[#ff5500] shadow-md" : "border-gray-200 hover:border-gray-300"
             }`}
             onClick={() => toggleAccordion(i)}
           >
-            <div className={`p-4 sm:p-5 md:p-6 ${isOpen ? "bg-[#0fddcc]/5" : ""} transition-colors duration-300`}>
+            <div className={`p-3 sm:p-4 md:p-5 ${isOpen ? "bg-[#ff5500]/5" : ""} transition-colors duration-300`}>
               <div className="flex justify-between items-center">
-                <span className={`text-base sm:text-lg md:text-xl font-semibold pr-4 transition-colors ${
-                  isOpen ? "text-[#0fddcc]" : "text-gray-900"
-                }`}>
+                <span
+                  className={`text-base sm:text-lg md:text-xl font-semibold pr-3 transition-colors ${
+                    isOpen ? "text-[#ff5500]" : "text-gray-900"
+                  } text-justify`}
+                >
                   {label}
                 </span>
                 <span
                   className={`transition-all duration-300 flex-shrink-0 ${
-                    isOpen ? "rotate-180 text-[#0fddcc]" : "text-gray-400"
+                    isOpen ? "rotate-180 text-[#ff5500]" : "text-gray-400"
                   }`}
                 >
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -298,8 +305,8 @@ export default function AdaptiveHiring() {
                 isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6 pt-2">
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+              <div className="px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 pt-2">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                   KIAQ delivers specialized {label.toLowerCase()} expertise through pre-vetted professionals 
                   who integrate seamlessly with your teams to drive innovation and deliver measurable business outcomes.
                 </p>
@@ -312,12 +319,13 @@ export default function AdaptiveHiring() {
   </div>
 </section>
 
+
       {/* SCROLL SECTION WITH IMAGE */}
-      <section className="py-8 sm:py-12 md:py-14 lg:py-18 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-5 sm:gap-8 lg:gap-12">
+      <section className="py-6 sm:py-10 md:py-12 lg:py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-10 flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-10">
     {/* Image Section - Shows first on mobile */}
     <div className="w-full lg:w-1/2 order-1 lg:order-2">
-      <div className="lg:sticky lg:top-24 h-[260px] sm:h-[360px] md:h-[460px] lg:h-[560px] flex items-center justify-center">
+      <div className="lg:sticky lg:top-20 h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
         <img
           src={imgfocus}
           className="max-w-full max-h-full object-contain"
@@ -334,11 +342,11 @@ export default function AdaptiveHiring() {
           ref={(el) => {
             contentRefs.current[i] = el;
           }}
-          className="min-h-[40vh] sm:min-h-[50vh] lg:min-h-[65vh] flex items-center py-3 sm:py-5"
+          className="min-h-[35vh] sm:min-h-[45vh] lg:min-h-[60vh] flex items-center py-2 sm:py-4"
         >
           <div>
             <h3
-              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-2.5 transition-all leading-tight text-justify"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1.5 sm:mb-2 transition-all leading-tight text-justify"
               style={{
                 opacity: activeIndex === i ? 1 : 0.3,
                 color: UI_CONSTANTS.DARK,
@@ -362,18 +370,19 @@ export default function AdaptiveHiring() {
     </div>
   </div>
 
-  <div className="text-center mt-8 sm:mt-12 md:mt-14 px-4">
+  <div className="text-center mt-6 sm:mt-8 md:mt-10 px-3">
     <button
-      className="px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
+      className="px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
       style={{
         backgroundColor: UI_CONSTANTS.PRIMARY,
         color: UI_CONSTANTS.WHITE,
       }}
     >
-      Connect with Global Tech Talent
+      Join Our Team
     </button>
   </div>
 </section>
+
 
 
 
@@ -381,30 +390,30 @@ export default function AdaptiveHiring() {
      
 
       {/* TABS SECTION */}
-      <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-12 sm:pb-16 md:pb-20">
-  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-[#0A3A36] px-4">
+      <section className="pt-10 sm:pt-12 md:pt-16 lg:pt-20 pb-10 sm:pb-12 md:pb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[Black] px-3 text-justify lg:text-center">
     KIAQ Makes Adaptive Hiring Accessible
   </h2>
 
-  <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 border-b border-gray-200 pb-6 sm:pb-8 px-4 sm:px-6">
+  <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 border-b border-gray-200 pb-4 sm:pb-6 px-3 sm:px-4">
     {tabs.map((tab, index) => (
       <div
         key={index}
         onClick={() => setSelected(index)}
-        className={`flex items-center gap-2 sm:gap-3 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-full cursor-pointer transition-all border ${
+        className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 md:py-2.5 rounded-full cursor-pointer transition-all border ${
           selected === index
-            ? "bg-gradient-to-r from-[#0A3A36] to-[#00695C] text-white shadow-md border-transparent"
-            : "bg-white border-gray-200 text-[#0A3A36] hover:shadow-sm"
+            ? "bg-gradient-to-r from-[#ff5500] to-[#ff4600] text-white shadow-md border-transparent"
+            : "bg-white border-gray-200 text-[#ff5500] hover:shadow-sm"
         }`}
       >
-        <img src={tab.icon} className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" alt="" />
+        <img src={tab.icon} className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" alt="" />
         <span className="font-medium text-xs sm:text-sm whitespace-nowrap">{tab.label}</span>
       </div>
     ))}
   </div>
 
-  <div className="max-w-7xl mx-auto mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6 md:px-8">
-    <div className="relative bg-[#C8E0D8] rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg overflow-hidden min-h-[280px] sm:min-h-[340px] md:min-h-[380px] lg:min-h-[420px] flex items-center justify-center order-1 lg:order-1">
+  <div className="max-w-7xl mx-auto mt-6 sm:mt-8 md:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 px-3 sm:px-4 md:px-6">
+    <div className="relative bg-[#C8E0D8] rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 shadow-lg overflow-hidden min-h-[260px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px] flex items-center justify-center order-1 lg:order-1">
       <img
         src={tabs[selected].image}
         alt=""
@@ -412,16 +421,18 @@ export default function AdaptiveHiring() {
       />
     </div>
 
-    <div className="flex flex-col justify-center px-2 sm:px-4 lg:px-0 order-2 lg:order-2">
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0A3A36] mb-3 sm:mb-4 leading-tight">
+    <div className="flex flex-col justify-center px-2 sm:px-3 lg:px-0 order-2 lg:order-2">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0A3A36] mb-2 sm:mb-3 leading-tight text-justify lg:text-left">
         {tabs[selected].title}
       </h3>
-      <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+      <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg text-justify">
         {tabs[selected].desc}
       </p>
     </div>
   </div>
 </section>
+
+
 
       {/* KIAQ ROI METRICS SECTION */}
       <section className="w-full bg-slate-950 relative overflow-hidden">
@@ -452,58 +463,58 @@ export default function AdaptiveHiring() {
   </div>
 
   {/* Content */}
-  <div className="relative z-10 px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20">
+  <div className="relative z-10 px-3 sm:px-4 md:px-6 py-10 sm:py-12 md:py-16">
     {/* Header */}
-    <div className="max-w-6xl mx-auto text-center mb-10 sm:mb-12 md:mb-16">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight px-2">
+    <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-10 md:mb-12">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight px-2">
         Adaptive Hiring Delivers Measurable Business Outcomes
       </h2>
-      <p className="text-gray-400 text-sm sm:text-base max-w-4xl mx-auto mb-6 sm:mb-8 md:mb-10 leading-relaxed px-2">
+      <p className="text-gray-400 text-sm sm:text-base max-w-4xl mx-auto mb-4 sm:mb-6 md:mb-8 leading-relaxed px-2 text-justify">
         Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model, 
         based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
       </p>
-      <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
-        Calculate Your ROI
+      <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
+        Read More
       </button>
     </div>
 
     {/* Metrics Cards Grid */}
-    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
       {/* Hiring Efficiency Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all">
-        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-orange-700/60 transition-all">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 md:mb-5">
           Hiring Efficiency
         </h3>
-        <div className="text-orange-400 mb-6 sm:mb-8 md:mb-10">
+        <div className="text-orange-400 mb-4 sm:mb-6 md:mb-8">
           <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">106+</span>
-          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-2">hours</span>
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-1">hours</span>
         </div>
-        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
-          <p className="text-gray-300 text-base sm:text-lg">Recruitment time saved per technical hire</p>
+        <div className="border-t border-orange-900/40 pt-2 sm:pt-3 md:pt-4">
+          <p className="text-gray-300 text-sm sm:text-base">Recruitment time saved per technical hire</p>
         </div>
       </div>
 
       {/* Project Productivity Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all">
-        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-orange-700/60 transition-all">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 md:mb-5">
           Project Velocity
         </h3>
-        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">33%</div>
-        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
-          <p className="text-gray-300 text-base sm:text-lg">Accelerated project completion timelines</p>
+        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 md:mb-8">33%</div>
+        <div className="border-t border-orange-900/40 pt-2 sm:pt-3 md:pt-4">
+          <p className="text-gray-300 text-sm sm:text-base">Accelerated project completion timelines</p>
         </div>
       </div>
 
       {/* Talent Compliance Risk Card */}
-      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 hover:border-orange-700/60 transition-all sm:col-span-2 md:col-span-1">
-        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 md:mb-8">
+      <div className="bg-slate-900/40 backdrop-blur-sm border border-orange-900/40 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:border-orange-700/60 transition-all sm:col-span-2 md:col-span-1">
+        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 sm:mb-4 md:mb-5">
           Risk Mitigation
         </h3>
-        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 md:mb-10">
+        <div className="text-orange-400 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 md:mb-8">
           640K
         </div>
-        <div className="border-t border-orange-900/40 pt-4 sm:pt-5 md:pt-6">
-          <p className="text-gray-300 text-base sm:text-lg">
+        <div className="border-t border-orange-900/40 pt-2 sm:pt-3 md:pt-4">
+          <p className="text-gray-300 text-sm sm:text-base">
             Avoided compliance and operational risks
           </p>
         </div>
@@ -511,6 +522,7 @@ export default function AdaptiveHiring() {
     </div>
   </div>
 </section>
+
 
 
       <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
@@ -531,7 +543,7 @@ export default function AdaptiveHiring() {
     {/* Header */}
     <div className="flex flex-col md:flex-row md:items-center md:justify-between text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-        Strategic Resources for Modern Talent Acquisition
+        Adaptive Hiring Insights & Resources
       </h2>
       <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
         Access All Resources
@@ -545,22 +557,22 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={tenimg}
-            alt="Future of Technical Hiring"
+            alt="Flexible Hiring Models"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Industry Report
+            Hiring Strategy
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            The Future of Technical Talent is Borderless
+            Flexible Hiring Models: Remote, Hybrid & On-Demand Talent
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Download Report <span className="ml-2">→</span>
+            Read More <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -570,22 +582,22 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={eleimg}
-            alt="Enterprise Talent Strategy"
+            alt="Skills-Based Hiring"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Case Study
+            Recruitment Innovation
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Enterprise Digital Transformation Through Global Talent
+            Skills-Based Hiring: Moving Beyond Traditional Credentials
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read Analysis <span className="ml-2">→</span>
+            Read More <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -595,22 +607,22 @@ export default function AdaptiveHiring() {
         <div className="overflow-hidden">
           <img
             src={twlimg}
-            alt="Global Talent Trends"
+            alt="Agile Recruitment"
             className="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Market Research
+            Process Optimization
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Global Technical Talent: Market Trends & Strategic Insights
+            Agile Recruitment: Adapting to Changing Market Demands
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Access Research <span className="ml-2">→</span>
+            Read More <span className="ml-2">→</span>
           </a>
         </div>
       </div>

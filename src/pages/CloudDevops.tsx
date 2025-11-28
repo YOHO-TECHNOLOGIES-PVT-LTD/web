@@ -97,11 +97,11 @@ const images = {
           <button
             className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
             style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
+              backgroundColor: UI_CONSTANTS.PRIMARY,
+              color: UI_CONSTANTS.WHITE,
             }}
           >
-            Explore Cloud Solutions
+            Learn More
           </button>
         </div>
 
@@ -132,12 +132,12 @@ const images = {
     </section>
 
   {/* {second section} */}
-  <section className="relative w-full bg-white overflow-hidden py-10 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12">
+  <section className="relative w-full bg-white overflow-hidden py-7 sm:py-9 lg:py-12 px-4 sm:px-6 lg:px-12">
 
   {/* STAR PATTERN TOP-RIGHT */}
   <div
     aria-hidden
-    className="absolute top-4 sm:top-8 right-4 sm:right-8 pointer-events-none"
+    className="absolute top-3 sm:top-8 right-3 sm:right-8 pointer-events-none"
     style={{ opacity: 0.12 }}
   >
     <svg width="180" height="100" viewBox="0 0 280 160" className="w-[180px] sm:w-[280px] h-auto">
@@ -203,12 +203,12 @@ const images = {
   <div className="relative z-10 max-w-6xl mx-auto">
 
     {/* HEADING */}
-    <div className="max-w-[980px] pr-0 sm:pr-12">
-      <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-semibold text-[#011123] leading-tight text-justify">
+    <div className="max-w-[980px] pr-0 sm:pr-10">
+      <h2 className="text-[22px] sm:text-[28px] md:text-[34px] font-semibold text-[#011123] leading-tight text-justify">
         Comprehensive Cloud & DevOps Services for Modern Enterprises
       </h2>
 
-      <p className="text-gray-600 mt-2.5 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.55] text-justify">
+      <p className="text-gray-600 mt-2 text-[0.92rem] sm:text-[1rem] leading-[1.55] text-justify">
         From cloud migration to DevOps implementation and infrastructure automation, 
         we build scalable, secure, and efficient technology foundations that drive 
         business agility and digital innovation.
@@ -216,8 +216,8 @@ const images = {
     </div>
 
     {/* TABS */}
-    <div className="mt-5 sm:mt-6">
-      <div className="flex flex-wrap items-center gap-3 sm:gap-5 max-w-[720px] pb-2">
+    <div className="mt-3 sm:mt-4">
+      <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 max-w-[720px] pb-1.5">
         {tabs.map((tab, idx) => {
           const isActive = tab === activeTab;
           return (
@@ -231,7 +231,7 @@ const images = {
                       | "Infrastructure Automation"
                   )
                 }
-                className="relative text-xs sm:text-sm md:text-base font-medium pb-1.5 transition-colors whitespace-nowrap"
+                className="relative text-xs sm:text-sm md:text-base font-medium pb-1 transition-colors whitespace-nowrap"
                 style={{
                   color: isActive ? "#011123" : "rgba(1,17,35,0.6)",
                 }}
@@ -243,7 +243,7 @@ const images = {
                     className="absolute left-0 right-0"
                     style={{
                       height: 3,
-                      bottom: -6,
+                      bottom: -5,
                       background: "#FF6600",
                       borderRadius: 2,
                     }}
@@ -253,9 +253,9 @@ const images = {
 
               {idx < tabs.length - 1 && (
                 <div
-                  className="mx-2 sm:mx-3 hidden sm:block"
+                  className="mx-1 sm:mx-2 hidden sm:block"
                   style={{
-                    width: 36,
+                    width: 32,
                     height: 1,
                     background: "rgba(1,17,35,0.06)",
                   }}
@@ -270,24 +270,24 @@ const images = {
     </div>
 
     {/* CONTENT + IMAGE */}
-    <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center">
+    <div className="mt-3 sm:mt-4 grid grid-cols-1 md:grid-cols-12 gap-2.5 sm:gap-4 items-start md:items-center">
       <div className="md:col-span-5">
-        <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-2 text-justify">
+        <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#011123] mb-2 text-justify">
           Expert Cloud & DevOps Teams
         </h3>
 
-        <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.6] mb-3 sm:mb-4 text-justify">
+        <p className="text-gray-600 text-[0.9rem] sm:text-[0.98rem] leading-[1.55] mb-2 sm:mb-3 text-justify">
           KIAQ provides certified cloud architects, DevOps engineers, and 
           infrastructure specialists with deep expertise in AWS, Azure, GCP, 
           and modern DevOps toolchains to optimize your technology operations.
         </p>
 
         <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-          View Our Expertise
+          Learn More
         </button>
       </div>
 
-      <div className="md:col-span-7 flex justify-center md:justify-end">
+      <div className="md:col-span-7 flex justify-center md:justify-end mt-2.5 md:mt-0">
         <div className="w-full max-w-[520px]">
           <img
             src={images[activeTab]}
@@ -299,6 +299,8 @@ const images = {
     </div>
   </div>
 </section>
+
+
 
 
     {/* {third section} */}
@@ -421,7 +423,7 @@ const images = {
     {/* fourth.one section */}
 
     {/* Enterprise Cloud Solutions Section */}
-<section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
+<section className="relative w-full bg-white py-12 sm:py-14 lg:py-16 px-4 lg:px-10 overflow-hidden">
   {/* Background Pattern */}
   <div
     className="absolute inset-0 opacity-15 pointer-events-none"
@@ -434,42 +436,43 @@ const images = {
     }}
   />
 
-  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
     {/* Left Image */}
-    <div className="relative w-full lg:w-1/2">
+    <div className="relative w-full lg:w-1/2 mb-6 lg:mb-0">
       <div className="rounded-2xl overflow-hidden shadow-md">
         <img
           src={sol21}
           alt="Enterprise Cloud Solutions"
-          className="w-full h-[380px] object-cover"
+          className="w-full h-[380px] sm:h-[400px] md:h-[420px] object-cover"
         />
       </div>
 
       {/* Cloud Solutions Logo Overlay */}
-      <div className="absolute bottom-5 left-5">
-        <div className="bg-white px-4 py-2 rounded-lg shadow-md">
-          <span className="text-sm font-semibold text-gray-900">Cloud Solutions</span>
+      <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5">
+        <div className="bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg shadow-md">
+          <span className="text-sm sm:text-[0.95rem] font-semibold text-gray-900">Cloud Solutions</span>
         </div>
       </div>
     </div>
 
     {/* Right Content */}
-    <div className="w-full lg:w-1/2">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
+    <div className="w-full lg:w-1/2 text-justify">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4">
         Enterprise Cloud Infrastructure Driving Digital Transformation
       </h2>
-      <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
         KIAQ partners with global enterprises to build scalable cloud infrastructure 
         and implement DevOps practices that transform technology operations. Our 
         expertise in cloud platforms and automation delivers measurable ROI through 
         improved efficiency, enhanced security, and accelerated innovation cycles.
       </p>
-      <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        View Cloud Case Studies
+      <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all w-full sm:w-auto">
+        Learn Cloud Case Studies
       </button>
     </div>
   </div>
 </section>
+
 
         {/* {fifth section} */}
 
@@ -511,10 +514,10 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            White Paper
+            Cloud Strategy
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Cloud Migration Strategy: Best Practices & Implementation Guide
+            Multi-Cloud Architecture: Design Patterns & Best Practices
           </h3>
           <a
             href="#"
@@ -536,16 +539,16 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Case Study
+            DevOps Practices
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            DevOps Transformation: Accelerating Software Delivery
+            CI/CD Pipeline Optimization: From Code to Deployment
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read Case Study <span className="ml-2">→</span>
+            Read More <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -561,16 +564,16 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Technical Guide
+            Infrastructure
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Cloud Security & Compliance: Enterprise Best Practices
+            Infrastructure as Code: Terraform & CloudFormation Guide
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Download Guide <span className="ml-2">→</span>
+            Read More <span className="ml-2">→</span>
           </a>
         </div>
       </div>

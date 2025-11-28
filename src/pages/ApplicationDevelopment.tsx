@@ -45,250 +45,259 @@ const images = {
   return (
     <>
     <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
-      <img
-        src={webimg}
-        alt="Web Application Development"
-        className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
-      />
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
+  className="relative w-full min-h-[90vh] flex items-center sm:items-center justify-start overflow-hidden"
+  style={{ backgroundColor: UI_CONSTANTS.DARK }}
+>
+  {/* Background image */}
+  <img
+    src={webimg}
+    alt="Web Application Development"
+    className="absolute inset-0 w-full h-full object-cover object-center sm:object-right z-0"
+  />
+
+  {/* Dark gradient overlay */}
+  <div
+    className="absolute inset-0 z-10"
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-16 sm:py-0">
+    <div className="max-w-[520px] mt-0 sm:mt-[14vh] text-justify sm:text-left">
+
+      {/* Title */}
+      <h1
+        className="text-white font-bold leading-snug mb-4 sm:mb-5"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+          fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
+          lineHeight: 1.2,
         }}
-      ></div>
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-        <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-4 sm:mb-5"
-            style={{
-              fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
-              lineHeight: 1.2,
-            }}
-          >
-            Enterprise-Grade Web Application Development
-            <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>
-            Tailored for Business Success
-          </h1>
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-6 sm:mb-8"
-            style={{
-              fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            KIAQ delivers robust, scalable web applications that drive digital transformation. 
-            Our expert developers create custom solutions that enhance user experience, 
-            optimize business processes, and deliver measurable ROI.
-          </p>
-          {/* CTA Button */}
-          <button
-            className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Start Your Project
-          </button>
-        </div>
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
-          <div>
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">98%</p>
-            <p className="text-xs sm:text-sm opacity-90">Client satisfaction rate</p>
-          </div>
-          <div className="border-l border-white/20 pl-6 sm:pl-8">
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">200+</p>
-            <p className="text-xs sm:text-sm opacity-90">Web applications delivered</p>
-          </div>
-          <div className="border-l border-white/20 pl-6 sm:pl-8">
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">36+</p>
-            <p className="text-xs sm:text-sm opacity-90">Months average client partnership</p>
-          </div>
-        </div>
+      >
+        Enterprise-Grade Web Application Development
+        <br className="hidden sm:block" />
+        <span className="sm:hidden"> </span>
+        Tailored for Business Success
+      </h1>
+
+      {/* Description */}
+      <p
+        className="text-gray-200 font-light mb-6 sm:mb-8"
+        style={{
+          fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
+          lineHeight: 1.65,
+          color: "rgba(255,255,255,0.85)",
+        }}
+      >
+        KIAQ delivers robust, scalable web applications that drive digital
+        transformation. Our expert developers create custom solutions that
+        enhance user experience, optimize business processes, and deliver
+        measurable ROI.
+      </p>
+
+      {/* CTA Button */}
+      <button
+        className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
+        style={{
+          backgroundColor: UI_CONSTANTS.PRIMARY,
+          color: UI_CONSTANTS.WHITE,
+        }}
+      >
+        Learn More
+      </button>
+    </div>
+
+    {/* Stats */}
+    <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
+      <div>
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">98%</p>
+        <p className="text-xs sm:text-sm opacity-90">Client satisfaction rate</p>
       </div>
-    </section>
+
+      <div className="sm:border-l sm:border-white/20 sm:pl-8">
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">200+</p>
+        <p className="text-xs sm:text-sm opacity-90">Web applications delivered</p>
+      </div>
+
+      <div className="sm:border-l sm:border-white/20 sm:pl-8">
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">36+</p>
+        <p className="text-xs sm:text-sm opacity-90">Months average client partnership</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   {/* {second section} */}
-  <section className="relative w-full bg-white overflow-hidden py-10 sm:py-14 lg:py-18 px-4 sm:px-6 lg:px-12">
+  <section className="relative w-full bg-white overflow-hidden 
+py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10">
 
-      {/* STAR PATTERN TOP-RIGHT */}
-      <div
-        aria-hidden
-        className="absolute top-4 sm:top-8 right-4 sm:right-8 pointer-events-none"
-        style={{ opacity: 0.12 }}
-      >
-        <svg width="180" height="100" viewBox="0 0 280 160" className="w-[180px] sm:w-[280px] h-auto">
-          <defs>
-            <g id="star">
-              <path
-                d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
-                fill="#FF6600"
-              />
-            </g>
-          </defs>
-          <g opacity="0.5">
-            <use href="#star" x="0" y="0" />
-            <use href="#star" x="36" y="0" />
-            <use href="#star" x="72" y="0" />
-            <use href="#star" x="108" y="0" />
-            <use href="#star" x="144" y="0" />
-            <use href="#star" x="180" y="0" />
-            <use href="#star" x="18" y="28" />
-            <use href="#star" x="54" y="28" />
-            <use href="#star" x="90" y="28" />
-            <use href="#star" x="126" y="28" />
-            <use href="#star" x="162" y="28" />
-            <use href="#star" x="198" y="28" />
-            <use href="#star" x="36" y="56" />
-            <use href="#star" x="72" y="56" />
-            <use href="#star" x="108" y="56" />
-            <use href="#star" x="144" y="56" />
-          </g>
-        </svg>
-      </div>
+  {/* STAR PATTERN TOP-RIGHT */}
+  <div
+    aria-hidden
+    className="absolute top-3 sm:top-6 right-3 sm:right-8 pointer-events-none"
+    style={{ opacity: 0.12 }}
+  >
+    <svg width="160" height="90" viewBox="0 0 280 160" className="w-[150px] sm:w-[260px] h-auto">
+      <defs>
+        <g id="star">
+          <path
+            d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
+            fill="#FF6600"
+          />
+        </g>
+      </defs>
+      <g opacity="0.5">
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="36" y="0" />
+        <use href="#star" x="72" y="0" />
+        <use href="#star" x="108" y="0" />
+        <use href="#star" x="144" y="0" />
+        <use href="#star" x="180" y="0" />
 
-      {/* STAR PATTERN BOTTOM-LEFT */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-0 pointer-events-none"
-        style={{ opacity: 0.10 }}
-      >
-        <svg width="220" height="180" viewBox="0 0 340 260" className="w-[220px] sm:w-[340px] h-auto">
-          <defs>
-            <g id="starB">
-              <path
-                d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
-                fill="#FF6600"
-              />
-            </g>
-          </defs>
-          <g opacity="0.5">
-            {Array.from({ length: 6 }).map((_, row) =>
-              Array.from({ length: 6 }).map((__, col) => (
-                <use
-                  key={`b-${row}-${col}`}
-                  href="#starB"
-                  x={col * 40 + (row % 2 === 0 ? 0 : 20)}
-                  y={row * 36}
-                />
-              ))
-            )}
-          </g>
-        </svg>
-      </div>
+        <use href="#star" x="18" y="26" />
+        <use href="#star" x="54" y="26" />
+        <use href="#star" x="90" y="26" />
+        <use href="#star" x="126" y="26" />
+        <use href="#star" x="162" y="26" />
+      </g>
+    </svg>
+  </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+  {/* STAR PATTERN BOTTOM-LEFT */}
+  <div
+    aria-hidden
+    className="absolute bottom-0 left-0 pointer-events-none"
+    style={{ opacity: 0.10 }}
+  >
+    <svg width="200" height="160" viewBox="0 0 340 260" className="w-[200px] sm:w-[320px] h-auto">
+      <defs>
+        <g id="starB">
+          <path
+            d="M8 0 L10.2 5.6 L16 6.4 L11.6 10.2 L12.8 16 L8 13 L3.2 16 L4.4 10.2 L0 6.4 L5.8 5.6 Z"
+            fill="#FF6600"
+          />
+        </g>
+      </defs>
+      <g opacity="0.5">
+        {Array.from({ length: 6 }).map((_, row) =>
+          Array.from({ length: 6 }).map((__, col) => (
+            <use
+              key={`b-${row}-${col}`}
+              href="#starB"
+              x={col * 38 + (row % 2 === 0 ? 0 : 18)}
+              y={row * 32}
+            />
+          ))
+        )}
+      </g>
+    </svg>
+  </div>
 
-        {/* HEADING */}
-        <div className="max-w-[980px] pr-0 sm:pr-12">
-          <h2 className="text-[24px] sm:text-[28px] md:text-[36px] font-semibold text-[#011123] leading-tight">
-            Comprehensive Web Application Solutions for Modern Businesses
-          </h2>
+  <div className="relative z-10 max-w-6xl mx-auto">
 
-          <p className="text-gray-600 mt-3 max-w-[720px] text-[0.95rem] sm:text-[1.03rem] leading-[1.65] text-justify">
-            From concept to deployment, we build high-performance web applications 
-            that solve complex business challenges and drive digital innovation.
-          </p>
-        </div>
+    {/* HEADING */}
+    <div className="max-w-[960px] pr-0 sm:pr-8 lg:pr-6">
+      <h2 className="text-[22px] sm:text-[26px] md:text-[34px] font-semibold text-[#011123] leading-tight">
+        Comprehensive Web Application Solutions for Modern Businesses
+      </h2>
 
-        {/* TABS */}
-        <div className="mt-5 sm:mt-6">
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6 max-w-[720px] pb-3">
-            {tabs.map((tab, idx) => {
-              const isActive = tab === activeTab;
-              return (
-                <div key={tab} className="flex items-center">
-                  <button
-                    onClick={() =>
-                      setActiveTab(
-                        tab as
-                          | "Enterprise Web Solutions"
-                          | "Custom Application Development"
-                          | "Digital Transformation"
-                      )
-                    }
-                    className="relative text-xs sm:text-sm md:text-base font-medium pb-2 transition-colors whitespace-nowrap"
+      <p className="text-gray-600 mt-2 max-w-[700px] text-[0.93rem] sm:text-[1rem] leading-[1.65] text-justify">
+        From concept to deployment, we build high-performance web applications 
+        that solve complex business challenges and drive digital innovation.
+      </p>
+    </div>
+
+    {/* TABS */}
+    <div className="mt-4 sm:mt-5">
+      <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-5 max-w-[700px] pb-2">
+        {tabs.map((tab, idx) => {
+          const isActive = tab === activeTab;
+          return (
+            <div key={tab} className="flex items-center">
+              <button
+                onClick={() =>
+                  setActiveTab(
+                    tab as
+                      | "Enterprise Web Solutions"
+                      | "Custom Application Development"
+                      | "Digital Transformation"
+                  )
+                }
+                className="relative text-xs sm:text-sm md:text-base font-medium pb-1.5 transition-colors whitespace-nowrap"
+                style={{
+                  color: isActive ? "#011123" : "rgba(1,17,35,0.6)",
+                }}
+              >
+                {tab}
+
+                {isActive && (
+                  <span
+                    className="absolute left-0 right-0"
                     style={{
-                      color: isActive
-                        ? "#011123"
-                        : "rgba(1,17,35,0.6)",
+                      height: 3,
+                      bottom: -6,
+                      background: "#FF6600",
+                      borderRadius: 2,
                     }}
-                  >
-                    {tab}
+                  />
+                )}
+              </button>
 
-                    {isActive && (
-                      <span
-                        className="absolute left-0 right-0"
-                        style={{
-                          height: 3,
-                          bottom: -8,
-                          background: "#FF6600",
-                          borderRadius: 2,
-                        }}
-                      />
-                    )}
-                  </button>
-
-                  {idx < tabs.length - 1 && (
-                    <div
-                      className="mx-2 sm:mx-4 hidden sm:block"
-                      style={{
-                        width: 36,
-                        height: 1,
-                        background: "rgba(1,17,35,0.06)",
-                      }}
-                    />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="max-w-[720px] border-b border-gray-200" />
-        </div>
-
-        {/* CONTENT + IMAGE */}
-        <div className="mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
-          <div className="md:col-span-5">
-            <h3 className="text-[20px] sm:text-[22px] font-semibold text-[#011123] mb-3">
-              Expert Web Application Development Teams
-            </h3>
-
-            <p className="text-gray-600 text-[0.95rem] sm:text-base leading-[1.7] mb-4 sm:mb-5 text-justify">
-              KIAQ provides dedicated development teams with expertise in modern 
-              frameworks, cloud technologies, and agile methodologies to deliver 
-              enterprise-grade web applications on time and within budget.
-            </p>
-
-            <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-              View Our Expertise
-            </button>
-          </div>
-
-          <div className="md:col-span-7 flex justify-center md:justify-end">
-            <div className="w-full max-w-[520px]">
-              <img
-                src={images[activeTab]}
-                alt={activeTab}
-                className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-              />
+              {idx < tabs.length - 1 && (
+                <div
+                  className="mx-2 sm:mx-4 hidden sm:block"
+                  style={{
+                    width: 32,
+                    height: 1,
+                    background: "rgba(1,17,35,0.06)",
+                  }}
+                />
+              )}
             </div>
-          </div>
+          );
+        })}
+      </div>
+
+      <div className="max-w-[700px] border-b border-gray-200" />
+    </div>
+
+    {/* CONTENT + IMAGE */}
+    <div className="mt-5 sm:mt-7 lg:mt-6 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 lg:gap-6 items-center">
+
+      <div className="md:col-span-5">
+        <h3 className="text-[19px] sm:text-[21px] font-semibold text-[#011123] mb-2.5">
+          Expert Web Application Development Teams
+        </h3>
+
+        <p className="text-gray-600 text-[0.93rem] sm:text-base leading-[1.7] mb-3.5 sm:mb-4 text-justify">
+          KIAQ provides dedicated development teams with expertise in modern 
+          frameworks, cloud technologies, and agile methodologies to deliver 
+          enterprise-grade web applications on time and within budget.
+        </p>
+
+        <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
+          Learn More
+        </button>
+      </div>
+
+      <div className="md:col-span-7 flex justify-center md:justify-end">
+        <div className="w-full max-w-[460px] lg:max-w-[480px]">
+          <img
+            src={images[activeTab]}
+            alt={activeTab}
+            className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+          />
         </div>
       </div>
+    </div>
+  </div>  
 </section>
+
+
 
 
 
@@ -412,7 +421,7 @@ const images = {
     {/* fourth.one section */}
 
     {/* Enterprise Solutions Section */}
-<section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
+<section className="relative w-full bg-white py-16 px-4 sm:px-6 lg:px-10 overflow-hidden">
   {/* Background Pattern */}
   <div
     className="absolute inset-0 opacity-15 pointer-events-none"
@@ -425,46 +434,51 @@ const images = {
     }}
   />
 
-  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-8 sm:gap-10">
     {/* Left Image */}
     <div className="relative w-full lg:w-1/2">
       <div className="rounded-2xl overflow-hidden shadow-md">
         <img
           src={sol21}
           alt="Enterprise Web Solutions"
-          className="w-full h-[380px] object-cover"
+          className="w-full h-[260px] sm:h-[320px] md:h-[380px] object-cover"
         />
       </div>
 
       {/* Solutions Logo Overlay */}
-      <div className="absolute bottom-5 left-5">
-        <div className="bg-white px-4 py-2 rounded-lg shadow-md">
-          <span className="text-sm font-semibold text-gray-900">Enterprise Solutions</span>
+      <div className="absolute bottom-4 sm:bottom-5 left-4 sm:left-5">
+        <div className="bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg shadow-md">
+          <span className="text-xs sm:text-sm font-semibold text-gray-900">
+            Enterprise Solutions
+          </span>
         </div>
       </div>
     </div>
 
     {/* Right Content */}
-    <div className="w-full lg:w-1/2">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
+    <div className="w-full lg:w-1/2 text-justify">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4">
         Enterprise Web Solutions Driving Digital Transformation
       </h2>
-      <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-        KIAQ partners with global enterprises to develop scalable web applications 
-        that transform business operations. Our solutions integrate seamlessly with 
-        existing infrastructure while delivering enhanced performance, security, 
+
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-5 sm:mb-6">
+        KIAQ partners with global enterprises to develop scalable web applications
+        that transform business operations. Our solutions integrate seamlessly with
+        existing infrastructure while delivering enhanced performance, security,
         and user experience across all digital touchpoints.
       </p>
-      <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        Explore Case Studies
+
+      <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
+        Learn Case Studies
       </button>
     </div>
   </div>
 </section>
 
+
         {/* {fifth section} */}
 
-    <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
+   <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
   {/* Flower Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -502,10 +516,10 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            White Paper
+            Technology Trends
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Modern Web Development Trends for Enterprise Applications
+            React vs Angular vs Vue: Choosing the Right Framework for Your Web App
           </h3>
           <a
             href="#"
@@ -527,16 +541,16 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Case Study
+            Performance Guide
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Building Scalable Web Architecture for High-Growth Businesses
+            Optimizing Web Application Performance: Best Practices and Tools
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Watch Now <span className="ml-2">→</span>
+            Read more <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -552,10 +566,10 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Technical Guide
+            Development Guide
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Enterprise Web Application Security Best Practices 2024
+            Progressive Web Apps (PWA): Building Modern Web Experiences
           </h3>
           <a
             href="#"
@@ -625,7 +639,7 @@ const images = {
           }}
           className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
         >
-          Start Your Project
+          Learn More
         </button>
       </div>
     </div>

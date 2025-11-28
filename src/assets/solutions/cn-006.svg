@@ -4,7 +4,7 @@
 <path d="M13 13.7297H28.853C31.1566 13.7297 33.0248 15.5979 33.0248 17.9016V32.0858L26.3499 27.914H17.1718C14.8681 27.914 13 26.0458 13 23.7421V13.7297Z" fill="url(#paint2_linear_11906_40447)"/>
 <defs>
 <linearGradient id="paint0_linear_11906_40447" x1="60" y1="-17" x2="-5.06639e-07" y2="60" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0FDDCC"/>
+<stop stop-color="#ff5500"/>
 <stop offset="0.8" stop-color="#173B3F"/>
 </linearGradient>
 <linearGradient id="paint1_linear_11906_40447" x1="19.3178" y1="16.3645" x2="47.7594" y2="43.905" gradientUnits="userSpaceOnUse">

@@ -124,7 +124,7 @@ export default function TestimonialSlider() {
                           <img
                             src={testimonial.image}
                             alt={testimonial.company}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover transform transition-transform duration-700 hover:rotate-[360deg]"
                           />
                           <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                         </div>
@@ -217,7 +217,7 @@ export default function TestimonialSlider() {
             </p>
 
             <button className="bg-white text-gray-800 font-semibold px-6 py-2.5 rounded-xl shadow hover:shadow-md transition-all border border-gray-200 text-sm sm:text-base">
-              FAQ's
+              FAQs
             </button>
           </div>
 

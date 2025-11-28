@@ -83,13 +83,24 @@ export default function Hero() {
           display: flex;
           align-items: center;
           padding-top: 80px !important;
+          overflow: hidden;
         }
 
         /* Mobile specific adjustments */
         @media (max-width: 640px) {
           .section_image-hero {
             padding-top: 60px !important;
-            min-height: 100svh; /* Use svh for better mobile support */
+            min-height: 100svh;
+            align-items: flex-start;
+            padding-bottom: 40px !important;
+          }
+        }
+
+        /* Tablet adjustments */
+        @media (min-width: 641px) and (max-width: 1024px) {
+          .section_image-hero {
+            padding-top: 70px !important;
+            min-height: 100vh;
           }
         }
 
@@ -100,8 +111,8 @@ export default function Hero() {
         }
 
         .padding-global {
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
         }
 
         @media (min-width: 640px) {
@@ -118,6 +129,13 @@ export default function Hero() {
           }
         }
 
+        @media (min-width: 1280px) {
+          .padding-global {
+            padding-left: 4rem;
+            padding-right: 4rem;
+          }
+        }
+
         .container-large {
           max-width: 1280px;
           margin-left: auto;
@@ -129,11 +147,19 @@ export default function Hero() {
           max-width: 960px;
         }
 
+        @media (max-width: 640px) {
+          .max-width-large {
+            max-width: 100%;
+          }
+        }
+
         .image-hero_background-wrapper {
           position: absolute;
           inset: 0;
           z-index: 1;
           overflow: hidden;
+          width: 100%;
+          height: 100%;
         }
 
         /* Dark overlay */
@@ -142,11 +168,18 @@ export default function Hero() {
           inset: 0;
           z-index: 3;
           background: rgba(0,0,0,0.35);
+          pointer-events: none;
         }
 
         @media (max-width: 640px) {
           .hero-dark-overlay {
-            background: rgba(0,0,0,0.50);
+            background: rgba(0,0,0,0.55);
+          }
+        }
+
+        @media (min-width: 641px) and (max-width: 1024px) {
+          .hero-dark-overlay {
+            background: rgba(0,0,0,0.45);
           }
         }
 
@@ -155,17 +188,54 @@ export default function Hero() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 100%;
-          height: 100%;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
           object-fit: cover;
           z-index: 1;
         }
 
-        /* Ensure video covers properly on mobile */
+        /* Mobile video optimization */
         @media (max-width: 640px) {
           .image-hero_video {
+            width: 100%;
+            height: 100%;
             min-width: 100%;
             min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        /* Tablet video optimization */
+        @media (min-width: 641px) and (max-width: 1024px) {
+          .image-hero_video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        /* Portrait mode specific */
+        @media (max-width: 640px) and (orientation: portrait) {
+          .image-hero_video {
+            width: auto;
+            height: 100%;
+            min-width: 100%;
+          }
+        }
+
+        /* Landscape mode specific */
+        @media (max-width: 896px) and (orientation: landscape) {
+          .image-hero_video {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+          }
+          .section_image-hero {
+            min-height: 100vh;
           }
         }
 
@@ -204,9 +274,33 @@ export default function Hero() {
         @media (max-width: 640px) {
           h1 {
             line-height: 1.2;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
           }
           p {
             line-height: 1.6;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+          }
+        }
+
+        /* Tablet text adjustments */
+        @media (min-width: 641px) and (max-width: 1024px) {
+          h1 {
+            line-height: 1.3;
+          }
+          p {
+            line-height: 1.7;
+          }
+        }
+
+        /* Prevent horizontal overflow */
+        * {
+          box-sizing: border-box;
+        }
+
+        /* iOS specific fixes */
+        @supports (-webkit-touch-callout: none) {
+          .section_image-hero {
+            min-height: -webkit-fill-available;
           }
         }
 

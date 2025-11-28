@@ -43,97 +43,97 @@ const images = {
   return (
     <>
     <section
-      className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
-      style={{ backgroundColor: UI_CONSTANTS.DARK }}
-    >
-      {/* Background image */}
-      <img
-        src={webimg}
-        alt="Data Science and AI"
-        className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
-      />
+  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+  style={{ backgroundColor: UI_CONSTANTS.DARK }}
+>
+  {/* Background image */}
+  <img
+    src={webimg}
+    alt="Data Science and AI"
+    className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
+  />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
+  {/* Dark gradient overlay */}
+  <div
+    className="absolute inset-0 z-10"
+    style={{
+      background:
+        "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+    }}
+  ></div>
+
+  {/* Content */}
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-10 sm:py-0">
+    <div className="max-w-[520px] mt-[12vh] sm:mt-[14vh] text-left sm:text-left">
+      {/* Title */}
+      <h1
+        className="text-white font-bold leading-snug mb-4 sm:mb-5 text-justify sm:text-left"
         style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.1) 100%)",
+          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          lineHeight: 1.2,
         }}
-      ></div>
+      >
+        Advanced Data Science & AI Solutions
+        <br />
+        Driving Business Transformation
+      </h1>
 
-      {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-        <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
-          {/* Title */}
-          <h1
-            className="text-white font-bold leading-snug mb-4 sm:mb-5"
-            style={{
-              fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
-              lineHeight: 1.2,
-            }}
-          >
-            Advanced Data Science & AI Solutions
-            <br />
-            Driving Business Transformation
-          </h1>
+      {/* Description */}
+      <p
+        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify"
+        style={{
+          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          lineHeight: 1.65,
+          color: "rgba(255,255,255,0.85)",
+        }}
+      >
+        KIAQ delivers cutting-edge data science and AI solutions that unlock
+        actionable insights, automate complex processes, and create sustainable
+        competitive advantages for forward-thinking enterprises.
+      </p>
 
-          {/* Description */}
-          <p
-            className="text-gray-200 font-light mb-6 sm:mb-8"
-            style={{
-              fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
-              lineHeight: 1.65,
-              color: "rgba(255,255,255,0.85)",
-            }}
-          >
-            KIAQ delivers cutting-edge data science and AI solutions that unlock 
-            actionable insights, automate complex processes, and create sustainable 
-            competitive advantages for forward-thinking enterprises.
-          </p>
+      {/* CTA Button */}
+      <button
+        className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
+        style={{
+          backgroundColor: UI_CONSTANTS.PRIMARY,
+          color: UI_CONSTANTS.WHITE,
+        }}
+      >
+        Learn More
+      </button>
+    </div>
 
-          {/* CTA Button */}
-          <button
-            className="px-5 sm:px-6 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
-            style={{
-              backgroundColor: UI_CONSTANTS.WHITE,
-              color: UI_CONSTANTS.DARK,
-            }}
-          >
-            Explore AI Solutions
-          </button>
-        </div>
-
-        {/* Stats Section */}
-        <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
-          <div>
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">97%</p>
-            <p className="text-xs sm:text-sm opacity-90">Project success rate</p>
-          </div>
-
-          <div className="border-l border-white/20 pl-6 sm:pl-8">
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">300+</p>
-            <p className="text-xs sm:text-sm opacity-90">AI & Data Science experts</p>
-          </div>
-
-          <div className="border-l border-white/20 pl-6 sm:pl-8">
-            <p className="text-xl sm:text-2xl font-semibold text-white mb-1">28+</p>
-            <p className="text-xs sm:text-sm opacity-90">Months average partnership</p>
-          </div>
-        </div>
+    {/* Stats Section */}
+    <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200 text-left sm:text-left">
+      <div>
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">97%</p>
+        <p className="text-xs sm:text-sm opacity-90">Project success rate</p>
       </div>
-    </section>
+
+      <div className="sm:border-l border-white/20 sm:pl-8">
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">300+</p>
+        <p className="text-xs sm:text-sm opacity-90">AI & Data Science experts</p>
+      </div>
+
+      <div className="sm:border-l border-white/20 sm:pl-8">
+        <p className="text-xl sm:text-2xl font-semibold text-white mb-1">28+</p>
+        <p className="text-xs sm:text-sm opacity-90">Months average partnership</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   {/* {second section} */}
- <section className="relative w-full bg-white overflow-hidden py-9 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12">
-
+<section className="relative w-full bg-white overflow-hidden py-7 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12">
   {/* STAR PATTERN TOP-RIGHT */}
   <div
     aria-hidden
     className="absolute top-3 sm:top-5 right-4 sm:right-8 pointer-events-none"
     style={{ opacity: 0.12 }}
   >
-    <svg width="180" height="100" viewBox="0 0 280 160" className="w-[150px] sm:w-[230px] h-auto">
+    <svg width="180" height="100" viewBox="0 0 280 160" className="w-[130px] sm:w-[230px] h-auto">
       <defs>
         <g id="star">
           <path
@@ -165,7 +165,7 @@ const images = {
     className="absolute bottom-0 left-0 pointer-events-none"
     style={{ opacity: 0.10 }}
   >
-    <svg width="220" height="180" viewBox="0 0 340 260" className="w-[190px] sm:w-[300px] h-auto">
+    <svg width="220" height="180" viewBox="0 0 340 260" className="w-[170px] sm:w-[300px] h-auto">
       <defs>
         <g id="starB">
           <path
@@ -190,10 +190,9 @@ const images = {
   </div>
 
   <div className="relative z-10 max-w-6xl mx-auto">
-
     {/* HEADING */}
     <div className="max-w-[900px] pr-0 sm:pr-10">
-      <h2 className="text-[22px] sm:text-[26px] md:text-[32px] font-semibold text-[#011123] leading-tight">
+      <h2 className="text-[20px] sm:text-[26px] md:text-[32px] font-semibold text-[#011123] leading-tight">
         Comprehensive Data Science & AI Services for Enterprise Excellence
       </h2>
 
@@ -205,8 +204,8 @@ const images = {
     </div>
 
     {/* TABS */}
-    <div className="mt-4 sm:mt-6">
-      <div className="flex flex-wrap items-center gap-3 sm:gap-5 max-w-[700px] pb-2">
+    <div className="mt-3 sm:mt-6">
+      <div className="flex flex-wrap items-center gap-2 sm:gap-5 max-w-[700px] pb-1 sm:pb-2">
         {tabs.map((tab, idx) => {
           const isActive = tab === activeTab;
           return (
@@ -214,10 +213,7 @@ const images = {
               <button
                 onClick={() =>
                   setActiveTab(
-                    tab as
-                      | "Predictive Analytics"
-                      | "Machine Learning"
-                      | "AI Solutions"
+                    tab as "Predictive Analytics" | "Machine Learning" | "AI Solutions"
                   )
                 }
                 className="relative text-xs sm:text-sm md:text-base font-medium pb-1 transition-colors whitespace-nowrap"
@@ -259,25 +255,25 @@ const images = {
     </div>
 
     {/* CONTENT + IMAGE */}
-    <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
+    <div className="mt-5 sm:mt-8 grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-center">
       <div className="md:col-span-5">
         <h3 className="text-[18px] sm:text-[20px] font-semibold text-[#011123] mb-2">
           Expert Data Science & AI Teams
         </h3>
 
-        <p className="text-gray-600 text-[0.92rem] sm:text-base leading-[1.6] mb-3 text-justify">
+        <p className="text-gray-600 text-[0.9rem] sm:text-base leading-[1.6] mb-3 text-justify">
           KIAQ provides specialized data scientists, ML engineers, and AI 
           specialists with deep expertise in modern frameworks, cloud platforms, 
           and industry-specific applications to deliver transformative solutions.
         </p>
 
         <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
-          View Our Capabilities
+          Learn More
         </button>
       </div>
 
       <div className="md:col-span-7 flex justify-center md:justify-end">
-        <div className="w-full max-w-[460px]">
+        <div className="w-full max-w-[430px]">
           <img
             src={images[activeTab]}
             alt={activeTab}
@@ -288,6 +284,7 @@ const images = {
     </div>
   </div>
 </section>
+
 
 
 
@@ -411,7 +408,7 @@ const images = {
     {/* fourth.one section */}
 
     {/* Enterprise AI Solutions Section */}
-<section className="relative w-full bg-white py-16 px-4 lg:px-10 overflow-hidden">
+<section className="relative w-full bg-white py-12 px-4 sm:px-6 lg:px-10 overflow-hidden">
   {/* Background Pattern */}
   <div
     className="absolute inset-0 opacity-15 pointer-events-none"
@@ -424,38 +421,38 @@ const images = {
     }}
   />
 
-  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+  <div className="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
     {/* Left Image */}
     <div className="relative w-full lg:w-1/2">
       <div className="rounded-2xl overflow-hidden shadow-md">
         <img
           src={sol21}
           alt="Enterprise AI Solutions"
-          className="w-full h-[380px] object-cover"
+          className="w-full h-[280px] sm:h-[320px] md:h-[380px] object-cover"
         />
       </div>
 
       {/* AI Solutions Logo Overlay */}
-      <div className="absolute bottom-5 left-5">
-        <div className="bg-white px-4 py-2 rounded-lg shadow-md">
-          <span className="text-sm font-semibold text-gray-900">AI Solutions</span>
+      <div className="absolute bottom-3 sm:bottom-5 left-3 sm:left-5">
+        <div className="bg-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-md">
+          <span className="text-xs sm:text-sm font-semibold text-gray-900">AI Solutions</span>
         </div>
       </div>
     </div>
 
     {/* Right Content */}
     <div className="w-full lg:w-1/2">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-4">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-justify">
         Enterprise AI Implementation Driving Digital Transformation
       </h2>
-      <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-justify">
         KIAQ partners with global enterprises to implement scalable AI solutions 
         that transform business operations. Our data science expertise combined 
         with industry-specific knowledge delivers measurable ROI through improved 
         efficiency, enhanced decision-making, and innovative product development.
       </p>
-      <button className="px-5 py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-        View AI Case Studies
+      <button className="px-4 sm:px-5 py-2 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
+        Learn AI Case Studies
       </button>
     </div>
   </div>
@@ -501,10 +498,10 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            White Paper
+            AI Strategy
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Enterprise AI Implementation: Best Practices & Strategies
+            Implementing AI Solutions: From Concept to Production
           </h3>
           <a
             href="#"
@@ -526,16 +523,16 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Research Report
+            ML Research
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Emerging Trends in Machine Learning & Predictive Analytics
+            Advanced Machine Learning Techniques for Real-World Applications
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Download Report <span className="ml-2">→</span>
+            Learn More <span className="ml-2">→</span>
           </a>
         </div>
       </div>
@@ -551,23 +548,22 @@ const images = {
         </div>
         <div className="p-6">
           <p className="uppercase text-sm font-semibold text-gray-500 tracking-wide group-hover:text-gray-300">
-            Case Study
+            Data Analytics
           </p>
           <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
-            Measuring ROI in Data Science & AI Investments
+            Data-Driven Decision Making: Analytics for Business Growth
           </h3>
           <a
             href="#"
             className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
           >
-            Read Case Study <span className="ml-2">→</span>
+            Learn More <span className="ml-2">→</span>
           </a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
           {/* {6th Section} */}
 
          <section className="dual-action-button-cta">

@@ -334,7 +334,7 @@ export default function Header() {
             <Link
               to="/Contact-us"
               className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 hover:scale-105 whitespace-nowrap"
-              style={{ backgroundColor: '#0fddcc', color: '#ffffff' }}
+              style={{ backgroundColor: '#ff5500', color: '#ffffff' }}
             >
               CONTACT US
             </Link>
@@ -704,14 +704,14 @@ export default function Header() {
                       >
                         How Adaptive Hiring Transformed Our Team
                       </h4>
-                      <Link
+                      {/* <Link
                         to="/insights"
                         onClick={closeDropdown}
                         className="inline-flex items-center text-sm font-semibold hover:opacity-80 transition-opacity"
                         style={{ color: "#1e3a3a" }}
                       >
                         Read Story →
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

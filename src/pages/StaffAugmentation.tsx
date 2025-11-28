@@ -165,8 +165,8 @@ const steps = [
       <button
         className="px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
         style={{
-          backgroundColor: UI_CONSTANTS.WHITE,
-          color: UI_CONSTANTS.DARK,
+          backgroundColor: UI_CONSTANTS.PRIMARY,
+          color: UI_CONSTANTS.WHITE,
         }}
       >
         Initiate AI Transformation
@@ -205,7 +205,7 @@ const steps = [
 
 
   {/* {second section} */}
-    <section className="w-full bg-[#f7faf9] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-20 relative overflow-hidden">
+    <section className="w-full bg-[#f7faf9] py-8 sm:py-10 md:py-14 lg:py-18 px-3 sm:px-4 lg:px-20 relative overflow-hidden">
   {/* Decorative faint circle pattern on the right (SVG) */}
   <svg
     className="absolute right-0 top-0 h-full w-[50%] opacity-10 pointer-events-none hidden md:block"
@@ -224,29 +224,26 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-8 sm:mb-10 md:mb-12">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-justify lg:text-left">
       Experience the KIAQ Advantage
     </h1>
 
-    {/* Two-column main area: left image (with patterned rounded panel), right text */}
-    <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-10 md:gap-12 lg:gap-20">
+    {/* Two-column main area: left image, right text */}
+    <div className="flex flex-col lg:flex-row items-start gap-4 sm:gap-6 md:gap-8 lg:gap-12">
       {/* Left: patterned rounded panel with image inset */}
       <div className="w-full lg:w-1/2 flex justify-start">
         <div className="relative w-full">
-          {/* Rounded patterned panel */}
           <div
-            className="rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6"
+            className="rounded-xl sm:rounded-2xl p-2 sm:p-3 md:p-4"
             style={{
-              background:
-                "linear-gradient(180deg, rgba(230,249,246,1) 0%, rgba(236,251,249,1) 100%)",
+              background: "#fff2eb",
               boxShadow: "0 6px 30px rgba(14,30,23,0.06)",
               width: "100%",
               maxWidth: "680px",
             }}
           >
-            {/* subtle circle SVG overlay inside the panel (top-left) */}
             <svg
-              className="absolute left-4 sm:left-6 top-4 sm:top-6 pointer-events-none opacity-30 hidden sm:block"
+              className="absolute left-2 sm:left-3 top-2 sm:top-3 pointer-events-none opacity-30 hidden sm:block"
               width="200"
               height="120"
               viewBox="0 0 260 160"
@@ -262,18 +259,11 @@ const steps = [
               <rect width="260" height="160" fill="url(#panelCircles)" rx="12" />
             </svg>
 
-            {/* Inner white card that visually contains the screenshot */}
-            <div
-              className="rounded-lg overflow-hidden bg-white"
-              style={{
-                marginTop: "10px",
-              }}
-            >
+            <div className="rounded-lg overflow-hidden bg-white mt-1">
               <img
                 src={webimg1}
                 alt="KIAQ platform dashboard"
                 className="w-full h-auto block object-cover"
-                style={{ display: "block" }}
               />
             </div>
           </div>
@@ -282,44 +272,43 @@ const steps = [
 
       {/* Right text block */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-justify lg:text-left">
           Access Premium Talent with
           <br className="hidden sm:inline" />
           Exceptional Efficiency
         </h2>
 
-        <p className="mt-4 sm:mt-5 md:mt-6 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed">
-          Our integrated methodology combines AI-powered technology platforms with experienced recruitment professionals to deliver optimal talent solutions.
-        </p>
+        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-justify">
+Our integrated methodology combines AI-powered technology platforms with the expertise of seasoned recruitment professionals to deliver optimal talent solutions. At Kiaq, we are built on a foundation of relentless improvement, constantly refining our processes to stay ahead in a competitive landscape. We sharpen our technical skills daily, ensuring that every solution we provide is innovative and precise. Our commitment to excellence drives us to go beyond expectations in every project.        </p>
       </div>
     </div>
 
     {/* Bottom four-column features */}
-    <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 border-t border-gray-200 pt-8 sm:pt-10 md:pt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-      <div className="pr-0 sm:pr-6">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Streamlined Recruitment Process</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
+    <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 border-t border-gray-200 pt-4 sm:pt-6 md:pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div className="pr-0 sm:pr-3">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-justify">Streamlined Recruitment Process</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-justify">
           KIAQ Talent Platform facilitates intelligent and efficient processes throughout the complete recruitment lifecycle.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-6 sm:border-l lg:border-l border-gray-200 sm:pl-6 pt-6 sm:pt-0 border-t sm:border-t-0">
+      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900">Certified Elite Professionals</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
           We provide industry-leading professional development, continuous education, and strategic networking opportunities.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-6 lg:border-l border-gray-200 lg:pl-6 pt-6 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0">
+      <div className="pr-0 sm:pr-3 lg:border-l border-gray-200 lg:pl-3 pt-3 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0 text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900">Comprehensive Support Services</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
           End-to-end assistance through recruitment, acquisition, training, qualification, matching, and project delivery phases.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-6 sm:border-l lg:border-l border-gray-200 sm:pl-6 pt-6 sm:pt-0 border-t sm:border-t-0">
+      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900">Premium Client Experience</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-2 sm:mt-3">
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
           Comprehensive service delivery from dedicated customer success and talent management teams.
         </p>
       </div>
@@ -328,9 +317,11 @@ const steps = [
 </section>
 
 
+
+
     {/* {third section} */}
 
-  <section className="relative w-full bg-white py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-20 overflow-hidden">
+<section className="relative w-full bg-white py-10 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 lg:px-20 overflow-hidden">
   {/* TOP PATTERN */}
   <svg
     className="absolute right-0 top-0 w-[55%] opacity-20 pointer-events-none hidden md:block"
@@ -352,23 +343,22 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl text-justify">
       Access the World's Premier Certified Global Talent Network
     </h1>
 
-    <p className="text-base sm:text-lg text-gray-600 mt-3 sm:mt-4 max-w-2xl leading-relaxed">
+    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-justify">
       Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.
     </p>
 
     {/* MAIN LAYOUT */}
-    <div className="mt-10 sm:mt-12 md:mt-14 lg:mt-16 flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-start">
+    <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-start">
       {/* RIGHT SIDE PANEL → Shows first on mobile */}
       <div className="w-full lg:w-[52%] flex justify-center lg:justify-end order-1 lg:order-2">
         <div
-          className="relative rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 w-full"
+          className="relative rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 w-full"
           style={{
-            background:
-              "linear-gradient(180deg, #d3ebe7 0%, #d9efeb 100%)",
+            background: "#fff2eb",
             maxWidth: "680px",
             boxShadow: "0 6px 25px rgba(0,0,0,0.06)",
           }}
@@ -402,26 +392,24 @@ const steps = [
       </div>
 
       {/* LEFT SIDE ACCORDION → Shows second on mobile */}
-      <div className="w-full lg:w-[48%] space-y-3 sm:space-y-4 order-2 lg:order-1">
+      <div className="w-full lg:w-[48%] space-y-2 sm:space-y-3">
         {steps.map((item, idx) => (
           <div
             key={idx}
             onClick={() => setOpenIndex(idx)}
-            className={`border rounded-lg sm:rounded-xl px-4 sm:px-5 md:px-6 py-3 sm:py-4 cursor-pointer bg-white transition-all ${
-              openIndex === idx
-                ? "border-[#bcd7d1] shadow-md"
-                : "border-[#bcd7d1]"
+            className={`border rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-5 py-2 sm:py-3 cursor-pointer bg-white transition-all ${
+              openIndex === idx ? "border-[#bcd7d1] shadow-md" : "border-[#bcd7d1]"
             }`}
           >
             <div className="flex justify-between items-center">
-              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-3">{item.title}</p>
-              <span className="text-gray-600 text-xl sm:text-2xl flex-shrink-0">
+              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-2">{item.title}</p>
+              <span className="text-gray-600 text-lg sm:text-xl flex-shrink-0">
                 {openIndex === idx ? "▲" : "▼"}
               </span>
             </div>
 
             {openIndex === idx && (
-              <p className="text-gray-600 text-sm sm:text-[15px] mt-2 sm:mt-3 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-[15px] mt-1 sm:mt-2 leading-relaxed text-justify">
                 {item.desc}
               </p>
             )}
@@ -431,6 +419,7 @@ const steps = [
     </div>
   </div>
 </section>
+
 
 <style>
 {`
@@ -448,93 +437,95 @@ const steps = [
 
 
         {/* {fourth section} */}
-       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row lg:gap-16">
-          {/* Mobile/Tablet Video - Shows First on Mobile */}
-          <div className="lg:hidden w-full mb-8 sm:mb-12">
-            <div className="w-full max-w-md mx-auto">
-              <video 
-                src={imgfocus}
-                className="w-full h-auto object-contain rounded-lg"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-            </div>
-          </div>
-
-          {/* Left Content Column - Scrollable */}
-          <div className="w-full lg:w-1/2">
-            {features.map((feature, index) => (
-              <div 
-                key={index} 
-                ref={el => { contentRefs.current[index] = el }}
-                className="min-h-[50vh] sm:min-h-[60vh] lg:min-h-[75vh] flex items-center py-4"
-              >
-                <div className="w-full max-w-xl">
-                  <h3 
-                    className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight transition-all duration-500"
-                    style={{ 
-                      color: UI_CONSTANTS.DARK,
-                      opacity: activeIndex === index ? 1 : 0.3,
-                    }}
-                  >
-                    {feature.title}
-                  </h3>
-                  
-                  <p 
-                    className="text-base sm:text-lg leading-relaxed transition-all duration-500"
-                    style={{ 
-                      color: UI_CONSTANTS.GRAY,
-                      opacity: activeIndex === index ? 1 : 0.3,
-                    }}
-                  >
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          {/* Right Fixed Image Column - Desktop Only */}
-          <div className="hidden lg:block lg:w-1/2">
-            <div className="sticky top-16 sm:top-24 lg:top-32 h-[400px] sm:h-[500px] lg:h-[600px] flex items-center justify-center">
-              <video 
-                src={imgfocus}
-                className="max-w-full max-h-full object-contain"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-            </div>
-          </div>
-        </div>
-        
-        {/* CTA Button */}
-        <div className="text-center mt-16 sm:mt-24 lg:mt-32">
-          <button 
-            className="px-8 py-4 sm:px-12 sm:py-5 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
-            style={{ 
-              backgroundColor: UI_CONSTANTS.PRIMARY,
-              color: UI_CONSTANTS.WHITE
-            }}
-          >
-            <span className="hidden sm:inline">Connect with Global Technology Experts</span><span className="sm:hidden">Connect with Experts</span>
-          </button>
+       <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-12">
+    <div className="flex flex-col lg:flex-row lg:gap-12">
+      {/* Mobile/Tablet Video - Shows First on Mobile */}
+      <div className="lg:hidden w-full mb-6 sm:mb-8">
+        <div className="w-full max-w-md mx-auto">
+          <video 
+            src={imgfocus}
+            className="w-full h-auto object-contain rounded-lg"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
         </div>
       </div>
-    </section>
+
+      {/* Left Content Column - Scrollable */}
+      <div className="w-full lg:w-1/2">
+        {features.map((feature, index) => (
+          <div 
+            key={index} 
+            ref={el => { contentRefs.current[index] = el }}
+            className="min-h-[45vh] sm:min-h-[55vh] lg:min-h-[70vh] flex items-center py-3 sm:py-4"
+          >
+            <div className="w-full max-w-xl text-justify">
+              <h3 
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-500"
+                style={{ 
+                  color: UI_CONSTANTS.DARK,
+                  opacity: activeIndex === index ? 1 : 0.3,
+                }}
+              >
+                {feature.title}
+              </h3>
+              
+              <p 
+                className="text-base sm:text-lg leading-relaxed transition-all duration-500"
+                style={{ 
+                  color: UI_CONSTANTS.GRAY,
+                  opacity: activeIndex === index ? 1 : 0.3,
+                }}
+              >
+                {feature.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      {/* Right Fixed Image Column - Desktop Only */}
+      <div className="hidden lg:block lg:w-1/2">
+        <div className="sticky top-12 sm:top-16 lg:top-24 h-[350px] sm:h-[450px] lg:h-[550px] flex items-center justify-center">
+          <video 
+            src={imgfocus}
+            className="max-w-full max-h-full object-contain"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
+      </div>
+    </div>
+    
+    {/* CTA Button */}
+    <div className="text-center mt-12 sm:mt-16 lg:mt-20">
+      <button 
+        className="px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+        style={{ 
+          backgroundColor: UI_CONSTANTS.PRIMARY,
+          color: UI_CONSTANTS.WHITE
+        }}
+      >
+        <span className="hidden sm:inline">Connect with Global Technology Experts</span>
+        <span className="sm:hidden">Connect with Experts</span>
+      </button>
+    </div>
+  </div>
+</section>
+
   
     {/* fourth.one section */}
 
-   <section className="relative w-full bg-white py-20 px-6 lg:px-20 overflow-hidden">
+<section className="relative w-full bg-white py-20 px-6 lg:px-20 overflow-hidden">
 
       {/* Title */}
       <h2 className="text-4xl font-bold text-center text-gray-900">
-        KIAQ Talent Platform Delivers Superior Matching
+        How KIAQ Works: Simple & Efficient Talent Matching
       </h2>
 
       {/* Cards Wrapper */}
@@ -545,17 +536,17 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg26}
-              alt="Global Talent Network"
-              className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
+              alt="Define Your Requirements"
+              className="w-full h-48 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Extensive Global Network
+            Define Your Requirements
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            KIAQ Talent Platform accesses our exclusive marketplace spanning more than 135 countries with diverse technical expertise.
+            Share your project needs, technical skills required, and timeline. Our team works with you to understand your specific requirements.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
@@ -568,17 +559,17 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg27}
-              alt="Intelligent Matching Platform"
-              className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
+              alt="AI-Powered Matching"
+              className="w-full h-48 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Advanced Matching Technology
+            Smart Talent Matching
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            Sophisticated AI matching algorithms analyze our global talent marketplace with exceptional speed and precision.
+            Our AI algorithms scan our global network to find the perfect match based on skills, experience, and project compatibility.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
@@ -591,21 +582,21 @@ const steps = [
           <div className="overflow-hidden rounded-xl">
             <img
               src={webimg28}
-              alt="Certified Technical Professionals"
-              className="w-full rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
+              alt="Onboard & Collaborate"
+              className="w-full h-48 object-cover rounded-xl transform transition-transform duration-500 group-hover:scale-[1.04]"
             />
           </div>
 
           <h3 className="text-xl font-semibold text-gray-900 mt-6">
-            Certified Technical Specialists
+            Onboard & Collaborate
           </h3>
 
           <p className="text-gray-600 mt-2 leading-relaxed">
-            KIAQ technology professionals demonstrate expertise in the most in-demand technical skill sets and methodologies.
+            Seamlessly integrate matched talent into your team with our support. We handle contracts, onboarding, and ongoing collaboration.
           </p>
 
           <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
-            Explore Our Talent →
+            Learn More →
           </button>
         </div>
 

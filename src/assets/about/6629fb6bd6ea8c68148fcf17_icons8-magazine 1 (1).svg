@@ -11,8 +11,8 @@
 <path d="M22.2207 28.5H25.2747" stroke="#173B3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_2005_30696" x1="34.9124" y1="9.24134" x2="18.1678" y2="32.8569" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0FDDCC"/>
-<stop offset="0.7" stop-color="#0FDDCC" stop-opacity="0"/>
+<stop stop-color="#ff5500"/>
+<stop offset="0.7" stop-color="#ff5500" stop-opacity="0"/>
 </linearGradient>
 </defs>
 </svg>

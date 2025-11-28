@@ -23,18 +23,30 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="footer-social-icons">
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-x-twitter"></i>
-              <i className="fab fa-linkedin"></i>
-              <i className="fab fa-github"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-youtube"></i>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-youtube"></i>
+              </a>
             </div>
 
             {/* COPYRIGHT */}
-            <p className="footer-copyright">
-              © 2025 KIAQ, All Rights Reserved.
-            </p>
+          <p className="footer-copyright">
+  © {new Date().getFullYear()} KIAQ Technologies Pvt Ltd, All Rights Reserved.
+</p>
 
             {/* BOTTOM LINKS */}
             <div className="footer-links">
@@ -178,6 +190,11 @@ export default function Footer() {
             gap: 1.25rem;
             font-size: 1.375rem;
           }
+        }
+
+        .footer-social-icons a {
+          text-decoration: none;
+          color: inherit;
         }
 
         .footer-social-icons i {
