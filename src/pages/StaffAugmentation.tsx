@@ -149,7 +149,7 @@ const steps = [
 
       {/* Description */}
       <p
-        className="text-gray-200 font-light mb-6 sm:mb-8"
+        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify"
         style={{
           fontSize: "clamp(0.9rem, 2vw, 1rem)",
           lineHeight: 1.65,

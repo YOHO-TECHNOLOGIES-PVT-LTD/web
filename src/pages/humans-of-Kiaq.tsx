@@ -232,11 +232,11 @@ export default function WhyKiaq() {
                 Solutions
               </h1>
 
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-justify">
                 Kiaq Technologies delivers innovative, scalable technology solutions that drive digital transformation and accelerate business growth across diverse industry sectors.
               </p>
 
-              <button className="mt-4 sm:mt-5 bg-orange-500 text-black font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
+              <button className="mt-4 sm:mt-5 bg-orange-500 text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
                 Schedule Consultation
               </button>
             </div>
@@ -294,7 +294,7 @@ export default function WhyKiaq() {
     </div>
     
     {/* Static Grid Layout */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-justify">
       {useCases.map((useCase, index) => (
         <UseCaseCard key={index} useCase={useCase} index={index} />
       ))}

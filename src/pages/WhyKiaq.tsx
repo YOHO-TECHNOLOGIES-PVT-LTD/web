@@ -82,7 +82,7 @@ export default function WhyKiaq() {
     Strategic Tech Partner for Business Transformation
   </h1>
 
-  <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-justify sm:text-left">
+  <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-justify sm:text-justify">
     Beyond IT Services - From IT Support to Strategic Tech Partnership. At Kiaq Technologies, we go beyond traditional IT support to become your strategic technology partner. Our mission is to align innovative software solutions with your long-term business goals, ensuring seamless operations, enhanced efficiency, and sustainable growth.
   </p>
 

@@ -84,7 +84,7 @@ const images = {
 
       {/* Description */}
       <p
-        className="text-gray-200 font-light mb-6 sm:mb-8"
+        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify"
         style={{
           fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
           lineHeight: 1.65,
