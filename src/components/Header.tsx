@@ -17,6 +17,11 @@ export default function Header() {
   
   const navigate = useNavigate();
 
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   // All searchable pages
   const pages = [
     { name: 'Home', path: '/' },

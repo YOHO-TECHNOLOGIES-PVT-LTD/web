@@ -13,9 +13,9 @@ import webimg12 from "../assets/usecase/6626c1c02f6333755ec89474_Cloudflare_Logo
 import webimg13 from "../assets/usecase/66347e6ccfb7ada3bdf3ce34_Vector (3).svg";
 import webimg14 from "../assets/usecase/665e67458fbe05d52c24cf21_groupm-logo.svg";
 // import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
-import tenimg from '../assets/whykiaq/66918974aa12c13b860ad1ee_6656923d82650c83f2ebfe15_Resources - future is borderless - thumb (1).avif';
-import eleimg from '../assets/whykiaq/665690116a49a409e7a60488_wim-van-t-einde-uj7eb7CgqRk-unsplash 3.png';
-import twlimg from '../assets/whykiaq/66568ede5d15566626a2c37b_Resources – research finds – thumb.png';
+import tenimg from '../assets/whykiaq/10.jpg';
+import eleimg from '../assets/whykiaq/11.jpg';
+import twlimg from '../assets/whykiaq/12.jpg';
 
 import sol21 from '../assets/solutions/hand-touching-tablet.jpg';
 export default function WebAppDevelopmentHero() {
