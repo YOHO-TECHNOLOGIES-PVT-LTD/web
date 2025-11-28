@@ -56,29 +56,34 @@ const steps = [
  const [activeIndex, setActiveIndex] = useState(0);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
   
-  const features = [
-    {
-  title: "Access Elite Global Technology Talent",
-  description: "Connect with a curated network of specialized engineers across DevOps, Data Science, and Artificial Intelligence—thoroughly vetted and prepared to accelerate your strategic initiatives."
-},
-{
-  title: "Build Without Geographical Constraints",
-  description: "KIAQ delivers world-class engineering expertise to international teams, enabling seamless collaboration and scalable project outcomes across global operations."
-},
-{
-  title: "Specialized Expertise for Evolving Requirements",
-  description: "From DevOps infrastructure to AI implementation, our technical specialists provide high-quality solutions customized to your dynamic business objectives and growth trajectory."
-},
-{
-  title: "Streamlined Global Collaboration Framework",
-  description: "Operate efficiently across multiple time zones with professionals experienced in remote-first execution methodologies and international project delivery."
-},
-{
-  title: "Innovation Through Global Technical Excellence",
-  description: "Leverage diverse engineering expertise that introduces fresh perspectives and drives continuous technological innovation within your organization."
-}
+ const features = [
+  {
+    title: "Access Elite Global Technology Talent",
+    description:
+      "Connect with a curated network of highly specialized engineers across DevOps, Data Science, and Artificial Intelligence. Each professional is rigorously screened and handpicked based on technical depth, problem-solving ability, and project execution excellence. Gain instant access to talent capable of accelerating mission-critical initiatives. Build with confidence knowing every engineer aligns with your engineering culture and growth objectives."
+  },
+  {
+    title: "Build Without Geographical Constraints",
+    description:
+      "KIAQ enables you to scale your engineering capabilities without the limitations of local hiring challenges. Collaborate with world-class experts regardless of where your teams are located, ensuring seamless communication and workflow integration. Our remote-first model ensures productivity, alignment, and technical efficiency at every stage. Expand your delivery capacity globally while maintaining uncompromised engineering quality."
+  },
+  {
+    title: "Specialized Expertise for Evolving Requirements",
+    description:
+      "Whether you need DevOps automation, cloud scalability, data intelligence, or AI-powered transformations, our specialists bring deep domain expertise. Every solution is tailored to your evolving business requirements, ensuring adaptability and long-term value. Work with professionals who understand modern architectures and emerging technologies. Stay ahead of industry expectations with technical precision engineered for growth."
+  },
+  {
+    title: "Streamlined Global Collaboration Framework",
+    description:
+      "Operate effortlessly across time zones with engineers trained in remote execution and global delivery models. Our collaboration frameworks ensure clarity, transparency, and continuous progress across distributed teams. Experience structured communication, real-time updates, and smooth integration into your existing workflows. Achieve predictable outcomes with a delivery system optimized for global operations."
+  },
+  {
+    title: "Innovation Through Global Technical Excellence",
+    description:
+      "Leverage diverse engineering intelligence shaped by global experience and advanced problem-solving capabilities. Our talent pool introduces fresh ideas and high-impact technical innovations that drive transformation. Move beyond traditional development with engineers who challenge norms and elevate your product vision. Harness creativity, precision, and world-class execution to stay ahead in a competitive digital landscape."
+  }
+];
 
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -462,7 +467,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             ref={el => { contentRefs.current[index] = el }}
             className="min-h-[45vh] sm:min-h-[55vh] lg:min-h-[70vh] flex items-center py-3 sm:py-4"
           >
-            <div className="w-full max-w-xl text-justify">
+            <div className="w-full max-w-xl ">
               <h3 
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-500"
                 style={{ 
