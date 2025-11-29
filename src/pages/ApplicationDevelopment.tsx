@@ -5,13 +5,13 @@ import webimg2 from "../assets/people-analyzing-checking-finance-graphs-office.j
 import webimg3 from "../assets/representation-user-experience-interface-design.jpg";
 import webimg4 from "../assets/technology-global-ai-race-information-network-connection.jpg";
 
-import webimg8 from "../assets/usecase/6626c1bf2f6333755ec893d1_Layer_1 (2).svg";
-import webimg9 from "../assets/usecase/6626c1bf2f6333755ec893f5_Coursera-Logo_600x600 (1).svg";
-import webimg10 from "../assets/usecase/6626c1bf2f6333755ec893fa_ViacomCBS (2).svg";
-import webimg11 from "../assets/usecase/6626c1c02f6333755ec89435_Casper_Sleep_logo (2).svg";
-import webimg12 from "../assets/usecase/6626c1c02f6333755ec89474_Cloudflare_Logo (2).svg";
-import webimg13 from "../assets/usecase/66347e6ccfb7ada3bdf3ce34_Vector (3).svg";
-import webimg14 from "../assets/usecase/665e67458fbe05d52c24cf21_groupm-logo.svg";
+import webimg8 from "../assets/logo/react-removebg-preview.png";
+import webimg9 from "../assets/logo/express_js-removebg-preview.png";
+import webimg10 from "../assets/logo/node_js-removebg-preview.png";
+import webimg11 from "../assets/logo/MONGOdb-removebg-preview.png";
+import webimg12 from "../assets/logo/reactnative-removebg-preview.png";
+import webimg13 from "../assets/logo/tailwind-removebg-preview.png";
+import webimg14 from "../assets/logo/TS-removebg-preview.png";
 // import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
 import tenimg from '../assets/whykiaq/7.jpg';
 import eleimg from '../assets/whykiaq/8.jpg';
@@ -380,13 +380,13 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
 
           {/* Auto Scrolling Logos Row */}
           <div className="relative overflow-hidden mt-20">
-            <div className="flex items-center justify-start gap-16 md:gap-20 opacity-70 animate-scroll">
+            <div className="flex items-center justify-start gap-16 md:gap-22 opacity-70 animate-scroll">
               {[...logos, ...logos].map((logo, idx) => (
                 <img
                   key={idx}
                   src={logo}
                   alt="client logo"
-                  className="h-6 md:h-7 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
+                  className="h-20 md:h-22 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
                 />
               ))}
             </div>
