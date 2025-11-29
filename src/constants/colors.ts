@@ -3,5 +3,5 @@ export const UI_CONSTANTS = {
   DARK: '#002b38',
   WHITE: '#ffffff',
   orange: '#ff4600',
-  FONT_FAMILY: 'Arial, sans-serif'
+  FONT_FAMILY: 'Inter Variable, sans-serif'
 } as const;

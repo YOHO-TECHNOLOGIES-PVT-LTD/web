@@ -138,10 +138,10 @@ const useCases = [
         }
         @media (max-width: 640px) {
           .animate-scroll-left {
-            animation: scroll-left 30s linear infinite;
+            animation: scroll-left 20s linear infinite;
           }
           .animate-scroll-right {
-            animation: scroll-right 30s linear infinite;
+            animation: scroll-right 20s linear infinite;
           }
         }
       `}</style>

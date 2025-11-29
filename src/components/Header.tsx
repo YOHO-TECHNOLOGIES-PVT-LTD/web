@@ -39,7 +39,6 @@ export default function Header() {
     { name: 'Cloud & DevOps', path: '/cloud-devops' },
     { name: 'Adaptive Hiring', path: '/adaptive-hiring' },
     { name: 'How KIAQ Works', path: '/how-kiaq-works' },
-    { name: 'Successfully Manage Remote Teams', path: '/successfully-manage-remote' },
     { name: 'Our Expertise', path: '/our-expertise' },
     { name: 'Contact Us', path: '/Contact-us' },
     { name: 'Use Cases', path: '/use-cases' },
@@ -492,13 +491,13 @@ export default function Header() {
                     >
                       How Kiaq Works
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/successfully-manage-remote"
                       onClick={closeDropdown}
                       className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-400 hover:bg-gray-50 rounded transition-colors"
                     >
                       Successfully Manage Remote Teams
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </div>
@@ -674,14 +673,14 @@ export default function Header() {
                       >
                         › How Kiaq Works
                       </Link>
-                      <Link
+                      {/* <Link
                         to="/successfully-manage-remote"
                         onClick={closeDropdown}
                         className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
                         style={{ color: "#2d4a4a" }}
                       >
                         › Successfully Manage Remote Teams
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>

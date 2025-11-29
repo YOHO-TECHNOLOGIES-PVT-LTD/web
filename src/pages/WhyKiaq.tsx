@@ -1,5 +1,4 @@
 import kiaqimag from '../assets/whykiaq/who wen  are banner.png'
-
 import imgwh from "../assets/Home1/image.png";
 import { FaGlobe, FaChalkboardTeacher, FaSmile, FaUsers, FaHandshake, FaShareAlt } from "react-icons/fa";
 import ourimg from '../assets/Home1/our-team01.webp';
@@ -35,7 +34,7 @@ const StatBox = ({ label, value, suffix = "", description, Icon }: StatBoxProps)
   }, [value]);
 
   return (
-    <div className="bg-[#002b38] rounded-2xl p-8 text-center shadow-lg w-full transition-transform duration-300 hover:scale-[1.02]">
+    <div className="bg-[#002b38] rounded-2xl p-8 text-center shadow-lg w-full transition-transform duration-300 hover:scale-[1.02] font-['Inter_Variable',_sans-serif]">
       
       {/* Icon */}
       <div className="flex justify-center mb-4">
@@ -58,11 +57,11 @@ const StatBox = ({ label, value, suffix = "", description, Icon }: StatBoxProps)
 export default function WhyKiaq() {
  
   return (
-    <>
+    <div className="font-['Inter_Variable',_sans-serif]">
      
      {/* First Section */}
    <section
-        className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat"
+        className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat font-['Inter_Variable',_sans-serif]"
         style={{ backgroundImage: `url(${kiaqimag})` }}
       >
         {/* Dark gradient overlay */}
@@ -99,7 +98,7 @@ export default function WhyKiaq() {
 
       {/* Second Section */}
    
-   <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+   <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-['Inter_Variable',_sans-serif]">
   <div className="max-w-7xl mx-auto bg-[#fff2eb] rounded-2xl shadow-sm overflow-hidden">
     <div className="flex flex-col md:flex-row">
 
@@ -137,7 +136,7 @@ export default function WhyKiaq() {
   
 
 
- <section className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+ <section className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 font-['Inter_Variable',_sans-serif]">
   <div className="max-w-7xl mx-auto">
 
     {/* Header */}
@@ -149,7 +148,7 @@ export default function WhyKiaq() {
       </div>
 
       <p className="text-slate-700 max-w-sm text-justify leading-relaxed text-sm sm:text-base">
-        <span className="font-semibold">Kiaq</span> built on a foundation of relentless improvement, where every day is an opportunity to grow and evolve. We sharpen our technical skills continuously, ensuring our expertise stays ahead of industry standards. With a commitment to innovation and detail, we deliver solutions that are both intelligent and impactful. Excellence isn’t just a goal for us—it’s the driving force behind everything we create.
+        <span className="font-semibold">Kiaq</span> built on a foundation of relentless improvement, where every day is an opportunity to grow and evolve. We sharpen our technical skills continuously, ensuring our expertise stays ahead of industry standards. With a commitment to innovation and detail, we deliver solutions that are both intelligent and impactful. Excellence isn't just a goal for us—it's the driving force behind everything we create.
       </p>
     </div>
 
@@ -212,7 +211,7 @@ export default function WhyKiaq() {
 
     {/* Fifth Section */}
   
-<section className="relative w-full bg-[#fff2eb] text-black py-16 sm:py-20 overflow-hidden">
+<section className="relative w-full bg-[#fff2eb] text-black py-16 sm:py-20 overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Background Flower Pattern */}
   <div
     className="absolute inset-0 opacity-20"
@@ -243,7 +242,7 @@ export default function WhyKiaq() {
 
       {/* Item 1 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaGlobe size={22} />
         </div>
         <div>
@@ -256,7 +255,7 @@ export default function WhyKiaq() {
 
       {/* Item 2 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaChalkboardTeacher size={22} />
         </div>
         <div>
@@ -269,7 +268,7 @@ export default function WhyKiaq() {
 
       {/* Item 3 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaSmile size={22} />
         </div>
         <div>
@@ -282,7 +281,7 @@ export default function WhyKiaq() {
 
       {/* Item 4 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaUsers size={22} />
         </div>
         <div>
@@ -295,7 +294,7 @@ export default function WhyKiaq() {
 
       {/* Item 5 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaHandshake size={22} />
         </div>
         <div>
@@ -310,7 +309,7 @@ export default function WhyKiaq() {
 
       {/* Item 6 */}
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="flex-shrink-0 bg-[#0c7262] text-white p-3 sm:p-4 rounded-xl shadow-md">
+        <div className="flex-shrink-0 bg-[#ff5500] text-white p-3 sm:p-4 rounded-xl shadow-md">
           <FaShareAlt size={22} />
         </div>
         <div>
@@ -327,8 +326,8 @@ export default function WhyKiaq() {
   </div>
 </section>
 
-    {/* Fifth Section */}
-       <section className="w-full py-14 sm:py-20 bg-white flex flex-col items-center px-4 sm:px-6">
+    {/* Sixth Section */}
+       <section className="w-full py-14 sm:py-20 bg-white flex flex-col items-center px-4 sm:px-6 font-['Inter_Variable',_sans-serif]">
   <h2 className="text-2xl sm:text-4xl font-bold text-center mb-10 sm:mb-14 text-[#011123]">
     KIAQ At A Glance
   </h2>
@@ -371,14 +370,10 @@ export default function WhyKiaq() {
 </section>
 
 
-    {/* Sixth Section */}
-
-     
-
     {/* Seventh Section */}
 
         
-<section className="w-full py-14 sm:py-20 px-4 sm:px-6 bg-white flex justify-center">
+<section className="w-full py-14 sm:py-20 px-4 sm:px-6 bg-white flex justify-center font-['Inter_Variable',_sans-serif]">
   <div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-2 items-start lg:items-center gap-0">
 
     {/* LEFT IMAGE */}
@@ -413,14 +408,7 @@ export default function WhyKiaq() {
   </div>
 </section>
 
-
-        {/* {8th Section} */}
-
         
-    </>
-
-
-
-
+    </div>
   );
 }

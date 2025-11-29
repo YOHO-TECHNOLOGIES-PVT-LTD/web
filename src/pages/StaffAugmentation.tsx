@@ -6,7 +6,7 @@ import webimg22 from "../assets/solutions/businessman-holding-tablet-with-virtua
 import webimg23 from "../assets/solutions/standard-quality-control-concept-m.jpg";
 import webimg24 from "../assets/solutions/person-office-analyzing-checking-finance-graphs.jpg";
 import webimg25 from "../assets/solutions/businesspeople-planning-tasks-with-sticky-notes.jpg";
-import imgfocus from "../assets/660dcc7f45ad8881324199b5_665edf960bfc2a8fb317836a_Make_work_happen_fast-transcode.webm";
+import imgfocus from "../assets/hkw.mp4";
 import webimg26 from "../assets/solutions/network-graphic-overlay-banner-background.jpg";
 import webimg27 from "../assets/solutions/two-factor-authentication-concept.jpg";
 import webimg28 from "../assets/solutions/colleagues-discussing-work-project.jpg";
@@ -116,7 +116,7 @@ const steps = [
   return (
     <>
    <section
-  className="relative w-full min-h-[75vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden"
+  className="relative w-full min-h-[75vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
   {/* Background image */}
@@ -141,7 +141,7 @@ const steps = [
 
       {/* Title */}
       <h1
-        className="text-white font-bold leading-snug mb-4 sm:mb-5"
+        className="text-white font-bold leading-snug mb-4 sm:mb-5 font-['Inter_Variable',_sans-serif]"
         style={{
           fontSize: "clamp(1.5rem, 4vw, 2.7rem)",
           lineHeight: 1.22,
@@ -154,7 +154,7 @@ const steps = [
 
       {/* Description */}
       <p
-        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify"
+        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify font-['Inter_Variable',_sans-serif]"
         style={{
           fontSize: "clamp(0.9rem, 2vw, 1rem)",
           lineHeight: 1.65,
@@ -168,7 +168,7 @@ const steps = [
 
       {/* CTA Button */}
       <button
-        className="px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto"
+        className="px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
         style={{
           backgroundColor: UI_CONSTANTS.PRIMARY,
           color: UI_CONSTANTS.WHITE,
@@ -179,7 +179,7 @@ const steps = [
     </div>
 
     {/* Stats Section */}
-    <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-12 md:mt-14 text-gray-200">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-12 md:mt-14 text-gray-200 font-['Inter_Variable',_sans-serif]">
 
       <div className="text-center sm:text-left min-w-[140px]">
         <p className="text-lg sm:text-2xl font-semibold text-white mb-1">95%</p>
@@ -210,7 +210,7 @@ const steps = [
 
 
   {/* {second section} */}
-    <section className="w-full bg-[#f7faf9] py-8 sm:py-10 md:py-14 lg:py-18 px-3 sm:px-4 lg:px-20 relative overflow-hidden">
+    <section className="w-full bg-[#f7faf9] py-8 sm:py-10 md:py-14 lg:py-18 px-3 sm:px-4 lg:px-20 relative overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Decorative faint circle pattern on the right (SVG) */}
   <svg
     className="absolute right-0 top-0 h-full w-[50%] opacity-10 pointer-events-none hidden md:block"
@@ -229,7 +229,7 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-justify lg:text-left">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-justify lg:text-left font-['Inter_Variable',_sans-serif]">
       Experience the KIAQ Advantage
     </h1>
 
@@ -277,43 +277,43 @@ const steps = [
 
       {/* Right text block */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-justify lg:text-left">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-justify lg:text-left font-['Inter_Variable',_sans-serif]">
           Access Premium Talent with
           <br className="hidden sm:inline" />
           Exceptional Efficiency
         </h2>
 
-        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-justify">
+        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
 Our integrated methodology combines AI-powered technology platforms with the expertise of seasoned recruitment professionals to deliver optimal talent solutions. At Kiaq, we are built on a foundation of relentless improvement, constantly refining our processes to stay ahead in a competitive landscape. We sharpen our technical skills daily, ensuring that every solution we provide is innovative and precise. Our commitment to excellence drives us to go beyond expectations in every project.        </p>
       </div>
     </div>
 
     {/* Bottom four-column features */}
-    <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 border-t border-gray-200 pt-4 sm:pt-6 md:pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+    <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 border-t border-gray-200 pt-4 sm:pt-6 md:pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 font-['Inter_Variable',_sans-serif]">
       <div className="pr-0 sm:pr-3">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-justify">Streamlined Recruitment Process</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-justify">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-justify font-['Inter_Variable',_sans-serif]">Streamlined Recruitment Process</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-justify font-['Inter_Variable',_sans-serif]">
           KIAQ Talent Platform facilitates intelligent and efficient processes throughout the complete recruitment lifecycle.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Certified Elite Professionals</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Certified Elite Professionals</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           We provide industry-leading professional development, continuous education, and strategic networking opportunities.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 lg:border-l border-gray-200 lg:pl-3 pt-3 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0 text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Comprehensive Support Services</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Comprehensive Support Services</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           End-to-end assistance through recruitment, acquisition, training, qualification, matching, and project delivery phases.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900">Premium Client Experience</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Premium Client Experience</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           Comprehensive service delivery from dedicated customer success and talent management teams.
         </p>
       </div>
@@ -326,7 +326,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
     {/* {third section} */}
 
-<section className="relative w-full bg-white py-10 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 lg:px-20 overflow-hidden">
+<section className="relative w-full bg-white py-10 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4 lg:px-20 overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* TOP PATTERN */}
   <svg
     className="absolute right-0 top-0 w-[55%] opacity-20 pointer-events-none hidden md:block"
@@ -348,11 +348,11 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl text-justify">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl text-justify font-['Inter_Variable',_sans-serif]">
       Access the World's Premier Certified Global Talent Network
     </h1>
 
-    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-justify">
+    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
       Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.
     </p>
 
@@ -397,7 +397,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
       </div>
 
       {/* LEFT SIDE ACCORDION → Shows second on mobile */}
-      <div className="w-full lg:w-[48%] space-y-2 sm:space-y-3">
+      <div className="w-full lg:w-[48%] space-y-2 sm:space-y-3 font-['Inter_Variable',_sans-serif]">
         {steps.map((item, idx) => (
           <div
             key={idx}
@@ -407,14 +407,14 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             }`}
           >
             <div className="flex justify-between items-center">
-              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-2">{item.title}</p>
+              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-2 font-['Inter_Variable',_sans-serif]">{item.title}</p>
               <span className="text-gray-600 text-lg sm:text-xl flex-shrink-0">
                 {openIndex === idx ? "▲" : "▼"}
               </span>
             </div>
 
             {openIndex === idx && (
-              <p className="text-gray-600 text-sm sm:text-[15px] mt-1 sm:mt-2 leading-relaxed text-justify">
+              <p className="text-gray-600 text-sm sm:text-[15px] mt-1 sm:mt-2 leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
                 {item.desc}
               </p>
             )}
@@ -442,7 +442,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
 
         {/* {fourth section} */}
-       <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-white">
+       <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-white font-['Inter_Variable',_sans-serif]">
   <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-12">
     <div className="flex flex-col lg:flex-row lg:gap-12">
       {/* Mobile/Tablet Video - Shows First on Mobile */}
@@ -469,7 +469,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
           >
             <div className="w-full max-w-xl ">
               <h3 
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-500"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 leading-tight transition-all duration-500 font-['Inter_Variable',_sans-serif]"
                 style={{ 
                   color: UI_CONSTANTS.DARK,
                   opacity: activeIndex === index ? 1 : 0.3,
@@ -479,7 +479,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
               </h3>
               
               <p 
-                className="text-base sm:text-lg leading-relaxed transition-all duration-500"
+                className="text-base sm:text-lg leading-relaxed transition-all duration-500 font-['Inter_Variable',_sans-serif]"
                 style={{ 
                   color: UI_CONSTANTS.GRAY,
                   opacity: activeIndex === index ? 1 : 0.3,
@@ -510,7 +510,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
     {/* CTA Button */}
     <div className="text-center mt-12 sm:mt-16 lg:mt-20">
       <button 
-        className="px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+        className="px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 font-['Inter_Variable',_sans-serif]"
         style={{ 
           backgroundColor: UI_CONSTANTS.PRIMARY,
           color: UI_CONSTANTS.WHITE
@@ -526,10 +526,10 @@ Our integrated methodology combines AI-powered technology platforms with the exp
   
     {/* fourth.one section */}
 
-<section className="relative w-full bg-white py-20 px-6 lg:px-20 overflow-hidden">
+<section className="relative w-full bg-white py-20 px-6 lg:px-20 overflow-hidden font-['Inter_Variable',_sans-serif]">
 
       {/* Title */}
-      <h2 className="text-4xl font-bold text-center text-gray-900">
+      <h2 className="text-4xl font-bold text-center text-gray-900 font-['Inter_Variable',_sans-serif]">
         How KIAQ Works: Simple & Efficient Talent Matching
       </h2>
 
@@ -546,15 +546,15 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             />
           </div>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6">
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 font-['Inter_Variable',_sans-serif]">
             Define Your Requirements
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed">
+          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
             Share your project needs, technical skills required, and timeline. Our team works with you to understand your specific requirements.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
+          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
           </button>
         </div>
@@ -569,15 +569,15 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             />
           </div>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6">
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 font-['Inter_Variable',_sans-serif]">
             Smart Talent Matching
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed">
+          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
             Our AI algorithms scan our global network to find the perfect match based on skills, experience, and project compatibility.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
+          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
           </button>
         </div>
@@ -592,15 +592,15 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             />
           </div>
 
-          <h3 className="text-xl font-semibold text-gray-900 mt-6">
+          <h3 className="text-xl font-semibold text-gray-900 mt-6 font-['Inter_Variable',_sans-serif]">
             Onboard & Collaborate
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed">
+          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
             Seamlessly integrate matched talent into your team with our support. We handle contracts, onboarding, and ongoing collaboration.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all">
+          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
           </button>
         </div>
@@ -617,7 +617,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
           {/* {6th Section} */}
 
-         <section className="dual-action-button-cta">
+         <section className="dual-action-button-cta font-['Inter_Variable',_sans-serif]">
            <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
              
              {/* LEFT SECTION */}
@@ -650,7 +650,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                      </svg>
                    </div>
                    <p
-                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase font-['Inter_Variable',_sans-serif]"
                      style={{ color: UI_CONSTANTS.WHITE }}
                    >
                      GET STARTED
@@ -658,7 +658,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                  </div>
          
                  <h2
-                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight font-['Inter_Variable',_sans-serif]"
                    style={{ color: UI_CONSTANTS.WHITE }}
                  >
                    Build Your Future Technology Team with KIAQ
@@ -669,7 +669,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                      backgroundColor: UI_CONSTANTS.DARK,
                      color: UI_CONSTANTS.WHITE,
                    }}
-                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
+                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
                  >
                    Request Strategic Consultation
                  </button>
@@ -706,7 +706,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                      </svg>
                    </div>
                    <p
-                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase font-['Inter_Variable',_sans-serif]"
                      style={{ color: '#173B3F' }}
                    >
                      CONNECT WITH US
@@ -714,7 +714,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                  </div>
          
                  <h2
-                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight font-['Inter_Variable',_sans-serif]"
                    style={{ color: '#173B3F' }}
                  >
                    Let Us Understand Your Technology Requirements
@@ -726,7 +726,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
                      color: '#173B3F',
                      border: '2px solid rgba(23, 59, 63, 0.2)',
                    }}
-                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
                  >
                    Schedule Strategic Meeting
                  </button>

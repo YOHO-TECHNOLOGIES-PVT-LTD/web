@@ -41,9 +41,9 @@ const images = {
 };
 
   return (
-    <>
+    <div className="font-['Inter_Variable',_sans-serif]">
     <section
-  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden"
+  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
   {/* Background image */}
@@ -126,7 +126,7 @@ const images = {
 
 
   {/* {second section} */}
-<section className="relative w-full bg-white overflow-hidden py-7 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12">
+<section className="relative w-full bg-white overflow-hidden py-7 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
   {/* STAR PATTERN TOP-RIGHT */}
   <div
     aria-hidden
@@ -290,7 +290,7 @@ const images = {
 
     {/* {third section} */}
 
-   <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12">
+   <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
   {/* Scrollable SVG Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -315,40 +315,40 @@ const images = {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
       {[
         {
-          title: "Predictive Analytics",
-          desc: "Advanced statistical modeling and forecasting to anticipate market trends and customer behavior",
-          gradient: "from-[#e3f3e9] to-[#f1faf4]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Machine Learning Solutions",
-          desc: "Custom ML models for classification, regression, and pattern recognition applications",
-          gradient: "from-[#b6d9d2] to-[#d3efea]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Natural Language Processing",
-          desc: "Text analysis, sentiment analysis, and language understanding for unstructured data",
-          gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Computer Vision Systems",
-          desc: "Image and video analysis for quality control, surveillance, and automation",
-          gradient: "from-[#e7f6dc] to-[#f1fbef]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "AI Strategy & Consulting",
-          desc: "End-to-end AI implementation roadmap and digital transformation advisory",
-          gradient: "from-[#b6d9d2] to-[#d3efea]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
+  title: "Predictive Analytics",
+  desc: "Advanced statistical modeling and forecasting to anticipate market trends and customer behavior with precision-driven insights",
+  gradient: "from-[#e3f3e9] to-[#f1faf4]",
+  pattern:
+    "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+},
+{
+  title: "Machine Learning Solutions",
+  desc: "Custom ML models for classification, regression, and pattern recognition applications with scalable deployment frameworks",
+  gradient: "from-[#b6d9d2] to-[#d3efea]",
+  pattern:
+    "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+},
+{
+  title: "Natural Language Processing",
+  desc: "Text analysis, sentiment analysis, and language understanding for unstructured data with contextual intelligence capabilities",
+  gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+  pattern:
+    "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+},
+{
+  title: "Computer Vision Systems",
+  desc: "Image and video analysis for quality control, surveillance, and automation with real-time processing algorithms",
+  gradient: "from-[#e7f6dc] to-[#f1fbef]",
+  pattern:
+    "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+},
+{
+  title: "AI Strategy & Consulting",
+  desc: "End-to-end AI implementation roadmap and digital transformation advisory with measurable business impact assessment",
+  gradient: "from-[#b6d9d2] to-[#d3efea]",
+  pattern:
+    "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+},
       ].map((card, idx) => (
         <div
           key={idx}
@@ -358,7 +358,7 @@ const images = {
             <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-snug text-justify">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -408,7 +408,7 @@ const images = {
     {/* fourth.one section */}
 
     {/* Enterprise AI Solutions Section */}
-<section className="relative w-full bg-white py-12 px-4 sm:px-6 lg:px-10 overflow-hidden">
+<section className="relative w-full bg-white py-12 px-4 sm:px-6 lg:px-10 overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Background Pattern */}
   <div
     className="absolute inset-0 opacity-15 pointer-events-none"
@@ -460,7 +460,7 @@ const images = {
 
         {/* {fifth section} */}
 
-    <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden">
+    <section className="relative w-full bg-[#f8fafc] text-black py-24 overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Flower Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -566,7 +566,7 @@ const images = {
 </section>
           {/* {6th Section} */}
 
-         <section className="dual-action-button-cta">
+         <section className="dual-action-button-cta font-['Inter_Variable',_sans-serif]">
   <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
     
     {/* LEFT SECTION */}
@@ -684,6 +684,6 @@ const images = {
   </div>
 </section>
 
-    </>
+    </div>
   );
 }
