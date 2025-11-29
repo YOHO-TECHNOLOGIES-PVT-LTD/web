@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import webimg from "../assets/solutions/Data engineering and analytics hero.avif";
+import webimg from "../assets/solutions/de1.jpg";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/admin-photovoltaics-factory-updates-machinery-software-talks-with-manager.jpg";
 import webimg3 from "../assets/hologram-projector-screen-with-cloud-system-technology.jpg";

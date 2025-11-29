@@ -1,4 +1,4 @@
-import kiaqimag from '../assets/6643e549495270ffe8edb1e8_ForCompanies_AdaptiveHiring_5-steps-to-building-a-successful-global-team_InteriorPageHero-p-2000.avif'
+import kiaqimag from '../assets/ex1.jpg'
 import fvimg from '../assets/whykiaq/img7.jpg';
 import ninth from '../assets/whykiaq/team-man-woman-working-media-field-with-laptop-tablet.jpg';
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import webimg from "../assets/solutions/Data science and ai hero.avif";
+import webimg from "../assets/solutions/ds3.jpg";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/freelancer-woman-comparing-graphics-from-clipboard-with-grafics-from-computer-business-office.jpg";
 import webimg3 from "../assets/data-center-programmers-collaborating-working-neural-networks-ai-databases.jpg";

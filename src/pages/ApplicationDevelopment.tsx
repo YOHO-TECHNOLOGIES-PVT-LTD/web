@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import webimg from "../assets/solutions/665f0e6451687baa423524d5_application_engineering_banner_2x-p-2000.webp";
+import webimg from "../assets/solutions/a1.jpg";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/people-analyzing-checking-finance-graphs-office.jpg";
 import webimg3 from "../assets/representation-user-experience-interface-design.jpg";
@@ -213,51 +213,39 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10">
 
     {/* TABS */}
     <div className="mt-4 sm:mt-5">
-      <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-5 max-w-[700px] pb-2">
-        {tabs.map((tab, idx) => {
+      <div className="flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 max-w-[700px] pb-2">
+        {tabs.map((tab) => {
           const isActive = tab === activeTab;
           return (
-            <div key={tab} className="flex items-center">
-              <button
-                onClick={() =>
-                  setActiveTab(
-                    tab as
-                      | "Enterprise Web Solutions"
-                      | "Custom Application Development"
-                      | "Digital Transformation"
-                  )
-                }
-                className="relative text-xs sm:text-sm md:text-base font-medium pb-1.5 transition-colors whitespace-nowrap"
-                style={{
-                  color: isActive ? "#011123" : "rgba(1,17,35,0.6)",
-                }}
-              >
-                {tab}
+            <button
+              key={tab}
+              onClick={() =>
+                setActiveTab(
+                  tab as
+                    | "Enterprise Web Solutions"
+                    | "Custom Application Development"
+                    | "Digital Transformation"
+                )
+              }
+              className="relative text-xs sm:text-sm md:text-base font-medium pb-1.5 transition-colors whitespace-nowrap"
+              style={{
+                color: isActive ? "#011123" : "rgba(1,17,35,0.6)",
+              }}
+            >
+              {tab}
 
-                {isActive && (
-                  <span
-                    className="absolute left-0 right-0"
-                    style={{
-                      height: 3,
-                      bottom: -6,
-                      background: "#FF6600",
-                      borderRadius: 2,
-                    }}
-                  />
-                )}
-              </button>
-
-              {idx < tabs.length - 1 && (
-                <div
-                  className="mx-2 sm:mx-4 hidden sm:block"
+              {isActive && (
+                <span
+                  className="absolute left-0 right-0"
                   style={{
-                    width: 32,
-                    height: 1,
-                    background: "rgba(1,17,35,0.06)",
+                    height: 3,
+                    bottom: -6,
+                    background: "#FF6600",
+                    borderRadius: 2,
                   }}
                 />
               )}
-            </div>
+            </button>
           );
         })}
       </div>
@@ -327,51 +315,51 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10">
     {/* Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
       {[
-        {
-          title: "Custom Web Application Development",
-          desc: "Tailored solutions designed to meet your specific business requirements and objectives",
-          gradient: "from-[#e3f3e9] to-[#f1faf4]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Enterprise Portal Development",
-          desc: "Secure, scalable portals that streamline internal processes and enhance collaboration",
-          gradient: "from-[#b6d9d2] to-[#d3efea]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "E-commerce Platform Development",
-          desc: "Feature-rich online stores optimized for conversion, security, and user experience",
-          gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Legacy System Modernization",
-          desc: "Transform outdated systems into modern, efficient, and scalable web applications",
-          gradient: "from-[#e7f6dc] to-[#f1fbef]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
-        {
-          title: "Progressive Web Applications",
-          desc: "Native-like web experiences with offline capabilities and enhanced performance",
-          gradient: "from-[#b6d9d2] to-[#d3efea]",
-          pattern:
-            "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-        },
+       {
+    title: "Custom Web Application Development",
+    desc: "We create fully customized web applications designed from the ground up to address your unique business challenges. Our solutions integrate seamlessly with your existing workflows while providing scalable architecture.",
+    gradient: "from-[#e3f3e9] to-[#f1faf4]",
+    pattern:
+      "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Enterprise Portal Development",
+    desc: "Our enterprise portals provide secure, centralized platforms that streamline internal operations and enhance team collaboration. We implement robust access controls and intuitive interfaces that boost productivity.",
+    gradient: "from-[#b6d9d2] to-[#d3efea]",
+    pattern:
+      "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "E-commerce Platform Development",
+    desc: "We build comprehensive e-commerce solutions that deliver exceptional shopping experiences while maximizing conversion rates. Our platforms include advanced inventory management and secure payment processing.",
+    gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+    pattern:
+      "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Legacy System Modernization",
+    desc: "Transform your outdated legacy systems into modern, efficient web applications that leverage current technologies. We carefully migrate your data while maintaining system integrity and minimizing disruption.",
+    gradient: "from-[#e7f6dc] to-[#f1fbef]",
+    pattern:
+      "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Progressive Web Applications",
+    desc: "Our Progressive Web Applications deliver native app-like experiences with the reach of the web. They work offline, load instantly, and can be installed on user devices without app stores.",
+    gradient: "from-[#b6d9d2] to-[#d3efea]",
+    pattern:
+      "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
       ].map((card, idx) => (
         <div
           key={idx}
           className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
         >
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+            <h2 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
               {card.title}
-            </h3>
-            <p className="text-sm text-[#011123b3] leading-snug">{card.desc}</p>
+            </h2>
+            <p className="text-sm text-[#011123b3] leading-snug text-justify">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"

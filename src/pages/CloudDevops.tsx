@@ -1,5 +1,5 @@
 import { useState,  } from 'react';
-import webimg from "../assets/usecase/Cloud Migration-p-2000.webp";
+import webimg from "../assets/solutions/cd1.jpg";
 import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/call-center-manager-guiding-intern-how-use-ai-chatbot-office-desk-pc.jpg";
 import webimg3 from "../assets/technology-integrated-everyday-life.jpg";
