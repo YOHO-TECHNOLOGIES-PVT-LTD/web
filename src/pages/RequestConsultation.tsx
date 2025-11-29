@@ -100,9 +100,6 @@ const ContactUs = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images.length]);
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   // Auto slide effect
   useEffect(() => {
