@@ -102,7 +102,7 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   const uniqueId = `pattern-${index}`;
 
   const handleClick = () => {
-    window.location.href = '/case-study';
+    window.location.href = '/';
   };
 
   return (

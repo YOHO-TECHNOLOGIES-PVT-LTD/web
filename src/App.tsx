@@ -42,7 +42,7 @@ import CloudDevops from './pages/CloudDevops'
 import AdaptiveHiring from './pages/AdaptiveHiring'
 import HowItWorks from './pages/HowItWorks'
 import ManageRemoteTeams from './pages/ManageRemoteTeams'
-import CaseStudyDetail from './pages/CaseStudyDetail'
+// import CaseStudyDetail from './pages/CaseStudyDetail'
 import MissionFocused from './pages/mission-focused'
 import ImpactPage from './pages/impact'
 import ApplicationDevelopment from './pages/ApplicationDevelopment'
@@ -117,7 +117,7 @@ function App() {
           <Route path="/Contact-us" element={<RequestConsultation />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/get-started" element={<GetStarted />} />
-          <Route path="/case-study" element={<CaseStudyDetail />} />
+          {/* <Route path="/case-study" element={<CaseStudyDetail />} /> */}
           <Route path="/mission-focused" element={<MissionFocused />} />
           <Route path="/impact" element={<ImpactPage />} />
           <Route path="/application-development" element={<ApplicationDevelopment />} />
