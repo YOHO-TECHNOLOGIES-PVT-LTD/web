@@ -280,20 +280,20 @@ export default function Header() {
               Our Expertise
             </button>
 
-           <button
-              onClick={() => {
-                navigate('#');
-              }}
-              className={`${
-                location.pathname === '#'
-                  ? 'text-orange-400 border-b-2 border-orange-400'
-                  : isScrolled
-                    ? 'text-gray-700'
-                    : 'text-white'
-              } hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1 whitespace-nowrap`}
-            >
-              Careers
-            </button>
+          <button
+  onClick={() => {
+    window.open('http://career.kiaq.in', '_blank');
+  }}
+  className={`${
+    location.pathname === '#'
+      ? 'text-orange-400 border-b-2 border-orange-400'
+      : isScrolled
+        ? 'text-gray-700'
+        : 'text-white'
+  } hover:text-orange-400 text-xs lg:text-sm font-medium transition-colors pb-1 whitespace-nowrap`}
+>
+  Careers
+</button>
           </div>
 
           {/* Right Side Icons */}
@@ -517,14 +517,14 @@ export default function Header() {
 
               {/* Careers */}
               <button
-                onClick={() => {
-                  navigate('/');
-                  setIsMobileMenuOpen(false);
-                }}
-                className="block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
-              >
-                Careers
-              </button>
+  onClick={() => {
+    window.open('http://career.kiaq.in', '_blank');
+    setIsMobileMenuOpen(false);
+  }}
+  className="block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
+>
+  Careers
+</button>
 
             </div>
           </div>
