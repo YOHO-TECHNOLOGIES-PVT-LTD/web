@@ -11,9 +11,11 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<Array<{name: string, path: string}>>([]);
+  const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const location = useLocation();
   const headerRef = useRef<HTMLElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const userDropdownRef = useRef<HTMLDivElement>(null);
   
   const navigate = useNavigate();
 
@@ -26,13 +28,6 @@ export default function Header() {
   const pages = [
     { name: 'Home', path: '/' },
     { name: 'Who We Are', path: '/who-we-are' },
-    { name: 'Customer Stories', path: '/customer-stories' },
-    { name: 'Insights', path: '/insights' },
-    { name: 'Talent Community', path: '/talent-community' },
-    { name: 'Untapped Markets', path: '/untapped-markets' },
-    { name: 'Mission Focused', path: '/mission-focused' },
-    { name: 'Forrester TEI', path: '/forrester-tei' },
-    { name: 'Impact', path: '/impact' },
     { name: 'Application Development', path: '/application-development' },
     { name: 'Data Science & AI', path: '/data-science-ai' },
     { name: 'Data Engineering', path: '/data-engineering-analytics' },
@@ -41,12 +36,6 @@ export default function Header() {
     { name: 'How KIAQ Works', path: '/how-kiaq-works' },
     { name: 'Our Expertise', path: '/our-expertise' },
     { name: 'Contact Us', path: '/Contact-us' },
-    { name: 'Use Cases', path: '/use-cases' },
-    { name: 'Custom Software Development', path: '/custom-software-development' },
-    { name: 'Legacy System Modernization', path: '/legacy-system-modernization' },
-    { name: 'Web App Development', path: '/web-app-development' },
-    { name: 'GenAI Engagement', path: '/genai-engagement' },
-    { name: 'Cloud Migrations', path: '/cloud-migrations' },
   ];
 
   // Focus search input when opened
@@ -91,12 +80,18 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
         setActiveDropdown(null);
         setIsSearchOpen(false);
+        setIsUserDropdownOpen(false);
+      }
+      
+      // Close user dropdown if clicked outside
+      if (userDropdownRef.current && !userDropdownRef.current.contains(event.target as Node)) {
+        setIsUserDropdownOpen(false);
       }
     };
 
@@ -110,11 +105,18 @@ export default function Header() {
 
   const handleDropdownToggle = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
+    setIsUserDropdownOpen(false);
+  };
+
+  const handleUserDropdownToggle = () => {
+    setIsUserDropdownOpen(!isUserDropdownOpen);
+    setActiveDropdown(null);
   };
 
   const closeDropdown = () => {
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);
+    setIsUserDropdownOpen(false);
   };
 
   const handleSearchClick = () => {
@@ -122,6 +124,7 @@ export default function Header() {
     setSearchQuery('');
     setSearchResults([]);
     setActiveDropdown(null);
+    setIsUserDropdownOpen(false);
   };
 
   const handleSearchResultClick = (path: string) => {
@@ -129,6 +132,11 @@ export default function Header() {
     setIsSearchOpen(false);
     setSearchQuery('');
     setSearchResults([]);
+  };
+
+  const handlePayrollClick = () => {
+    window.open('https://payroll.kiaq.in/', '_blank');
+    setIsUserDropdownOpen(false);
   };
 
   // Desktop dropdown container styles
@@ -324,16 +332,32 @@ export default function Header() {
               </svg>
             </button>
 
-            <button
-              className={`hidden sm:block ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              } hover:text-orange-400 p-2 transition-colors`}
-              aria-label="User profile"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-              </svg>
-            </button>
+            {/* User Profile Icon with Dropdown */}
+            <div className="relative hidden sm:block" ref={userDropdownRef}>
+              <button
+                onClick={handleUserDropdownToggle}
+                className={`${
+                  isScrolled ? 'text-gray-700' : 'text-white'
+                } hover:text-orange-400 p-2 transition-colors relative`}
+                aria-label="User profile"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </button>
+
+              {/* User Dropdown */}
+              {isUserDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
+                  <button
+                    onClick={handlePayrollClick}
+                    className="flex items-center w-full px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 transition-colors"
+                  >
+                    Payroll
+                  </button>
+                </div>
+              )}
+            </div>
             
             <Link
               to="/Contact-us"
@@ -491,13 +515,6 @@ export default function Header() {
                     >
                       How Kiaq Works
                     </Link>
-                    {/* <Link
-                      to="/successfully-manage-remote"
-                      onClick={closeDropdown}
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-orange-400 hover:bg-gray-50 rounded transition-colors"
-                    >
-                      Successfully Manage Remote Teams
-                    </Link> */}
                   </div>
                 )}
               </div>
@@ -517,14 +534,25 @@ export default function Header() {
 
               {/* Careers */}
               <button
-  onClick={() => {
-    window.open('http://career.kiaq.in', '_blank');
-    setIsMobileMenuOpen(false);
-  }}
-  className="block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
->
-  Careers
-</button>
+                onClick={() => {
+                  window.open('http://career.kiaq.in', '_blank');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
+              >
+                Careers
+              </button>
+
+              {/* Payroll in Mobile Menu */}
+              <button
+                onClick={() => {
+                  window.open('https://payroll.kiaq.in/', '_blank');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="flex items-center w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
+              >
+                Payroll
+              </button>
 
             </div>
           </div>
@@ -673,14 +701,6 @@ export default function Header() {
                       >
                         › How Kiaq Works
                       </Link>
-                      {/* <Link
-                        to="/successfully-manage-remote"
-                        onClick={closeDropdown}
-                        className="flex items-center text-sm font-medium hover:opacity-70 transition-opacity py-1"
-                        style={{ color: "#2d4a4a" }}
-                      >
-                        › Successfully Manage Remote Teams
-                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -708,14 +728,6 @@ export default function Header() {
                       >
                         How Adaptive Hiring Transformed Our Team
                       </h4>
-                      {/* <Link
-                        to="/insights"
-                        onClick={closeDropdown}
-                        className="inline-flex items-center text-sm font-semibold hover:opacity-80 transition-opacity"
-                        style={{ color: "#1e3a3a" }}
-                      >
-                        Read Story →
-                      </Link> */}
                     </div>
                   </div>
                 </div>

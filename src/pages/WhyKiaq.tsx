@@ -85,9 +85,9 @@ export default function WhyKiaq() {
     Beyond IT Services - From IT Support to Strategic Tech Partnership. At Kiaq Technologies, we go beyond traditional IT support to become your strategic technology partner. Our mission is to align innovative software solutions with your long-term business goals, ensuring seamless operations, enhanced efficiency, and sustainable growth.
   </p>
 
-  <button className="mt-4 sm:mt-5 bg-orange-500 text-White font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
+  <a href="/Contact-us" className="inline-block mt-4 sm:mt-5 bg-orange-500 text-White font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
     Book a discovery call
-  </button>
+  </a>
 </div>
 
             {/* Spacer for layout balance */}

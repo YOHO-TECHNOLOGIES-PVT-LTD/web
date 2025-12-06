@@ -1,4 +1,3 @@
-
 const UI_CONSTANTS = {
   PRIMARY: '#ff4600',
   DARK: '#011123', 
@@ -54,15 +53,15 @@ export default function CTASection() {
              Build the tech team of the future with KIAQ
            </h2>
    
-           <button
+           <a
+             href="https://career.kiaq.in/"
              style={{
                backgroundColor: UI_CONSTANTS.DARK,
                color: UI_CONSTANTS.WHITE,
              }}
-             className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
            >
-             Request a consultation
-           </button>
+Grow Your Career With Us           </a>
          </div>
        </div>
    
@@ -110,16 +109,19 @@ export default function CTASection() {
              Let us know how we can help
            </h2>
    
-           <button
+           <a
+             href="https://wa.me/918925921401"
              style={{
                backgroundColor: 'rgba(255, 255, 255, 0.8)',
                color: '#173B3F',
                border: '2px solid rgba(23, 59, 63, 0.2)',
              }}
-             className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+             target="_blank"
+             rel="noopener noreferrer"
            >
-             Schedule Now
-           </button>
+             Enquiry Now
+           </a>
          </div>
        </div>
      </div>

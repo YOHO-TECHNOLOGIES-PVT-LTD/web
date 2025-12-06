@@ -137,8 +137,9 @@ export default function FocusScrollSection() {
 
     {/* CTA Button */}
     <div className="text-center mt-8 sm:mt-12 lg:mt-14">
-      <button
-        className="px-8 py-3 sm:px-12 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
+      <a
+        href="/Contact-us"
+        className="inline-block px-8 py-3 sm:px-12 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
         style={{
           backgroundColor: UI_CONSTANTS.PRIMARY,
           color: UI_CONSTANTS.WHITE,
@@ -146,13 +147,9 @@ export default function FocusScrollSection() {
       >
         <span className="hidden sm:inline">Learn More</span>
         <span className="sm:hidden">Learn More</span>
-      </button>
+      </a>
     </div>
   </div>
 </section>
-
-
-
-
   );
 }

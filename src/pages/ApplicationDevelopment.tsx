@@ -77,7 +77,7 @@ export default function WebAppDevelopmentHero() {
 
         {/* Content */}
         <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-16 sm:py-0">
-          <div className="max-w-[520px] mt-0 sm:mt-[14vh] text-justify sm:text-left">
+          <div className="max-w-[520px] mt-0 sm:mt-[14vh] text-left sm:text-left">
 
             {/* Title */}
             <h1
@@ -95,7 +95,7 @@ export default function WebAppDevelopmentHero() {
 
             {/* Description */}
             <p
-              className="text-gray-200 font-light mb-6 sm:mb-8 text-justify"
+              className="text-gray-200 font-light mb-6 sm:mb-8 text-left sm:text-justify"
               style={{
                 fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
                 lineHeight: 1.65,
@@ -214,7 +214,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
               Comprehensive Web Application Solutions for Modern Businesses
             </h2>
 
-            <p className="text-gray-600 mt-2 max-w-[700px] text-[0.93rem] sm:text-[1rem] leading-[1.65] text-justify">
+            <p className="text-gray-600 mt-2 max-w-[700px] text-[0.93rem] sm:text-[1rem] leading-[1.65] text-left sm:text-justify">
               From concept to deployment, we build high-performance web applications 
               that solve complex business challenges and drive digital innovation.
             </p>
@@ -270,13 +270,13 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                 {tabContent[activeTab].title}
               </h3>
 
-              <p className="text-gray-600 text-[0.93rem] sm:text-base leading-[1.7] mb-3.5 sm:mb-4 text-justify">
+              <p className="text-gray-600 text-[0.93rem] sm:text-base leading-[1.7] mb-3.5 sm:mb-4 text-left sm:text-justify">
                 {tabContent[activeTab].description}
               </p>
 
-              <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
+              {/* <button className="text-sm font-semibold border-b border-current text-[#011123] hover:text-[#00d4aa] transition">
                 Learn More
-              </button>
+              </button> */}
             </div>
 
             <div className="md:col-span-7 flex justify-center md:justify-end">
@@ -291,7 +291,6 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
           </div>
         </div>  
       </section>
-
       {/* Rest of your existing sections remain unchanged */}
       {/* {third section} */}
       <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
@@ -362,7 +361,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                   <h2 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
                     {card.title}
                   </h2>
-                  <p className="text-sm text-[#011123b3] leading-snug text-justify">{card.desc}</p>
+                  <p className="text-sm text-[#011123b3] leading-snug text-left sm:text-justify">{card.desc}</p>
                 </div>
                 <div
                   className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -458,7 +457,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
             </p>
 
             <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-              Learn Case Studies
+              Case Studies
             </button>
           </div>
         </div>
@@ -486,7 +485,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
               Web Application Development Insights & Resources
             </h2>
             <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-              View All Resources
+              Resources
             </button>
           </div>
 
@@ -508,12 +507,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   React vs Angular vs Vue: Choosing the Right Framework for Your Web App
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read More <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -533,12 +532,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   Optimizing Web Application Performance: Best Practices and Tools
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read more <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -558,12 +557,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   Progressive Web Apps (PWA): Building Modern Web Experiences
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read More <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -571,123 +570,126 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
       </section>
 
       {/* {6th Section} */}
-      <section className="dual-action-button-cta font-['Inter_Variable',_sans-serif]">
-        <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
-          
-          {/* LEFT SECTION */}
-          <div
-            className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-            style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
-          >
-            {/* Pattern Background */}
-            <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-              <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
-                <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
-                <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
-              </svg>
-            </div>
-
-            {/* Text Content */}
-            <div className="relative z-20">
-              <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
-                <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
-                  <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                    <path
-                      d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <p
-                  className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-                  style={{ color: UI_CONSTANTS.WHITE }}
-                >
-                  GET STARTED
-                </p>
-              </div>
-
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-                style={{ color: UI_CONSTANTS.WHITE }}
-              >
-                Transform Your Business with Expert Web Applications
-              </h2>
-
-              <button
-                style={{
-                  backgroundColor: UI_CONSTANTS.DARK,
-                  color: UI_CONSTANTS.WHITE,
-                }}
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
-              >
-                Learn More
-              </button>
-            </div>
-          </div>
-
-          {/* RIGHT SECTION */}
-          <div
-            className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-            style={{ backgroundColor: UI_CONSTANTS.WHITE }}
-          >
-            {/* Pattern Background */}
-            <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-              <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
-                <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
-                <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
-              </svg>
-            </div>
-
-            {/* Text Content */}
-            <div className="relative z-20">
-              <div className="flex items-center mb-6 sm:mb-8">
-                <div className="mr-2.5 sm:mr-3">
-                  <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                    <path
-                      d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                      fill="#173B3F"
-                    />
-                  </svg>
-                </div>
-                <p
-                  className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-                  style={{ color: '#173B3F' }}
-                >
-                  CONSULT OUR EXPERTS
-                </p>
-              </div>
-
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-                style={{ color: '#173B3F' }}
-              >
-                Discuss Your Web Application Requirements
-              </h2>
-
-              <button
-                style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                  color: '#173B3F',
-                  border: '2px solid rgba(23, 59, 63, 0.2)',
-                }}
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
-              >
-                Schedule Consultation
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="dual-action-button-cta">
+     <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
+       
+       {/* LEFT SECTION */}
+       <div
+         className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
+             <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="white"
+                 />
+               </svg>
+             </div>
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: UI_CONSTANTS.WHITE }}
+             >
+               GET STARTED
+             </p>
+           </div>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: UI_CONSTANTS.WHITE }}
+           >
+             Build the tech team of the future with KIAQ
+           </h2>
+   
+           <a
+             href="https://career.kiaq.in/"
+             style={{
+               backgroundColor: UI_CONSTANTS.DARK,
+               color: UI_CONSTANTS.WHITE,
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
+           >
+Grow Your Career With Us           </a>
+         </div>
+       </div>
+   
+       {/* RIGHT SECTION */}
+       <div
+         className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.WHITE }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="flex items-center mb-6 sm:mb-8">
+             <div className="mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="#173B3F"
+                 />
+               </svg>
+             </div>
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: '#173B3F' }}
+             >
+               SCHEDULE A CALL
+             </p>
+           </div>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: '#173B3F' }}
+           >
+             Let us know how we can help
+           </h2>
+   
+           <a
+             href="https://wa.me/918925921401"
+             style={{
+               backgroundColor: 'rgba(255, 255, 255, 0.8)',
+               color: '#173B3F',
+               border: '2px solid rgba(23, 59, 63, 0.2)',
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             Enquiry Now
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
     </div>
   );
 }

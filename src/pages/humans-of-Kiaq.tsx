@@ -295,261 +295,263 @@ export default function WhyKiaq() {
   return (
     <div className="font-['Inter_Variable',_sans-serif]">
       <section
-        className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat font-['Inter_Variable',_sans-serif]"
-        style={{ backgroundImage: `url(${kiaqimag})` }}
-      >
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
+  className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat font-['Inter_Variable',_sans-serif]"
+  style={{ backgroundImage: `url(${kiaqimag})` }}
+>
+  {/* Dark gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
 
-        {/* Content */}
-        <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-20 py-12 sm:py-16 md:py-20">
-          <div className="flex flex-col md:flex-row items-start md:items-center">
-            
-            {/* Left Content */}
-            <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
-              <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
-                KIAQ TECHNOLOGIES
-              </p>
+  {/* Content */}
+  <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-20 py-12 sm:py-16 md:py-20">
+    <div className="flex flex-col md:flex-row items-start md:items-center">
+      
+      {/* Left Content */}
+      <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
+        <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
+          KIAQ TECHNOLOGIES
+        </p>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
-                Enterprise Technology <br />
-                Solutions
-              </h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
+          Enterprise Technology <br />
+          Solutions
+        </h1>
 
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-justify">
-                Kiaq Technologies delivers innovative, scalable technology solutions that drive digital transformation and accelerate business growth across diverse industry sectors.
-              </p>
+        <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-left sm:text-justify">
+          Kiaq Technologies delivers innovative, scalable technology solutions that drive digital transformation and accelerate business growth across diverse industry sectors.
+        </p>
 
-              <button className="mt-4 sm:mt-5 bg-orange-500 text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
-                Schedule Consultation
-              </button>
-            </div>
+        <a href="/Contact-us" className="inline-block mt-4 sm:mt-5 bg-orange-500 text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto text-center">
+          Schedule Consultation
+        </a>
+      </div>
 
-            {/* Spacer for layout balance */}
-            <div className="hidden md:block md:flex-1" />
-          </div>
-        </div>
-      </section>
+      {/* Spacer for layout balance */}
+      <div className="hidden md:block md:flex-1" />
+    </div>
+  </div>
+</section>
 
       {/* Second Section with Auto Slide */}
       <AutoSlideSection />
 
       {/* Fifth Section */}
-      <section className="py-6 sm:py-10 md:py-14 lg:py-16 px-3 sm:px-6 font-['Inter_Variable',_sans-serif]" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
-        <div className="max-w-[1400px] mx-auto">
-          <div className="text-center mb-6 sm:mb-10 lg:mb-12 px-2 sm:px-0">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
-              Driving Industrial Evolution Through Intelligent Technology Solutions
-            </h2>
+     <section className="py-6 sm:py-10 md:py-14 lg:py-16 px-3 sm:px-6 font-['Inter_Variable',_sans-serif]" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
+  <div className="max-w-[1400px] mx-auto">
+    <div className="text-left sm:text-center mb-6 sm:mb-10 lg:mb-12 px-2 sm:px-0">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
+        Driving Industrial Evolution Through Intelligent Technology Solutions
+      </h2>
 
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto text-justify">
-              Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors.
-            </p>
-          </div>
-          
-          {/* Static Grid Layout */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-justify">
-            {useCases.map((useCase, index) => (
-              <UseCaseCard key={index} useCase={useCase} index={index} />
-            ))}
-          </div>
-          
-          <div className="text-center mt-6 sm:mt-10 lg:mt-12">
-            <button 
-              style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-              className="px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
-            >
-              Explore Solutions
-            </button>
-          </div>
-        </div>
-      </section>
-
+      <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto text-left sm:text-justify">
+        Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors.
+      </p>
+    </div>
+    
+    {/* Static Grid Layout */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-left sm:text-justify">
+      {useCases.map((useCase, index) => (
+        <UseCaseCard key={index} useCase={useCase} index={index} />
+      ))}
+    </div>
+    
+    <div className="text-center mt-6 sm:mt-10 lg:mt-12">
+      <a 
+        href="/Contact-us"
+        style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
+        className="inline-block px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
+      >
+        Explore Solutions
+      </a>
+    </div>
+  </div>
+</section>
       {/* Fifth Section */}
       <section className="w-full bg-white text-black py-10 sm:py-14 md:py-16 lg:py-20 relative overflow-hidden font-['Inter_Variable',_sans-serif]">
-        {/* Diagonal Grid Pattern - Background */}
-        <svg
-          className="absolute top-0 right-0 w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] opacity-10 pointer-events-none translate-x-8 sm:translate-x-16 -translate-y-4 sm:-translate-y-8"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 200 200"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern id="diagonalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path
-                d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-                stroke="#00b3a4"
-                strokeWidth="0.8"
-                opacity="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#diagonalGrid)" />
-        </svg>
+  {/* Diagonal Grid Pattern - Background */}
+  <svg
+    className="absolute top-0 right-0 w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] opacity-10 pointer-events-none translate-x-8 sm:translate-x-16 -translate-y-4 sm:-translate-y-8"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 200"
+    aria-hidden="true"
+  >
+    <defs>
+      <pattern id="diagonalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <path
+          d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
+          stroke="#00b3a4"
+          strokeWidth="0.8"
+          opacity="0.5"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#diagonalGrid)" />
+  </svg>
 
-        <div className="relative max-w-7xl mx-auto px-3 sm:px-6 md:px-10 lg:px-20 z-10">
-          {/* Proof Section */}
-          <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
-            {/* Pattern inside Proof Section */}
-            <svg
-              className="absolute top-0 right-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] opacity-10 pointer-events-none translate-x-4 sm:translate-x-8 -translate-y-4 sm:-translate-y-8"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 200 200"
-            >
-              <defs>
-                <pattern id="diagonalGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <path
-                    d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
-                    stroke="#008080"
-                    strokeWidth="0.8"
-                    opacity="0.5"
-                  />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#diagonalGrid2)" />
-            </svg>
+  <div className="relative max-w-7xl mx-auto px-3 sm:px-6 md:px-10 lg:px-20 z-10">
+    {/* Proof Section */}
+    <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-10 relative overflow-hidden" style={{ backgroundColor: '#fff2eb' }}>
+      {/* Pattern inside Proof Section */}
+      <svg
+        className="absolute top-0 right-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] opacity-10 pointer-events-none translate-x-4 sm:translate-x-8 -translate-y-4 sm:-translate-y-8"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 200 200"
+      >
+        <defs>
+          <pattern id="diagonalGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 20 L20 0 M-5 5 L5 -5 M15 25 L25 15"
+              stroke="#008080"
+              strokeWidth="0.8"
+              opacity="0.5"
+            />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#diagonalGrid2)" />
+      </svg>
 
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6 relative z-10">
-              {/* Left Text */}
-              <div className="w-full lg:w-2/3">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight text-justify">
-                  Expertise That Powers Digital Excellence Book a Free Consultation
-                </h3>
-                <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-5 leading-relaxed text-justify">
-                  At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
-                </p>
-                <button className="bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover:bg-[#006666] transition-all w-full sm:w-auto">
-                  Schedule Consultation
-                </button>
-              </div>
-
-              {/* Right Image */}
-              <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
-                <img src={ninth} alt="Technology Excellence" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
-              </div>
-            </div>
-          </div>
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-6 relative z-10">
+        {/* Left Text */}
+        <div className="w-full lg:w-2/3">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight text-left sm:text-justify">
+            Expertise That Powers Digital Excellence Book a Free Consultation
+          </h3>
+          <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-5 leading-relaxed text-left sm:text-justify">
+            At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
+          </p>
+          <a href="/Contact-us" className="inline-block bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover: transition-all w-full sm:w-auto text-center">
+            Schedule Consultation
+          </a>
         </div>
-      </section>
 
+        {/* Right Image */}
+        <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-6 lg:mt-0">
+          <img src={ninth} alt="Technology Excellence" className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg object-contain" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Eighth Section */}
-      <section className="dual-action-button-cta font-['Inter_Variable',_sans-serif]">
-        <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
-          
-          {/* LEFT SECTION */}
-          <div
-            className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-            style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
-          >
-            {/* Pattern Background */}
-            <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-              <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
-                <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
-                <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
-              </svg>
-            </div>
-
-            {/* Text Content */}
-            <div className="relative z-20">
-              <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
-                <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
-                  <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                    <path
-                      d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <p
-                  className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-                  style={{ color: UI_CONSTANTS.WHITE }}
-                >
-                  GET STARTED
-                </p>
-              </div>
-
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-                style={{ color: UI_CONSTANTS.WHITE }}
-              >
-                Build Your Future Technology Team with KIAQ
-              </h2>
-
-              <button
-                style={{
-                  backgroundColor: UI_CONSTANTS.DARK,
-                  color: UI_CONSTANTS.WHITE,
-                }}
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
-              >
-                Request Consultation
-              </button>
-            </div>
-          </div>
-
-          {/* RIGHT SECTION */}
-          <div
-            className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-            style={{ backgroundColor: UI_CONSTANTS.WHITE }}
-          >
-            {/* Pattern Background */}
-            <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-              <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
-                <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
-                <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
-              </svg>
-            </div>
-
-            {/* Text Content */}
-            <div className="relative z-20">
-              <div className="flex items-center mb-6 sm:mb-8">
-                <div className="mr-2.5 sm:mr-3">
-                  <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                    <path
-                      d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                      fill="#173B3F"
-                    />
-                  </svg>
-                </div>
-                <p
-                  className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
-                  style={{ color: '#173B3F' }}
-                >
-                  CONNECT WITH US
-                </p>
-              </div>
-
-              <h2
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
-                style={{ color: '#173B3F' }}
-              >
-                Let Us Understand Your Technology Requirements
-              </h2>
-
-              <button
-                style={{
-                  backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                  color: '#173B3F',
-                  border: '2px solid rgba(23, 59, 63, 0.2)',
-                }}
-                className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
-              >
-                Schedule Meeting
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+        <section className="dual-action-button-cta">
+     <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
+       
+       {/* LEFT SECTION */}
+       <div
+         className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
+             <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="white"
+                 />
+               </svg>
+             </div>
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: UI_CONSTANTS.WHITE }}
+             >
+               GET STARTED
+             </p>
+           </div>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: UI_CONSTANTS.WHITE }}
+           >
+             Build the tech team of the future with KIAQ
+           </h2>
+   
+           <a
+             href="https://career.kiaq.in/"
+             style={{
+               backgroundColor: UI_CONSTANTS.DARK,
+               color: UI_CONSTANTS.WHITE,
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
+           >
+Grow Your Career With Us           </a>
+         </div>
+       </div>
+   
+       {/* RIGHT SECTION */}
+       <div
+         className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.WHITE }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="flex items-center mb-6 sm:mb-8">
+             <div className="mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="#173B3F"
+                 />
+               </svg>
+             </div>
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: '#173B3F' }}
+             >
+               SCHEDULE A CALL
+             </p>
+           </div>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: '#173B3F' }}
+           >
+             Let us know how we can help
+           </h2>
+   
+           <a
+             href="https://wa.me/918925921401"
+             style={{
+               backgroundColor: 'rgba(255, 255, 255, 0.8)',
+               color: '#173B3F',
+               border: '2px solid rgba(23, 59, 63, 0.2)',
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             Enquiry Now
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
     </div>
   );
 }

@@ -107,13 +107,14 @@ const useCases = [
         </div>
         
         <div className="text-center mt-8 sm:mt-12 md:mt-16 px-4">
-          <button 
+          <a 
+            href="/Contact-us"
             style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-            className="px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-sm sm:max-w-none"
+            className="inline-block px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-sm sm:max-w-none"
           >
             <span className="hidden sm:inline">Learn More </span>
             <span className="sm:hidden">Learn More</span>
-          </button>
+          </a>
         </div>
       </div>
       

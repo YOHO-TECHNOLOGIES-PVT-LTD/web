@@ -154,7 +154,7 @@ const steps = [
 
       {/* Description */}
       <p
-        className="text-gray-200 font-light mb-6 sm:mb-8 text-justify font-['Inter_Variable',_sans-serif]"
+        className="text-gray-200 font-light mb-6 sm:mb-8 text-left sm:text-justify font-['Inter_Variable',_sans-serif]"
         style={{
           fontSize: "clamp(0.9rem, 2vw, 1rem)",
           lineHeight: 1.65,
@@ -167,15 +167,16 @@ const steps = [
       </p>
 
       {/* CTA Button */}
-      <button
-        className="px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
+      <a
+        href="/Contact-us"
+        className="inline-block px-6 sm:px-7 md:px-8 py-2.5 sm:py-3 text-sm md:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto text-center font-['Inter_Variable',_sans-serif]"
         style={{
           backgroundColor: UI_CONSTANTS.PRIMARY,
           color: UI_CONSTANTS.WHITE,
         }}
       >
         Initiate AI Transformation
-      </button>
+      </a>
     </div>
 
     {/* Stats Section */}
@@ -210,7 +211,7 @@ const steps = [
 
 
   {/* {second section} */}
-    <section className="w-full bg-[#f7faf9] py-8 sm:py-10 md:py-14 lg:py-18 px-3 sm:px-4 lg:px-20 relative overflow-hidden font-['Inter_Variable',_sans-serif]">
+<section className="w-full bg-[#f7faf9] py-8 sm:py-10 md:py-14 lg:py-18 px-3 sm:px-4 lg:px-20 relative overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Decorative faint circle pattern on the right (SVG) */}
   <svg
     className="absolute right-0 top-0 h-full w-[50%] opacity-10 pointer-events-none hidden md:block"
@@ -229,7 +230,7 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-justify lg:text-left font-['Inter_Variable',_sans-serif]">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
       Experience the KIAQ Advantage
     </h1>
 
@@ -277,13 +278,13 @@ const steps = [
 
       {/* Right text block */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-justify lg:text-left font-['Inter_Variable',_sans-serif]">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
           Access Premium Talent with
           <br className="hidden sm:inline" />
           Exceptional Efficiency
         </h2>
 
-        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
+        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-left sm:text-justify font-['Inter_Variable',_sans-serif]">
 Our integrated methodology combines AI-powered technology platforms with the expertise of seasoned recruitment professionals to deliver optimal talent solutions. At Kiaq, we are built on a foundation of relentless improvement, constantly refining our processes to stay ahead in a competitive landscape. We sharpen our technical skills daily, ensuring that every solution we provide is innovative and precise. Our commitment to excellence drives us to go beyond expectations in every project.        </p>
       </div>
     </div>
@@ -291,27 +292,27 @@ Our integrated methodology combines AI-powered technology platforms with the exp
     {/* Bottom four-column features */}
     <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 border-t border-gray-200 pt-4 sm:pt-6 md:pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 font-['Inter_Variable',_sans-serif]">
       <div className="pr-0 sm:pr-3">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-justify font-['Inter_Variable',_sans-serif]">Streamlined Recruitment Process</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-justify font-['Inter_Variable',_sans-serif]">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-left sm:text-justify font-['Inter_Variable',_sans-serif]">Streamlined Recruitment Process</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-left sm:text-justify font-['Inter_Variable',_sans-serif]">
           KIAQ Talent Platform facilitates intelligent and efficient processes throughout the complete recruitment lifecycle.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
+      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-left sm:text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Certified Elite Professionals</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           We provide industry-leading professional development, continuous education, and strategic networking opportunities.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-3 lg:border-l border-gray-200 lg:pl-3 pt-3 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0 text-justify">
+      <div className="pr-0 sm:pr-3 lg:border-l border-gray-200 lg:pl-3 pt-3 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0 text-left sm:text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Comprehensive Support Services</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           End-to-end assistance through recruitment, acquisition, training, qualification, matching, and project delivery phases.
         </p>
       </div>
 
-      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-justify">
+      <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-left sm:text-justify">
         <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Premium Client Experience</h3>
         <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
           Comprehensive service delivery from dedicated customer success and talent management teams.
@@ -407,7 +408,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             }`}
           >
             <div className="flex justify-between items-center">
-              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-2 font-['Inter_Variable',_sans-serif]">{item.title}</p>
+              <p className="text-base sm:text-lg font-semibold text-gray-900 pr-2  font-['Inter_Variable',_sans-serif]">{item.title}</p>
               <span className="text-gray-600 text-lg sm:text-xl flex-shrink-0">
                 {openIndex === idx ? "▲" : "▼"}
               </span>
@@ -479,7 +480,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
               </h3>
               
               <p 
-                className="text-base sm:text-lg leading-relaxed transition-all duration-500 font-['Inter_Variable',_sans-serif]"
+                className="text-base sm:text-lg leading-relaxed transition-all duration-500 text-justify font-['Inter_Variable',_sans-serif]"
                 style={{ 
                   color: UI_CONSTANTS.GRAY,
                   opacity: activeIndex === index ? 1 : 0.3,
@@ -509,8 +510,9 @@ Our integrated methodology combines AI-powered technology platforms with the exp
     
     {/* CTA Button */}
     <div className="text-center mt-12 sm:mt-16 lg:mt-20">
-      <button 
-        className="px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 font-['Inter_Variable',_sans-serif]"
+      <a 
+        href="/Contact-us"
+        className="inline-block px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 font-['Inter_Variable',_sans-serif]"
         style={{ 
           backgroundColor: UI_CONSTANTS.PRIMARY,
           color: UI_CONSTANTS.WHITE
@@ -518,7 +520,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
       >
         <span className="hidden sm:inline">Connect with Global Technology Experts</span>
         <span className="sm:hidden">Connect with Experts</span>
-      </button>
+      </a>
     </div>
   </div>
 </section>
@@ -550,13 +552,13 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Define Your Requirements
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-justify  font-['Inter_Variable',_sans-serif]">
             Share your project needs, technical skills required, and timeline. Our team works with you to understand your specific requirements.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
+          {/* <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
-          </button>
+          </button> */}
         </div>
 
         {/* CARD 2 */}
@@ -573,13 +575,13 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Smart Talent Matching
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
             Our AI algorithms scan our global network to find the perfect match based on skills, experience, and project compatibility.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
+          {/* <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
-          </button>
+          </button> */}
         </div>
 
         {/* CARD 3 */}
@@ -596,13 +598,13 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Onboard & Collaborate
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
             Seamlessly integrate matched talent into your team with our support. We handle contracts, onboarding, and ongoing collaboration.
           </p>
 
-          <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
+          {/* <button className="mt-4 text-[#0b3b37] font-semibold flex gap-2 items-center hover:gap-3 transition-all font-['Inter_Variable',_sans-serif]">
             Learn More →
-          </button>
+          </button> */}
         </div>
 
       </div>
@@ -617,123 +619,126 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
           {/* {6th Section} */}
 
-         <section className="dual-action-button-cta font-['Inter_Variable',_sans-serif]">
-           <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
-             
-             {/* LEFT SECTION */}
-             <div
-               className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-               style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
-             >
-               {/* Pattern Background */}
-               <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-                 <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                   <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                   <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                   <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                   <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                   <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
-                   <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
-                   <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
-                 </svg>
-               </div>
-         
-               {/* Text Content */}
-               <div className="relative z-20">
-                 <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
-                   <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
-                     <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                       <path
-                         d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                         fill="white"
-                       />
-                     </svg>
-                   </div>
-                   <p
-                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase font-['Inter_Variable',_sans-serif]"
-                     style={{ color: UI_CONSTANTS.WHITE }}
-                   >
-                     GET STARTED
-                   </p>
-                 </div>
-         
-                 <h2
-                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight font-['Inter_Variable',_sans-serif]"
-                   style={{ color: UI_CONSTANTS.WHITE }}
-                 >
-                   Build Your Future Technology Team with KIAQ
-                 </h2>
-         
-                 <button
-                   style={{
-                     backgroundColor: UI_CONSTANTS.DARK,
-                     color: UI_CONSTANTS.WHITE,
-                   }}
-                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
-                 >
-                   Request Strategic Consultation
-                 </button>
-               </div>
+           <section className="dual-action-button-cta">
+     <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
+       
+       {/* LEFT SECTION */}
+       <div
+         className="dual-action-button-cta-left-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.PRIMARY }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="white" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="white" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="white" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="white" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="white" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="white" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="white" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="dual-action-button-cta-tag-wrapper flex items-center mb-6 sm:mb-8">
+             <div className="dual-action-button-cta-left-div-img mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="white"
+                 />
+               </svg>
              </div>
-         
-             {/* RIGHT SECTION */}
-             <div
-               className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
-               style={{ backgroundColor: UI_CONSTANTS.WHITE }}
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: UI_CONSTANTS.WHITE }}
              >
-               {/* Pattern Background */}
-               <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
-                 <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
-                   <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
-                   <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
-                   <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
-                   <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
-                   <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
-                   <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
-                   <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
-                 </svg>
-               </div>
-         
-               {/* Text Content */}
-               <div className="relative z-20">
-                 <div className="flex items-center mb-6 sm:mb-8">
-                   <div className="mr-2.5 sm:mr-3">
-                     <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
-                       <path
-                         d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
-                         fill="#173B3F"
-                       />
-                     </svg>
-                   </div>
-                   <p
-                     className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase font-['Inter_Variable',_sans-serif]"
-                     style={{ color: '#173B3F' }}
-                   >
-                     CONNECT WITH US
-                   </p>
-                 </div>
-         
-                 <h2
-                   className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight font-['Inter_Variable',_sans-serif]"
-                   style={{ color: '#173B3F' }}
-                 >
-                   Let Us Understand Your Technology Requirements
-                 </h2>
-         
-                 <button
-                   style={{
-                     backgroundColor: 'rgba(255, 255, 255, 0.8)',
-                     color: '#173B3F',
-                     border: '2px solid rgba(23, 59, 63, 0.2)',
-                   }}
-                   className="px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto font-['Inter_Variable',_sans-serif]"
-                 >
-                   Schedule Strategic Meeting
-                 </button>
-               </div>
-             </div>
+               GET STARTED
+             </p>
            </div>
-         </section>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: UI_CONSTANTS.WHITE }}
+           >
+             Build the tech team of the future with KIAQ
+           </h2>
+   
+           <a
+             href="https://career.kiaq.in/"
+             style={{
+               backgroundColor: UI_CONSTANTS.DARK,
+               color: UI_CONSTANTS.WHITE,
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
+           >
+Grow Your Career With Us           </a>
+         </div>
+       </div>
+   
+       {/* RIGHT SECTION */}
+       <div
+         className="dual-action-button-cta-right-div relative px-6 py-12 sm:px-10 sm:py-14 lg:px-16 lg:py-20 flex flex-col justify-center overflow-hidden"
+         style={{ backgroundColor: UI_CONSTANTS.WHITE }}
+       >
+         {/* Pattern Background */}
+         <div className="absolute inset-0 z-10 opacity-40 pointer-events-none">
+           <svg className="w-full h-full" viewBox="0 0 800 400" fill="none">
+             <path d="M100 50 Q300 150 500 50 T900 50" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.4" fill="none"/>
+             <path d="M0 100 Q200 200 400 100 T800 100" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.3" fill="none"/>
+             <path d="M150 200 Q350 300 550 200 T950 200" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.25" fill="none"/>
+             <path d="M50 300 Q250 400 450 300 T850 300" stroke="#0D2A2C" strokeWidth="1.5" opacity="0.2" fill="none"/>
+             <circle cx="200" cy="80" r="3" fill="#0D2A2C" opacity="0.5"/>
+             <circle cx="600" cy="120" r="2.5" fill="#0D2A2C" opacity="0.4"/>
+             <circle cx="400" cy="250" r="3" fill="#0D2A2C" opacity="0.3"/>
+           </svg>
+         </div>
+   
+         {/* Text Content */}
+         <div className="relative z-20">
+           <div className="flex items-center mb-6 sm:mb-8">
+             <div className="mr-2.5 sm:mr-3">
+               <svg width="12" height="13" viewBox="0 0 14 15" fill="none" className="sm:w-[14px] sm:h-[15px]">
+                 <path
+                   d="M13.9132 7.97465H13.8846C10.1376 7.98898 7.08558 11.0555 7.08558 14.8027C7.08558 14.8528 7.04259 14.8887 6.99961 14.8887C6.94946 14.8887 6.91363 14.8457 6.91363 14.8027V14.774C6.89931 11.0268 3.83295 7.97465 0.0859726 7.97465C0.0358219 7.97465 0 7.93166 0 7.88867C0 7.83852 0.0429862 7.80269 0.0859726 7.80269H0.11463C3.86161 7.78836 6.91363 4.72183 6.91363 0.974649C6.91363 0.924496 6.95662 0.888672 6.99961 0.888672C7.04976 0.888672 7.08558 0.93166 7.08558 0.974649C7.08558 4.73616 10.1448 7.80269 13.9132 7.80269C13.9634 7.80269 13.9992 7.84568 13.9992 7.88867C14.0064 7.93882 13.9634 7.97465 13.9132 7.97465Z"
+                   fill="#173B3F"
+                 />
+               </svg>
+             </div>
+             <p
+               className="text-xs sm:text-sm font-semibold tracking-[0.15em] sm:tracking-[0.2em] uppercase"
+               style={{ color: '#173B3F' }}
+             >
+               SCHEDULE A CALL
+             </p>
+           </div>
+   
+           <h2
+             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
+             style={{ color: '#173B3F' }}
+           >
+             Let us know how we can help
+           </h2>
+   
+           <a
+             href="https://wa.me/918925921401"
+             style={{
+               backgroundColor: 'rgba(255, 255, 255, 0.8)',
+               color: '#173B3F',
+               border: '2px solid rgba(23, 59, 63, 0.2)',
+             }}
+             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             Enquiry Now
+           </a>
+         </div>
+       </div>
+     </div>
+   </section>
 
     </>
   );

@@ -389,15 +389,16 @@ export default function AdaptiveHiring() {
         </div>
 
         <div className="text-center mt-6 sm:mt-8 md:mt-10 px-3">
-          <button
-            className="px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
+          <a
+            href="/Contact-us"
+            className="inline-block px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
             style={{
               backgroundColor: UI_CONSTANTS.PRIMARY,
               color: UI_CONSTANTS.WHITE,
             }}
           >
             Join Our Team
-          </button>
+          </a>
         </div>
       </section>
 
@@ -485,9 +486,9 @@ export default function AdaptiveHiring() {
               Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model, 
               based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
             </p>
-            <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
+            {/* <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
               Read More
-            </button>
+            </button> */}
           </div>
 
           {/* Metrics Cards Grid */}
@@ -556,7 +557,7 @@ export default function AdaptiveHiring() {
               Adaptive Hiring Insights & Resources
             </h2>
             <button className="mt-6 md:mt-0 border border-gray-800 text-gray-800 font-medium px-5 py-2 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300">
-              Access All Resources
+              Resources
             </button>
           </div>
 
@@ -578,12 +579,12 @@ export default function AdaptiveHiring() {
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   Flexible Hiring Models: Remote, Hybrid & On-Demand Talent
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read More <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -603,12 +604,12 @@ export default function AdaptiveHiring() {
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   Skills-Based Hiring: Moving Beyond Traditional Credentials
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read More <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
 
@@ -628,12 +629,12 @@ export default function AdaptiveHiring() {
                 <h3 className="text-lg font-semibold text-gray-900 mt-2 group-hover:text-white">
                   Agile Recruitment: Adapting to Changing Market Demands
                 </h3>
-                <a
+                {/* <a
                   href="#"
                   className="mt-4 inline-flex items-center text-[#0c7262] font-semibold text-sm hover:underline group-hover:text-[#68b39d]"
                 >
                   Read More <span className="ml-2">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

@@ -196,9 +196,9 @@ export default function TestimonialSlider() {
 
             </div>
 
-            <button className="bg-orange-500 text-white px-8 py-3 rounded-xl font-medium hover:bg-orange-600 transition-all text-sm sm:text-base">
+            <a href="/Contact-us" className="inline-block bg-orange-500 text-white px-8 py-3 rounded-xl font-medium hover:bg-orange-600 transition-all text-sm sm:text-base">
               Get Started
-            </button>
+            </a>
 
           </div>
         </div>
@@ -213,12 +213,9 @@ export default function TestimonialSlider() {
             </h2>
 
             <p className="text-base leading-relaxed mb-8 text-gray-700 max-w-md mx-auto lg:mx-0 text-justify">
-              We simplify complex technology with clear, insightful answers that help you make confident decisions.
-            </p>
+ We simplify complex technology with clear, insightful answers that help you make confident decisions. Our expert guidance ensures you have the clarity needed to navigate today's digital landscape effectively, transforming challenges into opportunities for growth and innovation. Whether you're exploring new technologies, optimizing existing systems, or planning strategic IT investments, we provide comprehensive solutions tailored to your unique needs.            </p>
 
-            <button className="bg-white text-gray-800 font-semibold px-6 py-2.5 rounded-xl shadow hover:shadow-md transition-all border border-gray-200 text-sm sm:text-base">
-              FAQs
-            </button>
+            
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center">
@@ -242,9 +239,9 @@ export default function TestimonialSlider() {
             We deliver innovation powered by technology and expertise, helping businesses grow in a fast-changing digital landscape.
           </p>
 
-          <button className="mt-6 bg-orange-400 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-orange-500 transition-all text-sm sm:text-base">
+          {/* <button className="mt-6 bg-orange-400 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-orange-500 transition-all text-sm sm:text-base">
             Lead The Team
-          </button>
+          </button> */}
         </div>
 
         <div className="w-full flex justify-center">

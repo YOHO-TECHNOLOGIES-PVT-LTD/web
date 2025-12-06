@@ -237,6 +237,7 @@ export default function Footer() {
           gap: 0.75rem;
           font-size: 0.875rem;
           color: #4b5563;
+          width: 100%;
         }
 
         @media (min-width: 640px) {
@@ -250,6 +251,12 @@ export default function Footer() {
             font-size: 0.8125rem;
             gap: 0.5rem;
             line-height: 1.6;
+            flex-wrap: nowrap; /* Force single line */
+            justify-content: center;
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+            white-space: nowrap; /* Prevent wrapping */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            padding-bottom: 0.25rem; /* Add some space for scrollbar */
           }
         }
 
@@ -264,7 +271,7 @@ export default function Footer() {
           color: #4b5563;
           text-decoration: none;
           transition: color 0.2s ease;
-          white-space: nowrap;
+          white-space: nowrap; /* Ensure links don't wrap */
         }
 
         .footer-link:hover {
@@ -274,6 +281,7 @@ export default function Footer() {
         .footer-separator {
           color: #4b5563;
           user-select: none;
+          white-space: nowrap; /* Ensure separators don't wrap */
         }
 
         @media (max-width: 640px) {
@@ -282,10 +290,14 @@ export default function Footer() {
           }
         }
 
-        /* Better wrapping for small screens */
-        @media (max-width: 480px) {
+        /* Hide scrollbar for cleaner look but keep functionality */
+        @media (max-width: 640px) {
+          .footer-links::-webkit-scrollbar {
+            display: none;
+          }
           .footer-links {
-            max-width: 100%;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
           }
         }
       `}</style>
