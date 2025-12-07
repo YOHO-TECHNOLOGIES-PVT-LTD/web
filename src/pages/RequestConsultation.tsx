@@ -47,9 +47,8 @@ const ContactUs = () => {
     Chennai: {
       title: "Chennai",
       address: [
-        "M181, Cactus Corporate, 7th Floor, Block B",
-        "Tecci Park, OMR, Sholinganallur",
-        "Chennai 600 119",
+        "M181, Cactus Corporate, 7th Floor, Block B,Tecci Park, OMR,Sholinganallur,Chennai 600 119",
+        
       ],
       mobile: "+91 8925 92 1401",
       email: "Info@kiaq.in",
@@ -180,19 +179,26 @@ const ContactUs = () => {
                 <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">Address:</p>
-                  <div className="space-y-0.5">
-                    {currentOffice.address.map((line, index) => (
-                      <p
-                        key={index}
-                        className="text-gray-700 leading-relaxed text-base sm:text-lg opacity-90 font-['Inter_Variable',_sans-serif]"
-                      >
-                        {line}
-                      </p>
-                    ))}
-                  </div>
-                </div>
+                <div>
+  <div className="flex items-start gap-2">
+    <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+    </svg>
+    <div className="flex-1 min-w-0">
+      <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">Address:</p>
+      <div className="space-y-0.5">
+        {currentOffice.address.map((line, index) => (
+          <p
+            key={index}
+            className="text-gray-700 leading-relaxed text-base  sm:text-lg opacity-90 font-['Inter_Variable',_sans-serif] break-words"
+          >
+            {line}
+          </p>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
               </div>
             </div>
 
