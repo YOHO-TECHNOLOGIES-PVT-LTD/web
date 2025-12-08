@@ -81,7 +81,7 @@ const useCases = [
     <section className="py-8 sm:py-12 md:py-16 lg:py-20 px-3 sm:px-4" style={{ backgroundColor: UI_CONSTANTS.WHITE }}>
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight" style={{ color: UI_CONSTANTS.DARK }}>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-left md:text-center" style={{ color: UI_CONSTANTS.DARK }}>
            Driven by Our IT Excellence, Powered by Your Success
           </h2>
         </div>
