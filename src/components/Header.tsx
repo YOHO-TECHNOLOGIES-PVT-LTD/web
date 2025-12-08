@@ -551,15 +551,31 @@ useEffect(() => {
               </button>
 
               {/* Payroll in Mobile Menu */}
-              <button
-                onClick={() => {
-                  window.open('https://payroll.kiaq.in/', '_blank');
-                  setIsMobileMenuOpen(false);
-                }}
-                className="flex items-center w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400"
-              >
-                Payroll
-              </button>
+             {/* Payroll in Mobile Menu - Modified to be in same bar style */}
+<button
+  onClick={() => {
+    window.open('https://payroll.kiaq.in/', '_blank');
+    setIsMobileMenuOpen(false);
+  }}
+  className="flex items-center justify-between w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 border border-gray-200 hover:border-orange-300"
+>
+  <div className="flex items-center">
+    <span>Payroll</span>
+  </div>
+  <svg 
+    className="w-4 h-4 text-gray-400" 
+    fill="none" 
+    stroke="currentColor" 
+    viewBox="0 0 24 24"
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      strokeWidth={2} 
+      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+    />
+  </svg>
+</button>
 
             </div>
           </div>
