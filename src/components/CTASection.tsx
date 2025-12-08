@@ -53,15 +53,18 @@ export default function CTASection() {
              Build the tech team of the future with KIAQ
            </h2>
    
-           <a
-             href="https://career.kiaq.in/"
-             style={{
-               backgroundColor: UI_CONSTANTS.DARK,
-               color: UI_CONSTANTS.WHITE,
-             }}
-             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
-           >
-Grow Your Career With Us           </a>
+           <div className="flex justify-center sm:justify-start">
+             <a
+               href="https://career.kiaq.in/"
+               style={{
+                 backgroundColor: UI_CONSTANTS.DARK,
+                 color: UI_CONSTANTS.WHITE,
+               }}
+               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+             >
+               Grow Your Career With Us
+             </a>
+           </div>
          </div>
        </div>
    
@@ -109,19 +112,21 @@ Grow Your Career With Us           </a>
              Let us know how we can help
            </h2>
    
-           <a
-             href="https://wa.me/918925921401"
-             style={{
-               backgroundColor: 'rgba(255, 255, 255, 0.8)',
-               color: '#173B3F',
-               border: '2px solid rgba(23, 59, 63, 0.2)',
-             }}
-             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
-             target="_blank"
-             rel="noopener noreferrer"
-           >
-             Enquiry Now
-           </a>
+           <div className="flex justify-center sm:justify-start">
+             <a
+               href="https://wa.me/918925921401"
+               style={{
+                 backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                 color: '#173B3F',
+                 border: '2px solid rgba(23, 59, 63, 0.2)',
+               }}
+               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto text-center"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               Enquiry Now
+             </a>
+           </div>
          </div>
        </div>
      </div>

@@ -61,69 +61,67 @@ export default function WhyKiaq() {
      
      {/* First Section */}
    <section
-        className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat font-['Inter_Variable',_sans-serif]"
-        style={{ backgroundImage: `url(${kiaqimag})` }}
-      >
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent z-10" />
+  className="relative min-h-screen flex items-center bg-black text-white bg-cover bg-center bg-no-repeat font-['Inter_Variable',_sans-serif]"
+  style={{ backgroundImage: `url(${kiaqimag})` }}
+>
+  {/* Dark gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent z-10" />
 
-        {/* Content */}
-        <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-20 py-12 sm:py-16 md:py-20">
-          <div className="flex flex-col md:flex-row items-start md:items-center">
-            
-            {/* Left Content */}
-           <div className="w-full md:w-1/2 max-w-xl space-y-4 sm:space-y-5">
-  <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
-    KIAQ TECHNOLOGIES
-  </p>
+  {/* Content */}
+  <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-12 lg:px-20 py-8 sm:py-16 md:py-20">
+    <div className="flex flex-col md:flex-row items-start md:items-center">
+      
+      {/* Left Content */}
+      <div className="w-full md:w-1/2 max-w-xl space-y-3 sm:space-y-5">
+        <p className="text-orange-400 font-semibold uppercase tracking-wider text-sm sm:text-base">
+          KIAQ TECHNOLOGIES
+        </p>
 
-  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
-    Strategic Tech Partner for Business Transformation
-  </h1>
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight sm:leading-snug">
+          Strategic Tech Partner for Business Transformation
+        </h1>
 
-  <p className="text-gray-300 text-base sm:text-lg leading-relaxed text-justify sm:text-justify">
-    Beyond IT Services - From IT Support to Strategic Tech Partnership. At Kiaq Technologies, we go beyond traditional IT support to become your strategic technology partner. Our mission is to align innovative software solutions with your long-term business goals, ensuring seamless operations, enhanced efficiency, and sustainable growth.
-  </p>
+        <p className="text-gray-300 text-sm sm:text-lg leading-relaxed text-justify sm:text-justify">
+          Beyond IT Services - From IT Support to Strategic Tech Partnership. At Kiaq Technologies, we go beyond traditional IT support to become your strategic technology partner. Our mission is to align innovative software solutions with your long-term business goals, ensuring seamless operations, enhanced efficiency, and sustainable growth.
+        </p>
 
-  <a href="/Contact-us" className="inline-block mt-4 sm:mt-5 bg-orange-500 text-White font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto">
-    Book a discovery call
-  </a>
-</div>
-
-            {/* Spacer for layout balance */}
-            <div className="hidden md:block md:flex-1" />
-          </div>
+        <div className="flex justify-center sm:justify-start">
+          <a href="/Contact-us" className="inline-block mt-3 sm:mt-5 bg-orange-500 text-White font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto text-center">
+            Book a discovery call
+          </a>
         </div>
-      </section>
+      </div>
+
+      {/* Spacer for layout balance */}
+      <div className="hidden md:block md:flex-1" />
+    </div>
+  </div>
+</section>
 
       {/* Second Section */}
    
-   <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-['Inter_Variable',_sans-serif]">
+  <section className="w-full bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 font-['Inter_Variable',_sans-serif]">
   <div className="max-w-7xl mx-auto bg-[#fff2eb] rounded-2xl shadow-sm overflow-hidden">
     <div className="flex flex-col md:flex-row">
-
       {/* LEFT SIDE — Explore More Heading with Pattern */}
-      <div className="relative flex flex-col justify-center items-start p-8 sm:p-12 md:p-16 md:w-[32%] bg-[#fff2eb] border-b md:border-b-0 md:border-r border-[#D7E0D2]">
+      <div className="relative flex flex-col justify-center items-start p-6 sm:p-12 md:p-16 md:w-[32%] bg-[#fff2eb] border-b md:border-b-0 md:border-r border-[#D7E0D2]">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0F3E40] leading-tight sm:leading-snug mb-2">
           Why Choose Kiaq ?
         </h2>
       </div>
-
       {/* RIGHT SIDE — Paragraph + Bullet Points */}
       <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-start items-start bg-[#fff2eb]">
         {/* Paragraph */}
-        <h1 className="text-lg sm:text-xl text-gray-700 mb-4 sm:mb-6 leading-relaxed text-justify sm:text-left">
+        <h1 className="text-lg sm:text-xl text-gray-700 mb-3 sm:mb-6 leading-relaxed text-left md:text-justify">
           With a 05-year track record in IT, we create reliable, forward-thinking technology solutions designed to help businesses scale and excel in the evolving digital era. Excellence is the cornerstone of our work.
         </h1>
-
         {/* Bullet Points */}
-        <ul className="list-disc pl-4 sm:pl-5 space-y-3 sm:space-y-4 text-sm text-gray-700 text-justify sm:text-left">
+        <ul className="list-disc pl-4 sm:pl-5 space-y-2 sm:space-y-4 text-sm text-gray-700 text-left md:text-justify">
           <li>Trusted Tech Professionals for Your Most Demanding IT Needs</li>
           <li>Tech-Driven Plans, Perfectly Aligned with Your Business Needs</li>
           <li>Innovative Technologies That Drive Business Success</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
@@ -136,11 +134,11 @@ export default function WhyKiaq() {
   
 
 
- <section className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 font-['Inter_Variable',_sans-serif]">
+<section className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 font-['Inter_Variable',_sans-serif]">
   <div className="max-w-7xl mx-auto">
 
     {/* Header */}
-    <div className="flex flex-col lg:flex-row justify-between items-start mb-10 sm:mb-12 gap-6 sm:gap-8">
+    <div className="flex flex-col lg:flex-row justify-between items-start mb-8 sm:mb-12 gap-4 sm:gap-8">
       <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight max-w-2xl text-left">
           From Vision to Execution, Building Tomorrow's Technology Today
@@ -153,7 +151,7 @@ export default function WhyKiaq() {
     </div>
 
     {/* Main Grid */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
 
       {/* Left Image */}
       <div className="relative rounded-3xl overflow-hidden shadow-2xl h-64 sm:h-80 md:h-[450px] lg:h-[600px]">
@@ -165,9 +163,9 @@ export default function WhyKiaq() {
       </div>
 
       {/* Right Values Grid */}
-      <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 md:p-12 relative shadow-2xl min-h-[450px] sm:min-h-[500px] lg:min-h-[600px]">
+  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 md:p-12 relative shadow-2xl min-h-[450px] sm:min-h-[500px] lg:min-h-[600px]">
         
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 h-full">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 md:gap-8 h-full">
           {[
             { icon: <Heart className="w-7 h-7 text-purple-300" />, title: "Empathy", desc: "We prioritize deep understanding to deliver tailored tech solutions." },
             { icon: <TrendingUp className="w-7 h-7 text-purple-300" />, title: "Performance Driven", desc: "We continuously enhance performance to surpass expectations." },
@@ -175,13 +173,13 @@ export default function WhyKiaq() {
             { icon: <Briefcase className="w-7 h-7 text-purple-300" />, title: "Teamwork & Collaboration", desc: "A collaborative culture that moves us toward shared success." },
           ].map((item, idx) => (
             <div key={idx} className="flex flex-col items-center text-center px-1">
-              <div className="bg-slate-700/50 rounded-full p-4 sm:p-5 mb-3 sm:mb-4">
+              <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4">
                 {item.icon}
               </div>
               <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2">
                 {item.title}
               </h3>
-              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">
+              <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed text-center md:text-justify">
                 {item.desc}
               </p>
             </div>
@@ -388,7 +386,7 @@ export default function WhyKiaq() {
         Strategic Tech Partner, Not Just <br className="hidden sm:block" /> Another IT Provider
       </h2>
 
-      <p className="text-gray-200 text-sm sm:text-[15px] leading-relaxed mb-5 sm:mb-6 text-justify">
+      <p className="text-gray-200 text-sm sm:text-[15px] leading-relaxed mb-5 sm:mb-6 text-justify" >
         Kiaq Technologies brings deep technical expertise across modern software development,
         cloud computing, cybersecurity, and enterprise IT solutions. Our skilled team leverages
         cutting-edge technologies to design, develop, and deploy scalable systems tailored to your

@@ -19,8 +19,8 @@ interface OfficeInfo {
 
 interface OfficeData {
   Chennai: OfficeInfo;
-  Bangalore: OfficeInfo;
-  Mumbai: OfficeInfo;
+  // Bangalore: OfficeInfo;
+  // Mumbai: OfficeInfo;
 }
 
 type OfficeLocation = keyof OfficeData;
@@ -47,45 +47,15 @@ const ContactUs = () => {
     Chennai: {
       title: "Chennai",
       address: [
-        "M181, Cactus Corporate, 7th Floor, Block B,Tecci Park, OMR,Sholinganallur,Chennai 600 119",
-        
+        // "M181, Cactus Corporate, 7th Floor, Block B,",
+        // "Tecci Park, OMR, Sholinganallur, Chennai 600 119."
       ],
       mobile: "+91 8925 92 1401",
       email: "Info@kiaq.in",
       hours: "09:30 AM – 06:30 PM GMT +5:30",
       image: tecki,
-
-      // ✅ UPDATED ONLY THIS LINE
       mapsLink:
         "https://www.google.com/maps/dir//Cactus,G+Floor,+Block+B,+TECCI+PARK,+M181,+Rajiv+Gandhi+Salai,+Elcot+Sez,+Sholinganallur,+Chennai,+Tamil+Nadu+600119/@13.008896,80.2029568,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a525d352c30ef65:0x5e68ff80778d5be4!2m2!1d80.2264068!2d12.910766?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D",
-    },
-
-    Bangalore: {
-      title: "Bangalore",
-      address: [
-        "Tech Park, 3rd Floor, Tower B",
-        "Whitefield Road",
-        "Bangalore 560 066",
-      ],
-      mobile: "+91 8925 92 1402",
-      email: "Info@kiaq.in",
-      hours: "09:30 AM – 06:30 PM GMT +5:30",
-      image: tecki,
-      mapsLink: "#",
-    },
-
-    Mumbai: {
-      title: "Mumbai",
-      address: [
-        "Business Bay, 5th Floor",
-        "Bandra Kurla Complex",
-        "Mumbai 400 051",
-      ],
-      mobile: "+91 8925 92 1403",
-      email: "Info@kiaq.in",
-      hours: "09:30 AM – 06:30 PM GMT +5:30",
-      image: tecki,
-      mapsLink: "#",
     },
   };
 
@@ -98,7 +68,6 @@ const ContactUs = () => {
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images.length]);
-
 
   // Auto slide effect
   useEffect(() => {
@@ -116,10 +85,10 @@ const ContactUs = () => {
 
   {/* Header */}
   <div className="relative z-10 flex flex-col items-center text-center text-white px-4 mb-12">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4 font-['Inter_Variable',_sans-serif]">
+    <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold sm:font-extrabold tracking-tight mb-4 font-['Inter_Variable',_sans-serif]">
       Contact Us
     </h2>
-    <p className="max-w-2xl text-base sm:text-lg leading-relaxed text-gray-200 opacity-90 font-['Inter_Variable',_sans-serif]">
+    <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-gray-200 opacity-90 font-['Inter_Variable',_sans-serif]">
       We're a dedicated team of IT professionals, committed to delivering
       innovative solutions that fuel your business success.
     </p>
@@ -127,22 +96,22 @@ const ContactUs = () => {
 
   {/* Contact Card */}
   <div className="relative z-10 flex justify-center px-4">
-    <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-6xl p-6 sm:p-8 md:p-10 border border-gray-200/80">
+    <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl w-full max-w-6xl p-4 sm:p-8 md:p-10 border border-gray-200/80">
 
       {/* Title row */}
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full mb-8 gap-4">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full mb-6 sm:mb-8 gap-4">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-semibold mb-3 text-gray-900 font-['Inter_Variable',_sans-serif]">
+          <h1 className="text-2xl sm:text-4xl font-semibold mb-2 sm:mb-3 text-gray-900 font-['Inter_Variable',_sans-serif]">
             Our Offices
           </h1>
-          <p className="text-gray-700 max-w-xl leading-relaxed text-base sm:text-lg opacity-90 font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-700 max-w-xl leading-relaxed text-sm sm:text-lg opacity-90 font-['Inter_Variable',_sans-serif]">
             Explore our modern offices around the world—where innovation meets
             collaboration and support is always available.
           </p>
         </div>
 
         {/* Dropdown */}
-        <div className="w-full lg:w-auto">
+         <div className="w-full lg:w-auto">
           <div className="relative">
             <select
               value={selectedLocation}
@@ -162,54 +131,56 @@ const ContactUs = () => {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="border border-gray-200 rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-6 bg-white shadow-xl">
+      <div className="border border-gray-200 rounded-3xl p-4 sm:p-6 md:p-8 flex flex-col lg:flex-row gap-4 sm:gap-6 bg-white shadow-xl">
 
         {/* LEFT INFO */}
         <div className="flex-1">
-          <div className="flex items-center mb-6">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 tracking-tight font-['Inter_Variable',_sans-serif]">
+          <div className="flex items-center mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-4xl font-semibold text-gray-900 tracking-tight font-['Inter_Variable',_sans-serif]">
               {currentOffice.title}
             </h2>
-            <img src={teck4} alt="Location" className="w-12 h-12 ml-4 opacity-90" />
+            <img src={teck4} alt="Location" className="w-10 h-10 sm:w-12 sm:h-12 ml-3 sm:ml-4 opacity-90" />
           </div>
 
-          <div className="space-y-5 text-base sm:text-lg text-gray-800 font-['Inter_Variable',_sans-serif]">
+          <div className="space-y-4 sm:space-y-5 text-sm sm:text-base md:text-lg text-gray-800 font-['Inter_Variable',_sans-serif]">
             <div>
               <div className="flex items-start gap-2">
-                
-                <div>
-  <div className="flex items-start gap-2">
-    <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-    </svg>
-    <div className="flex-1 min-w-0">
-      <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">Address:</p>
-      <div className="space-y-0.5">
-        {currentOffice.address.map((line, index) => (
-          <p
-            key={index}
-            className="text-gray-700 leading-relaxed text-base  sm:text-lg opacity-90 font-['Inter_Variable',_sans-serif] break-words"
-          >
-            {line}
-          </p>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-base sm:text-xl mb-1 sm:mb-1.5 font-['Inter_Variable',_sans-serif]">Address:</p>
+                  <div className="space-y-0.5">
+                    {/* {currentOffice.address.map((line, index) => (
+                      <p
+                        key={index}
+                        className={`text-gray-700 leading-relaxed opacity-90 font-['Inter_Variable',_sans-serif] break-words
+                          ${index === 0 ? 'text-sm sm:text-base md:text-lg' : 'text-sm sm:text-base md:text-lg'}`}
+                      >
+                        {line}
+                      </p>
+                    ))} */}
+                    <p className="text-gray-700 leading-relaxed opacity-90 font-['Inter_Variable',_sans-serif] break-words">
+  M181, Cactus Corporate, 7th Floor, <br/> Block B,
+  Tecci Park, OMR, Sholinganallur,<br/> 
+  <span className="hidden sm:inline">Chennai 600 119,Tamil Nadu.<br/></span>
+  <span className="inline sm:hidden">Chennai 600 119,Tamil Nadu. </span>
+</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div>
               <div className="flex items-start gap-2">
-                <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">Mobile:</p>
+                  <p className="font-semibold text-base sm:text-xl mb-1 sm:mb-1.5 font-['Inter_Variable',_sans-serif]">Mobile:</p>
                   <a
                     href={`tel:${currentOffice.mobile}`}
-                    className="text-[#002b38] hover:text-[#ff5500] transition font-medium block font-['Inter_Variable',_sans-serif]"
+                    className="text-[#002b38] hover:text-[#ff5500] transition font-medium block text-sm sm:text-base font-['Inter_Variable',_sans-serif]"
                   >
                     {currentOffice.mobile}
                   </a>
@@ -219,15 +190,15 @@ const ContactUs = () => {
 
             <div>
               <div className="flex items-start gap-2">
-                <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">Mail ID:</p>
+                  <p className="font-semibold text-base sm:text-xl mb-1 sm:mb-1.5 font-['Inter_Variable',_sans-serif]">Mail ID:</p>
                   <a
                     href={`mailto:${currentOffice.email}`}
-                    className="text-[#002b38] hover:text-[#ff5500] transition font-medium block break-all font-['Inter_Variable',_sans-serif]"
+                    className="text-[#002b38] hover:text-[#ff5500] transition font-medium block break-all text-sm sm:text-base font-['Inter_Variable',_sans-serif]"
                   >
                     {currentOffice.email}
                   </a>
@@ -237,14 +208,14 @@ const ContactUs = () => {
 
             <div>
               <div className="flex items-start gap-2">
-                <svg className="w-5 h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 text-[#002b38] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-lg sm:text-xl mb-1.5 font-['Inter_Variable',_sans-serif]">
+                  <p className="font-semibold text-base sm:text-xl mb-1 sm:mb-1.5 font-['Inter_Variable',_sans-serif]">
                     Working Hours:
                   </p>
-                  <p className="text-gray-700 opacity-90 font-['Inter_Variable',_sans-serif]">{currentOffice.hours}</p>
+                  <p className="text-gray-700 opacity-90 text-sm sm:text-base font-['Inter_Variable',_sans-serif]">{currentOffice.hours}</p>
                 </div>
               </div>
             </div>
@@ -254,7 +225,7 @@ const ContactUs = () => {
             href={currentOffice.mapsLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-base sm:text-lg mt-6 font-medium text-[#002b38] border-b-2 border-[#ff5500] pb-1 hover:text-[#ff5500] hover:border-[#002b38] transition-all ml-7 font-['Inter_Variable',_sans-serif]"
+            className="inline-flex items-center gap-2 text-sm sm:text-base md:text-lg mt-4 sm:mt-6 font-medium text-[#002b38] border-b-2 border-[#ff5500] pb-1 hover:text-[#ff5500] hover:border-[#002b38] transition-all ml-0 sm:ml-7 font-['Inter_Variable',_sans-serif]"
           >
             Open in Google Maps →
           </a>
@@ -262,7 +233,7 @@ const ContactUs = () => {
 
         {/* RIGHT SLIDER */}
         <div className="flex-1">
-          <div className="w-full h-[300px] sm:h-[380px] md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl relative group">
+          <div className="w-full h-[240px] sm:h-[380px] md:h-[480px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl relative group">
             <img
               src={images[currentIndex]}
               alt="Office Slide"

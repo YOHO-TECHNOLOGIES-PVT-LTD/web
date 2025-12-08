@@ -310,7 +310,7 @@ export default function WebAppDevelopmentHero() {
 
       {/* Rest of your existing sections remain unchanged */}
       {/* {third section} */}
-      <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
+     <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
   {/* Scrollable SVG Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -372,13 +372,13 @@ pattern:
       ].map((card, idx) => (
         <div
           key={idx}
-          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+          className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
         >
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-snug text-left sm:text-justify">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"

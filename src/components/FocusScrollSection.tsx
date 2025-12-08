@@ -18,7 +18,7 @@ export default function FocusScrollSection() {
   {
     title: "Advanced AI-Powered Systems Designed to Transform Customer Interaction",
     description:
-      "Our advanced AI-driven chatbots and automation tools revolutionize how businesses engage with customers. Using cutting-edge machine learning and natural language processing, they deliver smarter, more personalized support. These systems streamline operations by automating routine workflows and reducing manual effort, enhance customer satisfaction through consistent, high-quality interactions, and enable greater efficiency and sustainable growth through scalable, intelligent automation."
+     "Our advanced AI-driven chatbots and automation tools revolutionize how businesses engage with customers.Using cutting-edge machine learning and natural language processing, they deliver smarter, more personalized support.These systems streamline operations by automating routine workflows and reducing manual effort, enhance customer satisfaction through consistent, high-quality interactions, and enable greater efficiency and sustainable growth through scalable, intelligent automation."
   },
   {
     title: "Custom Software Built for Real-World Performance",
@@ -69,12 +69,12 @@ export default function FocusScrollSection() {
   }, []);
 
   return (
-   <section className="py-5 sm:py-7 md:py-8 lg:py-10 bg-white">
+   <section className="py-4 sm:py-7 md:py-8 lg:py-10 bg-white">
   <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-10">
     <div className="flex flex-col lg:flex-row lg:gap-8">
 
       {/* Mobile/Tablet Video */}
-      <div className="lg:hidden w-full mb-4 sm:mb-6">
+      <div className="lg:hidden w-full mb-3 sm:mb-5">
         <div className="w-full max-w-md mx-auto">
           <video
             src={imgfocus}
@@ -93,11 +93,11 @@ export default function FocusScrollSection() {
           <div
             key={index}
             ref={(el) => { contentRefs.current[index] = el }}
-            className="min-h-[35vh] sm:min-h-[42vh] lg:min-h-[52vh] flex items-center py-1"
+            className="min-h-[28vh] sm:min-h-[36vh] lg:min-h-[52vh]"
           >
-            <div className="w-full max-w-xl">
+            <div className="w-full max-w-xl py-2 sm:py-3">
               <h3
-                className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-2 leading-tight transition-all duration-500"
+                className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2 leading-tight transition-all duration-500"
                 style={{
                   color: UI_CONSTANTS.DARK,
                   opacity: activeIndex === index ? 1 : 0.3,
@@ -107,7 +107,7 @@ export default function FocusScrollSection() {
               </h3>
 
               <p
-                className="text-base sm:text-lg leading-relaxed transition-all duration-500 text-justify"
+                className="text-base sm:text-lg leading-relaxed transition-all duration-500 text-justify "
                 style={{
                   color: UI_CONSTANTS.GRAY,
                   opacity: activeIndex === index ? 1 : 0.3,
@@ -136,9 +136,9 @@ export default function FocusScrollSection() {
     </div>
 
     {/* CTA Button */}
-    <div className="text-center mt-8 sm:mt-12 lg:mt-14">
+    <div className="text-center mt-6 sm:mt-10 lg:mt-14">
       <a
-        href="/Contact-us"
+        href="/who-we-are"
         className="inline-block px-8 py-3 sm:px-12 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
         style={{
           backgroundColor: UI_CONSTANTS.PRIMARY,

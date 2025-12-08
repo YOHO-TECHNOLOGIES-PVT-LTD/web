@@ -26,7 +26,7 @@ export default function WebAppDevelopmentHero() {
 
   const [activeTab, setActiveTab] = useState<
   "Predictive Analytics" | "Machine Learning" | "AI Solutions"
->("AI Solutions");
+>("Predictive Analytics");
 
 const tabs = [
   "Predictive Analytics",
@@ -283,7 +283,7 @@ const images = {
 
     {/* {third section} */}
 
-   <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
+ <section className="relative w-full bg-[#edf6f5] overflow-hidden py-20 px-6 lg:px-12 font-['Inter_Variable',_sans-serif]">
   {/* Scrollable SVG Pattern Background */}
   <div
     className="absolute inset-0 opacity-15"
@@ -345,13 +345,13 @@ const images = {
       ].map((card, idx) => (
         <div
           key={idx}
-          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+          className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
         >
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-snug text-left sm:text-justify">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -438,7 +438,7 @@ const images = {
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left sm:text-justify">
         Enterprise AI Implementation Driving Digital Transformation
       </h2>
-      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-left sm:text-justify">
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-justify sm:text-justify">
         KIAQ partners with global enterprises to implement scalable AI solutions 
         that transform business operations. Our data science expertise combined 
         with industry-specific knowledge delivers measurable ROI through improved 
@@ -559,7 +559,7 @@ const images = {
 </section>
           {/* {6th Section} */}
 
-         <section className="dual-action-button-cta">
+          <section className="dual-action-button-cta">
      <div className="dual-action-button-cta-wrapper grid lg:grid-cols-2 gap-0 min-h-[350px] sm:min-h-[400px]">
        
        {/* LEFT SECTION */}
@@ -606,15 +606,18 @@ const images = {
              Build the tech team of the future with KIAQ
            </h2>
    
-           <a
-             href="https://career.kiaq.in/"
-             style={{
-               backgroundColor: UI_CONSTANTS.DARK,
-               color: UI_CONSTANTS.WHITE,
-             }}
-             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto"
-           >
-Grow Your Career With Us           </a>
+           <div className="flex justify-center sm:justify-start">
+             <a
+               href="https://career.kiaq.in/"
+               style={{
+                 backgroundColor: UI_CONSTANTS.DARK,
+                 color: UI_CONSTANTS.WHITE,
+               }}
+               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+             >
+               Grow Your Career With Us
+             </a>
+           </div>
          </div>
        </div>
    
@@ -662,19 +665,21 @@ Grow Your Career With Us           </a>
              Let us know how we can help
            </h2>
    
-           <a
-             href="https://wa.me/918925921401"
-             style={{
-               backgroundColor: 'rgba(255, 255, 255, 0.8)',
-               color: '#173B3F',
-               border: '2px solid rgba(23, 59, 63, 0.2)',
-             }}
-             className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto"
-             target="_blank"
-             rel="noopener noreferrer"
-           >
-             Enquiry Now
-           </a>
+           <div className="flex justify-center sm:justify-start">
+             <a
+               href="https://wa.me/918925921401"
+               style={{
+                 backgroundColor: 'rgba(255, 255, 255, 0.8)',
+                 color: '#173B3F',
+                 border: '2px solid rgba(23, 59, 63, 0.2)',
+               }}
+               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:bg-white transition-colors w-full sm:w-auto text-center"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               Enquiry Now
+             </a>
+           </div>
          </div>
        </div>
      </div>

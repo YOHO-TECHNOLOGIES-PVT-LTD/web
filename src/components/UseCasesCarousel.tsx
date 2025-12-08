@@ -108,7 +108,7 @@ const useCases = [
         
         <div className="text-center mt-8 sm:mt-12 md:mt-16 px-4">
           <a 
-            href="/Contact-us"
+            href="/application-development"
             style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
             className="inline-block px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-sm sm:max-w-none"
           >
@@ -133,16 +133,36 @@ const useCases = [
         .animate-scroll-right {
           animation: scroll-right 20s linear infinite;
         }
-        .animate-scroll-left:hover,
-        .animate-scroll-right:hover {
-          animation-play-state: paused;
-        }
-        @media (max-width: 640px) {
-          .animate-scroll-left {
-            animation: scroll-left 20s linear infinite;
+        
+        /* For desktop - pause on hover */
+        @media (hover: hover) and (pointer: fine) {
+          .animate-scroll-left:hover,
+          .animate-scroll-right:hover {
+            animation-play-state: paused;
           }
-          .animate-scroll-right {
-            animation: scroll-right 20s linear infinite;
+        }
+        
+        /* For mobile - pause on touch */
+        @media (hover: none) and (pointer: coarse) {
+          .animate-scroll-left:active,
+          .animate-scroll-right:active {
+            animation-play-state: paused;
+          }
+        }
+        
+        /* Enable hover effects on mobile using :active pseudo-class */
+        @media (hover: none) and (pointer: coarse) {
+          .group:active .group-hover\\:opacity-100 {
+            opacity: 1 !important;
+          }
+          .group:active .group-hover\\:opacity-0 {
+            opacity: 0 !important;
+          }
+          .group:active [style*="opacity: 0"] {
+            opacity: 1 !important;
+          }
+          .group:active [style*="opacity: 100"] {
+            opacity: 0 !important;
           }
         }
       `}</style>
@@ -169,12 +189,15 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   const textColor = isDark ? "#FFFFFF" : UI_CONSTANTS.DARK;
   const uniqueId = `pattern-${index}`;
 
-  const handleClick = () => {
-    window.location.href = '/';
-  };
+  // const handleClick = () => {
+  //   window.location.href = '';
+  // };
 
   return (
-    <div className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[400px] lg:w-[470px] h-[300px] sm:h-[320px] md:h-[340px] lg:h-[360px] group cursor-pointer" onClick={handleClick}>
+    <div 
+      className="flex-shrink-0 w-[300px] sm:w-[340px] md:w-[400px] lg:w-[470px] h-[300px] sm:h-[320px] md:h-[340px] lg:h-[360px] group cursor-pointer" 
+      // onClick={handleClick}
+    >
       <div 
         className="p-6 sm:p-7 md:p-9 lg:p-11 rounded-xl sm:rounded-2xl lg:rounded-3xl h-full relative overflow-hidden transition-all duration-500"
         style={{ backgroundColor: useCase.bgColor }}

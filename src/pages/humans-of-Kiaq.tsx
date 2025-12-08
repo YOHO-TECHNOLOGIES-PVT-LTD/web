@@ -101,14 +101,14 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
   const textColor = isDark ? "#FFFFFF" : UI_CONSTANTS.DARK;
   const uniqueId = `pattern-${index}`;
 
-  const handleClick = () => {
-    window.location.href = '/';
-  };
+  // const handleClick = () => {
+  //   window.location.href = '';
+  // };
 
   return (
     <div 
-      className="group cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl font-['Inter_Variable',_sans-serif]"
-      onClick={handleClick}
+      className="group cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-2xl active:scale-105 active:shadow-2xl font-['Inter_Variable',_sans-serif] touch-manipulation"
+      // onClick={handleClick}
     >
       <div 
         className="relative rounded-3xl overflow-hidden border border-gray-200 h-full min-h-[320px] transition-all duration-500"
@@ -116,7 +116,7 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
       >
         {/* Original Hexagonal Pattern with Four-Pointed Star */}
         <svg 
-          className="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 transition-opacity duration-500"
+          className="absolute inset-0 w-full h-full opacity-100 group-hover:opacity-0 group-active:opacity-0 transition-opacity duration-500"
           style={{ pointerEvents: 'none' }}
         >
           <defs>
@@ -140,7 +140,7 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
 
         {/* Hover Overlay */}
         <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500 rounded-3xl"
           style={{ 
             background: `linear-gradient(135deg, ${useCase.bgColor} 0%, ${useCase.patternColor} 100%)` 
           }}
@@ -168,16 +168,16 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
 
           {/* Title */}
           <h3 
-            className="text-xl font-bold leading-tight mb-4 flex-grow group-hover:translate-y-[-5px] transition-transform duration-300"
+            className="text-xl font-bold leading-tight mb-4 flex-grow group-hover:translate-y-[-5px] group-active:translate-y-[-5px] transition-transform duration-300"
             style={{ color: textColor }}
           >
             {useCase.title}
           </h3>
 
-          {/* Description - Hidden by default, shows on hover */}
+          {/* Description - Hidden by default, shows on hover/touch */}
           <div className="overflow-hidden">
             <p 
-              className="text-sm leading-relaxed transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100"
+              className="text-sm leading-relaxed transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-active:translate-y-0 group-active:opacity-100 transition-all duration-500 delay-100"
               style={{ color: textColor, opacity: 0.9 }}
             >
               {useCase.description}
@@ -186,7 +186,7 @@ function UseCaseCard({ useCase, index }: UseCaseCardProps) {
 
           {/* CTA Arrow */}
           <div className="flex justify-end mt-6">
-            <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300">
+            <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center transform group-hover:scale-110 group-hover:bg-white/30 group-active:scale-110 group-active:bg-white/30 transition-all duration-300">
               <svg 
                 width="20" 
                 height="20" 
@@ -283,7 +283,7 @@ function AutoSlideSection() {
           </h2>
           
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-justify">
-            At Kiaq Technologies, we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance, or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience, and accelerate digital growth.
+            At Kiaq Technologies,we specialize in delivering scalable technology solutions tailored to the unique digital demands of diverse industries. Whether it's manufacturing, healthcare, finance or retail, our expert team crafts agile, high-performance systems designed to streamline operations, enhance user experience and accelerate digital growth.
           </p>
         </div>
       </div>
@@ -342,8 +342,8 @@ export default function WhyKiaq() {
         Driving Industrial Evolution Through Intelligent Technology Solutions
       </h2>
 
-      <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto text-left sm:text-justify">
-        Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated, future-ready technology solutions. By leveraging advanced capabilities including cloud computing, automation, data analytics, and custom software development, we address the distinctive operational requirements of various sectors.
+      <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl mx-auto text-justify sm:text-justify">
+        Kiaq Technologies empowers industrial organizations to evolve and excel in the digital age through sophisticated,future-ready technology solutions. By leveraging advanced capabilities including cloud computing,automation,data analytics, and custom software development,we address the distinctive operational requirements of various sectors.
       </p>
     </div>
     
@@ -415,8 +415,8 @@ export default function WhyKiaq() {
           <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight text-left sm:text-justify">
             Expertise That Powers Digital Excellence Book a Free Consultation
           </h3>
-          <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-5 leading-relaxed text-left sm:text-justify">
-            At Kiaq Technologies, our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable, and secure systems that solve real business challenges. Our team of experienced professionals brings together innovation, precision, and strategic thinking to drive digital transformation across sectors. From concept to execution, we ensure each project reflects our commitment to quality, performance, and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
+          <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-5 leading-relaxed text-justify sm:text-justify">
+            At Kiaq Technologies,our expertise is the foundation of every solution we deliver. With a deep understanding of emerging technologies and industry-specific demands, we craft intelligent, scalable and secure systems that solve real business challenges.Our team of experienced professionals brings together innovation,precision and strategic thinking to drive digital transformation across sectors.From concept to execution,we ensure each project reflects our commitment to quality,performance and long-term value—positioning your business for sustainable success in a rapidly evolving tech landscape.
           </p>
           <a href="/Contact-us" className="inline-block bg-orange-600 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-md text-sm sm:text-base font-semibold hover: transition-all w-full sm:w-auto text-center">
             Schedule Consultation

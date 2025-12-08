@@ -367,13 +367,13 @@ pattern:
       ].map((card, idx) => (
         <div
           key={idx}
-          className={`relative w-full max-w-[230px] min-h-[240px] p-6 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
+          className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
         >
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-snug">
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-snug text-left sm:text-justify">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -458,7 +458,7 @@ pattern:
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left sm:text-justify">
         Enterprise Data Infrastructure Driving Digital Transformation
       </h2>
-      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-left sm:text-justify">
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-justify sm:text-justify">
         KIAQ partners with global enterprises to build scalable data infrastructure 
         that transforms business operations. Our data engineering expertise combined 
         with industry-specific knowledge delivers measurable ROI through improved 

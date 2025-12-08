@@ -115,7 +115,7 @@ const steps = [
 
   return (
     <>
-   <section
+  <section
   className="relative w-full min-h-[75vh] sm:min-h-[90vh] flex items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
@@ -137,7 +137,7 @@ const steps = [
 
   {/* Content */}
   <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-10 sm:py-0">
-    <div className="max-w-full sm:max-w-[520px] mt-6 sm:mt-[10vh] md:mt-[12vh] lg:mt-[14vh]">
+    <div className="max-w-full sm:max-w-[520px] mt-16 sm:mt-[10vh] md:mt-[12vh] lg:mt-[14vh]">
 
       {/* Title */}
       <h1
@@ -182,21 +182,21 @@ const steps = [
     {/* Stats Section */}
     <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-12 md:mt-14 text-gray-200 font-['Inter_Variable',_sans-serif]">
 
-      <div className="text-center sm:text-left min-w-[140px]">
+      <div className="text-left min-w-[140px]">
         <p className="text-lg sm:text-2xl font-semibold text-white mb-1">95%</p>
         <p className="text-xs sm:text-sm opacity-90">
           Client satisfaction with AI implementation
         </p>
       </div>
 
-      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-center sm:text-left min-w-[140px]">
+      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-left min-w-[140px]">
         <p className="text-lg sm:text-2xl font-semibold text-white mb-1">500+</p>
         <p className="text-xs sm:text-sm opacity-90">
           AI & Data Science specialists
         </p>
       </div>
 
-      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-center sm:text-left min-w-[140px]">
+      <div className="border-t sm:border-t-0 sm:border-l border-white/20 pt-4 sm:pt-0 sm:pl-6 md:pl-8 text-left min-w-[140px]">
         <p className="text-lg sm:text-2xl font-semibold text-white mb-1">24+</p>
         <p className="text-xs sm:text-sm opacity-90">
           Average engagement duration (months)
