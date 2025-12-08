@@ -390,7 +390,7 @@ export default function AdaptiveHiring() {
 
         <div className="text-center mt-6 sm:mt-8 md:mt-10 px-3">
           <a
-            href="/Contact-us"
+            href="https://career.kiaq.in/"
             className="inline-block px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
             style={{
               backgroundColor: UI_CONSTANTS.PRIMARY,

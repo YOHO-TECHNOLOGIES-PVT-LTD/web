@@ -191,7 +191,7 @@ export default function TestimonialSlider() {
 
             </div>
 
-            <a href="/Contact-us" className="inline-block bg-orange-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium hover:bg-orange-600 transition-all text-xs sm:text-base">
+            <a href="/our-expertise" className="inline-block bg-orange-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium hover:bg-orange-600 transition-all text-xs sm:text-base">
               Get Started
             </a>
 

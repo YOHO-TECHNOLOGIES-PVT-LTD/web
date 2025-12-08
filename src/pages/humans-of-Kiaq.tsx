@@ -356,7 +356,7 @@ export default function WhyKiaq() {
     
     <div className="text-center mt-6 sm:mt-10 lg:mt-12">
       <a 
-        href="/Contact-us"
+        href="/who-we-are"
         style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
         className="inline-block px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
       >
