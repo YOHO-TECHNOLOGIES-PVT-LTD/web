@@ -423,3 +423,28 @@ html {
   --sprite-url: url('https://storage.googleapis.com/...svg');
 }
 
+/* Image Masked Text */
+/* Image Masked Text */
+.text-image-mask {
+  background-size: 200%;
+  background-position: 0% 50%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: maskMove 25s linear infinite;
+}
+
+/* Animation movement LEFT ➝ RIGHT ➝ LEFT */
+@keyframes maskMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+

@@ -9,6 +9,8 @@ const UI_CONSTANTS = {
 
 // import imgfocus from '../assets/HOME/Gemini_Generated_Image_x9vr37x9vr37x9vr.png';
 import imgfocus from "../assets/660dcc7f45ad8881324199b5_665edf960bfc2a8fb317836a_Make_work_happen_fast-transcode.webm";
+import img4 from "../assets/698.jpg";
+
 
 export default function FocusScrollSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -137,18 +139,34 @@ export default function FocusScrollSection() {
 
     {/* CTA Button */}
     <div className="text-center mt-6 sm:mt-10 lg:mt-14">
-      <a
-        href="/who-we-are"
-        className="inline-block px-8 py-3 sm:px-12 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-1 active:translate-y-0"
-        style={{
-          backgroundColor: UI_CONSTANTS.PRIMARY,
-          color: UI_CONSTANTS.WHITE,
-        }}
-      >
-        <span className="hidden sm:inline">Learn More</span>
-        <span className="sm:hidden">Learn More</span>
-      </a>
-    </div>
+  <a
+    className="inline-block px-8 py-3 sm:px-12 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300"
+    
+  >
+    <span
+  className="hidden sm:inline text-image-mask text-8xl"
+  style={{ backgroundImage: `url(${img4})` }}
+>
+  Advanced AI
+</span>
+
+<h1
+  className="sm:hidden sm: text-5xl font-bold text-image-mask"
+  style={{ backgroundImage: `url(${img4})` }}
+>
+  Advanced AI
+</h1>
+
+
+    {/* <span
+      className="sm:hidden text-image-mask"
+      style={{ backgroundImage: `url(${img4})` }}
+    >
+      Advanced AI
+    </span> */}
+  </a>
+</div>
+
   </div>
 </section>
   );

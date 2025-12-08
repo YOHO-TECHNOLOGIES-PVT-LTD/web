@@ -4,6 +4,8 @@ import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/admin-photovoltaics-factory-updates-machinery-software-talks-with-manager.jpg";
 import webimg3 from "../assets/hologram-projector-screen-with-cloud-system-technology.jpg";
 import webimg4 from "../assets/business-team-meeting.jpg";
+import img4 from "../assets/698.jpg"
+
 
 import webimg8 from "../assets/dslogo/ChatGPT_Image_Nov_29__2025__12_07_06_PM-removebg-preview.png";
 import webimg9 from "../assets/dslogo/python_logo-removebg-preview.png";
@@ -56,14 +58,14 @@ export default function WebAppDevelopmentHero() {
   return (
     <div className="font-['Inter_Variable',_sans-serif]">
      <section
-  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
+  className="relative w-full min-h-[90vh] flex items-center sm:items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
   {/* Background image */}
   <img
     src={webimg}
     alt="Data Engineering and Analytics"
-    className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
+    className="absolute inset-0 w-full h-full object-cover object-center sm:object-right z-0"
   />
 
   {/* Dark gradient overlay */}
@@ -76,18 +78,19 @@ export default function WebAppDevelopmentHero() {
   ></div>
 
   {/* Content */}
-  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-    <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-10 sm:py-0">
+    <div className="max-w-[520px] mt-0 sm:mt-[14vh] text-left">
       {/* Title */}
       <h1
-        className="text-white font-bold leading-snug mb-4 sm:mb-5"
+        className="text-white font-bold leading-snug mb-4 sm:mb-5 text-left sm:text-left"
         style={{
-          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
           lineHeight: 1.2,
         }}
       >
         Enterprise Data Engineering & Analytics Solutions
-        <br />
+        <br className="hidden sm:block" />
+        <span className="sm:hidden"> </span>
         Building Foundations for Data-Driven Success
       </h1>
 
@@ -95,7 +98,7 @@ export default function WebAppDevelopmentHero() {
       <p
         className="text-gray-200 font-light mb-6 sm:mb-8 text-left sm:text-justify"
         style={{
-          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
           lineHeight: 1.65,
           color: "rgba(255,255,255,0.85)",
         }}
@@ -119,18 +122,18 @@ export default function WebAppDevelopmentHero() {
     </div>
 
     {/* Stats Section */}
-    <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200 text-left">
       <div>
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">98%</p>
         <p className="text-xs sm:text-sm opacity-90">Data pipeline reliability</p>
       </div>
 
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
+      <div className="sm:border-l border-white/20 sm:pl-8">
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">200+</p>
         <p className="text-xs sm:text-sm opacity-90">Data engineering experts</p>
       </div>
 
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
+      <div className="sm:border-l border-white/20 sm:pl-8">
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">32+</p>
         <p className="text-xs sm:text-sm opacity-90">Months average partnership</p>
       </div>
@@ -209,7 +212,7 @@ export default function WebAppDevelopmentHero() {
   <div className="relative z-10 max-w-6xl mx-auto">
     {/* HEADING */}
     <div className="max-w-[980px] pr-0 sm:pr-8">
-      <h2 className="text-[22px] sm:text-[28px] md:text-[34px] font-semibold text-[#011123] leading-tight text-left sm:text-justify">
+      <h2 className="text-[22px] sm:text-[28px] md:text-[34px] font-semibold text-[#011123] leading-tight text-left sm:text-left">
         Comprehensive Data Engineering Services for Modern Enterprises
       </h2>
 
@@ -293,10 +296,11 @@ export default function WebAppDevelopmentHero() {
       <div className="md:col-span-7 flex justify-center md:justify-end mt-3 md:mt-0">
         <div className="w-full max-w-[520px]">
           <img
-            src={images[activeTab]}
-            alt={activeTab}
-            className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-          />
+  src={images[activeTab]}
+  alt={activeTab}
+  className="w-full h-[300px] sm:h-[350px] lg:h-[380px] rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+/>
+
         </div>
       </div>
     </div>
@@ -322,58 +326,55 @@ export default function WebAppDevelopmentHero() {
   {/* Content */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14 text-left lg:text-center">
       Comprehensive Data Engineering Service Portfolio
     </h2>
 
     {/* Cards */}
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 justify-items-center items-stretch">
       {[
-        {
-title: "Data Pipeline Development",
-desc: "Design and implementation of scalable ETL/ELT pipelines for efficient data processing and transformation with automated monitoring and maintenance",
-gradient: "from-[#e3f3e9] to-[#f1faf4]",
-pattern:
-  "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-},
-{
-title: "Cloud Data Migration",
-desc: "Seamless migration of on-premise data infrastructure to cloud platforms with optimized performance and security compliance",
-gradient: "from-[#b6d9d2] to-[#d3efea]",
-pattern:
-  "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-},
-{
-title: "Real-time Data Streaming",
-desc: "Implementation of streaming architectures for immediate data processing and analytics with low-latency data ingestion",
-gradient: "from-[#f2f5f6] to-[#f7fbfb]",
-pattern:
-  "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-},
-{
-title: "Data Warehouse Solutions",
-desc: "Building optimized data warehouses for business intelligence and advanced analytics with scalable storage solutions",
-gradient: "from-[#e7f6dc] to-[#f1fbef]",
-pattern:
-  "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-},
-{
-title: "Data Governance & Quality",
-desc: "Establishing data governance frameworks and quality assurance processes with comprehensive metadata management",
-gradient: "from-[#b6d9d2] to-[#d3efea]",
-pattern:
-  "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
-},
-      ].map((card, idx) => (
+  {
+    title: "Data Pipeline Development",
+    desc: "Design and implementation of highly scalable ETL/ELT pipelines for efficient data processing and transformation with automated monitoring and maintenance",
+    gradient: "from-[#e3f3e9] to-[#f1faf4]",
+    pattern: "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Cloud Data Migration",
+    desc: "Seamless migration of on-premise data infrastructure to modern cloud platforms with optimized performance and security compliance",
+    gradient: "from-[#b6d9d2] to-[#d3efea]",
+    pattern: "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Real-time Data Streaming",
+    desc: "Implementation of streaming architectures for immediate real-time data processing and analytics with low-latency data ingestion",
+    gradient: "from-[#f2f5f6] to-[#f7fbfb]",
+    pattern: "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Data Warehouse Solutions",
+    desc: "Building optimized data warehouses for advanced business intelligence and analytics with scalable storage solutions",
+    gradient: "from-[#e7f6dc] to-[#f1fbef]",
+    pattern: "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+  {
+    title: "Data Governance & Quality",
+    desc: "Establishing robust data governance frameworks and quality assurance processes with comprehensive metadata management",
+    gradient: "from-[#b6d9d2] to-[#d3efea]",
+    pattern: "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
+  },
+]
+.map((card, idx) => (
         <div
-          key={idx}
-          className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-        >
+  key={idx}
+  className={`relative w-full max-w-[360px] sm:max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-start`}
+>
+
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug">
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug text-left lg:text-left">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-left">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -394,11 +395,12 @@ pattern:
       <div className="flex items-center justify-start gap-16 md:gap-22 opacity-70 animate-scroll">
         {[...logos, ...logos].map((logo, idx) => (
           <img
-            key={idx}
-            src={logo}
-            alt="client logo"
-            className="h-22 md:h-24 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
-          />
+  key={idx}
+  src={logo}
+  alt="client logo"
+  className="h-20 w-20 md:h-22 md:w-22 object-contain grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
+/>
+
         ))}
       </div>
     </div>
@@ -455,7 +457,7 @@ pattern:
 
     {/* Right Content */}
     <div className="w-full lg:w-1/2">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left sm:text-justify">
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left sm:text-left">
         Enterprise Data Infrastructure Driving Digital Transformation
       </h2>
       <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-justify sm:text-justify">
@@ -464,9 +466,18 @@ pattern:
         with industry-specific knowledge delivers measurable ROI through improved 
         data accessibility, enhanced analytics capabilities, and optimized operational efficiency.
       </p>
-      <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all w-full sm:w-auto">
-        Data Engineering Case Studies
-      </button>
+      <h2
+  className="text-3xl md:text-4xl font-bold mb-4 text-start text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+ Data Engineering
+</h2>
     </div>
   </div>
 </section>

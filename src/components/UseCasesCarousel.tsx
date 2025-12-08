@@ -106,7 +106,7 @@ const useCases = [
           </div>
         </div>
         
-        <div className="text-center mt-8 sm:mt-12 md:mt-16 px-4">
+        {/* <div className="text-center mt-8 sm:mt-12 md:mt-16 px-4">
           <a 
             href="/application-development"
             style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
@@ -115,7 +115,7 @@ const useCases = [
             <span className="hidden sm:inline">Learn More </span>
             <span className="sm:hidden">Learn More</span>
           </a>
-        </div>
+        </div> */}
       </div>
       
       <style>{`

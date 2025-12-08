@@ -177,21 +177,21 @@ export default function TestimonialSlider() {
 
               <div>
                 <h3 className="text-base sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Design Tailored Solutions</h3>
-                <p className="text-xs sm:text-base leading-relaxed text-gray-600 text-justify">
+                <p className="text-xs sm:text-base leading-relaxed text-gray-600 text-left">
                   Using gathered insights, our team creates strategic, scalable, and customized solutions crafted to match your vision.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-base sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-3">Deliver and Support</h3>
-                <p className="text-xs sm:text-base leading-relaxed text-gray-600 text-justify">
+                <p className="text-xs sm:text-base leading-relaxed text-gray-600 text-left">
                   We ensure smooth delivery with strong support, helping your solution evolve as your business grows.
                 </p>
               </div>
 
             </div>
 
-            <a href="/our-expertise" className="inline-block bg-orange-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium hover:bg-orange-600 transition-all text-xs sm:text-base">
+            <a href="/Contact-us" className="inline-block bg-orange-500 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg sm:rounded-xl font-medium hover:bg-orange-600 transition-all text-xs sm:text-base">
               Get Started
             </a>
 
@@ -230,8 +230,12 @@ export default function TestimonialSlider() {
             Empowering Innovation, Leading with Expertise.
           </h2>
 
-          <p className="text-xs sm:text-base leading-relaxed text-white/80">
-            We deliver innovation powered by technology and expertise, helping businesses grow in a fast-changing digital landscape.
+          <p className="text-xs sm:text-base leading-relaxed text-white/80 text-left">
+We deliver innovation powered by cutting-edge technology and deep industry expertise.  
+Our solutions help businesses adapt and grow in an ever-changing digital landscape.  
+By combining strategy, creativity, and engineering, we build systems that scale with your goals.  
+We focus on improving efficiency, enhancing customer experiences, and driving measurable results.  
+With a commitment to excellence, we empower organizations to achieve sustainable digital growth.
           </p>
 
           {/* <button className="mt-4 sm:mt-6 bg-orange-400 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-lg sm:rounded-xl font-medium hover:bg-orange-500 transition-all text-xs sm:text-base">

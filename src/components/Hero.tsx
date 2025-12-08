@@ -40,7 +40,7 @@ export default function Hero() {
                 <div className="spacer-large"></div>
                 <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 ${isLoaded ? 'animate-in delay-600' : ''}`}>
                   <a href="https://career.kiaq.in/" className="px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-orange-500 text-white rounded-lg font-semibold text-sm sm:text-base text-center hover:bg-orange-600 transition-colors">
-                    Build Your Team Faster
+                    Build Your Career Faster
                   </a>
                   <a href="/who-we-are" className="px-5 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 border-2 border-white text-white rounded-lg font-semibold text-sm sm:text-base text-center hover:bg-white hover:text-gray-900 transition-colors">
                     Explore KIAQ

@@ -4,6 +4,7 @@ import fvimg from '../assets/whykiaq/img7.jpg';
 import ninth from '../assets/whykiaq/team-man-woman-working-media-field-with-laptop-tablet.jpg';
 import omeimg1 from '../assets/whykiaq/e1.jpg';
 import omeimg2 from '../assets/whykiaq/e2.jpg';
+import img4 from "../assets/698.jpg"
 
 import { UI_CONSTANTS } from '../constants/colors';
 
@@ -320,7 +321,7 @@ export default function WhyKiaq() {
           Kiaq Technologies delivers innovative, scalable technology solutions that drive digital transformation and accelerate business growth across diverse industry sectors.
         </p>
 
-        <a href="/Contact-us" className="inline-block mt-4 sm:mt-5 bg-orange-500 text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto text-center">
+        <a href="https://wa.me/918925921401" className="inline-block mt-4 sm:mt-5 bg-orange-500 text-white font-semibold px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-md hover:bg-orange-400 transition w-full sm:w-auto text-center">
           Schedule Consultation
         </a>
       </div>
@@ -354,19 +355,24 @@ export default function WhyKiaq() {
       ))}
     </div>
     
-    <div className="text-center mt-6 sm:mt-10 lg:mt-12">
-      <a 
-        href="/who-we-are"
-        style={{ backgroundColor: UI_CONSTANTS.PRIMARY, color: UI_CONSTANTS.WHITE }}
-        className="inline-block px-6 py-2.5 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold hover:opacity-90 transition-opacity w-full sm:w-auto max-w-xs sm:max-w-none"
-      >
-        Explore Solutions
-      </a>
+    <div className="text-center mt-10 sm:mt-10 lg:mt-14">
+        <h2
+  className="text-xl md:text-6xl font-bold mb-4 text-center text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+  Software Crafted by Experts
+</h2>
     </div>
   </div>
 </section>
       {/* Fifth Section */}
-      <section className="w-full bg-white text-black py-10 sm:py-14 md:py-16 lg:py-20 relative overflow-hidden font-['Inter_Variable',_sans-serif]">
+      <section className="w-full bg-white text-black  relative overflow-hidden font-['Inter_Variable',_sans-serif]">
   {/* Diagonal Grid Pattern - Background */}
   <svg
     className="absolute top-0 right-0 w-[350px] sm:w-[450px] md:w-[550px] lg:w-[650px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[650px] opacity-10 pointer-events-none translate-x-8 sm:translate-x-16 -translate-y-4 sm:-translate-y-8"

@@ -163,33 +163,67 @@ export default function WhyKiaq() {
       </div>
 
       {/* Right Values Grid */}
-  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 md:p-12 relative shadow-2xl min-h-[450px] sm:min-h-[500px] lg:min-h-[600px]">
+  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 md:p-12 relative shadow-2xl min-h-[400px] sm:min-h-[450px] lg:min-h-[600px]">
         
-        <div className="grid grid-cols-2 gap-3 sm:gap-6 md:gap-8 h-full">
-          {[
-            { icon: <Heart className="w-7 h-7 text-purple-300" />, title: "Empathy", desc: "We prioritize deep understanding to deliver tailored tech solutions." },
-            { icon: <TrendingUp className="w-7 h-7 text-purple-300" />, title: "Performance Driven", desc: "We continuously enhance performance to surpass expectations." },
-            { icon: <Shield className="w-7 h-7 text-purple-300" />, title: "Honest & Integrity", desc: "Built on trust and transparency, driving ethical innovation." },
-            { icon: <Briefcase className="w-7 h-7 text-purple-300" />, title: "Teamwork & Collaboration", desc: "A collaborative culture that moves us toward shared success." },
-          ].map((item, idx) => (
-            <div key={idx} className="flex flex-col items-center text-center px-1">
-              <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4">
-                {item.icon}
-              </div>
-              <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2">
-                {item.title}
-              </h3>
-              <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed text-center md:text-justify">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
+       <div className="grid grid-cols-2 gap-3 sm:gap-8 md:gap-8 h-full">
+  {/* Item 1 */}
+  <div className="flex flex-col items-center text-center px-1 ">
+    <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-start">
+      <Heart className="w-7 h-7 text-purple-300" />
+    </div>
+    <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-start">
+      Empathy
+    </h3>
+    <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed mt-2 text-left">
+      We prioritize deep understanding to deliver tailored solutions that truly align with your business goals.
+    </p>
+  </div>
+
+  {/* Item 2 */}
+  <div className="flex flex-col items-center text-center px-1">
+    <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-end">
+      <TrendingUp className="w-7 h-7 text-purple-300" />
+    </div>
+    <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-end">
+      Performance Driven
+    </h3>
+    <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed mt-2 text-right">
+      Our commitment to excellence ensures consistent improvement value for your business.
+    </p>
+  </div>
+
+  {/* Item 3 */}
+  <div className="flex flex-col items-center text-center px-1">
+    <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-start">
+      <Shield className="w-7 h-7 text-purple-300" />
+    </div>
+    <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-start">
+      Honest & Integrity
+    </h3>
+    <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed mt-2 text-left">
+      Built on trust and transparency, driving ethical innovation that empowers responsible digital growth.
+    </p>
+  </div>
+
+  {/* Item 4 */}
+  <div className="flex flex-col items-center text-center px-1">
+    <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-end">
+      <Briefcase className="w-7 h-7 text-purple-300" />
+    </div>
+    <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-end">
+      Team Collaboration
+    </h3>
+    <p className="text-slate-300 text-xs sm:text-sm leading-snug sm:leading-relaxed mt-2 text-right">
+      A collaborative culture that moves us toward success, fostering teamwork and collective growth.
+    </p>
+  </div>
+</div>
+
 
         {/* Center Circle */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-200 rounded-full 
                         w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 
-                        flex flex-col items-center justify-center shadow-xl z-10">
+                        flex flex-col items-center justify-center shadow-xl z-10 mt-5">
           <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-slate-800 mb-1" />
           <p className="text-slate-800 font-semibold text-[10px] sm:text-xs md:text-sm text-center leading-tight px-1">
             Commitment To<br />Growth!
@@ -382,7 +416,7 @@ export default function WhyKiaq() {
     {/* RIGHT CONTENT */}
     <div className="bg-[#032C33] text-white p-6 sm:p-10 md:p-12 lg:p-14 rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none h-full flex flex-col justify-center">
 
-      <h2 className="text-2xl sm:text-3xl md:text-[32px] font-semibold leading-snug text-center mb-6 sm:mb-8">
+      <h2 className="text-2xl sm:text-3xl md:text-[32px] font-semibold leading-snug text-left mb-6 sm:mb-8">
         Strategic Tech Partner, Not Just <br className="hidden sm:block" /> Another IT Provider
       </h2>
 

@@ -4,6 +4,7 @@ import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/call-center-manager-guiding-intern-how-use-ai-chatbot-office-desk-pc.jpg";
 import webimg3 from "../assets/technology-integrated-everyday-life.jpg";
 import webimg4 from "../assets/ai-powered-device-concept.jpg";
+import img4 from "../assets/698.jpg"
 
 import webimg8 from "../assets/cllogo/Docker-removebg-preview.png";
 import webimg9 from "../assets/cllogo/kubernetes-removebg-preview.png";
@@ -57,14 +58,14 @@ export default function WebAppDevelopmentHero() {
   return (
     <div className="font-['Inter_Variable',_sans-serif]">
      <section
-  className="relative w-full min-h-[90vh] flex items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
+  className="relative w-full min-h-[90vh] flex items-center sm:items-center justify-start overflow-hidden font-['Inter_Variable',_sans-serif]"
   style={{ backgroundColor: UI_CONSTANTS.DARK }}
 >
   {/* Background image */}
   <img
     src={webimg}
     alt="Cloud & DevOps Solutions"
-    className="absolute inset-0 w-full h-full object-cover object-center md:object-right z-0"
+    className="absolute inset-0 w-full h-full object-cover object-center sm:object-right z-0"
   />
 
   {/* Dark gradient overlay */}
@@ -77,18 +78,19 @@ export default function WebAppDevelopmentHero() {
   ></div>
 
   {/* Content */}
-  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-0">
-    <div className="max-w-[520px] mt-[8vh] sm:mt-[14vh]">
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-10 sm:py-0">
+    <div className="max-w-[520px] mt-0 sm:mt-[14vh] text-left">
       {/* Title */}
       <h1
-        className="text-white font-bold leading-snug mb-4 sm:mb-5"
+        className="text-white font-bold leading-snug mb-4 sm:mb-5 text-left sm:text-left"
         style={{
-          fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)",
+          fontSize: "clamp(1.5rem, 5vw, 2.7rem)",
           lineHeight: 1.2,
         }}
       >
         Enterprise Cloud & DevOps Solutions
-        <br />
+        <br className="hidden sm:block" />
+        <span className="sm:hidden"> </span>
         Accelerating Digital Transformation
       </h1>
 
@@ -96,7 +98,7 @@ export default function WebAppDevelopmentHero() {
       <p
         className="text-gray-200 font-light mb-6 sm:mb-8 text-left sm:text-justify"
         style={{
-          fontSize: "clamp(0.9rem, 1.8vw, 1rem)",
+          fontSize: "clamp(0.875rem, 2.5vw, 1rem)",
           lineHeight: 1.65,
           color: "rgba(255,255,255,0.85)",
         }}
@@ -120,7 +122,7 @@ export default function WebAppDevelopmentHero() {
     </div>
 
     {/* Stats Section */}
-    <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200 text-left">
       <div>
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">99.9%</p>
         <p className="text-xs sm:text-sm opacity-90">
@@ -128,14 +130,14 @@ export default function WebAppDevelopmentHero() {
         </p>
       </div>
 
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
+      <div className="sm:border-l border-white/20 sm:pl-8">
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">150+</p>
         <p className="text-xs sm:text-sm opacity-90">
           Cloud & DevOps experts
         </p>
       </div>
 
-      <div className="border-l border-white/20 pl-6 sm:pl-8">
+      <div className="sm:border-l border-white/20 sm:pl-8">
         <p className="text-xl sm:text-2xl font-semibold text-white mb-1">24+</p>
         <p className="text-xs sm:text-sm opacity-90">
           Month average partnership
@@ -216,7 +218,7 @@ export default function WebAppDevelopmentHero() {
   <div className="relative z-10 max-w-6xl mx-auto">
     {/* HEADING */}
     <div className="max-w-[980px] pr-0 sm:pr-10">
-      <h2 className="text-[22px] sm:text-[28px] md:text-[34px] font-semibold text-[#011123] leading-tight text-left sm:text-justify">
+      <h2 className="text-[22px] sm:text-[28px] md:text-[34px] font-semibold text-[#011123] leading-tight text-left sm:text-left">
         Comprehensive Cloud & DevOps Services for Modern Enterprises
       </h2>
 
@@ -297,11 +299,12 @@ export default function WebAppDevelopmentHero() {
 
       <div className="md:col-span-7 flex justify-center md:justify-end mt-2.5 md:mt-0">
         <div className="w-full max-w-[520px]">
-          <img
-            src={images[activeTab]}
-            alt={activeTab}
-            className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-          />
+         <img
+  src={images[activeTab]}
+  alt={activeTab}
+  className="w-full h-[300px] sm:h-[350px] lg:h-[380px] rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+/>
+
         </div>
       </div>
     </div>
@@ -327,7 +330,7 @@ export default function WebAppDevelopmentHero() {
   {/* Content */}
   <div className="relative z-10 max-w-7xl mx-auto text-center">
     {/* Heading */}
-    <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14">
+    <h2 className="text-2xl md:text-3xl font-semibold text-[#011123] mb-14 text-left lg:text-center">
       Comprehensive Cloud & DevOps Service Portfolio
     </h2>
 
@@ -371,14 +374,15 @@ pattern:
 },
       ].map((card, idx) => (
         <div
-          key={idx}
-          className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-between`}
-        >
+  key={idx}
+  className={`relative w-full max-w-[360px] sm:max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-start`}
+>
+
           <div>
-            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug">
+            <h3 className="text-[15px] font-semibold text-[#011123] mb-2.5 leading-snug text-left">
               {card.title}
             </h3>
-            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
+            <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-left">{card.desc}</p>
           </div>
           <div
             className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -399,11 +403,12 @@ pattern:
       <div className="flex items-center justify-start gap-16 md:gap-22 opacity-70 animate-scroll">
         {[...logos, ...logos].map((logo, idx) => (
           <img
-            key={idx}
-            src={logo}
-            alt="client logo"
-            className="h-20 md:h-22 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
-          />
+  key={idx}
+  src={logo}
+  alt="client logo"
+  className="h-20 w-20 md:h-22 md:w-22 object-contain grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
+/>
+
         ))}
       </div>
     </div>
@@ -460,7 +465,7 @@ pattern:
 
           {/* Right Content */}
           <div className="w-full lg:w-1/2 text-justify">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left">
               Enterprise Cloud Infrastructure Driving Digital Transformation
             </h2>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
@@ -469,9 +474,18 @@ pattern:
               expertise in cloud platforms and automation delivers measurable ROI through 
               improved efficiency, enhanced security, and accelerated innovation cycles.
             </p>
-            <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all w-full sm:w-auto">
-              Cloud Case Studies
-            </button>
+            <h2
+  className="text-3xl md:text-4xl font-bold mb-4 text-start text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+  Cloud & DevOps
+</h2>
           </div>
         </div>
       </section>

@@ -44,18 +44,18 @@ export default function Footer() {
             </div>
 
             {/* COPYRIGHT */}
-          <p className="footer-copyright">
-  © {new Date().getFullYear()} KIAQ Technologies Pvt Ltd, All Rights Reserved.
-</p>
+            <p className="footer-copyright">
+              © {new Date().getFullYear()} KIAQ Technologies Pvt Ltd, All Rights Reserved.
+            </p>
 
-            {/* BOTTOM LINKS */}
+            {/* BOTTOM LINKS - MODIFIED FOR BETTER MOBILE DISPLAY */}
             <div className="footer-links">
               <Link to="/privacy" className="footer-link">Privacy Policy</Link>
-              <span className="footer-separator">✦</span>
+              <span className="footer-separator">•</span>
               <Link to="/terms" className="footer-link">Terms</Link>
-              <span className="footer-separator">✦</span>
+              <span className="footer-separator">•</span>
               <Link to="/cookies" className="footer-link">Cookie Preferences</Link>
-              <span className="footer-separator">✦</span>
+              <span className="footer-separator">•</span>
               <Link to="/code-of-conduct" className="footer-link">Code of Conduct</Link>
             </div>
 
@@ -228,13 +228,13 @@ export default function Footer() {
           }
         }
 
-        /* FOOTER LINKS */
+        /* FOOTER LINKS - MODIFIED FOR BETTER MOBILE DISPLAY */
         .footer-links {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.5rem;
           font-size: 0.875rem;
           color: #4b5563;
           width: 100%;
@@ -248,22 +248,23 @@ export default function Footer() {
 
         @media (max-width: 640px) {
           .footer-links {
-            font-size: 0.8125rem;
-            gap: 0.5rem;
-            line-height: 1.6;
-            flex-wrap: nowrap; /* Force single line */
+            font-size: 0.75rem;
+            gap: 0.375rem;
             justify-content: center;
-            overflow-x: auto; /* Allow horizontal scrolling if needed */
-            white-space: nowrap; /* Prevent wrapping */
-            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-            padding-bottom: 0.25rem; /* Add some space for scrollbar */
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 0.25rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
           }
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 320px) {
           .footer-links {
-            font-size: 0.75rem;
-            gap: 0.375rem;
+            font-size: 0.6875rem;
+            gap: 0.25rem;
           }
         }
 
@@ -271,7 +272,7 @@ export default function Footer() {
           color: #4b5563;
           text-decoration: none;
           transition: color 0.2s ease;
-          white-space: nowrap; /* Ensure links don't wrap */
+          white-space: nowrap;
         }
 
         .footer-link:hover {
@@ -281,12 +282,14 @@ export default function Footer() {
         .footer-separator {
           color: #4b5563;
           user-select: none;
-          white-space: nowrap; /* Ensure separators don't wrap */
+          white-space: nowrap;
+          font-size: 0.6rem;
+          opacity: 0.7;
         }
 
         @media (max-width: 640px) {
           .footer-separator {
-            font-size: 0.75rem;
+            font-size: 0.5rem;
           }
         }
 
@@ -296,8 +299,8 @@ export default function Footer() {
             display: none;
           }
           .footer-links {
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
           }
         }
       `}</style>

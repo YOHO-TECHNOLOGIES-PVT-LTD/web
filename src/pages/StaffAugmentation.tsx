@@ -10,6 +10,7 @@ import imgfocus from "../assets/hkw.mp4";
 import webimg26 from "../assets/solutions/network-graphic-overlay-banner-background.jpg";
 import webimg27 from "../assets/solutions/two-factor-authentication-concept.jpg";
 import webimg28 from "../assets/solutions/colleagues-discussing-work-project.jpg";
+import img4 from "../assets/698.jpg"
 
 // import webimg15 from "../assets/usecase/66561ebf26b4d7de96e4e0ed_Wendy TWC.avif";
 
@@ -230,7 +231,7 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
       Experience the KIAQ Advantage
     </h1>
 
@@ -278,13 +279,13 @@ const steps = [
 
       {/* Right text block */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-extrabold text-gray-900 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
           Access Premium Talent with
           <br className="hidden sm:inline" />
           Exceptional Efficiency
         </h2>
 
-        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-left sm:text-justify font-['Inter_Variable',_sans-serif]">
+        <p className="mt-2 sm:mt-3 md:mt-4 text-base sm:text-lg text-gray-600 max-w-md leading-relaxed text-left sm:text-justify  font-['Inter_Variable',_sans-serif]">
 Our integrated methodology combines AI-powered technology platforms with the expertise of seasoned recruitment professionals to deliver optimal talent solutions. At Kiaq, we are built on a foundation of relentless improvement, constantly refining our processes to stay ahead in a competitive landscape. We sharpen our technical skills daily, ensuring that every solution we provide is innovative and precise. Our commitment to excellence drives us to go beyond expectations in every project.        </p>
       </div>
     </div>
@@ -292,29 +293,29 @@ Our integrated methodology combines AI-powered technology platforms with the exp
     {/* Bottom four-column features */}
     <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 border-t border-gray-200 pt-4 sm:pt-6 md:pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 font-['Inter_Variable',_sans-serif]">
       <div className="pr-0 sm:pr-3">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-left sm:text-justify font-['Inter_Variable',_sans-serif]">Streamlined Recruitment Process</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-left sm:text-justify font-['Inter_Variable',_sans-serif]">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 text-left sm:text-justify lg:text-left font-['Inter_Variable',_sans-serif]">Streamlined Recruitment Process</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 text-left sm:text-justify lg:text-left font-['Inter_Variable',_sans-serif]">
           KIAQ Talent Platform facilitates intelligent and efficient processes throughout the complete recruitment lifecycle.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-left sm:text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Certified Elite Professionals</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 lg:text-left font-['Inter_Variable',_sans-serif]">Certified Elite Professionals</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 lg:text-left font-['Inter_Variable',_sans-serif]">
           We provide industry-leading professional development, continuous education, and strategic networking opportunities.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 lg:border-l border-gray-200 lg:pl-3 pt-3 sm:pt-0 lg:pt-0 border-t sm:border-t lg:border-t-0 text-left sm:text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Comprehensive Support Services</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 lg:text-left font-['Inter_Variable',_sans-serif]">Comprehensive Support Services</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 lg:text-left font-['Inter_Variable',_sans-serif]">
           End-to-end assistance through recruitment, acquisition, training, qualification, matching, and project delivery phases.
         </p>
       </div>
 
       <div className="pr-0 sm:pr-3 sm:border-l lg:border-l border-gray-200 sm:pl-3 pt-3 sm:pt-0 border-t sm:border-t-0 text-left sm:text-justify">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-900 font-['Inter_Variable',_sans-serif]">Premium Client Experience</h3>
-        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 font-['Inter_Variable',_sans-serif]">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 lg:text-left font-['Inter_Variable',_sans-serif]">Premium Client Experience</h3>
+        <p className="text-sm sm:text-base text-gray-600 mt-1 sm:mt-2 lg:text-left font-['Inter_Variable',_sans-serif]">
           Comprehensive service delivery from dedicated customer success and talent management teams.
         </p>
       </div>
@@ -349,11 +350,11 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight max-w-3xl text-justify font-['Inter_Variable',_sans-serif]">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 leading-tight max-w-3xl text-left font-['Inter_Variable',_sans-serif]">
       Access the World's Premier Certified Global Talent Network
     </h1>
 
-    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
+    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-left lg:text-justify font-['Inter_Variable',_sans-serif]">
       Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.
     </p>
 
@@ -509,18 +510,19 @@ Our integrated methodology combines AI-powered technology platforms with the exp
     </div>
     
     {/* CTA Button */}
-    <div className="text-center mt-12 sm:mt-16 lg:mt-20">
-      <a 
-        href="/Contact-us"
-        className="inline-block px-6 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 font-['Inter_Variable',_sans-serif]"
-        style={{ 
-          backgroundColor: UI_CONSTANTS.PRIMARY,
-          color: UI_CONSTANTS.WHITE
-        }}
-      >
-        <span className="hidden sm:inline">Connect with Global Technology Experts</span>
-        <span className="sm:hidden">Connect with Experts</span>
-      </a>
+    <div className="text-center  sm:mt-16 lg:mt-20">
+       <h2
+  className="text-lg md:text-5xl font-bold  text-center text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+   Connect with Global Technology Experts
+</h2>
     </div>
   </div>
 </section>
@@ -528,15 +530,15 @@ Our integrated methodology combines AI-powered technology platforms with the exp
   
     {/* fourth.one section */}
 
-<section className="relative w-full bg-white py-20 px-6 lg:px-20 overflow-hidden font-['Inter_Variable',_sans-serif]">
+<section className="relative w-full bg-white py-0 px-6 lg:px-20 overflow-hidden font-['Inter_Variable',_sans-serif]">
 
       {/* Title */}
-      <h2 className="text-4xl font-bold text-center text-gray-900 font-['Inter_Variable',_sans-serif]">
+      <h2 className="text-4xl font-bold  text-gray-900 text-left md:text-center font-['Inter_Variable',_sans-serif]">
         How KIAQ Works: Simple & Efficient Talent Matching
       </h2>
 
       {/* Cards Wrapper */}
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div className="mt-16 grid mb-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
 
         {/* CARD 1 */}
         <div className="group bg-white shadow-md hover:shadow-xl rounded-2xl p-6 border border-[#e3efec] transition-all duration-300">
@@ -552,7 +554,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Define Your Requirements
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed text-justify  font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-left  font-['Inter_Variable',_sans-serif]">
             Share your project needs, technical skills required, and timeline. Our team works with you to understand your specific requirements.
           </p>
 
@@ -575,7 +577,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Smart Talent Matching
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-left font-['Inter_Variable',_sans-serif]">
             Our AI algorithms scan our global network to find the perfect match based on skills, experience, and project compatibility.
           </p>
 
@@ -598,7 +600,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
             Onboard & Collaborate
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-relaxed text-justify font-['Inter_Variable',_sans-serif]">
+          <p className="text-gray-600 mt-2 leading-relaxed text-left font-['Inter_Variable',_sans-serif]">
             Seamlessly integrate matched talent into your team with our support. We handle contracts, onboarding, and ongoing collaboration.
           </p>
 

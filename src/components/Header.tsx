@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import image from '../assets/kIAQ_.png';
 import img2 from "../assets/resources_sub_menu.webp";
 import img3 from "../assets/kqwhite-removebg-preview.png"
+import img4 from "../assets/698.jpg"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<Array<{name: string, path: string}>>([]);
-  const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
+  const [, setIsUserDropdownOpen] = useState(false);
   const location = useLocation();
   const headerRef = useRef<HTMLElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -115,10 +116,10 @@ useEffect(() => {
     setIsUserDropdownOpen(false);
   };
 
-  const handleUserDropdownToggle = () => {
-    setIsUserDropdownOpen(!isUserDropdownOpen);
-    setActiveDropdown(null);
-  };
+  // const handleUserDropdownToggle = () => {
+  //   setIsUserDropdownOpen(!isUserDropdownOpen);
+  //   setActiveDropdown(null);
+  // };
 
   const closeDropdown = () => {
     setActiveDropdown(null);
@@ -141,10 +142,10 @@ useEffect(() => {
     setSearchResults([]);
   };
 
-  const handlePayrollClick = () => {
-    window.open('https://payroll.kiaq.in/', '_blank');
-    setIsUserDropdownOpen(false);
-  };
+  // const handlePayrollClick = () => {
+  //   window.open('https://payroll.kiaq.in/', '_blank');
+  //   setIsUserDropdownOpen(false);
+  // };
 
   // Desktop dropdown container styles
   const dropdownContainerStyle = {
@@ -341,7 +342,7 @@ useEffect(() => {
 
             {/* User Profile Icon with Dropdown */}
             <div className="relative hidden sm:block" ref={userDropdownRef}>
-              <button
+              {/* <button
                 onClick={handleUserDropdownToggle}
                 className={`${
                   isScrolled ? 'text-gray-700' : 'text-white'
@@ -351,10 +352,10 @@ useEffect(() => {
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
-              </button>
+              </button> */}
 
               {/* User Dropdown */}
-              {isUserDropdownOpen && (
+              {/* {isUserDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
                   <button
                     onClick={handlePayrollClick}
@@ -363,7 +364,7 @@ useEffect(() => {
                     Payroll
                   </button>
                 </div>
-              )}
+              )} */}
             </div>
             
             <Link
@@ -552,14 +553,14 @@ useEffect(() => {
 
               {/* Payroll in Mobile Menu */}
              {/* Payroll in Mobile Menu - Modified to be in same bar style */}
-<button
+{/* <button
   onClick={() => {
     window.open('https://payroll.kiaq.in/', '_blank');
     setIsMobileMenuOpen(false);
   }}
-  className="flex items-center justify-between w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-400 border border-gray-200 hover:border-orange-300"
+  className="flex items-center justify-between w-full text-left px-4 py-3 rounded-lg font-medium transition-colors text-sm text-gray-700 bg-[#002b38]-400 hover:bg-gray-50  hover:text-orange-400 border border-orange-300 hover:border-orange-300"
 >
-  <div className="flex items-center">
+  <div className="flex items-center text-xl">
     <span>Payroll</span>
   </div>
   <svg 
@@ -575,7 +576,7 @@ useEffect(() => {
       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
     />
   </svg>
-</button>
+</button> */}
 
             </div>
           </div>
@@ -652,11 +653,18 @@ useEffect(() => {
               {/* Left Section */}
               <div className="flex-1 flex flex-col justify-center" style={{ maxWidth: "320px" }}>
                 <h2
-                  className="text-3xl md:text-4xl font-bold mb-4"
-                  style={{ color: "#1e3a3a", lineHeight: "1.15" }}
-                >
-                  Solutions
-                </h2>
+  className="text-3xl md:text-6xl font-bold mb-4 text-start text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+  Solutions
+</h2>
+
 
                 <p
                   className="text-sm md:text-base mb-6 leading-relaxed"

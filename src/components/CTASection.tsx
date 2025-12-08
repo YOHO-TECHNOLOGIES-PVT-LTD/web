@@ -55,12 +55,14 @@ export default function CTASection() {
    
            <div className="flex justify-center sm:justify-start">
              <a
-               href="https://career.kiaq.in/"
+               onClick={() => {
+    window.open('http://career.kiaq.in', '_blank');
+  }}
                style={{
                  backgroundColor: UI_CONSTANTS.DARK,
                  color: UI_CONSTANTS.WHITE,
                }}
-               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg font-bold hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+               className="inline-block px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg  hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
              >
                Grow Your Career With Us
              </a>

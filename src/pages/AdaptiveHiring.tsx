@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { 
   FaUserTie, 
-  FaDollarSign, 
+  // FaDollarSign, 
   // FaRocket, 
   FaExpandArrowsAlt,
   // FaCheck,
@@ -17,6 +17,8 @@ import {
   FaRocket, 
   FaSyncAlt 
 } from "react-icons/fa";
+import { HiCurrencyRupee } from "react-icons/hi2";
+
 import img7 from "../assets/solutions/Cloud and DevOps.avif";
 import imgfocus from "../assets/solutions/job-interview-candidate-selection-employment.jpg";
 import img12 from "../assets/solutions/business-people-working-using-technology-connect-with-others.jpg";
@@ -37,7 +39,7 @@ const tabs = [
   },
   {
     label: "Cost Optimization",
-    icon: FaDollarSign,
+    icon: HiCurrencyRupee,
     image: img14,
     title: "Strategic Cost Optimization",
     desc: "Reduce technical hiring costs by up to 40% while maintaining enterprise-grade quality. Our global talent model eliminates geographical compensation barriers while ensuring fair market rates and sustainable partnerships.",
@@ -186,12 +188,12 @@ export default function AdaptiveHiring() {
           }}
         />
 
-        <div className="relative max-w-4xl mx-auto text-center">
+        <div className="relative max-w-4xl mx-auto text-left">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            What is <br /> Adaptive Hiring?
+            What is  Adaptive Hiring?
           </h2>
 
-          <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 text-justify sm:text-center">
+          <p className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 text-justify sm:text-left">
             Adaptive Hiring applies agile methodology to technical recruitment, enabling organizations 
             to rapidly scale engineering capacity with pre-vetted global talent. This modern approach 
             transforms how enterprises access specialized skills and deliver digital innovation.
@@ -208,11 +210,16 @@ export default function AdaptiveHiring() {
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               The Technical Talent<br />Challenge is Real<br />and Growing
             </h1>
-            <p className="text-gray-600 text-base sm:text-lg">
-              Organizations face increasing pressure to deliver digital transformation 
-              while constrained by traditional hiring limitations. KIAQ's Adaptive Hiring 
-              model provides the strategic solution for sustainable technical capacity.
-            </p>
+           <p className="text-gray-600 text-base sm:text-lg">
+  Organizations face increasing pressure to deliver digital transformation while constrained 
+  by traditional hiring limitations. KIAQ's Adaptive Hiring model provides a strategic and 
+  scalable solution for sustainable technical capacity. It not only enables companies to 
+  rapidly access specialized expertise but also ensures long-term workforce efficiency. 
+  By removing geographic restrictions, accelerating project delivery, and maintaining 
+  consistent quality, organizations can innovate faster and stay competitive in a continually 
+  evolving digital landscape.
+</p>
+
           </div>
 
           {/* Divider for larger screens */}
@@ -242,7 +249,7 @@ export default function AdaptiveHiring() {
       {/* USE CASES SECTION */}
       <section className="w-full py-10 sm:py-12 md:py-16 lg:py-20 bg-white font-['Inter_Variable',_sans-serif]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-10 text-justify">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-10 text-left">
             Strategic Applications for Adaptive Hiring
           </h2>
 
@@ -281,7 +288,7 @@ export default function AdaptiveHiring() {
                     <span className="w-5 h-5 sm:w-6 sm:h-6 bg-[#ff5500] rounded-full flex items-center justify-center flex-shrink-0 text-white text-xs sm:text-sm mt-0.5">
                       ✓
                     </span>
-                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">{item}</p>
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-left">{item}</p>
                   </div>
                 ))}
               </div>
@@ -364,7 +371,7 @@ export default function AdaptiveHiring() {
               >
                 <div>
                   <h3
-                    className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1.5 sm:mb-2 transition-all leading-tight text-justify"
+                    className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1.5 sm:mb-2 transition-all leading-tight text-left"
                     style={{
                       opacity: activeIndex === i ? 1 : 0.3,
                       color: UI_CONSTANTS.DARK,
@@ -390,7 +397,10 @@ export default function AdaptiveHiring() {
 
         <div className="text-center mt-6 sm:mt-8 md:mt-10 px-3">
           <a
-            href="https://career.kiaq.in/"
+           onClick={() => {
+                  window.open('http://career.kiaq.in', '_blank');
+                  // setIsMobileMenuOpen(false);
+                }}
             className="inline-block px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-4 rounded-full font-semibold hover:shadow-xl transition-shadow text-sm sm:text-base w-full sm:w-auto"
             style={{
               backgroundColor: UI_CONSTANTS.PRIMARY,
@@ -478,18 +488,18 @@ export default function AdaptiveHiring() {
         {/* Content */}
         <div className="relative z-10 px-3 sm:px-4 md:px-6 py-10 sm:py-12 md:py-16">
           {/* Header */}
-          <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight px-2">
-              Adaptive Hiring Delivers Measurable Business Outcomes
-            </h2>
-            <p className="text-gray-400 text-sm sm:text-base max-w-4xl mx-auto mb-4 sm:mb-6 md:mb-8 leading-relaxed px-2 text-justify">
-              Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model, 
-              based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
-            </p>
-            {/* <button className="bg-orange-400 hover:bg-orange-300 text-slate-950 font-semibold px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg transition-all shadow-lg shadow-orange-500/20 text-sm sm:text-base w-full sm:w-auto">
-              Read More
-            </button> */}
-          </div>
+          <div className="max-w-6xl mx-auto text-left mb-8 sm:mb-10 md:mb-12">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-5 leading-tight px-2 text-left">
+    Adaptive Hiring Delivers Measurable Business Outcomes
+  </h2>
+
+ <p className="text-gray-400 text-sm sm:text-base max-w-4xl mb-4 sm:mb-6 md:mb-8 leading-relaxed px-2 text-left">
+  Independent analysis demonstrates the significant economic impact of KIAQ's Adaptive Hiring model,
+  based on comprehensive customer interviews, enterprise surveys, and multi-year financial modeling.
+</p>
+
+</div>
+
 
           {/* Metrics Cards Grid */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
@@ -499,7 +509,9 @@ export default function AdaptiveHiring() {
                 Hiring Efficiency
               </h3>
               <div className="text-orange-400 mb-4 sm:mb-6 md:mb-8">
-                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">106+</span>
+<span className="text-6xl font-bold">
+  106<span className="text-orange-500 align-top text-5xl">+</span>
+</span>
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ml-1">hours</span>
               </div>
               <div className="border-t border-orange-900/40 pt-2 sm:pt-3 md:pt-4">

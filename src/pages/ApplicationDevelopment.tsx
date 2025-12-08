@@ -4,6 +4,7 @@ import { UI_CONSTANTS } from "../constants/colors";
 import webimg2 from "../assets/people-analyzing-checking-finance-graphs-office.jpg";
 import webimg3 from "../assets/representation-user-experience-interface-design.jpg";
 import webimg4 from "../assets/technology-global-ai-race-information-network-connection.jpg";
+import img4 from "../assets/698.jpg";
 
 import webimg8 from "../assets/logo/react-removebg-preview.png";
 import webimg9 from "../assets/logo/express_js-removebg-preview.png";
@@ -22,28 +23,28 @@ export default function WebAppDevelopmentHero() {
   const logos = [webimg10, webimg8, webimg9, webimg12, webimg11, webimg14, webimg13];
   
   const [activeTab, setActiveTab] = useState<
-    "Enterprise Web Solutions" | "Custom Application Development" | "Digital Transformation"
-  >("Enterprise Web Solutions");
+    "Web Solutions" | "Application Development" | "Digital Transformation"
+  >("Web Solutions");
 
   const tabs = [
-    "Enterprise Web Solutions",
-    "Custom Application Development",
+    "Web Solutions",
+    "Application Development",
     "Digital Transformation",
   ];
 
   const images = {
-    "Enterprise Web Solutions": webimg2,
-    "Custom Application Development": webimg3,
+    "Web Solutions": webimg2,
+    "Application Development": webimg3,
     "Digital Transformation": webimg4,
   };
 
   // Individual paragraphs for each tab
   const tabContent = {
-    "Enterprise Web Solutions": {
+    "Web Solutions": {
       title: "Expert Enterprise Web Development Teams",
       description: "KIAQ provides specialized enterprise development teams with deep expertise in building scalable, secure web applications for large organizations. Our solutions integrate seamlessly with existing enterprise systems while ensuring high performance, robust security, and compliance with industry standards."
     },
-    "Custom Application Development": {
+    "Application Development": {
       title: "Custom Application Development Specialists",
       description: "Our custom development teams create tailored web applications designed specifically for your unique business needs. We leverage modern frameworks and agile methodologies to deliver innovative solutions that streamline operations, enhance user experience, and drive business growth."
     },
@@ -231,8 +232,8 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
                     onClick={() =>
                       setActiveTab(
                         tab as
-                          | "Enterprise Web Solutions"
-                          | "Custom Application Development"
+                          | "Web Solutions"
+                          | "Application Development"
                           | "Digital Transformation"
                       )
                     }
@@ -282,10 +283,11 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
             <div className="md:col-span-7 flex justify-center md:justify-end">
               <div className="w-full max-w-[460px] lg:max-w-[480px]">
                 <img
-                  src={images[activeTab]}
-                  alt={activeTab}
-                  className="w-full h-auto rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
-                />
+  src={images[activeTab]}
+  alt={activeTab}
+  className="w-full h-[300px] sm:h-[350px] lg:h-[380px] rounded-lg sm:rounded-xl shadow-[0_10px_30px_rgba(2,6,23,0.12)] object-cover"
+/>
+
               </div>
             </div>
           </div>
@@ -319,7 +321,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
             {[
               {
                 title: "Custom Web Application Development",
-                desc: "We create fully customized web applications designed from the ground up to address your unique business challenges. Our solutions integrate seamlessly with your existing workflows while providing scalable architecture.",
+                desc: "We create fully customized web applications designed from the ground up to address your unique business challenges.Our solutions integrate seamlessly with your existing workflows while providing scalable architecture.",
                 gradient: "from-[#e3f3e9] to-[#f1faf4]",
                 pattern:
                   "radial-gradient(circle at center, rgba(156,175,136,0.25) 8%, transparent 8%)",
@@ -354,14 +356,15 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
               },
             ].map((card, idx) => (
               <div
-                key={idx}
-                className={`relative w-full max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-start`}
-              >
+  key={idx}
+  className={`relative w-full max-w-[360px] sm:max-w-[280px] p-5 rounded-xl shadow-sm bg-gradient-to-b ${card.gradient} transition-all duration-300 hover:scale-[1.03] hover:shadow-md flex flex-col justify-start`}
+>
+
                 <div>
-                  <h2 className="text-[15px] font-semibold text-[#011123] mb-2 leading-tight">
+                  <h2 className="text-[15px] font-semibold text-[#011123] mb-2 leading-tight text-left lg:text-left">
                     {card.title}
                   </h2>
-                  <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-justify">{card.desc}</p>
+                  <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-left">{card.desc}</p>
                 </div>
                 <div
                   className="absolute bottom-0 left-0 right-0 h-14 rounded-b-xl"
@@ -382,11 +385,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
             <div className="flex items-center justify-start gap-16 md:gap-22 opacity-70 animate-scroll">
               {[...logos, ...logos].map((logo, idx) => (
                 <img
-                  key={idx}
-                  src={logo}
-                  alt="client logo"
-                  className="h-20 md:h-22 w-auto grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
-                />
+  key={idx}
+  src={logo}
+  alt="client logo"
+  className="h-20 w-20 md:h-22 md:w-22 object-contain grayscale hover:grayscale-0 transition duration-300 flex-shrink-0"
+/>
+
               ))}
             </div>
           </div>
@@ -445,7 +449,7 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
 
           {/* Right Content */}
           <div className="w-full lg:w-1/2 text-justify">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug mb-3 sm:mb-4 text-left">
               Enterprise Web Solutions Driving Digital Transformation
             </h2>
 
@@ -456,9 +460,18 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
               and user experience across all digital touchpoints.
             </p>
 
-            <button className="px-4 sm:px-5 py-2 sm:py-2.5 border border-gray-800 text-gray-900 rounded-md font-medium hover:bg-gray-100 transition-all">
-              Case Studies
-            </button>
+             <h2
+  className="text-3xl md:text-4xl font-bold mb-4 text-start text-image-mask"
+  style={{ 
+    backgroundImage: `url(${img4})`,
+    color: "transparent",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    lineHeight: "1.15",
+  }}
+>
+  Application Development
+</h2>
           </div>
         </div>
       </section>

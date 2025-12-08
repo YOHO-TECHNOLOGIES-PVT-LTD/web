@@ -84,15 +84,21 @@ const ContactUs = () => {
   <div className="absolute inset-0 bg-[#002b38] opacity-95"></div>
 
   {/* Header */}
-  <div className="relative z-10 flex flex-col items-center text-center text-white px-4 mb-12">
-    <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold sm:font-extrabold tracking-tight mb-4 font-['Inter_Variable',_sans-serif]">
-      Contact Us
-    </h2>
-    <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-gray-200 opacity-90 font-['Inter_Variable',_sans-serif]">
-      We're a dedicated team of IT professionals, committed to delivering
-      innovative solutions that fuel your business success.
-    </p>
-  </div>
+ <div className="relative z-10 flex flex-col items-start text-left text-white 
+                px-4 sm:px-6 lg:px-46 mb-12">
+  <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold sm:font-extrabold tracking-tight mb-4 
+                 text-left font-['Inter_Variable',_sans-serif]">
+    Contact Us
+  </h2>
+
+  <p className="max-w-2xl text-sm sm:text-lg leading-relaxed text-gray-200 opacity-90 
+                text-left font-['Inter_Variable',_sans-serif]">
+    We're a dedicated team of IT professionals, committed to delivering
+    innovative solutions that fuel your business success.
+  </p>
+</div>
+
+
 
   {/* Contact Card */}
   <div className="relative z-10 flex justify-center px-4">
