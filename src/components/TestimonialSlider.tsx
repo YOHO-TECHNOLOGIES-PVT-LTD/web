@@ -118,13 +118,13 @@ export default function TestimonialSlider() {
                   </p>
                 </div>
 
-                {/* Right Image */}
+                {/* Right Image - Modified for mobile responsiveness */}
                 <div className="relative">
-                  <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
+                  <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden max-w-[90%] mx-auto sm:max-w-none">
                     <img
                       src={testimonial.image}
                       alt={testimonial.company}
-                      className="w-full h-full object-cover transform transition-transform duration-700 hover:rotate-[360deg]"
+                      className="w-full h-full object-cover transform transition-transform duration-700 hover:rotate-[360deg] scale-[0.95] sm:scale-100"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
                   </div>

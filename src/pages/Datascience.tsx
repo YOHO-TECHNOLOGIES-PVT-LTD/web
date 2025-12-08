@@ -106,7 +106,7 @@ export default function WebAppDevelopmentHero() {
               competitive advantages for forward-thinking enterprises.
             </p>
             {/* CTA Button */}
-            <a
+            {/* <a
               href="/Contact-us"
               className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-300 hover:opacity-90 w-full sm:w-auto text-center"
               style={{
@@ -115,7 +115,7 @@ export default function WebAppDevelopmentHero() {
               }}
             >
               Learn More
-            </a>
+            </a> */}
           </div>
           {/* Stats Section */}
           <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-14 text-gray-200 text-left">
