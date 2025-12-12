@@ -18,29 +18,29 @@ export default function FocusScrollSection() {
   
   const features = [
   {
-    title: "Advanced AI-Powered Systems Designed to Transform Customer Interaction",
+    title: "AI-Powered Solutions That Elevate Customer Engagement",
     description:
-     "Our advanced AI-driven chatbots and automation tools revolutionize how businesses engage with customers.Using cutting-edge machine learning and natural language processing, they deliver smarter, more personalized support.These systems streamline operations by automating routine workflows and reducing manual effort, enhance customer satisfaction through consistent, high-quality interactions, and enable greater efficiency and sustainable growth through scalable, intelligent automation."
+     "We deliver advanced AI development services that enhance customer engagement through intelligent chatbots and automation. Powered by machine learning and NLP, our solutions offer personalized responses, reduce manual workload, and improve service consistency. With scalable workflows and automation, businesses gain higher efficiency, lower operational costs, and long-term digital growth while delivering superior customer experiences."
   },
   {
-    title: "Custom Software Built for Real-World Performance",
+    title: "Custom Software Engineered for High-Performance Results",
     description:
-      "We design, develop, and deploy tailored software solutions that solve real business challenges. Whether it's a web app, mobile application, or enterprise platform, we deliver reliable and scalable products built for long-term performance. Our development approach ensures seamless integration into your operations, resulting in improved efficiency, enhanced flexibility, and a strong competitive edge."
+      "As a trusted software development company, we create custom applications built for speed, scalability, and real-world performance. From mobile apps to enterprise systems, our solutions integrate seamlessly with existing processes, boosting operational efficiency and flexibility. With strong full-stack capabilities, we deliver reliable software that enhances productivity and gives your business a competitive advantage."
   },
   {
-    title: "Transforming Data Into Intelligent Decisions",
+    title: " Turning Data Into Strategic Intelligence",
     description:
-      "Leveraging the power of AI, we help businesses convert data into actionable insights. Our solutions enable smarter decision-making, automate complex processes, and provide predictive analytics that anticipate future trends with accuracy. With intelligent data-driven strategies, companies can optimize operations, reduce risk, and drive sustained business growth."
+      "Our data engineering and analytics services transform raw data into actionable intelligence. Using AI, automation, and predictive analytics, we streamline complex workflows and deliver insights that improve decision-making. Businesses gain enhanced productivity, reduced risk, and long-term growth through data-backed strategies designed to increase efficiency and uncover new opportunities."
   },
   {
-    title: "Scalable, Secure & Cost-Efficient Cloud Infrastructure",
+    title: "Secure, Scalable & Affordable Cloud Architecture",
     description:
-      "We design and manage cloud environments that foster innovation and support growth at any pace. Our solutions ensure seamless scalability, strong data security, and full compliance. By optimizing cloud resources, we reduce operational costs and enhance overall efficiency, enabling businesses to operate with agility, reliability, and long-term success."
+      "We provide end-to-end cloud and DevOps services that strengthen security, scalability, and operational reliability. Our cloud solutions ensure seamless performance, regulatory compliance, and cost efficiency. With cloud migration, infrastructure optimization, and automation, we help businesses achieve agility, stability, and long-term digital transformation while reducing operational overhead."
   },
   {
     title: "Strategic Technology Guidance for Sustainable Growth",
     description:
-      "From system optimization to long-term digital strategy, we help you make informed technology decisions that maximize efficiency and future-proof your operations. We assess your current technology landscape to identify improvement and cost-saving opportunities, ensuring seamless integration of new solutions while enhancing performance and scalability. By aligning technology with your business goals, we enable sustainable growth and long-term success."
+      "Our technology consulting and development services help businesses make informed decisions that support long-term growth. We analyze your current systems, identify improvement opportunities, and ensure seamless integration of new technologies. By aligning IT strategy with business goals, we enhance performance, reduce costs, and deliver scalable, future-ready solutions that drive sustainable success"
   }
 ];
 

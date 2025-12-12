@@ -46,9 +46,9 @@ export default function ConsultingServices() {
 
           {/* Header */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-5 sm:mb-6 lg:mb-8">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
               Technology that drives your business forward.
-            </h1>
+            </h2>
             {/* <button className="px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 border-2 border-gray-900 text-gray-900 font-semibold rounded hover:bg-gray-900 hover:text-white transition-colors text-sm sm:text-base whitespace-nowrap">
               View All Resources
             </button> */}
@@ -96,9 +96,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   AI & Machine Learning Solutions
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Artificial Intelligence
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
@@ -116,9 +116,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   Blockchain & Web3 Development
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Blockchain Technology
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
@@ -136,9 +136,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   IoT & Edge Computing
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Internet of Things
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
@@ -161,9 +161,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   Cloud Native & Microservices
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Cloud Solutions
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
@@ -181,9 +181,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   Data Science & Analytics
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Big Data Analytics
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />
@@ -201,9 +201,9 @@ export default function ConsultingServices() {
                 <p className="text-xs font-semibold text-gray-500 group-hover:text-gray-300 tracking-wider mb-2">
                   Cybersecurity & DevSecOps
                 </p>
-                <h3 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-white mb-3 leading-tight">
                   Cybersecurity
-                </h3>
+                </h4>
                 {/* <a href="#" className="inline-flex items-center text-gray-900 group-hover:text-white font-semibold hover:gap-2 transition-all text-sm">
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1" />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import vd1 from "../assets/Home1/hv.mp4";
+import vd1 from "../assets/Home1/hv1.mp4";
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,14 +27,13 @@ export default function Hero() {
 
             <div className="max-width-large">
               <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white ${isLoaded ? 'animate-in' : ''}`}>
-                Scaling with Confidence<br className="hidden sm:block" />Through Future-Ready Tech
+                Leading AI and Software<br className="hidden sm:block" /> Solutions Company Chennai
               </h1>
 
               <div className="spacer-small"></div>
 
-              <p className={`text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-white max-w-3xl ${isLoaded ? 'animate-in delay-300' : ''}`}>
-                KIAQ connects global companies with top engineering talent from emerging markets. Our flexible hiring model helps you scale fast, cut costs, and build future-ready teams across AI, Data, Cloud, and Software Engineering.
-              </p>
+              <p className={`text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-left lg:text-justify text-white max-w-3xl ${isLoaded ? 'animate-in delay-300' : ''}`}>
+As a leading AI and software solutions company Chennai, we provide innovative technology and expert engineering. Our AI, cloud, data, and software services help businesses scale, improve efficiency, and achieve measurable growth.              </p>
 
               <div>
                 <div className="spacer-large"></div>

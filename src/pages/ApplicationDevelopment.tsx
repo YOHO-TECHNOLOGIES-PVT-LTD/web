@@ -103,10 +103,7 @@ export default function WebAppDevelopmentHero() {
                 color: "rgba(255,255,255,0.85)",
               }}
             >
-              KIAQ delivers robust, scalable web applications that drive digital
-              transformation. Our expert developers create custom solutions that
-              enhance user experience, optimize business processes, and deliver
-              measurable ROI.
+             KIAQ is a leading web application development company in Chennai, delivering robust, scalable web solutions that enhance user experience, streamline operations, and drive digital transformation and measurable business growth.
             </p>
 
             {/* CTA Button */}
@@ -361,9 +358,9 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
 >
 
                 <div>
-                  <h2 className="text-[15px] font-semibold text-[#011123] mb-2 leading-tight text-left lg:text-left">
+                  <h3 className="text-[15px] font-semibold text-[#011123] mb-2 leading-tight text-left lg:text-left">
                     {card.title}
-                  </h2>
+                  </h3>
                   <p className="text-sm text-[#011123b3] leading-[1.4] text-left lg:text-left">{card.desc}</p>
                 </div>
                 <div
@@ -623,12 +620,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
              </p>
            </div>
    
-           <h2
+           <h3
              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
              style={{ color: UI_CONSTANTS.WHITE }}
            >
              Build the tech team of the future with KIAQ
-           </h2>
+           </h3>
    
            <div className="flex justify-center sm:justify-start">
              <a
@@ -682,12 +679,12 @@ py-8 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-10 font-['Inter_Variable',_sans-serif]
              </p>
            </div>
    
-           <h2
+           <h3
              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
              style={{ color: '#173B3F' }}
            >
              Let us know how we can help
-           </h2>
+           </h3>
    
            <div className="flex justify-center sm:justify-start">
              <a

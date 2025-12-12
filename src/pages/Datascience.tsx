@@ -598,12 +598,12 @@ export default function WebAppDevelopmentHero() {
                 </p>
               </div>
       
-              <h2
+              <h3
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
                 style={{ color: UI_CONSTANTS.WHITE }}
               >
                 Build the tech team of the future with KIAQ
-              </h2>
+              </h3>
       
               <div className="flex justify-center sm:justify-start">
                 <a
@@ -657,12 +657,12 @@ export default function WebAppDevelopmentHero() {
                 </p>
               </div>
       
-              <h2
+              <h3
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
                 style={{ color: '#173B3F' }}
               >
                 Let us know how we can help
-              </h2>
+              </h3>
       
               <div className="flex justify-center sm:justify-start">
                 <a

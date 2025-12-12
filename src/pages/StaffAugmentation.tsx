@@ -231,9 +231,9 @@ const steps = [
 
   <div className="relative max-w-7xl mx-auto">
     {/* Top heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
+    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 max-w-3xl mb-4 sm:mb-6 md:mb-8 leading-tight text-left lg:text-left font-['Inter_Variable',_sans-serif]">
       Experience the KIAQ Advantage
-    </h1>
+    </h3>
 
     {/* Two-column main area: left image, right text */}
     <div className="flex flex-col lg:flex-row items-start gap-4 sm:gap-6 md:gap-8 lg:gap-12">
@@ -350,9 +350,9 @@ Our integrated methodology combines AI-powered technology platforms with the exp
 
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 leading-tight max-w-3xl text-left font-['Inter_Variable',_sans-serif]">
+    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold text-gray-900 leading-tight max-w-3xl text-left font-['Inter_Variable',_sans-serif]">
       Access the World's Premier Certified Global Talent Network
-    </h1>
+    </h3>
 
     <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-left lg:text-justify font-['Inter_Variable',_sans-serif]">
       Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.

@@ -88,10 +88,10 @@ export default function WebAppDevelopmentHero() {
           lineHeight: 1.2,
         }}
       >
-        Enterprise Data Engineering & Analytics Solutions
+        Enterprise Data Engineering &
         <br className="hidden sm:block" />
         <span className="sm:hidden"> </span>
-        Building Foundations for Data-Driven Success
+        Analytics Solutions for Data-Driven Success
       </h1>
 
       {/* Description */}
@@ -629,12 +629,12 @@ export default function WebAppDevelopmentHero() {
              </p>
            </div>
    
-           <h2
+           <h3
              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
              style={{ color: UI_CONSTANTS.WHITE }}
            >
              Build the tech team of the future with KIAQ
-           </h2>
+           </h3>
    
            <a
              href="https://career.kiaq.in/"
@@ -685,12 +685,12 @@ Grow Your Career With Us           </a>
              </p>
            </div>
    
-           <h2
+           <h3
              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 lg:mb-12 leading-tight"
              style={{ color: '#173B3F' }}
            >
              Let us know how we can help
-           </h2>
+           </h3>
    
            <a
              href="https://wa.me/918925921401"

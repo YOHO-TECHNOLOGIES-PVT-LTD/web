@@ -112,9 +112,8 @@ export default function WhyKiaq() {
       {/* RIGHT SIDE — Paragraph + Bullet Points */}
       <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-start items-start bg-[#fff2eb]">
         {/* Paragraph */}
-        <h1 className="text-lg sm:text-xl text-gray-700 mb-3 sm:mb-6 leading-relaxed text-left md:text-justify">
-          With a 05-year track record in IT, we create reliable, forward-thinking technology solutions designed to help businesses scale and excel in the evolving digital era. Excellence is the cornerstone of our work.
-        </h1>
+        <h3 className="text-lg sm:text-xl text-gray-700 mb-3 sm:mb-6 leading-relaxed text-left md:text-justify">
+With 05-years of proven IT experience, we develop dependable, future-ready technology solutions that empower businesses to grow and thrive in the fast-changing digital landscape.        </h3>
         {/* Bullet Points */}
         <ul className="list-disc pl-4 sm:pl-5 space-y-2 sm:space-y-4 text-sm text-gray-700 text-left md:text-justify">
           <li>Trusted Tech Professionals for Your Most Demanding IT Needs</li>
@@ -140,9 +139,9 @@ export default function WhyKiaq() {
     {/* Header */}
     <div className="flex flex-col lg:flex-row justify-between items-start mb-8 sm:mb-12 gap-4 sm:gap-8">
       <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight max-w-2xl text-left">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight max-w-2xl text-left">
           From Vision to Execution, Building Tomorrow's Technology Today
-        </h1>
+        </h3>
       </div>
 
       <p className="text-slate-700 max-w-sm text-justify leading-relaxed text-sm sm:text-base">
@@ -260,9 +259,9 @@ export default function WhyKiaq() {
   <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 text-center z-10">
 
     {/* Heading */}
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
       Leave the groundwork to us
-    </h2>
+    </h3>
 
     <p className="mt-3 sm:mt-4 text-gray-700 max-w-2xl sm:max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
       We provide premium customer and talent support services so you can focus on optimizing
@@ -360,9 +359,9 @@ export default function WhyKiaq() {
 
     {/* Sixth Section */}
        <section className="w-full py-14 sm:py-20 bg-white flex flex-col items-center px-4 sm:px-6 font-['Inter_Variable',_sans-serif]">
-  <h2 className="text-2xl sm:text-4xl font-bold text-center mb-10 sm:mb-14 text-[#011123]">
+  <h3 className="text-2xl sm:text-4xl font-bold text-center mb-10 sm:mb-14 text-[#011123]">
     KIAQ At A Glance
-  </h2>
+  </h3>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 w-full max-w-6xl">
 
@@ -421,8 +420,7 @@ export default function WhyKiaq() {
       </h2>
 
       <p className="text-gray-200 text-sm sm:text-[15px] leading-relaxed mb-5 sm:mb-6 text-justify" >
-        Kiaq Technologies brings deep technical expertise across modern software development,
-        cloud computing, cybersecurity, and enterprise IT solutions. Our skilled team leverages
+        KIAQ Technologies delivers strong technical expertise across modern software engineering, cloud solutions, cybersecurity, and comprehensive enterprise IT services. Our skilled team leverages
         cutting-edge technologies to design, develop, and deploy scalable systems tailored to your
         unique business needs. With a focus on innovation, quality, and performance, we help businesses
         embrace digital transformation and stay ahead in a rapidly evolving tech landscape.
