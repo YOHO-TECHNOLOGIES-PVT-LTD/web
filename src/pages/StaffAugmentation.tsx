@@ -354,7 +354,7 @@ Our integrated methodology combines AI-powered technology platforms with the exp
       Access the World's Premier Certified Global Talent Network
     </h3>
 
-    <p className="text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-left lg:text-justify font-['Inter_Variable',_sans-serif]">
+    <p className=" text-base sm:text-lg text-gray-600 mt-2 sm:mt-3 max-w-2xl leading-relaxed text-left lg:text-justify font-['Inter_Variable',_sans-serif]">
       Highly skilled digital professionals undergo comprehensive multi-stage certification processes. This rigorous approach ensures KIAQ clients report 98% satisfaction rates.
     </p>
 
