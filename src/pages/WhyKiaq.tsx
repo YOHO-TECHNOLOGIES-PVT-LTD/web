@@ -38,12 +38,12 @@ const StatBox = ({ label, value, suffix = "", description, Icon }: StatBoxProps)
       
       {/* Icon */}
       <div className="flex justify-center mb-4">
-        <Icon size={48} strokeWidth={1.5} className="text-[#ff5500]" />
+        <Icon size={48} strokeWidth={1.5} className="text-white" />
       </div>
 
       <h3 className="text-[#ffffff] text-lg font-semibold mb-3">{label}</h3>
 
-      <p className="text-[#ff5500] text-5xl font-bold leading-tight">
+      <p className="text-white text-5xl font-bold leading-tight">
         {count}{suffix}
       </p>
 
@@ -168,7 +168,7 @@ With 05-years of proven IT experience, we develop dependable, future-ready techn
   {/* Item 1 */}
   <div className="flex flex-col items-center text-center px-1 ">
     <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-start">
-      <Heart className="w-7 h-7 text-orange-500" />
+      <Heart className="w-7 h-7 text-white" />
     </div>
     <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-start">
       Empathy
@@ -181,7 +181,7 @@ With 05-years of proven IT experience, we develop dependable, future-ready techn
   {/* Item 2 */}
   <div className="flex flex-col items-center text-center px-1">
     <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-end">
-      <TrendingUp className="w-7 h-7 text-orange-500" />
+      <TrendingUp className="w-7 h-7 text-white" />
     </div>
     <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-end">
       Performance Driven
@@ -194,7 +194,7 @@ With 05-years of proven IT experience, we develop dependable, future-ready techn
   {/* Item 3 */}
   <div className="flex flex-col items-center text-center px-1">
     <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-start">
-      <Shield className="w-7 h-7 text-orange-500" />
+      <Shield className="w-7 h-7 text-white" />
     </div>
     <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-start">
       Honest & Integrity
@@ -207,7 +207,7 @@ With 05-years of proven IT experience, we develop dependable, future-ready techn
   {/* Item 4 */}
   <div className="flex flex-col items-center text-center px-1">
     <div className="bg-slate-700/50 rounded-full p-3 sm:p-5 mb-2 sm:mb-4 self-end">
-      <Briefcase className="w-7 h-7 text-orange-500" />
+      <Briefcase className="w-7 h-7 text-white" />
     </div>
     <h3 className="text-white text-sm sm:text-lg font-semibold mb-1 sm:mb-2 mt-1 self-end">
       Team Collaboration
